@@ -83,7 +83,7 @@
           </div>
           <img class="user-profile__avatar" src="./img/jpeg/profile-avatar.jpg" width="100" height="100" alt="Ваша аватарка">
         </div>
-        <a class="user-profile__link button user-profile--button" href="/">сменить фото</a>
+        <a class="user-profile__link button button--change-photo" href="/">сменить фото</a>
         <div class="user-profile-wrapper">
           <h3 class="user-profile__title">ТЭГИ</h3>
           <p class="user-profile__description">#бургер #бар #футбол #концерт
@@ -137,7 +137,7 @@
       <section class="user-plans">
         <div class="user-plans-container">
           <h2 class="user-plans__title inner-title">Мои планы:</h2>
-          <ol class="user-plans__list user-plans">
+          <ol class="user-plans__list user-plans-list">
             <li class="user-plans__item user-plans-item">
               <h3 class="user-plans-item__title">Франция, Италия</h3>
               <p class="user-plans-item__description travelers-counter">3 попутчика</p>
@@ -189,8 +189,10 @@
                   <input class="plans-algoritm__input" id="day-counter" type="number" placeholder="3" required>
                   <button class="plans-algoritm__button plans-algoritm__button--max" type="button">+</button>
                 </li>
-                <input class="plans-algoritm__input" id="with-children" type="checkbox" checked>
-                <label class="plans-algoritm__label" for="with-children" type="checkbox" checked>Можно с детьми</label>
+                <li class="plans-algoritm__item">
+                  <input class="plans-algoritm__input" id="with-children" type="checkbox" checked>
+                  <label class="plans-algoritm__label" for="with-children">Можно с детьми</label>
+                </li>
                 <li class="plans-algoritm__item">
                   <label class="visually-hidden" for="mounts">Выберите месяц</label>
                   <button class="plans-algoritm__button plans-algoritm__button--earler" type="button">-</button>
@@ -198,7 +200,7 @@
                   <button class="plans-algoritm__button plans-algoritm__button--later" type="button">+</button>
                 </li>
                 <li class="plans-algoritm__item">
-                  <table class="plans-algoritm__calendar plans-algoritm-calendar" border="1">
+                  <table class="plans-algoritm__calendar plans-algoritm-calendar">
                     <tr class="plans-algoritm-calendar__tr plans-algoritm-calendar__tr--day">
                       <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">П</td>
                       <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">В</td>
@@ -280,17 +282,17 @@
               <ul class="plans-algoritm-countries-list">
                 <li class="plans-algoritm-countries-item">
                   <label class="visually-hidden" for="your-countries-one">Выбранная страна</label>
-                  <select class="plans-algoritm-countries__select plans-algoritm__select--countries" id="your-countries-one">
-                    <option class="plans-algoritm-countries__option">Босния и герцеговина</option>
+                  <select class="plans-algoritm__select plans-algoritm__select--countries" id="your-countries-one">
+                    <option class="plans-algoritm__option">Босния и герцеговина</option>
                   </select>
-                  <img class="plans-algoritm-countries__flags" src="./img/png/bosnia-and-herzegovina.png"  width="35" height="24" alt="Флаг Боснии и Герцоговины">
+                  <img class="plans-algoritm__flags" src="./img/png/bosnia-and-herzegovina.png"  width="35" height="24" alt="Флаг Боснии и Герцоговины">
                 </li>
                 <li>
                   <label class="visually-hidden" for="your-countries-two">Выбранная страна</label>
-                  <select class="plans-algoritm-countries__select plans-algoritm__select--countries" id="your-countries-two">
-                    <option class="plans-algoritm-countries__option">чехия</option>
+                  <select class="plans-algoritm__select plans-algoritm__select--countries" id="your-countries-two">
+                    <option class="plans-algoritm__option">чехия</option>
                   </select>
-                  <img class="plans-algoritm-countries__flags" src="./img/png/czechia.png"  width="35" height="24" alt="Флаг Чехии">
+                  <img class="plans-algoritm__flags" src="./img/png/czechia.png"  width="35" height="24" alt="Флаг Чехии">
                 </li>
                 <li class="plans-algoritm-countries-item">
                   <label class="visually-hidden" for="chouse-countries">Выберите страну</label>
@@ -298,78 +300,79 @@
                   <div class="plans-algoritm__popup popup-countries popup-countries--hidden">
                     <ol class="popup-countries__list">
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">А</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">А</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">Б</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">Б</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">В</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">В</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">Г</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">Г</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">Д</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">Д</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">Е</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">Е</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">З</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">З</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">И</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">И</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">К</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">К</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">Л</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">Л</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">М</button>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">Н</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">М</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">О</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">Н</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">П</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">О</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">Р</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">П</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">С</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">Р</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">Т</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">С</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">У</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">Т</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">Ф</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">У</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">Х</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">Ф</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">Ч</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">Х</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">Ш</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">Ч</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">Э</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">Ш</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">Ю</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">Э</button>
                       </li>
                       <li class="popup-countries__item">
-                        <button class="popup-countries__button button--key-letter">Я</button>
+                        <button class="popup-countries__button popup-countries__button--key-letter">Ю</button>
+                      </li>
+                      <li class="popup-countries__item">
+                        <button class="popup-countries__button popup-countries__button--key-letter">Я</button>
                       </li>
                     </ol>
                     <ol class="popup-countries__description-list">
@@ -410,7 +413,7 @@
                 </li>
                 <li class="algoritm-form-thired__item">
                   <label class="plans-algoritm__label" for="plan-fun-two">Чехия</label>
-                  <textarea class="plans-algoritm__textarea" id="plan-fun-two" value="Пить пиво и лазить
+                  <textarea class="plans-algoritm__textarea" id="plan-fun-two" placeholder="Пить пиво и лазить
                     по старым замкам, наслаждаться архитектурой и вот это все.">
                   </textarea>
                 </li>
