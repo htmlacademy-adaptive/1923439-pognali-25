@@ -75,14 +75,14 @@
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Подбор попутчиков</h1>
-      <section class="countries-filter">
-        <div class="countries-filter-container">
-          <a class="countries-filter__link" href="/">
-            Фильтрация по странам:
-          </a>
-          <button class="countries-filter__button countries-filter__button--open countries-filter__button--close"></button>
-          <div class="countries-filter__popup popup-countries popup-countries--hidden">
-            <form class="popup-countries__form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="popup-countries__form" action="https://echo.htmlacademy.ru" method="post">
+        <section class="countries-filter">
+          <div class="countries-filter-container">
+            <a class="countries-filter__link" href="/">
+              Фильтрация по странам:
+            </a>
+            <button class="countries-filter__button countries-filter__button--open countries-filter__button--close"></button>
+            <div class="countries-filter__popup popup-countries popup-countries--hidden">
               <ul class="popup-countries__list">
                 <li class="popup-countries__item">
                   <input class="popup-countries__button popup-countries__button--continent popup-countries__button--active" id="europe" name="europe" type="checkbox" checked>
@@ -224,25 +224,23 @@
                   <label class="popup-countries__label popup-countries__label--list" for="auganistan">Афганистан</label>
                 </li>
               </ol>
-            </form>
-            <a class="popup-countries__close button button--close">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.25 1.75L1.75 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M1.75 1.75L12.25 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              Свернуть
-            </a>
+              <a class="popup-countries__close button button--close">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.25 1.75L1.75 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1.75 1.75L12.25 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Свернуть
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="travelers-search">
-        <div class="travelers-search-container">
-          <h2 class="travelers-search__title">
-            Подберите
-            идеального
-            попутчика
-          </h2>
-          <form class="travelers-search__form" action="https://echo.htmlacademy.ru" method="post">
+        </section>
+        <section class="travelers-search">
+          <div class="travelers-search-container">
+            <h2 class="travelers-search__title">
+              Подберите
+              идеального
+              попутчика
+            </h2>
             <fieldset class="travelers-search__fieldset">
               <legend class="travelers-search__legend">хобби</legend>
               <button class="travelers-search__button travelers-search__button--open"></button>
@@ -302,9 +300,9 @@
               </ul>
             </fieldset>
             <input class="travelers-search__input button travelers-search__input--submit" type="submit" value="показать">
-          </form>
-        </div>
-      </section>
+          </div>
+        </section>
+      </form>
       <section class="search-results">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <div class="search-results-container">
