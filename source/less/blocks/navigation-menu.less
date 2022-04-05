@@ -1,0 +1,29 @@
+.navigation-menu {
+  position: relative;
+  width: 25px;
+  height: 11px;
+  display: flex;
+}
+
+.navigation-menu::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 1.5px;
+}
+
+.navigation-menu::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 1.5px;
+}
+
