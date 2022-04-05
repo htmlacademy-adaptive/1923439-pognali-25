@@ -9,7 +9,7 @@
     <header class="main-header">
       <div class="header-container">
         <div class="main-header__logo-wrapper">
-          <a class="main-header__logo logo">Погнали?</a>
+          <a class="main-header__logo logo" href="/source/index.html">Погнали?</a>
           <a class="main-header__menu navigation-menu" href="#"></a>
         </div>
         <div class="main-header__popup main-header__popup--hidden popup-menu">
@@ -242,70 +242,72 @@
         </section>
         <section class="travelers-search">
           <div class="travelers-search-container">
-            <h2 class="travelers-search__title">
-              Подберите
-              идеального
-              попутчика
-            </h2>
-            <fieldset class="travelers-search__fieldset">
-              <legend class="travelers-search__legend">хобби</legend>
-              <button class="travelers-search__button travelers-search__button--open"></button>
-            </fieldset>
-            <fieldset class="travelers-search__fieldset">
-              <legend class="travelers-search__legend">музыка</legend>
-              <button class="travelers-search__button travelers-search__button--close"></button>
-              <ul class="travelers-search__list">
-                <li class="travelers-search__item">
-                  <input class="travelers-search__input" id="music-rok" name="music-rok" type="checkbox" checked>
-                  <label class="travelers-search__label" for="music-rok">Тяжелый рок</label>
-                </li>
-                <li class="travelers-search__item">
-                  <input class="travelers-search__input" id="music-rap" name="music-rap" type="checkbox" checked>
-                  <label class="travelers-search__label" for="music-rap">Русский рэп</label>
-                </li>
-                <li class="travelers-search__item">
-                  <input class="travelers-search__input" id="music-dance" name="music-dance" type="checkbox">
-                  <label class="travelers-search__label" for="music-dance">Евроденс</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="travelers-search__fieldset">
-              <legend class="travelers-search__legend">еда</legend>
-              <button class="travelers-search__button travelers-search__button--open"></button>
-            </fieldset>
-            <fieldset class="travelers-search__fieldset">
-              <legend class="travelers-search__legend">транспорт</legend>
-              <button class="travelers-search__button travelers-search__button--close"></button>
-              <ul class="travelers-search__list travelers-search__list--transport">
-                <li class="travelers-search__item travelers-search__item--transport">
-                  <input class="travelers-search__input" id="aero" name="aero" type="checkbox" checked>
-                  <label class="travelers-search__label" for="aero">Самолёт</label>
-                </li>
-                <li class="travelers-search__item travelers-search__item--transport">
-                  <input class="travelers-search__input" id="bus" name="bus" type="checkbox" checked>
-                  <label class="travelers-search__label" for="bus">Автобус</label>
-                </li>
-                <li class="travelers-search__item travelers-search__item--transport">
-                  <input class="travelers-search__input" id="becikle" name="becikle" type="checkbox">
-                  <label class="travelers-search__label" for="becikle">Велосипед</label>
-                </li>
-                <li class="travelers-search__item travelers-search__item--transport">
-                  <input class="travelers-search__input" id="legs" name="legs" type="checkbox" checked>
-                  <label class="travelers-search__label" for="legs">Пешком</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="travelers-search__fieldset">
-              <legend class="travelers-search__legend">Левел</legend>
-              <button class="travelers-search__button travelers-search__button--close"></button>
-              <ul class="travelers-search__list travelers-search__list--transport">
-                <li class="travelers-search__item travelers-search__item--transport">
-                  <input class="travelers-search__input" id="lvl" name="lvl" type="range">
-                  <label class="travelers-search__label" for="lvl">Уровень попутчика</label>
-                </li>
-              </ul>
-            </fieldset>
-            <input class="travelers-search__input button travelers-search__input--submit" type="submit" value="показать">
+            <div class="travelers-search-container__background">
+              <h2 class="travelers-search__title">
+                Подберите
+                идеального
+                попутчика
+              </h2>
+              <fieldset class="travelers-search__fieldset">
+                <legend class="travelers-search__legend">хобби</legend>
+                <button class="travelers-search__button travelers-search__button--open"></button>
+              </fieldset>
+              <fieldset class="travelers-search__fieldset">
+                <legend class="travelers-search__legend">музыка</legend>
+                <button class="travelers-search__button travelers-search__button--close"></button>
+                <ul class="travelers-search__list">
+                  <li class="travelers-search__item">
+                    <input class="travelers-search__input" id="music-rok" name="music-rok" type="checkbox" checked>
+                    <label class="travelers-search__label" for="music-rok">Тяжелый рок</label>
+                  </li>
+                  <li class="travelers-search__item">
+                    <input class="travelers-search__input" id="music-rap" name="music-rap" type="checkbox" checked>
+                    <label class="travelers-search__label" for="music-rap">Русский рэп</label>
+                  </li>
+                  <li class="travelers-search__item">
+                    <input class="travelers-search__input" id="music-dance" name="music-dance" type="checkbox">
+                    <label class="travelers-search__label" for="music-dance">Евроденс</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="travelers-search__fieldset">
+                <legend class="travelers-search__legend">еда</legend>
+                <button class="travelers-search__button travelers-search__button--open"></button>
+              </fieldset>
+              <fieldset class="travelers-search__fieldset">
+                <legend class="travelers-search__legend">транспорт</legend>
+                <button class="travelers-search__button travelers-search__button--close"></button>
+                <ul class="travelers-search__list travelers-search__list--transport">
+                  <li class="travelers-search__item travelers-search__item--transport">
+                    <input class="travelers-search__input" id="aero" name="aero" type="checkbox" checked>
+                    <label class="travelers-search__label" for="aero">Самолёт</label>
+                  </li>
+                  <li class="travelers-search__item travelers-search__item--transport">
+                    <input class="travelers-search__input" id="bus" name="bus" type="checkbox" checked>
+                    <label class="travelers-search__label" for="bus">Автобус</label>
+                  </li>
+                  <li class="travelers-search__item travelers-search__item--transport">
+                    <input class="travelers-search__input" id="becikle" name="becikle" type="checkbox">
+                    <label class="travelers-search__label" for="becikle">Велосипед</label>
+                  </li>
+                  <li class="travelers-search__item travelers-search__item--transport">
+                    <input class="travelers-search__input" id="legs" name="legs" type="checkbox" checked>
+                    <label class="travelers-search__label" for="legs">Пешком</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="travelers-search__fieldset">
+                <legend class="travelers-search__legend">Левел</legend>
+                <button class="travelers-search__button travelers-search__button--close"></button>
+                <ul class="travelers-search__list travelers-search__list--transport">
+                  <li class="travelers-search__item travelers-search__item--transport">
+                    <input class="travelers-search__input" id="lvl" name="lvl" type="range">
+                    <label class="travelers-search__label visually-hidden" for="lvl">Уровень попутчика</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <input class="travelers-search__input button travelers-search__input--submit" type="submit" value="показать">
+            </div>
           </div>
         </section>
       </form>
@@ -617,8 +619,16 @@
       </section>
       <section class="catalog-pagination">
         <div class="catalog-pagination-container">
-          <a class="catalog-pagination__link button catalog-pagination__link--previos" href="/"></a>
-          <a class="catalog-pagination__link button catalog-pagination__link--next" href="/"></a>
+          <a class="catalog-pagination__link button button--pagination button--pagination-previos" href="/">
+            <svg class="catalog-pagination__img--next" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z" fill="#1D2E5B"/>
+              </svg>
+          </a>
+          <a class="catalog-pagination__link button button--pagination button--pagination-next" href="/">
+            <svg class=" catalog-pagination__img--previos" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z" fill="#1D2E5B"/>
+              </svg>
+          </a>
         </div>
       </section>
     </main>
