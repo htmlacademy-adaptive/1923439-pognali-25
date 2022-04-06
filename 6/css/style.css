@@ -4,7 +4,7 @@
 }
 .about-us {
   background-color: #192144;
-  background-image: url("/img/png/about-mobile.png");
+  background-image: url("../img/png/about-mobile.png");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -81,7 +81,7 @@
   min-height: 40px;
 }
 .button--show-all {
-  background-image: url("/img/svg/button-treangle.svg");
+  background-image: url("../img/svg/button-treangle.svg");
   background-position: 90% 50%;
   background-repeat: no-repeat;
   width: 270px;
@@ -112,12 +112,12 @@
   height: 62px;
   background-color: #ffd74b;
   border-radius: 10px;
-  background-image: url("/img/svg/button-treangle.svg");
+  background-image: url("../img/svg/button-treangle.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 .button--location {
-  background-image: url("/img/svg/button-treangle.svg");
+  background-image: url("../img/svg/button-treangle.svg");
   background-position: 90% 50%;
   background-repeat: no-repeat;
   font-family: "Blogger Sans", sans-serif;
@@ -642,7 +642,7 @@
 }
 .travelers {
   background-color: #192144;
-  background-image: url("/img/png/travelers-background.png");
+  background-image: url("../img/png/travelers-background.png");
   background-repeat: no-repeat;
 }
 .travelers__list {
@@ -655,7 +655,7 @@
   padding-right: 24px;
 }
 .welcome {
-  background: url("/img/png/traveller-illustration-mobile.png") center no-repeat, url("/img/png/header-back-mobile.png") center no-repeat;
+  background: url("../img/png/traveller-illustration-mobile.png") center no-repeat, url("../img/png/header-back-mobile.png") center no-repeat;
 }
 .welcome__title {
   font-family: "Blogger Sans", sans-serif;
