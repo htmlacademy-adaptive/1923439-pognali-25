@@ -1,1 +1,218 @@
 // Начните писать стили здесь
+@import "./blocks/about-us-container.less";
+@import "./blocks/about-us.less";
+@import "./blocks/add-profile-container.less";
+@import "./blocks/add-profile.less";
+@import "./blocks/button.less";
+@import "./blocks/contacts-wrapper.less";
+@import "./blocks/directions-card.less";
+@import "./blocks/directions-container.less";
+@import "./blocks/directions.less";
+@import "./blocks/features-container.less";
+@import "./blocks/features.less";
+@import "./blocks/footer-container.less";
+@import "./blocks/footer-copyright-wrapper.less";
+@import "./blocks/footer-social.less";
+@import "./blocks/header-container.less";
+@import "./blocks/location-container.less";
+@import "./blocks/location-wrapper.less";
+@import "./blocks/location.less";
+@import "./blocks/log-in-link.less";
+@import "./blocks/logo.less";
+@import "./blocks/main-footer.less";
+@import "./blocks/main-header.less";
+@import "./blocks/main-navigation.less";
+@import "./blocks/modal-contant.less";
+@import "./blocks/navigation-menu.less";
+@import "./blocks/page-title.less";
+@import "./blocks/popup-menu.less";
+@import ".//blocks/social-link.less";
+@import "./blocks/social-wrapper.less";
+@import "./blocks/subscribe-container.less";
+@import "./blocks/subscribe-form.less";
+@import "./blocks/subscribe.less";
+@import "./blocks/tag-list.less";
+@import "./blocks/text.less";
+@import "./blocks/transport-list.less";
+@import "./blocks/travelers-card.less";
+@import "./blocks/travelers-container.less";
+@import "./blocks/travelers-flags.less";
+@import "./blocks/travelers.less";
+@import "./blocks/welcome-container.less";
+@import "./blocks/welcome.less";
+// form.html //
+@import "./blocks/add-plans.less";
+@import "./blocks/algoritm-form.less";
+@import "./blocks/inner-title.less";
+@import "./blocks/main-header-title.less";
+@import "./blocks/plans-algoritm-countries-item.less";
+@import "./blocks/plans-algoritm.less";
+@import "./blocks/popup-countries.less";
+@import "./blocks/user-plans-container.less";
+@import "./blocks/user-plans-item.less";
+@import "./blocks/user-plans-list.less";
+@import "./blocks/user-plans.less";
+@import "./blocks/user-profile-avatar.less";
+@import "./blocks/user-profile-container.less";
+@import "./blocks/user-profile.less";
+@import "./blocks/travelers-info.less";
+// catalog.html //
+@import "./blocks/catalog-pagination-container.less";
+@import "./blocks/catalog-pagination.less";
+@import "./blocks/countries-filter-container.less";
+@import "./blocks/countries-filter.less";
+@import "./blocks/product-card.less";
+@import "./blocks/search-results-container.less";
+@import "./blocks/search-results.less";
+@import "./blocks/travelers-search-container.less";
+@import "./blocks/travelers-search.less";
+@import "./blocks/wishes-item.less";
+@import "./blocks/wishes-list.less";
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: bold;
+  font-weight: 800;
+  src: url("../fonts/bloggersans-bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: bold;
+  font-weight: 800;
+  src: url("../fonts/bloggersans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../fonts/bloggersans-bolditalic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: italic;
+  font-weight: 800;
+  src: url("../fonts/bloggersans-bolditalic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/bloggersans-italic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/bloggersans-italic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/bloggersans-light.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/bloggersans-light.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/bloggersans-lightitalic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/bloggersans-lightitalic.woff") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/bloggersans-medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/bloggersans-medium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/bloggersans-mediumitalic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/bloggersans-mediumitalic.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bloggersans.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Blogger Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bloggersans.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Blogger Sans", sans-serif;
+  width: 320px;
+  margin: 0 auto;
+  background-color: rgba(43, 192, 43, 0.4);
+}

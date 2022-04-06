@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body class="page__form">
+  <body class="page__catalog main">
     <header class="main-header">
       <div class="header-container">
-        <a class="main-header__logo logo">Погнали?</a>
-        <a class="main-header__menu navigation-menu"></a>
+        <div class="main-header__logo-wrapper">
+          <a class="main-header__logo logo" href="index.html">Погнали?</a>
+          <a class="main-header__menu navigation-menu" href="#"></a>
+        </div>
         <div class="main-header__popup main-header__popup--hidden popup-menu">
           <nav class="main-navigation">
             <ul class="main-navigation__list">
@@ -16,7 +19,7 @@
                 <a class="main-navigation__link" href="#about-servis">О сервисе</a>
               </li>
               <li class="main-navigation__item">
-                <a class="main-navigation__link" href="/source/form.html">Направления</a>
+                <a class="main-navigation__link" href="form.html">Направления</a>
               </li>
               <li class="main-navigation__item">
                 <a class="main-navigation__link">Попутчики</a>
@@ -24,15 +27,19 @@
             </ul>
             <a class="main-navigation__log-in button button--log-in" href="/">Авторизация</a>
             <div class="contacts-wrapper">
-              <svg class="contacts-wrapper__image" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.50001 0.0861511C5.70356 0.0861511 2.90039 0.558819 1.88328 1.50092C1.0394 2.28252 0.7581 3.66329 0.663275 4.53753C0.663275 4.53753 0.650208 4.62393 0.650208 4.66109C0.650208 5.00391 0.944508 5.27887 1.30433 5.27887C1.34684 5.27887 2.92008 5.15837 3.86857 5.08425C3.8914 5.08112 3.9144 5.07806 3.93722 5.07191C4.29049 5.0627 4.57511 4.7908 4.57511 4.45413L4.57828 3.237C4.57828 2.86014 4.9022 2.55737 5.30126 2.55737H11.6987C12.0979 2.55737 12.4218 2.86011 12.4218 3.237L12.425 4.45413C12.425 4.7908 12.7096 5.0627 13.0628 5.07191C13.0855 5.0781 13.1085 5.08112 13.1316 5.08425C14.0802 5.15834 15.6534 5.27887 15.6957 5.27887C16.0554 5.27887 16.3499 5.00391 16.3499 4.66109C16.3499 4.62393 16.3369 4.53753 16.3369 4.53753C16.242 3.66329 15.961 2.28255 15.1171 1.50092C14.0996 0.558819 11.2965 0.0861511 8.50001 0.0861511ZM8.50001 8.11773C7.77717 8.11773 7.1917 8.67064 7.1917 9.35333C7.1917 10.036 7.77717 10.5889 8.50001 10.5889C9.22285 10.5889 9.80829 10.036 9.80829 9.35333C9.80829 8.67064 9.22285 8.11773 8.50001 8.11773ZM7.51879 5.33752V4.56528C7.51879 4.13902 7.15242 3.79303 6.70113 3.79303C6.24983 3.79303 5.88346 4.13905 5.88346 4.56528V5.33752L1.47101 9.7889C1.16695 10.07 0.977196 10.4622 0.977196 10.8948V12.1335C0.977196 12.8162 1.5627 13.3691 2.28551 13.3691H2.6126V14.1414C2.6126 14.5677 2.97901 14.9136 3.43031 14.9136C3.8816 14.9136 4.24798 14.5677 4.24798 14.1414V13.3691H12.752V14.1414C12.752 14.5677 13.1183 14.9136 13.5698 14.9136C14.0211 14.9136 14.3874 14.5677 14.3874 14.1414V13.3691H14.7145C15.4373 13.3691 16.0228 12.8162 16.0228 12.1335V10.8948C16.0228 10.4622 15.833 10.07 15.5289 9.7889L11.1167 5.33752V4.56528C11.1167 4.13902 10.7502 3.79303 10.2989 3.79303C9.84763 3.79303 9.4813 4.13905 9.4813 4.56528V5.33752H7.51879ZM8.50001 6.8821C9.9457 6.8821 11.1167 7.98799 11.1167 9.35333C11.1167 10.7187 9.94573 11.8246 8.50001 11.8246C7.05432 11.8246 5.88342 10.7187 5.88342 9.35333C5.88342 7.98795 7.05432 6.8821 8.50001 6.8821Z" fill="#FFD74B"/>
-              </svg>
+              <div class="contacts-wrapper__image-wrapper">
+                <svg class="contacts-wrapper__image" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.50001 0.0861511C5.70356 0.0861511 2.90039 0.558819 1.88328 1.50092C1.0394 2.28252 0.7581 3.66329 0.663275 4.53753C0.663275 4.53753 0.650208 4.62393 0.650208 4.66109C0.650208 5.00391 0.944508 5.27887 1.30433 5.27887C1.34684 5.27887 2.92008 5.15837 3.86857 5.08425C3.8914 5.08112 3.9144 5.07806 3.93722 5.07191C4.29049 5.0627 4.57511 4.7908 4.57511 4.45413L4.57828 3.237C4.57828 2.86014 4.9022 2.55737 5.30126 2.55737H11.6987C12.0979 2.55737 12.4218 2.86011 12.4218 3.237L12.425 4.45413C12.425 4.7908 12.7096 5.0627 13.0628 5.07191C13.0855 5.0781 13.1085 5.08112 13.1316 5.08425C14.0802 5.15834 15.6534 5.27887 15.6957 5.27887C16.0554 5.27887 16.3499 5.00391 16.3499 4.66109C16.3499 4.62393 16.3369 4.53753 16.3369 4.53753C16.242 3.66329 15.961 2.28255 15.1171 1.50092C14.0996 0.558819 11.2965 0.0861511 8.50001 0.0861511ZM8.50001 8.11773C7.77717 8.11773 7.1917 8.67064 7.1917 9.35333C7.1917 10.036 7.77717 10.5889 8.50001 10.5889C9.22285 10.5889 9.80829 10.036 9.80829 9.35333C9.80829 8.67064 9.22285 8.11773 8.50001 8.11773ZM7.51879 5.33752V4.56528C7.51879 4.13902 7.15242 3.79303 6.70113 3.79303C6.24983 3.79303 5.88346 4.13905 5.88346 4.56528V5.33752L1.47101 9.7889C1.16695 10.07 0.977196 10.4622 0.977196 10.8948V12.1335C0.977196 12.8162 1.5627 13.3691 2.28551 13.3691H2.6126V14.1414C2.6126 14.5677 2.97901 14.9136 3.43031 14.9136C3.8816 14.9136 4.24798 14.5677 4.24798 14.1414V13.3691H12.752V14.1414C12.752 14.5677 13.1183 14.9136 13.5698 14.9136C14.0211 14.9136 14.3874 14.5677 14.3874 14.1414V13.3691H14.7145C15.4373 13.3691 16.0228 12.8162 16.0228 12.1335V10.8948C16.0228 10.4622 15.833 10.07 15.5289 9.7889L11.1167 5.33752V4.56528C11.1167 4.13902 10.7502 3.79303 10.2989 3.79303C9.84763 3.79303 9.4813 4.13905 9.4813 4.56528V5.33752H7.51879ZM8.50001 6.8821C9.9457 6.8821 11.1167 7.98799 11.1167 9.35333C11.1167 10.7187 9.94573 11.8246 8.50001 11.8246C7.05432 11.8246 5.88342 10.7187 5.88342 9.35333C5.88342 7.98795 7.05432 6.8821 8.50001 6.8821Z" fill="#FFD74B"/>
+                </svg>
+              </div>
               <a class="contacts-wrapper__link" href="/">8 800 555-86-28</a>
             </div>
             <div class="contacts-wrapper">
-              <svg class="contacts-wrapper__image" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1393 10.4663L11.8089 6.5L16.1393 2.53365L15.5488 1.90264L9.25 7.67188L2.9512 1.90264L2.36069 2.53365L6.69112 6.5L2.36069 10.4663L2.9512 11.0974L7.33084 7.08594L9.25 8.84375L11.1692 7.08594L15.5488 11.0974L16.1393 10.4663ZM1.57597 0.25C0.76695 0.25 0.111115 0.948839 0.111115 1.80786V11.1921C0.111115 12.0525 0.76163 12.75 1.57597 12.75H16.924C17.7331 12.75 18.3889 12.0512 18.3889 11.1921V1.80786C18.3889 0.947478 17.7384 0.25 16.924 0.25H1.57597Z" fill="#FFD74B"/>
-              </svg>
+              <div class="contacts-wrapper__image-wrapper">
+                <svg class="contacts-wrapper__image" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1393 10.4663L11.8089 6.5L16.1393 2.53365L15.5488 1.90264L9.25 7.67188L2.9512 1.90264L2.36069 2.53365L6.69112 6.5L2.36069 10.4663L2.9512 11.0974L7.33084 7.08594L9.25 8.84375L11.1692 7.08594L15.5488 11.0974L16.1393 10.4663ZM1.57597 0.25C0.76695 0.25 0.111115 0.948839 0.111115 1.80786V11.1921C0.111115 12.0525 0.76163 12.75 1.57597 12.75H16.924C17.7331 12.75 18.3889 12.0512 18.3889 11.1921V1.80786C18.3889 0.947478 17.7384 0.25 16.924 0.25H1.57597Z" fill="#FFD74B"/>
+                </svg>
+              </div>
               <a class="contacts-wrapper__link" href="/">mail@htmlacademy.ru</a>
             </div>
             <div class="social-wrapper">
@@ -69,12 +76,12 @@
             </div>
           </nav>
         </div>
-        <a class="main-header__title main-header__title--active">Попутчики</a>
+        <a class="main-header__title main-header-title main-header-title--active">Попутчики</a>
       </div>
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Подбор попутчиков</h1>
-      <form class="popup-countries__form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="catalog-form" action="https://echo.htmlacademy.ru" method="post">
         <section class="countries-filter">
           <div class="countries-filter-container">
             <a class="countries-filter__link" href="/">
@@ -235,70 +242,72 @@
         </section>
         <section class="travelers-search">
           <div class="travelers-search-container">
-            <h2 class="travelers-search__title">
-              Подберите
-              идеального
-              попутчика
-            </h2>
-            <fieldset class="travelers-search__fieldset">
-              <legend class="travelers-search__legend">хобби</legend>
-              <button class="travelers-search__button travelers-search__button--open"></button>
-            </fieldset>
-            <fieldset class="travelers-search__fieldset">
-              <legend class="travelers-search__legend">музыка</legend>
-              <button class="travelers-search__button travelers-search__button--close"></button>
-              <ul class="travelers-search__list">
-                <li class="travelers-search__item">
-                  <input class="travelers-search__input" id="music-rok" name="music-rok" type="checkbox" checked>
-                  <label class="travelers-search__label" for="music-rok">Тяжелый рок</label>
-                </li>
-                <li class="travelers-search__item">
-                  <input class="travelers-search__input" id="music-rap" name="music-rap" type="checkbox" checked>
-                  <label class="travelers-search__label" for="music-rap">Русский рэп</label>
-                </li>
-                <li class="travelers-search__item">
-                  <input class="travelers-search__input" id="music-dance" name="music-dance" type="checkbox">
-                  <label class="travelers-search__label" for="music-dance">Евроденс</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="travelers-search__fieldset">
-              <legend class="travelers-search__legend">еда</legend>
-              <button class="travelers-search__button travelers-search__button--open"></button>
-            </fieldset>
-            <fieldset class="travelers-search__fieldset">
-              <legend class="travelers-search__legend">транспорт</legend>
-              <button class="travelers-search__button travelers-search__button--close"></button>
-              <ul class="travelers-search__list travelers-search__list--transport">
-                <li class="travelers-search__item travelers-search__item--transport">
-                  <input class="travelers-search__input" id="aero" name="aero" type="checkbox" checked>
-                  <label class="travelers-search__label" for="aero">Самолёт</label>
-                </li>
-                <li class="travelers-search__item travelers-search__item--transport">
-                  <input class="travelers-search__input" id="bus" name="bus" type="checkbox" checked>
-                  <label class="travelers-search__label" for="bus">Автобус</label>
-                </li>
-                <li class="travelers-search__item travelers-search__item--transport">
-                  <input class="travelers-search__input" id="becikle" name="becikle" type="checkbox">
-                  <label class="travelers-search__label" for="becikle">Велосипед</label>
-                </li>
-                <li class="travelers-search__item travelers-search__item--transport">
-                  <input class="travelers-search__input" id="legs" name="legs" type="checkbox" checked>
-                  <label class="travelers-search__label" for="legs">Пешком</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="travelers-search__fieldset">
-              <legend class="travelers-search__legend">Левел</legend>
-              <button class="travelers-search__button travelers-search__button--close"></button>
-              <ul class="travelers-search__list travelers-search__list--transport">
-                <li class="travelers-search__item travelers-search__item--transport">
-                  <input class="travelers-search__input" id="lvl" name="lvl" type="range">
-                  <label class="travelers-search__label" for="lvl">Уровень попутчика</label>
-                </li>
-              </ul>
-            </fieldset>
-            <input class="travelers-search__input button travelers-search__input--submit" type="submit" value="показать">
+            <div class="travelers-search-container__background">
+              <h2 class="travelers-search__title">
+                Подберите
+                идеального
+                попутчика
+              </h2>
+              <fieldset class="travelers-search__fieldset">
+                <legend class="travelers-search__legend">хобби</legend>
+                <button class="travelers-search__button travelers-search__button--open"></button>
+              </fieldset>
+              <fieldset class="travelers-search__fieldset">
+                <legend class="travelers-search__legend">музыка</legend>
+                <button class="travelers-search__button travelers-search__button--close"></button>
+                <ul class="travelers-search__list">
+                  <li class="travelers-search__item">
+                    <input class="travelers-search__input" id="music-rok" name="music-rok" type="checkbox" checked>
+                    <label class="travelers-search__label" for="music-rok">Тяжелый рок</label>
+                  </li>
+                  <li class="travelers-search__item">
+                    <input class="travelers-search__input" id="music-rap" name="music-rap" type="checkbox" checked>
+                    <label class="travelers-search__label" for="music-rap">Русский рэп</label>
+                  </li>
+                  <li class="travelers-search__item">
+                    <input class="travelers-search__input" id="music-dance" name="music-dance" type="checkbox">
+                    <label class="travelers-search__label" for="music-dance">Евроденс</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="travelers-search__fieldset">
+                <legend class="travelers-search__legend">еда</legend>
+                <button class="travelers-search__button travelers-search__button--open"></button>
+              </fieldset>
+              <fieldset class="travelers-search__fieldset">
+                <legend class="travelers-search__legend">транспорт</legend>
+                <button class="travelers-search__button travelers-search__button--close"></button>
+                <ul class="travelers-search__list travelers-search__list--transport">
+                  <li class="travelers-search__item travelers-search__item--transport">
+                    <input class="travelers-search__input" id="aero" name="aero" type="checkbox" checked>
+                    <label class="travelers-search__label" for="aero">Самолёт</label>
+                  </li>
+                  <li class="travelers-search__item travelers-search__item--transport">
+                    <input class="travelers-search__input" id="bus" name="bus" type="checkbox" checked>
+                    <label class="travelers-search__label" for="bus">Автобус</label>
+                  </li>
+                  <li class="travelers-search__item travelers-search__item--transport">
+                    <input class="travelers-search__input" id="becikle" name="becikle" type="checkbox">
+                    <label class="travelers-search__label" for="becikle">Велосипед</label>
+                  </li>
+                  <li class="travelers-search__item travelers-search__item--transport">
+                    <input class="travelers-search__input" id="legs" name="legs" type="checkbox" checked>
+                    <label class="travelers-search__label" for="legs">Пешком</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="travelers-search__fieldset">
+                <legend class="travelers-search__legend">Левел</legend>
+                <button class="travelers-search__button travelers-search__button--close"></button>
+                <ul class="travelers-search__list travelers-search__list--transport">
+                  <li class="travelers-search__item travelers-search__item--transport">
+                    <input class="travelers-search__input" id="lvl" name="lvl" type="range">
+                    <label class="travelers-search__label visually-hidden" for="lvl">Уровень попутчика</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <input class="travelers-search__input button travelers-search__input--submit" type="submit" value="показать">
+            </div>
           </div>
         </section>
       </form>
@@ -610,14 +619,22 @@
       </section>
       <section class="catalog-pagination">
         <div class="catalog-pagination-container">
-          <a class="catalog-pagination__link button catalog-pagination__link--previos" href="/"></a>
-          <a class="catalog-pagination__link button catalog-pagination__link--next" href="/"></a>
+          <a class="catalog-pagination__link button button--pagination button--pagination-previos" href="/">
+            <svg class="catalog-pagination__img--next" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z" fill="#1D2E5B"/>
+              </svg>
+          </a>
+          <a class="catalog-pagination__link button button--pagination button--pagination-next" href="/">
+            <svg class=" catalog-pagination__img--previos" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z" fill="#1D2E5B"/>
+              </svg>
+          </a>
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <div class="footer-container">
-        <a class="main-footer__logo logo" href="/source/index.html">Погнали?</a>
+        <a class="main-footer__logo logo logo--footer" href="/source/index.html">Погнали?</a>
         <section class="footer-social">
           <ul class="footer-social__list">
             <li class="footer-social__item">
@@ -666,3 +683,4 @@
       </div>
     </footer>
   </body>
+</html>
