@@ -2,3 +2,24 @@
   padding-left: 25px;
   padding-right: 25px;
 }
+
+@media (min-width: @tablet-width) {
+  .directions-container {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 73px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .directions-container {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 88px;
+    padding-bottom: 87px;
+    display: grid;
+    grid-template-columns: 560px 1fr;
+    column-gap: 120px;
+  }
+}

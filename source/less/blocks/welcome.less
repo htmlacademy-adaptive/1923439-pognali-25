@@ -1,5 +1,6 @@
 .welcome {
-  background: url("../img/png/traveller-illustration-mobile.png") center no-repeat, url("../img/png/header-back-mobile.png") center no-repeat;
+  background: url("../img/png/traveller-illustration-mobile.png") 80% bottom no-repeat, url("../img/png/header-back-mobile.png") center no-repeat;
+  min-height: 400px;
 }
 
 .welcome__title {
@@ -10,10 +11,32 @@
   line-height: 40px;
   text-align: center;
   color: #ffffff;
+  display: block;
+  margin: 0 auto;
 }
 
 .welcome__contacts-wrapper {
   display: flex;
   align-items: center;
-  margin-top: 200px;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome__title {
+    order: 5;
+  }
+
+  .welcome__contacts-wrapper {
+    order: 6;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome__title {
+    order: 5;
+  }
+
+  .welcome__contacts-wrapper {
+    order: 2;
+    margin-top: 0;
+  }
 }

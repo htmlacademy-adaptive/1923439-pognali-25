@@ -1,6 +1,8 @@
 .contacts-wrapper {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .contacts-wrapper__image-wrapper {
@@ -25,4 +27,17 @@
 
 .contacts-wrapper__link--subscribe {
   color: #ffd74b;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-wrapper {
+    order: 4;
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-wrapper {
+    display: none;
+  }
 }

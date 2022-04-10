@@ -4,3 +4,63 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media (min-width: @tablet-width) {
+  .about-us {
+    background-image: url("../img/png/about-tablet.png");
+    background-position: right center;
+    padding-top: 137px;
+    padding-bottom: 89px;
+
+    .about-us__title {
+      margin-bottom: 51px;
+    }
+
+    .button--more-info {
+      display: flex;
+    }
+
+    .about-us__text {
+      width: 310px;
+      display: block;
+      font-size: 28px;
+      line-height: 33px;
+    }
+
+    .about-us__description {
+      display: block;
+      width: 310px;
+      margin-bottom: 51px;
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us {
+    background-image: url("../img/png/about-desktop.png");
+    background-position: right center;
+    padding-bottom: 163px;
+    padding-top: 42px;
+
+    .about-us__text {
+      width: 620px;
+      display: block;
+      font-size: 28px;
+      line-height: 33px;
+    }
+
+    .about-us__description {
+      display: block;
+      width: 425px;
+      margin-bottom: 51px;
+      font-size: 21px;
+      line-height: 25px;
+    }
+
+    .button--more-info {
+      display: flex;
+    }
+  }
+}
