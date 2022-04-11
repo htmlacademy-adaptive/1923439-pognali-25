@@ -827,6 +827,10 @@
   position: relative;
   padding: 0;
 }
+.main-header--open .main-header__logo-wrapper {
+  background-color: #ffffff;
+  margin-bottom: 0;
+}
 .main-header--open .navigation-menu::before,
 .main-header--open .navigation-menu::after {
   background-color: #161c35;
@@ -1447,7 +1451,7 @@
     min-width: 765px;
   }
 }
-@media (min-width: 1200px) {
+@med 1ia (min-width: 1200px) {
   .main-container {
     min-width: 1200px;
   }
