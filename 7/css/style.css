@@ -709,9 +709,10 @@
 .location__map {
   background-color: #e5e5e5;
   display: block;
-  width: 100%;
+  width: 304px;
 }
 .location__map-wrapper {
+  background-color: #e5e5e5;
   margin: 0 auto;
 }
 .location__link {
@@ -727,7 +728,7 @@
     width: 430px;
   }
   .location__map {
-    width: 100%;
+    width: 768px;
   }
 }
 @media (min-width: 1200px) {
@@ -735,7 +736,8 @@
     width: 324px;
   }
   .location__map {
-    width: 100%;
+    width: 1200px;
+    margin: 0 auto;
   }
 }
 .log-in-link {
@@ -866,6 +868,11 @@
     margin-left: auto;
     align-self: center;
   }
+  .main-header .main-header__navigation-link {
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 71px;
+  }
   .main-header .main-header__logo-wrapper {
     width: 50%;
     order: 0;
@@ -927,13 +934,15 @@
   }
   .main-header--open .main-header__logo-wrapper {
     background-color: #ffffff;
-    width: 353px;
-    padding-bottom: 66.5px;
-    padding-top: 15px;
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
   }
   .main-header--open .main-header__log-in-wrapper {
-    width: 365px;
+    width: 50%;
     order: 0;
+    padding: 25px;
+    box-sizing: border-box;
   }
   .main-header--open .contacts-wrapper {
     order: 1;
@@ -1506,6 +1515,8 @@
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: center;
+  width: 320px;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .main-header-container {
@@ -1513,6 +1524,7 @@
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
+    width: 768px;
   }
 }
 @media (min-width: 1200px) {
@@ -1521,6 +1533,7 @@
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
+    width: 1200px;
   }
 }
 .add-plans {
