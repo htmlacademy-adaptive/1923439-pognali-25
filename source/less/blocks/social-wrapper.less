@@ -3,4 +3,19 @@
   padding: 0;
   list-style-type: none;
   display: flex;
+  justify-content: center;
+  margin-top: 53px;
+}
+
+@media (min-width: @tablet-width) {
+  .social-wrapper {
+    justify-content: flex-start;
+    order: 4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social-wrapper {
+    display: none;
+  }
 }

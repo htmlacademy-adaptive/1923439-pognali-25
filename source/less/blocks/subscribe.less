@@ -1,3 +1,59 @@
 .subscribe {
   background-color: #192144;
 }
+
+.subscribe-form__text {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .subscribe__description {
+    width: 100%;
+  }
+
+  .subscribe__form {
+    width: 100%;
+  }
+
+  .subscribe-form__input {
+    width: 536px;
+  }
+
+  .subscribe__contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .subscribe__description {
+    width: 655px;
+  }
+
+  .subscribe-form__input {
+    width: 850px;
+    box-sizing: border-box;
+  }
+
+  .subscribe-form__button {
+    width: 320px;
+  }
+
+  .subscribe-form__text {
+    display: flex;
+    font-family: "Blogger Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #1d2e5b;
+  }
+
+  .subscribe__contacts-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+}

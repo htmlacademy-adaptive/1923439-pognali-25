@@ -1,8 +1,7 @@
 .location-wrapper {
   display: flex;
   align-items: center;
-  padding-right: 25px;
-  padding-left: 25px;
+  justify-content: center;
 }
 
 .location-wrapper__image {
@@ -13,4 +12,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: @tablet-width) {
+  .location-wrapper {
+    width: 90%;
+    justify-content: flex-start;
+  }
 }

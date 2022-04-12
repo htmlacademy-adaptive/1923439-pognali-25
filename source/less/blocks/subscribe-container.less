@@ -1,4 +1,20 @@
-.subscribe-container {
-  padding-left: 25px;
-  padding-right: 25px;
+@media (min-width: @tablet-width) {
+  .subscribe-container {
+    padding: 78px 76px 77px 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .subscribe .subscribe-container {
+    padding: 72px;
+    box-sizing: border-box;
+
+    .contacts-wrapper {
+      display: flex;
+      width: 50%;
+    }
+  }
 }
