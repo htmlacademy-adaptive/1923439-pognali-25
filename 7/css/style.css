@@ -815,7 +815,7 @@
   padding: 0;
 }
 .main-header--open .main-header-container {
-  width: 100%;
+  width: 320px;
 }
 .main-header--open .main-header__logo-wrapper {
   background-color: #ffffff;
@@ -932,7 +932,7 @@
     padding: 0;
   }
   .main-header--open .main-header-container {
-    width: 100%;
+    width: 768px;
   }
   .main-header--open .main-header__navigation-link {
     font-weight: 500;
@@ -1030,6 +1030,7 @@
     align-items: flex-start;
   }
   .main-header--open .main-header-container {
+    width: 1320px;
     justify-content: space-between;
     align-items: baseline;
   }
