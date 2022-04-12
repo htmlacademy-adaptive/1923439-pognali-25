@@ -1,20 +1,19 @@
 .main-header {
   position: relative;
-  background: url("../img/png/traveller-illustration-mobile.png") 80% 45% no-repeat, url("../img/png/header-back-mobile.png") center 10%  no-repeat;
+  background: url("../img/png/traveller-illustration-mobile.png") center 45% no-repeat, url("../img/png/header-back-mobile.png") center 10%  no-repeat;
   background-color: #161c35;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 20px;
-  min-height: 569px;
+  padding: 25px;
 
   .main-header__logo-wrapper {
     background-color: #161c35;
     margin-bottom: 60px;
     padding: 0;
+    width: 320px;
+    justify-content: space-between;
   }
 
-  .main-navigation__list,
-  .main-navigation__log-in,
+  .main-header__navigation-list,
+  .main-header__log-in,
   .contacts-wrapper,
   .social-wrapper {
     display: none;
@@ -29,7 +28,7 @@
     background-color: #ffffff;
   }
 
-  .welcome__contacts-wrapper {
+  .main-header__welcome-contacts-wrapper {
     margin-top: 313px;
   }
 }
@@ -38,9 +37,11 @@
   position: relative;
   padding: 0;
 
+
   .main-header__logo-wrapper {
     background-color: #ffffff;
     margin-bottom: 0;
+    padding: 25px;
   }
 
   .navigation-menu::before,
@@ -48,13 +49,13 @@
     background-color: #161c35;
   }
 
-  .main-navigation__log-in,
+  .main-header__log-in,
   .contacts-wrapper,
   .social-wrapper {
     display: flex;
   }
 
-  .main-navigation__list {
+  .main-header__navigation-list {
     display: block;
     background-color: #ffffff;
     width: 100%;
@@ -66,15 +67,15 @@
     width: 100%;
   }
 
-  .main-navigation-log-in__wrapper {
+  .main-header__log-in-wrapper {
     background-color: #ffffff;
     padding-bottom: 51px;
+    width: 100%;
   }
 
   .logo__image {
     color: #182044;
   }
-
 }
 
 .main-header__logo-wrapper {
@@ -88,44 +89,44 @@
 
 @media (min-width: @tablet-width) {
   .main-header {
-    width: 90%;
-    padding: 40px;
-    padding-bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-between;
+    width: 768px;
     background: url("../img/png/traveller-illustration-tablet.png") 80% 61% no-repeat, url("../img/png/globe-back-tablet.svg.png") center 74%  no-repeat;
     background-color: #182044;
+    padding: 40px;
+    padding-bottom: 0;
+    margin: 0 auto;
 
-    .main-navigation__log-in {
+    .main-header__log-in {
       display: flex;
       width: 188px;
       margin-left: auto;
+      align-self: center;
     }
 
     .main-header__logo-wrapper {
       width: 50%;
       order: 0;
+      margin-bottom: 0;
       align-items: center;
       background-color: #182044;
     }
 
-    .welcome__title {
+    .main-header__welcome-title {
       display: block;
-      width: 400px;
+      width: 580px;
       font-weight: 700;
       font-size: 60px;
       line-height: 70px;
       order: 1;
       margin-bottom: 86px;
+      margin-top: 30px;
     }
 
-    .welcome__contacts-wrapper {
+    .main-header__welcome-contacts-wrapper {
       display: none;
     }
 
-    .features__quote {
+    .main-header__features-quote {
       width: 264px;
       order: 3;
       margin-bottom: 211px;
@@ -133,7 +134,7 @@
       line-height: 33px;
     }
 
-    .features__cite {
+    .main-header__features-cite {
       margin-top: 45px;
       font-weight: 700;
       font-size: 21px;
@@ -141,13 +142,13 @@
     }
   }
 
-  .features__list {
+  .main-header__features-list {
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
     order: 5;
 
-    .features__item {
+    .main-header__features-item {
       padding: 22px 21px 22px 24px;
       width: 100%;
       min-height: 140px;
@@ -155,60 +156,85 @@
     }
   }
 
-  .features__counter {
+  .main-header__features-counter {
     font-size: 30px;
     line-height: 30px;
   }
 
-  .features__link {
+  .main-header__features-link {
     font-size: 24px;
     line-height: 24px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .main-header--open {
+    padding: 0;
+
+    .main-header__logo-wrapper {
+      background-color: #ffffff;
+      width: 353px;
+      padding-bottom: 66.5px;
+      padding-top: 15px;
+    }
+
+    .main-header__log-in-wrapper {
+      width: 365px;
+      order: 0;
+    }
+
+    .contacts-wrapper {
+      order: 1;
+    }
+
+    .social-wrapper {
+      order: 1;
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-header {
-    width: 90%;
+    width: 1200px;
     background: url("../img/png/traveller-illustration-desktop.png") 50% bottom no-repeat, url("../img/png/globe-back-desktop.png") center bottom  no-repeat;
     background-color: #161c35;
-    padding: 46px 60px 55px 60px;
     display: flex;
-    align-content: flex-start;
     justify-content: space-between;
+    padding: 60px;
+    margin: 0 auto;
 
-    .main-navigation__log-in {
+    .main-header__log-in {
       display: none;
     }
 
-    .main-navigation__list {
+    .main-header__navigation-list {
       display: flex;
       margin: 0;
     }
 
     .main-header__logo-wrapper {
+      display: block;
       width: 20%;
+      height: 20px;
       order: 0;
-      align-items: center;
-      margin: 0;
-      margin-bottom: 110px;
+      margin-bottom: 150px;
       background-color: #161c35;
     }
 
-    .welcome__contacts-wrapper {
+    .main-header__welcome-contacts-wrapper {
       margin-top: 0;
       display: flex;
       margin-left: auto;
       justify-content: flex-end;
+      align-items: flex-start;
     }
 
-    .features__quote {
+    .main-header__features-quote {
       margin: 0;
     }
 
-    .features__cite {
+    .main-header__features-cite {
       width: 264px;
       margin-top: 45px;
       font-weight: 700;
@@ -217,9 +243,9 @@
       order: 2;
     }
 
-    .welcome__title {
+    .main-header__welcome-title {
       display: block;
-      width: 420px;
+      width: 40%;
       font-weight: 700;
       font-size: 60px;
       line-height: 70px;
@@ -229,7 +255,7 @@
     }
   }
 
-  .features__list {
+  .main-header__features-list {
     width: 100%;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -237,7 +263,7 @@
     order: 5;
     margin-top: 101px;
 
-    .features__item {
+    .main-header__features-item {
       width: 100%;
       min-height: 50px;
       padding: 22px 21px 22px 24px;
@@ -245,10 +271,59 @@
     }
   }
 
-  .features__link {
+  .main-header__features-link {
     line-height: 24px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+  }
+
+  .main-header--open {
+    .main-header-container {
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .main-header__logo-wrapper {
+      background-color: transparent;
+      margin-bottom: 0;
+      width: 20%;
+    }
+
+    .navigation-menu::before,
+    .navigation-menu::after {
+      display: none;
+    }
+
+    .main-header__log-in,
+    .contacts-wrapper,
+    .social-wrapper {
+      display: none;
+    }
+
+    .main-header__navigation-list {
+      display: flex;
+      justify-self: flex-start;
+      margin: 0;
+      background-color: transparent;
+      width: 45%;
+    }
+
+    .contacts-wrapper,
+    .social-wrapper {
+      display: none;
+    }
+
+    .main-header__log-in-wrapper {
+      display: none;
+    }
+
+    .logo__image {
+      color: #ffffff;
+    }
+
+    .main-header__welcome-contacts-wrapper {
+      margin-left: 0;
+    }
   }
 }

@@ -1,9 +1,4 @@
-.welcome {
-  background: url("../img/png/traveller-illustration-mobile.png") 80% bottom no-repeat, url("../img/png/header-back-mobile.png") center no-repeat;
-  min-height: 400px;
-}
-
-.welcome__title {
+.main-header__welcome-title {
   font-family: "Blogger Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -15,27 +10,27 @@
   margin: 0 auto;
 }
 
-.welcome__contacts-wrapper {
+.main-header__welcome-contacts-wrapper {
   display: flex;
   align-items: center;
 }
 
 @media (min-width: @tablet-width) {
-  .welcome__title {
+  .main-header__welcome-title {
     order: 5;
   }
 
-  .welcome__contacts-wrapper {
+  .main-header__welcome-contacts-wrapper {
     order: 6;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .welcome__title {
+  .main-header__welcome-title {
     order: 5;
   }
 
-  .welcome__contacts-wrapper {
+  .main-header__welcome-contacts-wrapper {
     order: 2;
     margin-top: 0;
   }

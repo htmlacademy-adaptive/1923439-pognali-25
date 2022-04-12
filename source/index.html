@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body class="page__main main-container">
+  <body class="page__main">
     <header class="main-header main-header--open">
+      <div class="main-header-container">
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo logo">
           <svg class="logo__image" width="96" height="15" viewBox="0 0 96 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -24,19 +25,19 @@
         </a>
         <a class="main-header__menu navigation-menu" href="#"></a>
       </div>
-      <ul class="main-navigation__list">
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="#about-servis">О сервисе</a>
+      <ul class="main-header__navigation-list">
+        <li class="main-header__navigation-item">
+          <a class="main-header__navigation-link" href="/">О сервисе</a>
         </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="form.html">Направления</a>
+        <li class="main-header__navigation-item">
+          <a class="main-header__navigation-link" href="form.html">Направления</a>
         </li>
-        <li class="main-navigation__item">
-          <a class="main-navigation__link" href="catalog.html">Попутчики</a>
+        <li class="main-header__navigation-item">
+          <a class="main-header__navigation-link" href="catalog.html">Попутчики</a>
         </li>
       </ul>
-      <div class="main-navigation-log-in__wrapper">
-        <a class="main-navigation__log-in button button--log-in" href="/">Авторизация</a>
+      <div class="main-header__log-in-wrapper">
+        <a class="main-header__log-in button button--log-in" href="/">Авторизация</a>
       </div>
       <div class="contacts-wrapper">
         <div class="contacts-wrapper__image-wrapper">
@@ -87,73 +88,74 @@
         </ul>
       </div>
       <h1 class="visually-hidden">Сервис поиска попутчиков</h1>
-      <b class="welcome__title">В путешествие<br> с крутыми
+      <b class="main-header__welcome-title">В путешествие<br> с крутыми
         попутчиками!
       </b>
-      <div class="welcome__contacts-wrapper">
-        <a class="welcome__link button button--phone">
+      <div class="main-header__welcome-contacts-wrapper">
+        <a class="main-header__welcome-link button button--phone">
           <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.77423 8.22389C9.77423 8.41289 9.92786 8.56139 10.1156 8.56139C10.5048 8.56139 10.8189 8.87526 10.8189 9.25664C10.8189 9.44226 10.9725 9.59414 11.1602 9.59414C11.348 9.59414 11.5016 9.44226 11.5016 9.25664C11.5016 8.50064 10.8803 7.88639 10.1156 7.88639C9.92786 7.88639 9.77423 8.03827 9.77423 8.22389ZM15.3319 9.59414C15.5231 9.59414 15.6733 9.44226 15.6733 9.25664C15.6733 6.22589 13.1812 3.76215 10.1156 3.76215C9.92786 3.76215 9.77423 3.914 9.77423 4.09965C9.77423 4.28527 9.92786 4.43715 10.1156 4.43715C12.8057 4.43715 14.9905 6.60051 14.9905 9.25664C14.9905 9.44226 15.1441 9.59414 15.3319 9.59414Z" fill="#161C35"/>
             <path d="M12.9047 9.25661C12.9047 9.44223 13.0583 9.59411 13.2461 9.59411C13.4338 9.59411 13.5874 9.44223 13.5874 9.25661C13.5874 7.36324 12.0307 5.82424 10.1156 5.82424C9.92786 5.82424 9.77423 5.97612 9.77423 6.16174C9.77423 6.35074 9.92786 6.49924 10.1156 6.49924C11.6552 6.49924 12.9047 7.73786 12.9047 9.25661ZM10.1156 1.69998C9.92786 1.69998 9.77423 1.85186 9.77423 2.03748C9.77423 2.22312 9.92786 2.37498 10.1156 2.37498C13.9561 2.37498 17.0798 5.46312 17.0798 9.25661C17.0798 9.44223 17.23 9.59411 17.4211 9.59411C17.6089 9.59411 17.7625 9.44223 17.7625 9.25661C17.7625 5.0885 14.3316 1.69998 10.1156 1.69998ZM13.4509 12.8139L13.0037 13.0535C12.2492 13.4619 11.6621 14.5812 10.7311 13.7375L8.30007 11.3L6.2 9.25661C5.14491 7.92348 6.32631 7.60623 6.73936 6.85699L6.98175 6.41825C7.25485 5.91873 7.35384 5.35849 7.27191 4.79823C7.1934 4.23799 6.93737 3.72836 6.52771 3.32336C6.02931 2.83062 5.36703 2.56062 4.66038 2.56062C3.95372 2.56062 3.28802 2.83062 2.7896 3.32336L2.61552 3.49886C1.69379 4.41012 1.58796 5.97948 2.3151 7.92348C3.00126 9.77973 4.38386 11.7912 6.2 13.5867C8.96858 16.3239 12.0512 17.9 14.2634 17.9C15.1373 17.9 15.8781 17.6536 16.4038 17.1339L16.5813 16.9584C17.0763 16.469 17.3529 15.8142 17.3563 15.1089C17.3529 14.4204 17.0695 13.7454 16.5813 13.2627C15.7586 12.4494 14.4716 12.2671 13.4509 12.8139Z" fill="#161C35"/>
           </svg>
         </a>
-        <a class="welcome__link button button--email">
+        <a class="main-header__welcome-link button button--email">
           <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M2.01661 3.32528L8.76661 7.55572C8.99341 7.69747 9.28681 7.76467 9.58201 7.76467C9.87721 7.76467 10.1706 7.69747 10.3974 7.55572L17.1474 3.32528C17.5875 3.04913 18.0033 1.97498 17.196 1.97498H1.96891C1.16161 1.97498 1.57741 3.04913 2.01661 3.32528ZM17.3517 5.63842L10.3974 9.86677C10.0914 10.0537 9.87721 10.0757 9.58201 10.0757C9.28681 10.0757 9.07261 10.0537 8.76661 9.86677C8.46061 9.67987 2.34691 5.94082 1.84741 5.63737C1.49641 5.42317 1.50001 5.67412 1.50001 5.86732V13.525C1.50001 13.966 2.00941 14.575 2.40001 14.575H16.8C17.1906 14.575 17.7 13.966 17.7 13.525V5.86837C17.7 5.67517 17.7036 5.42422 17.3517 5.63842Z" fill="#161C35"/>
           </svg>
         </a>
-        <a class="welcome__log-in button button--log-in  button--log-in-welcome" href="/">Авторизация</a>
+        <a class="main-header__welcome-log-in button button--log-in  button--log-in-welcome" href="/">Авторизация</a>
       </div>
       <h2 class="visually-hidden">Наши приемущества</h2>
-      <blockquote class="features__quote">
+      <blockquote class="main-header__features-quote">
         «Лучшее приложение,
         что я видел в жизни!»
-        <cite class="features__cite">
+        <cite class="main-header__features-cite">
           Мурат Эльтазин
           главный редактор
           газеты «гаджетлайф»
         </cite>
       </blockquote>
-      <ol class="features__list">
-        <li class="features__item">
-          <a class="features__link" href="/">
+      <ol class="main-header__features-list">
+        <li class="main-header__features-item">
+          <a class="main-header__features-link" href="/">
             Выберите<br>
             направление
-            <span class="features__counter">1</span>
+            <span class="main-header__features-counter">1</span>
           </a>
         </li>
-        <li class="features__item">
-          <a class="features__link" href="/">
+        <li class="main-header__features-item">
+          <a class="main-header__features-link" href="/">
             Изучите идеи<br>
             путешественников
-            <span class="features__counter">2</span>
+            <span class="main-header__features-counter">2</span>
           </a>
         </li>
-        <li class="features__item">
-          <a class="features__link" href="/">
+        <li class="main-header__features-item">
+          <a class="main-header__features-link" href="/">
             Находите тех,<br>
             кто похож на вас
-            <span class="features__counter">3</span>
+            <span class="main-header__features-counter">3</span>
           </a>
         </li>
-        <li class="features__item">
-          <a class="features__link" href="/">
+        <li class="main-header__features-item">
+          <a class="main-header__features-link" href="/">
             Путешествуйте<br>
             вместе!
-            <span class="features__counter">4</span>
+            <span class="main-header__features-counter">4</span>
           </a>
         </li>
       </ol>
+    </div>
     </header>
-    <main class="main-container">
-      <section class="about-us" id="about-servis">
-        <div class="about-us-container">
+    <main>
+      <section class="about-us">
+        <div class="about-us-container container">
           <h2 class="about-us__title page-title">О сервисе</h2>
           <span class="about-us__text text">Любое путешествие веселее
             с попутчиками, которые на одной волне с тобой!
             Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
           </span>
-          <p class="about-us__description text--bold">
+          <p class="about-us__description text text--bold">
             А если найдете кого-то
             близкого по духу — скорее
             зовите в совместный трип!
@@ -162,7 +164,7 @@
         </div>
       </section>
       <section class="directions">
-        <div class="directions-container">
+        <div class="directions-container container">
           <h2 class="directions__title page-title">Направления</h2>
           <span class="directions__text text text--derections">
             Мы не продаем туры
@@ -210,14 +212,14 @@
         </div>
       </section>
       <section class="travelers">
-        <div class="travelers-container">
+        <div class="travelers-container container">
           <div class="travelers__description-wrapper">
             <h2 class="travelers__title page-title">Попутчики</h2>
             <span class="travelers__text text">
               Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
               Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
             </span>
-            <p class="travelers__description text--bold">
+            <p class="travelers__description text text--bold">
               Теперь можно легко<br> найти
               единомышленников!
             </p>
@@ -357,7 +359,7 @@
         </div>
       </section>
       <section class="add-profile">
-        <div class="add-profile-container">
+        <div class="add-profile-container container">
           <h2 class="add-profile__title page-title">
             Добавьте свой
             профиль
@@ -398,7 +400,7 @@
         </div>
       </section>
       <section class="subscribe">
-        <div class="subscribe-container">
+        <div class="subscribe-container container">
           <h2 class="subscribe__title page-title">Заинтересовались?</h2>
           <p class="subscribe__description text">
             Зарегистрируйтесь, это быстро и бесплатно!
@@ -409,7 +411,7 @@
               <input class="subscribe-form__input" type="email" placeholder="E-mail">
             </label>
             <label class="subscribe-form__label"><span class="visually-hidden">Подтвердите подписку</span>
-              <button class="subscribe-form__button button button--subscribe" type="submit"><span class="subscribe-form__button--text">Регистрация</span></button>
+              <button class="subscribe-form__button button button--subscribe" type="submit"><span class="subscribe-form__text">Регистрация</span></button>
             </label>
           </form>
           <p class="subscribe__notation text">
@@ -436,7 +438,7 @@
         </div>
       </section>
       <section class="location">
-        <div class="location-container">
+        <div class="location-container container">
           <div class="location-wrapper">
             <div class="location-wrapper__image">
               <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -451,11 +453,13 @@
           </div>
           <a class="location__link button button--location" href="/">Проложить маршрут</a>
         </div>
-        <img class="location__map" src="./img/jpeg/background_map.jpg" width="320" height="424" alt="Как проехать?">
+        <div class="location__map-wrapper">
+          <img class="location__map" src="./img/jpeg/background_map.jpg" width="320" height="424" alt="Как проехать?">
+        </div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="footer-container">
+      <div class="footer-container container">
         <a class="main-footer__logo logo logo--footer" href="/source/index.html">
           <svg class="logo__image" width="96" height="15" viewBox="0 0 96 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M94.9113 6.18874C95.6371 5.72747 96 5.01634 96 4.05535C96 2.79967 95.4774 1.81306 94.4322 1.09552C93.4161 0.365174 92.2185 0 90.8394 0C89.4894 0 88.2555 0.397207 87.1378 1.19162C86.0345 1.97322 85.4829 3.01749 85.4829 4.32443C85.4829 4.81133 85.6353 5.21494 85.9402 5.53527C86.245 5.84278 86.6805 5.99654 87.2467 5.99654C87.7983 5.99654 88.2193 5.84278 88.5096 5.53527C88.8144 5.21494 88.9668 4.81133 88.9668 4.32443C88.9378 3.95285 89.0612 3.57486 89.337 3.19047C89.6128 2.79326 90.1136 2.59466 90.8394 2.59466C91.4491 2.60747 91.8846 2.76123 92.1459 3.05593C92.4217 3.35063 92.5451 3.64533 92.5161 3.94003C92.5161 4.14504 92.4435 4.35005 92.2983 4.55506C92.1532 4.76007 92.0008 4.92024 91.8411 5.03556C91.6959 5.15088 91.4564 5.31745 91.1225 5.53527C90.7886 5.75309 90.5564 5.90685 90.4257 5.99654C89.6709 6.54751 89.2935 7.27785 89.2935 8.18758C89.2935 8.63604 89.4531 9.01403 89.7725 9.32155C90.1064 9.61625 90.5491 9.7636 91.1007 9.7636C91.6524 9.7636 92.0878 9.61625 92.4072 9.32155C92.7411 9.01403 92.908 8.63604 92.908 8.18758C92.908 7.99539 92.9443 7.816 93.0169 7.64943C93.0895 7.48286 93.2056 7.32911 93.3653 7.18816C93.5395 7.04722 93.6846 6.9319 93.8008 6.84221C93.9314 6.75252 94.1201 6.6372 94.3669 6.49625C94.6282 6.35531 94.8097 6.2528 94.9113 6.18874Z"/>
@@ -499,7 +503,7 @@
         </section>
         <section class="footer-copyright">
           <div class="footer-copyright-wrapper">
-            <p class="footer-copyright__description text--copyright">Разработано</p>
+            <p class="footer-copyright__description text text--copyright">Разработано</p>
             <a class="footer-copyright__logo logo-html" href="https://htmlacademy.ru/intensive/adaptive">
               <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_59_40)">
@@ -519,19 +523,19 @@
     <div class="modal-container modal-container--close">
       <div class="modal-contant">
         <h2 class="modal-contant__title page-title">Бизнес-тарифы</h2>
-        <dl class="modal-contant__list text--derections ">
+        <dl class="modal-contant__list text text--derections ">
           <dt class="modal-contant__dt">Реклама у блоггера</dt>
           <dd class="modal-contant__dd">300 000 руб./пост</dd>
         </dl>
-        <dl class="modal-contant__list text--derections ">
+        <dl class="modal-contant__list text text--derections ">
           <dt class="modal-contant__dt">Накрутка подписчиков</dt>
           <dd class="modal-contant__dd">от 1 руб./шт.</dd>
         </dl>
-        <dl class="modal-contant__list text--derections ">
+        <dl class="modal-contant__list text text--derections ">
           <dt class="modal-contant__dt">Лайки от ботов</dt>
           <dd class="modal-contant__dd">от 20 коп./лайк</dd>
         </dl>
-        <dl class="modal-contant__list text--derections ">
+        <dl class="modal-contant__list text text--derections ">
           <dt class="modal-contant__dt">Ваш продакт-плейсмент</dt>
           <dd class="modal-contant__dd">Индивидуально</dd>
         </dl>
