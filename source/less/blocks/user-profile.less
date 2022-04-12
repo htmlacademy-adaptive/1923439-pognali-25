@@ -1,16 +1,22 @@
 .user-profile {
   background-color: #f2eeee;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .user-profile__title {
-  font-family: "Blogger Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #1d2e5b;
+  border-bottom: 5px solid #ff8d30;
+  padding-bottom: 8px;
+  padding-left: 7px;
+}
+
+.user-profile-title-wrapper {
+  background-color: #161c35;
+  padding: 15px;
+  border-radius: 0 0 20px 20px;
+  width: 100%;
 }
 
 .user-profile__description {
@@ -21,4 +27,125 @@
   line-height: 18px;
   color: #444444;
   opacity: 0.6;
+}
+
+.user-profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.user-profile__avatar {
+  display: block;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+@media (min-width: @tablet-width) {
+  .user-profile {
+    justify-content: space-around;
+  }
+
+  .user-profile__title  {
+    padding-left: 25px;
+  }
+
+  .user-profile-title-wrapper {
+    background-color: #182044;
+  }
+
+  .user-profile-wrapper__transport {
+    width: 308px;
+    order: 1;
+  }
+
+  .user-profile-avatar__wrapper {
+    order: 2;
+    margin-right: 25px;
+  }
+
+  .user-profile__lvl {
+    margin-left: 25px;
+  }
+
+  .user-profile__link {
+    order: 4;
+    width: 80%;
+    justify-self: center;
+  }
+
+  .user-profile-wrapper__tag {
+    order: 6;
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-profile {
+    justify-content: space-between;
+  }
+
+  .user-profile-avatar__wrapper {
+    order: 0;
+    width: 220px;
+    background-color: #161c35;
+    border-radius: 0 0 20px 0;
+    margin-right: 0;
+  }
+
+  .user-profile__lvl {
+    margin-left: 0;
+    order: 1;
+  }
+
+  .card-lvl__wrapper {
+    width: 220px;
+    height: 190px;
+    order: 0;
+    background-color: #161c35;
+  }
+
+  .user-profile-title-wrapper {
+    width: 730px;
+    background-color: #161c35;
+    align-self: flex-start;
+    justify-self: flex-start;
+    padding-top: 80px;
+    padding-bottom: 74px;
+    border-radius: 0 0 0 20px;
+  }
+
+  .user-profile__title {
+    padding-bottom: 65px;
+  }
+
+  .user-profile__avatar {
+    border-radius: 10px;
+    width: 190px;
+    height: 190px;
+    margin: 0;
+  }
+
+  .user-profile__link {
+    order: 3;
+    width: 20%;
+    justify-self: flex-end;
+    margin-left: 80%;
+  }
+
+  .user-profile-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .user-profile-wrapper__tag {
+    order: 6;
+    width: 40%;
+  }
+
+  .user-profile-wrapper__transport {
+    width: 200px;
+    order: 7;
+  }
 }
