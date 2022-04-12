@@ -37,6 +37,10 @@
   position: relative;
   padding: 0;
 
+  .main-header-container {
+    width: 100%;
+  }
+
 
   .main-header__logo-wrapper {
     background-color: #ffffff;
@@ -90,7 +94,6 @@
 
 @media (min-width: @tablet-width) {
   .main-header {
-    width: 768px;
     background: url("../img/png/traveller-illustration-tablet.png") 80% 61% no-repeat, url("../img/png/globe-back-tablet.svg.png") center 74%  no-repeat;
     background-color: #182044;
     padding: 40px;
@@ -173,6 +176,10 @@
   .main-header--open {
     padding: 0;
 
+    .main-header-container {
+      width: 100%;
+    }
+
     .main-header__navigation-link {
       font-weight: 500;
       font-size: 60px;
@@ -205,13 +212,11 @@
 
 @media (min-width: @desktop-width) {
   .main-header {
-    width: 1200px;
     background: url("../img/png/traveller-illustration-desktop.png") 50% bottom no-repeat, url("../img/png/globe-back-desktop.png") center bottom  no-repeat;
     background-color: #161c35;
     display: flex;
     justify-content: space-between;
-    padding: 60px;
-    margin: 0 auto;
+    padding: 80px;
 
     .main-header__log-in {
       display: none;
