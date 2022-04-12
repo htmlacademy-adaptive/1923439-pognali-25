@@ -814,6 +814,7 @@
   background-color: #ffffff;
   margin-bottom: 0;
   padding: 25px;
+  width: 100%;
 }
 .main-header--open .navigation-menu::before,
 .main-header--open .navigation-menu::after {
