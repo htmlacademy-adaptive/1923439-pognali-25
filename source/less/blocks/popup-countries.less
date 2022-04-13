@@ -1,11 +1,105 @@
+.popup-countries {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  background: #ffffff;
+  box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+}
+
+.popup-countries--close {
+  display: none;
+}
+
 .popup-countries__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: grid;
+  justify-content: flex-start;
+  align-items: flex-start;
+  grid-template-columns: 44px 44px 44px 44px 44px;
+  width: 100%;
+  height: 205px;
+  border-bottom: 1px solid #cbced9;
+}
+
+.popup-countries__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 41px;
+}
+
+.popup-countries__button {
+  width: 43px;
+  height: 41px;
+  padding: 0;
+  border: 1px solid #cbced9;
 }
 
 .popup-countries__description-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+@media (min-width: @tablet-width) {
+  .popup-countries {
+    flex-direction: row;
+    width: 100%;
+    min-height: 414px;
+    justify-content: space-between;
+  }
+
+  .popup-countries__description-list {
+    width: 200px;
+    border-left: 1px solid #cbced9;
+  }
+
+  .popup-countries__list {
+    width: 50%;
+    border-bottom: none;
+    grid-template-columns: 54px 54px 54px 54px 54px;
+  }
+
+  .popup-countries__checkbox {
+    margin: 0;
+  }
+
+  .popup-countries__item {
+    width: 54px;
+    height: 70px;
+  }
+
+  .popup-countries__button {
+    width: 54px;
+    height: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .popup-countries {
+    width: 730px;
+  }
+
+  .popup-countries__list {
+    width: 50%;
+    border-bottom: none;
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    column-gap: 14px;
+    row-gap: 14px;
+  }
+
+  .popup-countries__item {
+    width: 60px;
+    height: 70px;
+  }
+
+  .popup-countries__button {
+    width: 60px;
+    height: 70px;
+  }
 }

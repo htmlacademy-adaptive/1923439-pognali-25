@@ -1,6 +1,7 @@
 .plans-algoritm {
   background-color: #ffffff;
   border-radius: 10px;
+  padding: 25px;
 }
 
 .plans-algoritm__title {
@@ -11,6 +12,7 @@
   line-height: 20px;
   color: #1d2e5b;
   margin: 0;
+  margin-bottom: 16px;
 }
 
 .plans-algoritm__description {
@@ -21,12 +23,29 @@
   line-height: 22px;
   color: #444444;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .plans-algoritm__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.plans-algoritm__item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.plans-algoritm__item + .plans-algoritm__item {
+  margin-top: 20px;
 }
 
 .plans-algoritm__label {
@@ -36,4 +55,178 @@
   font-size: 18px;
   line-height: 18px;
   color: #1d2e5b;
+  width: 87%;
+  margin-bottom: 8px;
+}
+
+.plans-algoritm__calendar {
+  width: 100%;
+}
+
+.plans-algoritm__textarea {
+  width: 220px;
+  height: 220px;
+  margin-top: 20px;
+  margin-bottom: 22px;
+}
+
+.plans-algoritm__label-textarea {
+  margin-bottom: 20px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .plans-algoritm {
+    padding: 48px 40px 56px 40px;
+  }
+
+  .plans-algoritm__title {
+    font-family: "Blogger Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #1d2e5b;
+    width: 293px;
+  }
+
+  .plans-algoritm__label {
+    width: 95%;
+    margin-bottom: 24px;
+  }
+
+  .plans-algoritm__item + .plans-algoritm__item {
+    margin-top: 34px;
+  }
+
+  .plans-algoritm__list {
+    margin-bottom: 47px;
+  }
+
+  .plans-algoritm__item-day,
+  .plans-algoritm__item-mounts,
+  .plans-algoritm__item--calendar {
+    order: 2;
+  }
+
+  .plans-algoritm__item-children {
+    order: 1;
+  }
+
+  .algoritm-form__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .plans-algoritm__textarea {
+    width: 500px;
+    height: 140px;
+    margin-top: 20px;
+    margin-bottom: 22px;
+  }
+
+  .plans-algoritm__label-textarea {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .plans-algoritm {
+    padding: 101px 152px 106px 152px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .plans-algoritm__label {
+    width: max-content;
+    margin: 0;
+  }
+
+  .plans-algoritm__title {
+    width: max-content;
+    margin-bottom: 0;
+  }
+
+  .plans-algoritm__description {
+    width: 581px;
+    order: 3;
+  }
+
+  .plans-algoritm__list {
+    order: 3;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+    row-gap: 30px;
+  }
+
+  .plans-algoritm__item + .plans-algoritm__item {
+    margin-top: 0;
+  }
+
+  .plans-algoritm__item {
+    justify-content: flex-start;
+  }
+
+  .plans-algoritm__item-children {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .plans-algoritm__item-human {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+  }
+
+  .plans-algoritm__item-day {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+  }
+
+  .plans-algoritm__explanation {
+    order: 1;
+  }
+
+  .plans-algoritm__item-mounts {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    width: 100%;
+  }
+
+  .plans-algoritm__input--mounts {
+    width: 94%;
+    text-align: center;
+  }
+
+  .plans-algoritm__item--calendar {
+    grid-column: 1/-1;
+    grid-row: 5/6;
+  }
+
+  .plans-algoritm__button-wrapper {
+    width: 100%;
+  }
+
+  .algoritm-form__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 730px;
+  }
+
+  .plans-algoritm__textarea {
+    width: 730px;
+    height: 142px;
+    margin-top: 20px;
+    margin-bottom: 22px;
+  }
+
+  .plans-algoritm__label-textarea {
+    margin-bottom: 20px;
+  }
 }
