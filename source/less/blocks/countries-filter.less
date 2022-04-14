@@ -2,6 +2,10 @@
   background-color: #e2e5f2;
 }
 
+.popup-countries__list {
+  position: relative;
+}
+
 .countries-filter__link {
   font-family: "Blogger Sans", sans-serif;
   font-style: normal;
@@ -51,6 +55,14 @@
 }
 
 .popup-countries-inner__hidden {
+  display: none;
+}
+
+.countries-filter__key-letter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
   display: none;
 }
 
@@ -191,6 +203,36 @@
 
     .countries-filter__button--close {
       display: none;
+    }
+
+    .popup-countries__description-list {
+      display: none;
+    }
+
+    .countries-filter__key-letter-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .countries-filter_container {
+      height: auto;
+    }
+
+    .popup-countries__list {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 300px);
+    }
+
+    .popup-countries__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: max-content;
     }
   }
 }
