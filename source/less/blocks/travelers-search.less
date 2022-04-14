@@ -1,5 +1,6 @@
 .travelers-search {
   background-color: #e5e5e5;
+  position: relative;
 }
 
 .travelers-search__title {
@@ -92,5 +93,31 @@
 
   .travelers-search__input--submit {
     width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .travelers-search__list--close {
+    display: none;
+  }
+
+  .travelers-search-container {
+    width: 285px;
+    position: absolute;
+    top: 0;
+    left: 1070px;
+  }
+
+  .travelers-search__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .travelers-search__item + .travelers-search__item {
+    margin-left: 0;
+  }
+
+  .travelers-search__button {
+    display: block;
   }
 }

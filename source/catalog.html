@@ -103,7 +103,7 @@
         </div>
       </div>
     </header>
-    <main class="catalog-main">
+    <main class="catalog">
       <h1 class="visually-hidden">Подбор попутчиков</h1>
       <form class="catalog-form" action="https://echo.htmlacademy.ru" method="post">
         <nav class="inner-navigation">
@@ -112,7 +112,7 @@
             <a class="inner-navigation__go-index" href="index.html">На главную</a>
           </div>
         </nav>
-        <section class="countries-filter countries-filter--close">
+        <section class="countries-filter countries-filter--">
           <div class="countries-filter_container container">
             <div class="countries-filter__header-wrapper">
               <a class="countries-filter__link" href="/">
@@ -1540,7 +1540,7 @@
               #авокадо #смузи
             </p>
             <div class="product-card__fieldset product-card__fieldset--wishes">
-              <h4 class="product-card__legend">хочет посетить:</h4>
+              <h4 class="product-card__legend product-card__legend--wishes">хочет посетить:</h4>
               <ul class="product-card__list product-card__wishes-list">
                 <li class="product-card__list product-card__wishes-item">
                   <img class="wishes-countries-image" src="./img/png/sri-lanka.png" width="26" height="18" alt="Флаг Шри Ланки">
@@ -1601,8 +1601,8 @@
             </div>
             <div class="product-card__fieldset product-card__fieldset--lvl">
               <h4 class="product-card__legend">левел:</h4>
-              <ul class="product-card__list wishes-list">
-                <li class="product-card__item wishes-item">
+              <ul class="product-card__list product-card__lvl-list">
+                <li class="product-card__list product-card__lvl-item">
                   <span class="product-card__lvl">99</span>
                 </li>
               </ul>
@@ -1618,7 +1618,7 @@
               #бургер #бар #футбол #концерт #крафт
             </p>
             <div class="product-card__fieldset product-card__fieldset--wishes">
-              <h4 class="product-card__legend">хочет посетить:</h4>
+              <h4 class="product-card__legend product-card__legend--wishes">хочет посетить:</h4>
               <ul class="product-card__list product-card__wishes-list">
                 <li class="product-card__list product-card__wishes-item">
                   <img class="wishes-countries-image" src="./img/png/belgium.png" width="26" height="18" alt="Флаг Бельгии">
@@ -1688,7 +1688,7 @@
               #рэп #тату #хайпбист #кроссовки #суприм
             </p>
             <div class="product-card__fieldset product-card__fieldset--wishes">
-              <h4 class="product-card__legend">хочет посетить:</h4>
+              <h4 class="product-card__legend product-card__legend--wishes">хочет посетить:</h4>
               <ul class="product-card__list product-card__wishes-list">
                 <li class="product-card__item product-card__wishes-item">
                   <img class="wishes-countries-image" src="./img/png/usa.png" width="26" height="18" alt="Флаг США">
@@ -1763,7 +1763,7 @@
               #учеба #линкедин
             </p>
             <div class="product-card__fieldset product-card__fieldset--wishes">
-              <h4 class="product-card__legend">хочет посетить:</h4>
+              <h4 class="product-card__legend product-card__legend--wishes">хочет посетить:</h4>
               <ul class="product-card__list product-card__wishes-list">
                 <li class="product-card__item product-card__wishes-item">
                   <img class="wishes-countries-image" src="./img/png/uk.png" width="26" height="18" alt="Флаг Великобритании">
@@ -1835,16 +1835,42 @@
       </section>
       <section class="catalog-pagination">
         <div class="catalog-pagination-container container">
-          <a class="catalog-pagination__link button button--pagination button--pagination-previos" href="/">
-            <svg class="catalog-pagination__img--next" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z" fill="#1D2E5B"/>
-              </svg>
-          </a>
-          <a class="catalog-pagination__link button button--pagination button--pagination-next" href="/">
-            <svg class=" catalog-pagination__img--previos" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z" fill="#1D2E5B"/>
-              </svg>
-          </a>
+          <div class="catalog-pagination__wrapper">
+            <ul class="catalog-pagination__list">
+              <li class="catalog-pagination__item">
+                <a class="catalog-pagination__link catalog-pagination__link--active" href="/">
+                  1
+                </a>
+              </li>
+              <li class="catalog-pagination__item">
+                <a class="catalog-pagination__link" href="/">
+                  2
+                </a>
+              </li>
+              <li class="catalog-pagination__item">
+                <a class="catalog-pagination__link" href="/">
+                  3
+                </a>
+              </li>
+              <li class="catalog-pagination__item">
+                <a class="catalog-pagination__link" href="/">
+                  4
+                </a>
+              </li>
+            </ul>
+            <div class="catalog-pagination__button-wrapper">
+              <a class="catalog-pagination__link button button--pagination button--pagination-previos" href="/">
+                <svg class="catalog-pagination__img--next" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z" fill="#1D2E5B"/>
+                </svg>
+              </a>
+              <a class="catalog-pagination__link button button--pagination button--pagination-next" href="/">
+                <svg class=" catalog-pagination__img--previos" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.0698 6.07495L0.157238 11.7041L0.157238 0.445786L10.0698 6.07495Z" fill="#1D2E5B"/>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
