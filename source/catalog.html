@@ -112,34 +112,43 @@
             <a class="inner-navigation__go-index" href="index.html">На главную</a>
           </div>
         </nav>
-        <section class="countries-filter">
-          <div class="countries-filter-container container">
-            <a class="countries-filter__link" href="/">
-              Фильтрация по странам:
-            </a>
-            <button class="countries-filter__button countries-filter__button--open countries-filter__button--close"></button>
-            <div class="countries-filter__popup popup-countries popup-countries--hidden">
-              <ul class="popup-countries__list">
-                <li class="popup-countries__item">
-                  <input class="popup-countries__button popup-countries__button--continent popup-countries__button--active" id="europe" name="europe" type="checkbox" checked>
-                  <label class="popup-countries__label popup-countries__label--continent popup-countries__label--active" for="europe">Европа</label>
+        <section class="countries-filter countries-filter--">
+          <div class="countries-filter_container container">
+            <div class="countries-filter__header-wrapper">
+              <a class="countries-filter__link" href="/">
+                Фильтрация по странам:
+              </a>
+              <button class="countries-filter__button countries-filter__button--open countries-filter__button--close">
+                <svg width="17" height="17" viewBox="0 0 17 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="1.5" cy="1.5" r="1.5" fill="#192144"/>
+                  <circle cx="8.5" cy="1.5" r="1.5" fill="#192144"/>
+                  <circle cx="15.5" cy="1.5" r="1.5" fill="#192144"/>
+                </svg>
+              </button>
+            </div>
+              <ul class="popup-countries__continent-list">
+                <li class="popup-countries__continent-item">
+                  <input class="popup-countries__continent-checkbox popup-countries__button--continent popup-countries__button--active" id="europe" name="europe" type="checkbox" checked>
+                  <label class="popup-countries__continent-label popup-countries__label--continent popup-countries__label--active" for="europe">Европа</label>
                 </li>
-                <li class="popup-countries__item">
-                  <input class="popup-countries__button popup-countries__button--continent" id="asia" name="asia" type="checkbox">
-                  <label class="popup-countries__label popup-countries__label--continent" for="asia">Азия</label>
+                <li class="popup-countries__continent-item">
+                  <input class="popup-countries__continent-checkbox popup-countries__button--continent" id="asia" name="asia" type="checkbox">
+                  <label class="popup-countries__continent-label popup-countries__label--continent" for="asia">Азия</label>
                 </li>
-                <li class="popup-countries__item">
-                  <input class="popup-countries__button popup-countries__button--continent" id="america" name="america" type="checkbox">
-                  <label class="popup-countries__label popup-countries__label--continent" for="america">Америка</label>
+                <li class="popup-countries__continent-item">
+                  <input class="popup-countries__continent-checkbox popup-countries__button--continent" id="america" name="america" type="checkbox">
+                  <label class="popup-countries__continent-label popup-countries__label--continent" for="america">Америка</label>
                 </li>
-                <li class="popup-countries__item">
-                  <input class="popup-countries__button popup-countries__button--continent" id="island" name="island" type="checkbox">
-                  <label class="popup-countries__label popup-countries__label--continent" for="island">Острова</label>
+                <li class="popup-countries__continent-item">
+                  <input class="popup-countries__continent-checkbox popup-countries__button--continent" id="island" name="island" type="checkbox">
+                  <label class="popup-countries__continent-label popup-countries__label--continent" for="island">Острова</label>
                 </li>
               </ul>
+              <button class="popup-countries-inner__show-all" type="button">Показать все</button>
+              <button class="popup-countries-inner__hidden" type="button">Свернуть</button>
               <ol class="popup-countries__list">
                 <li class="popup-countries__item">
-                  <button class="popup-countries__button popup-countries__button--key-letter">А</button>
+                  <button class="popup-countries__button popup-countries__button--key-letter popup-countries__button--key-letter-active">А</button>
                 </li>
                 <li class="popup-countries__item">
                   <button class="popup-countries__button popup-countries__button--key-letter">Б</button>
@@ -267,7 +276,6 @@
                 </svg>
                 Свернуть
               </a>
-            </div>
           </div>
         </section>
         <section class="travelers-search">

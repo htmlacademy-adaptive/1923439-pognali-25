@@ -11,4 +11,186 @@
   text-transform: uppercase;
   color: #192144;
   text-decoration: none;
+  padding-left: 25px;
+  background-image: url("../img/svg/icon_filter.svg");
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.countries-filter__header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.countries-filter__button--close {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.popup-countries__continent-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.countries-filter--close {
+  .popup-countries__list,
+  .popup-countries__description-list,
+  .popup-countries__close,
+  .popup-countries__continent-list {
+    display: none;
+  }
+}
+
+.popup-countries-inner__show-all {
+  display: none;
+}
+
+.popup-countries-inner__hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .countries-filter.countries-filter--close {
+    .popup-countries__list,
+    .popup-countries__description-list,
+    .popup-countries__close {
+      display: none;
+    }
+
+    .popup-countries-inner__show-all {
+      display: block;
+    }
+
+    .countries-filter__button--close {
+      display: flex;
+    }
+
+    .popup-countries-inner__hidden {
+      display: none;
+    }
+
+    .countries-filter__header-wrapper {
+      order: 1;
+      display: flex;
+    }
+
+    .countries-filter__link {
+      display: none;
+    }
+
+    .countries-filter_container {
+      display: flex;
+      min-height: auto;
+    }
+
+    .popup-countries__continent-list {
+      display: flex;
+      margin-right: auto;
+    }
+  }
+  // Выпадашка открыта //
+  .countries-filter {
+    .countries-filter__header-wrapper {
+      display: none;
+    }
+
+    .popup-countries__continent-list {
+      display: flex;
+      width: 500px;
+    }
+
+    .popup-countries-inner__hidden {
+      display: block;
+    }
+
+    .popup-countries-inner__show-all {
+      display: none;
+    }
+
+    .popup-countries__list {
+      width: 400px;
+      height: 400px;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .popup-countries__button--key-letter {
+      font-family: "Blogger Sans", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 60px;
+      text-transform: uppercase;
+      color: #192144;
+      background-color: transparent;
+      border: none;
+      opacity: 0.3;
+    }
+
+    .popup-countries__button--key-letter-active {
+      opacity: 1;
+    }
+
+    .popup-countries__close {
+      width: 100%;
+      min-height: 100px;
+    }
+  }
+
+  .countries-filter_container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 540px;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .countries-filter.countries-filter--close {
+    .countries-filter__header-wrapper {
+      display: flex;
+      order: -1;
+    }
+
+    .countries-filter__link {
+      display: flex;
+    }
+
+    .countries-filter__button--close {
+      display: none;
+    }
+
+    .popup-countries-inner__show-all {
+      display: none;
+    }
+
+    .popup-countries-inner__hidden {
+      display: none;
+    }
+  }
+
+  // Выпадашка открыта //
+  .countries-filter {
+    .popup-countries-inner__hidden {
+      display: none;
+    }
+
+    .popup-countries__continent-list {
+      width: 82%;
+    }
+
+    .countries-filter__header-wrapper {
+      display: flex;
+    }
+
+    .countries-filter__button--close {
+      display: none;
+    }
+  }
 }
