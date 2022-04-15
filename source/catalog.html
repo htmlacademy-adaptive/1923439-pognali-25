@@ -105,13 +105,13 @@
     </header>
     <main class="catalog">
       <h1 class="visually-hidden">Подбор попутчиков</h1>
-      <form class="catalog-form" action="https://echo.htmlacademy.ru" method="post">
         <nav class="inner-navigation">
           <div class="inner-navigation__wrapper container">
             <a class="inner-navigation__title main-header-title main-header-title--active">Попутчики</a>
             <a class="inner-navigation__go-index" href="index.html">На главную</a>
           </div>
         </nav>
+        <form class="catalog-form container" action="https://echo.htmlacademy.ru" method="post">
         <section class="countries-filter countries-filter--">
           <div class="countries-filter_container container">
             <div class="countries-filter__header-wrapper">
@@ -146,9 +146,13 @@
               </ul>
               <button class="popup-countries-inner__show-all" type="button">Показать все</button>
               <button class="popup-countries-inner__hidden" type="button">Свернуть</button>
+              <!-- список букв -->
               <ol class="popup-countries__list">
+                <!-- пункт списка -->
                 <li class="popup-countries__item">
+                  <!-- кнопка-буква -->
                   <button class="popup-countries__button popup-countries__button--key-letter popup-countries__button--key-letter-active">А</button>
+                  <!-- список стран на эту букву -->
                   <ol class="countries-filter__key-letter-list">
                     <li class="countries-filter__key-letter-item">
                       <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="australia" name="australia" type="checkbox">
@@ -1526,7 +1530,6 @@
             </div>
           </div>
         </section>
-      </form>
       <section class="search-results">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <div class="search-results-container container">
@@ -1873,6 +1876,7 @@
           </div>
         </div>
       </section>
+    </form>
     </main>
     <footer class="main-footer">
       <div class="footer-container container">

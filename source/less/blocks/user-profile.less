@@ -1,9 +1,26 @@
 .user-profile {
+  position: relative;
   background-color: #f2eeee;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
+  width: 100%;
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.user-profile::before {
+  position: absolute;
+  width: 100%;
+  height: 76px;
+  top: 0;
+  left: 0;
+  background-color: #161c35;
+  z-index: 0;
+  border-radius: 0 0 30px 30px;
+  content: "";
 }
 
 .user-profile__title {
@@ -13,10 +30,10 @@
 }
 
 .user-profile-title-wrapper {
-  background-color: #161c35;
   padding: 15px;
   border-radius: 0 0 20px 20px;
   width: 100%;
+  z-index: 1;
 }
 
 .user-profile__description {
@@ -34,6 +51,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  z-index: 1;
 }
 
 .user-profile__avatar {
@@ -41,19 +59,34 @@
   border-radius: 50%;
   width: 100px;
   height: 100px;
+  z-index: 1;
 }
 
 @media (min-width: @tablet-width) {
+  .user-profile::before {
+    position: absolute;
+    width: 100%;
+    height: 66px;
+    top: 0;
+    left: 0;
+    background-color: #182044;
+    z-index: 0;
+    border-radius: 0 0 30px 30px;
+    content: "";
+  }
+
   .user-profile {
     justify-content: space-around;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   .user-profile__title {
     margin-left: 25px;
-  }
-
-  .user-profile-title-wrapper {
-    background-color: #182044;
   }
 
   .user-profile-wrapper__transport {
@@ -64,6 +97,7 @@
   .user-profile-avatar__wrapper {
     order: 2;
     margin-right: 25px;
+    z-index: 1;
   }
 
   .user-profile__lvl {
@@ -83,15 +117,33 @@
 }
 
 @media (min-width: @desktop-width) {
+  .user-profile::before {
+    position: absolute;
+    width: 100%;
+    height: 190px;
+    top: 0;
+    left: 0;
+    background-color: #161c35;
+    z-index: 0;
+    border-radius: 0 0 30px 30px;
+    content: "";
+  }
+
   .user-profile {
+    position: relative;
     justify-content: space-between;
     width: 100%;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
   .user-profile-avatar__wrapper {
     order: 0;
-    width: 321px;
-    background-color: #161c35;
+    width: 198px;
     border-radius: 0 0 20px 0;
     margin-right: 0;
   }
@@ -99,6 +151,7 @@
   .user-profile__lvl {
     margin-left: 0;
     order: 1;
+    z-index: 1;
   }
 
   .card-lvl__wrapper {
@@ -106,11 +159,11 @@
     height: 190px;
     order: 0;
     background-color: #161c35;
+    z-index: 1;
   }
 
   .user-profile-title-wrapper {
     width: 869px;
-    background-color: #161c35;
     align-self: flex-start;
     justify-self: flex-start;
     padding-top: 56px;
@@ -123,6 +176,7 @@
     font-weight: 700;
     font-size: 60px;
     line-height: 60px;
+    margin-left: 0;
   }
 
   .user-profile__avatar {
