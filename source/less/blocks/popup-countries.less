@@ -6,45 +6,16 @@
   box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
   border: 1px solid #cbced9;
   border-radius: 4px;
+
+  .countries-filter__list {
+    padding: 0;
+  }
 }
 
 .popup-countries--close {
   display: none;
 }
 
-.popup-countries__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: grid;
-  justify-content: flex-start;
-  align-items: flex-start;
-  grid-template-columns: 44px 44px 44px 44px 44px;
-  width: 100%;
-  height: 205px;
-  border-bottom: 1px solid #cbced9;
-}
-
-.popup-countries__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 43px;
-  height: 41px;
-}
-
-.popup-countries__button {
-  width: 43px;
-  height: 41px;
-  padding: 0;
-  border: 1px solid #cbced9;
-}
-
-.popup-countries__description-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
 
 @media (min-width: @tablet-width) {
   .popup-countries {
@@ -52,54 +23,168 @@
     width: 100%;
     min-height: 414px;
     justify-content: space-between;
-  }
+    padding: 35px 23px;
+    box-sizing: border-box;
 
-  .popup-countries__description-list {
-    width: 200px;
-    border-left: 1px solid #cbced9;
-  }
+    .countries-filter__list {
+      display: grid;
+      grid-template-columns: repeat(5, 55px) 100px 230px;
+      grid-template-rows: repeat(5, 70px);
+      width: 100%;
+      height: 360px;
+    }
 
-  .popup-countries__list {
-    width: 50%;
-    border-bottom: none;
-    grid-template-columns: 54px 54px 54px 54px 54px;
-  }
+    .countries-filter__button {
+      width: 55px;
+      height: 70px;
+    }
 
-  .popup-countries__checkbox {
-    margin: 0;
-  }
+    .countries-filter__item--active {
+      grid-column: 7/8;
+      grid-row: 1/-1;
+    }
 
-  .popup-countries__item {
-    width: 54px;
-    height: 70px;
-  }
+    .grid-1 {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
 
-  .popup-countries__button {
-    width: 54px;
-    height: 70px;
+    .grid-2 {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    .grid-3 {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+
+    .grid-4 {
+      grid-column: 4/5;
+      grid-row: 1/2;
+    }
+
+    .grid-5 {
+      grid-column: 5/6;
+      grid-row: 1/2;
+    }
+
+    .grid-6 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    .grid-7 {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    .grid-8 {
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
+
+    .grid-9 {
+      grid-column: 4/5;
+      grid-row: 2/3;
+    }
+
+    .grid-10 {
+      grid-column: 5/6;
+      grid-row: 2/3;
+    }
+
+    .grid-11 {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+
+    .grid-12 {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+
+    .grid-13 {
+      grid-column: 3/4;
+      grid-row: 3/4;
+    }
+
+    .grid-14 {
+      grid-column: 4/5;
+      grid-row: 3/4;
+    }
+
+    .grid-15 {
+      grid-column: 5/6;
+      grid-row: 3/4;
+    }
+
+    .grid-16 {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+
+    .grid-17 {
+      grid-column: 2/3;
+      grid-row: 4/5;
+    }
+
+    .grid-18 {
+      grid-column: 3/4;
+      grid-row: 4/5;
+    }
+
+    .grid-19 {
+      grid-column: 4/5;
+      grid-row: 4/5;
+    }
+
+    .grid-20 {
+      grid-column: 5/6;
+      grid-row: 4/5;
+    }
+
+    .grid-21 {
+      grid-column: 1/2;
+      grid-row: 5/6;
+    }
+
+    .grid-22 {
+      grid-column: 2/3;
+      grid-row: 5/6;
+    }
+
+    .grid-23 {
+      grid-column: 3/4;
+      grid-row: 5/6;
+    }
+
+    .grid-24 {
+      grid-column: 4/5;
+      grid-row: 5/6;
+    }
+
+    .grid-25 {
+      grid-column: 5/6;
+      grid-row: 5/6;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .popup-countries {
     width: 730px;
-  }
+    height: 476px;
+    padding: 32px 26px;
 
-  .popup-countries__list {
-    width: 50%;
-    border-bottom: none;
-    grid-template-columns: 60px 60px 60px 60px 60px;
-    column-gap: 14px;
-    row-gap: 14px;
-  }
+    .countries-filter__list {
+      column-gap: 15px;
+      row-gap: 15px;
+    }
 
-  .popup-countries__item {
-    width: 60px;
-    height: 70px;
-  }
-
-  .popup-countries__button {
-    width: 60px;
-    height: 70px;
+    .countries-filter__button {
+      width: 60px;
+      height: 70px;
+    }
   }
 }

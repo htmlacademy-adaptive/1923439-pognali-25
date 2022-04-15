@@ -352,127 +352,1281 @@
                 </li>
                 <li class="plans-algoritm-countries__item">
                   <div class="add-plans__popup popup-countries">
-                    <ol class="popup-countries__list">
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">А</button>
+                    <ol class="countries-filter__list">
+                      <li class="countries-filter__item countries-filter__item--button grid-1">
+                        <button class="countries-filter__button countries-filter__button--key-letter countries-filter__button--key-letter-active">А</button>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">Б</button>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--active grid-countries-1">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">В</button>
+                      <li class="countries-filter__item countries-filter__item--button grid-2">
+                        <button class="countries-filter__button countries-filter__button--key-letter">Б</button>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">Г</button>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-2">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">Д</button>
+                      <li class="countries-filter__item countries-filter__item--button grid-3">
+                        <button class="countries-filter__button countries-filter__button--key-letter">В</button>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">Е</button>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-3">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">З</button>
+                      <li class="countries-filter__item countries-filter__item--button grid-4">
+                        <button class="countries-filter__button countries-filter__button--key-letter">Г</button>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">И</button>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-4">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">К</button>
+                      <li class="countries-filter__item countries-filter__item--button grid-5">
+                        <button class="countries-filter__button countries-filter__button--key-letter">Д</button>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">Л</button>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-5">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">М</button>
+                      <li class="countries-filter__item countries-filter__item--button grid-6">
+                        <button class="countries-filter__button countries-filter__button--key-letter">Е</button>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">Н</button>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-6">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">О</button>
+                      <li class="countries-filter__item countries-filter__item--button grid-7">
+                        <button class="countries-filter__button countries-filter__button--key-letter">З</button>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">П</button>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-7">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">Р</button>
+                      <li class="countries-filter__item countries-filter__item--button grid-8">
+                        <button class="countries-filter__button countries-filter__button--key-letter">И</button>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">С</button>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-8">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">Т</button>
+                      <li class="countries-filter__item countries-filter__item--button grid-9">
+                        <button class="countries-filter__button countries-filter__button--key-letter">К</button>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">У</button>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-9">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">Ф</button>
+                      <li class="countries-filter__item countries-filter__item--button grid-10">
+                        <button class="countries-filter__button countries-filter__button--key-letter">Л</button>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">Х</button>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-10">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">Ч</button>
+                      <li class="countries-filter__item countries-filter__item--button grid-11">
+                        <button class="countries-filter__button countries-filter__button--key-letter">М</button>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">Ш</button>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-11">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">Э</button>
+                      <li class="countries-filter__item countries-filter__item--button grid-12">
+                        <button class="countries-filter__button countries-filter__button--key-letter">н</button>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">Ю</button>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-12">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__item">
-                        <button class="popup-countries__button popup-countries__button--key-letter">Я</button>
+                      <li class="countries-filter__item countries-filter__item--button grid-13">
+                        <button class="countries-filter__button countries-filter__button--key-letter">о</button>
                       </li>
-                    </ol>
-                    <ol class="popup-countries__description-list">
-                      <li class="popup-countries__description-item">
-                        <input class="popup-countries__checkbox popup-countries__button--list" id="australia" name="australia" type="checkbox">
-                        <label class="popup-countries__label popup-countries__label--list" for="australia">Австралия</label>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-13">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__description-item">
-                        <input class="popup-countries__checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
-                        <label class="popup-countries__label popup-countries__label--list" for="austria">Австрия</label>
+                      <li class="countries-filter__item countries-filter__item--button grid-14">
+                        <button class="countries-filter__button countries-filter__button--key-letter">п</button>
                       </li>
-                      <li class="popup-countries__description-item">
-                        <input class="popup-countries__checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
-                        <label class="popup-countries__label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-14">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__description-item">
-                        <input class="popup-countries__checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
-                        <label class="popup-countries__label popup-countries__label--list" for="alban">Албания</label>
+                      <li class="countries-filter__item countries-filter__item--button grid-15">
+                        <button class="countries-filter__button countries-filter__button--key-letter">р</button>
                       </li>
-                      <li class="popup-countries__description-item">
-                        <input class="popup-countries__checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
-                        <label class="popup-countries__label popup-countries__label--list" for="aljir">Алжир</label>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-15">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__description-item">
-                        <input class="popup-countries__checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
-                        <label class="popup-countries__label popup-countries__label--list" for="angola">Ангола</label>
+                      <li class="countries-filter__item countries-filter__item--button grid-16">
+                        <button class="countries-filter__button countries-filter__button--key-letter">с</button>
                       </li>
-                      <li class="popup-countries__description-item">
-                        <input class="popup-countries__checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
-                        <label class="popup-countries__label popup-countries__label--list" for="andorra">Андорра</label>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-16">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__description-item">
-                        <input class="popup-countries__checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
-                        <label class="popup-countries__label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                      <li class="countries-filter__item countries-filter__item--button grid-17">
+                        <button class="countries-filter__button countries-filter__button--key-letter">т</button>
                       </li>
-                      <li class="popup-countries__description-item">
-                        <input class="popup-countries__checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
-                        <label class="popup-countries__label popup-countries__label--list" for="argentina">Аргентина</label>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-17">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
-                      <li class="popup-countries__description-item">
-                        <input class="popup-countries__checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
-                        <label class="popup-countries__label popup-countries__label--list" for="armenia">Армения</label>
+                      <li class="countries-filter__item countries-filter__item--button grid-18">
+                        <button class="countries-filter__button countries-filter__button--key-letter">у</button>
                       </li>
-                      <li class="popup-countries__description-item">
-                        <input class="popup-countries__checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
-                        <label class="popup-countries__label popup-countries__label--list" for="auganistan">Афганистан</label>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-18">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="countries-filter__item countries-filter__item--button grid-19">
+                        <button class="countries-filter__button countries-filter__button--key-letter">ф</button>
+                      </li>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-19">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="countries-filter__item countries-filter__item--button grid-20">
+                        <button class="countries-filter__button countries-filter__button--key-letter">х</button>
+                      </li>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-20">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="countries-filter__item countries-filter__item--button grid-21">
+                        <button class="countries-filter__button countries-filter__button--key-letter">ч</button>
+                      </li>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-21">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="countries-filter__item countries-filter__item--button grid-22">
+                        <button class="countries-filter__button countries-filter__button--key-letter">ш</button>
+                      </li>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-22">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="countries-filter__item countries-filter__item--button grid-23">
+                        <button class="countries-filter__button countries-filter__button--key-letter">э</button>
+                      </li>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-23">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="countries-filter__item countries-filter__item--button grid-24">
+                        <button class="countries-filter__button countries-filter__button--key-letter">ю</button>
+                      </li>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-24">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
+                      </li>
+                      <li class="countries-filter__item countries-filter__item--button grid-25">
+                        <button class="countries-filter__button countries-filter__button--key-letter">я</button>
+                      </li>
+                      <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-25">
+                        <ol class="countries-filter__list--inside">
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
+                            <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                          </li>
+                          <li>
+                            <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
+                            <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                          </li>
+                        </ol>
                       </li>
                     </ol>
                   </div>

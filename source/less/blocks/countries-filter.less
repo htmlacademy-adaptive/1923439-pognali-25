@@ -2,8 +2,54 @@
   background-color: #e2e5f2;
 }
 
-.popup-countries__list {
+.countries-filter__list {
   position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 225px;
+}
+
+.countries-filter__list--inside {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.countries-filter__item--countries {
+  order: 1;
+}
+
+.countries-filter__continent-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 25px;
+}
+
+.countries-filter__button {
+  border: 1px solid #e2e5f2;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  font-family: "Blogger Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1d2e5b;
+}
+
+.countries-filter__button--key-letter-active {
+  background-color: #1d2e5b;
+  color: #ffffff;
+}
+
+.countries-filter__item--hidden {
+  display: none;
 }
 
 .countries-filter__link {
@@ -35,26 +81,20 @@
   background-color: transparent;
 }
 
-.popup-countries__continent-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
 .countries-filter--close {
-  .popup-countries__list,
-  .popup-countries__description-list,
-  .popup-countries__close,
-  .popup-countries__continent-list {
+  .countries-filter__list,
+  .countries-filter__close,
+  .countries-filter__continent-list {
     display: none;
   }
 }
 
-.popup-countries-inner__show-all {
+.countries-filter__show-all {
   display: none;
 }
 
-.popup-countries-inner__hidden {
+.countries-filter__hidden {
   display: none;
 }
 
@@ -68,21 +108,26 @@
 
 @media (min-width: @tablet-width) {
   .countries-filter.countries-filter--close {
-    .popup-countries__list,
-    .popup-countries__description-list,
-    .popup-countries__close {
+    .countries-filter__list {
       display: none;
     }
 
-    .popup-countries-inner__show-all {
+    .countries-filter__close {
+      display: none;
+    }
+
+    .countries-filter__show-all {
       display: block;
     }
 
     .countries-filter__button--close {
       display: flex;
+      width: 30px;
+      height: 10px;
+      opacity: 1;
     }
 
-    .popup-countries-inner__hidden {
+    .countries-filter__hidden {
       display: none;
     }
 
@@ -98,11 +143,13 @@
     .countries-filter_container {
       display: flex;
       min-height: auto;
+      align-items: center;
     }
 
-    .popup-countries__continent-list {
+    .countries-filter__continent-list {
       display: flex;
       margin-right: auto;
+      width: 400px;
     }
   }
   // Выпадашка открыта //
@@ -111,43 +158,176 @@
       display: none;
     }
 
-    .popup-countries__continent-list {
+    .countries-filter__continent-list {
       display: flex;
       width: 500px;
     }
 
-    .popup-countries-inner__hidden {
+    .countries-filter__hidden {
       display: block;
     }
 
-    .popup-countries-inner__show-all {
+    .countries-filter__show-all {
       display: none;
     }
 
-    .popup-countries__list {
-      width: 400px;
-      height: 400px;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    .popup-countries__button--key-letter {
-      font-family: "Blogger Sans", sans-serif;
-      font-style: normal;
+    .countries-filter__button {
+      width: 60px;
+      height: 60px;
+      border: none;
       font-weight: 700;
       font-size: 60px;
       line-height: 60px;
       text-transform: uppercase;
       color: #192144;
-      background-color: transparent;
-      border: none;
       opacity: 0.3;
     }
 
-    .popup-countries__button--key-letter-active {
+    .countries-filter__button--key-letter-active {
+      background-color: transparent;
       opacity: 1;
     }
 
-    .popup-countries__close {
+    .countries-filter__list {
+      display: grid;
+      grid-template-columns: repeat(5, 60px) 100px 230px;
+      grid-template-rows: repeat(5, 60px);
+      width: 100%;
+      height: 360px;
+      margin-top: 50px;
+    }
+
+    .countries-filter__item--active {
+      grid-column: 7/8;
+      grid-row: 1/-1;
+    }
+
+    .grid-1 {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    .grid-2 {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    .grid-3 {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+
+    .grid-4 {
+      grid-column: 4/5;
+      grid-row: 1/2;
+    }
+
+    .grid-5 {
+      grid-column: 5/6;
+      grid-row: 1/2;
+    }
+
+    .grid-6 {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    .grid-7 {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    .grid-8 {
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
+
+    .grid-9 {
+      grid-column: 4/5;
+      grid-row: 2/3;
+    }
+
+    .grid-10 {
+      grid-column: 5/6;
+      grid-row: 2/3;
+    }
+
+    .grid-11 {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+
+    .grid-12 {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+
+    .grid-13 {
+      grid-column: 3/4;
+      grid-row: 3/4;
+    }
+
+    .grid-14 {
+      grid-column: 4/5;
+      grid-row: 3/4;
+    }
+
+    .grid-15 {
+      grid-column: 5/6;
+      grid-row: 3/4;
+    }
+
+    .grid-16 {
+      grid-column: 1/2;
+      grid-row: 4/5;
+    }
+
+    .grid-17 {
+      grid-column: 2/3;
+      grid-row: 4/5;
+    }
+
+    .grid-18 {
+      grid-column: 3/4;
+      grid-row: 4/5;
+    }
+
+    .grid-19 {
+      grid-column: 4/5;
+      grid-row: 4/5;
+    }
+
+    .grid-20 {
+      grid-column: 5/6;
+      grid-row: 4/5;
+    }
+
+    .grid-21 {
+      grid-column: 1/2;
+      grid-row: 5/6;
+    }
+
+    .grid-22 {
+      grid-column: 2/3;
+      grid-row: 5/6;
+    }
+
+    .grid-23 {
+      grid-column: 3/4;
+      grid-row: 5/6;
+    }
+
+    .grid-24 {
+      grid-column: 4/5;
+      grid-row: 5/6;
+    }
+
+    .grid-25 {
+      grid-column: 5/6;
+      grid-row: 5/6;
+    }
+
+    .countries-filter__close {
       width: 100%;
       min-height: 100px;
     }
@@ -178,23 +358,32 @@
       display: none;
     }
 
-    .popup-countries-inner__show-all {
+    .countries-filter__show-all {
       display: none;
     }
 
-    .popup-countries-inner__hidden {
+    .countries-filter__hidden {
       display: none;
     }
   }
 
   // Выпадашка открыта //
   .countries-filter {
-    .popup-countries-inner__hidden {
+    .countries-filter__hidden {
       display: none;
     }
 
-    .popup-countries__continent-list {
-      width: 82%;
+    .countries-filter__item--hidden {
+      display: block;
+    }
+
+    .countries-filter__item--active {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    .countries-filter__continent-list {
+      width: 79%;
     }
 
     .countries-filter__header-wrapper {
@@ -202,10 +391,6 @@
     }
 
     .countries-filter__button--close {
-      display: none;
-    }
-
-    .popup-countries__description-list {
       display: none;
     }
 
@@ -218,21 +403,138 @@
       height: auto;
     }
 
-    .popup-countries__list {
+    .countries-filter__list {
       position: relative;
       width: 100%;
       height: 100%;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(5, 300px);
+      grid-template-rows: 60px 300px 60px 300px 60px 300px 60px 300px 60px 300px;
     }
 
-    .popup-countries__item {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      width: max-content;
+    .grid-1 {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    .grid-2 {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
+    .grid-3 {
+      grid-column: 3/4;
+      grid-row: 1/2;
+    }
+
+    .grid-4 {
+      grid-column: 4/5;
+      grid-row: 1/2;
+    }
+
+    .grid-5 {
+      grid-column: 5/6;
+      grid-row: 1/2;
+    }
+
+    .grid-6 {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+
+    .grid-7 {
+      grid-column: 2/3;
+      grid-row: 3/4;
+    }
+
+    .grid-8 {
+      grid-column: 3/4;
+      grid-row: 3/4;
+    }
+
+    .grid-9 {
+      grid-column: 4/5;
+      grid-row: 3/4;
+    }
+
+    .grid-10 {
+      grid-column: 5/6;
+      grid-row: 3/4;
+    }
+
+    .grid-11 {
+      grid-column: 1/2;
+      grid-row: 5/6;
+    }
+
+    .grid-12 {
+      grid-column: 2/3;
+      grid-row: 5/6;
+    }
+
+    .grid-13 {
+      grid-column: 3/4;
+      grid-row: 5/6;
+    }
+
+    .grid-14 {
+      grid-column: 4/5;
+      grid-row: 5/6;
+    }
+
+    .grid-15 {
+      grid-column: 5/6;
+      grid-row: 5/6;
+    }
+
+    .grid-16 {
+      grid-column: 1/2;
+      grid-row: 7/8;
+    }
+
+    .grid-17 {
+      grid-column: 2/3;
+      grid-row: 7/8;
+    }
+
+    .grid-18 {
+      grid-column: 3/4;
+      grid-row: 7/8;
+    }
+
+    .grid-19 {
+      grid-column: 4/5;
+      grid-row: 7/8;
+    }
+
+    .grid-20 {
+      grid-column: 5/6;
+      grid-row: 7/8;
+    }
+
+    .grid-21 {
+      grid-column: 1/2;
+      grid-row: 9/10;
+    }
+
+    .grid-22 {
+      grid-column: 2/3;
+      grid-row: 9/10;
+    }
+
+    .grid-23 {
+      grid-column: 3/4;
+      grid-row: 9/10;
+    }
+
+    .grid-24 {
+      grid-column: 4/5;
+      grid-row: 9/10;
+    }
+
+    .grid-25 {
+      grid-column: 5/6;
+      grid-row: 9/10;
     }
   }
 }
