@@ -1,0 +1,31 @@
+.catalog-form {
+  .container {
+    padding: 0;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .catalog-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .container {
+      padding: 0;
+    }
+  }
+
+  .travelers-search {
+    order: 1;
+  }
+
+  .search-results {
+    order: 0;
+    width: 74%;
+  }
+
+  .catalog-pagination {
+    order: 1;
+  }
+}
