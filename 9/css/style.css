@@ -1514,6 +1514,15 @@
   .main-header--open .main-header__features-list {
     margin-top: 101px;
   }
+  .main-header--nojs .main-header__logo-wrapper {
+    display: block;
+    width: 20%;
+    height: 20px;
+    order: 0;
+    margin-bottom: 150px;
+    padding-left: 0;
+    background-color: #161c35;
+  }
   .main-header--nojs .main-header-container {
     width: 1320px;
   }
@@ -1524,14 +1533,6 @@
   .main-header--nojs .contacts-wrapper,
   .main-header--nojs .social-wrapper {
     display: none;
-  }
-  .main-header--nojs .main-header__logo-wrapper {
-    display: block;
-    width: 20%;
-    height: 20px;
-    order: 0;
-    margin-bottom: 150px;
-    background-color: #161c35;
   }
   .main-header--nojs .main-header__navigation-list {
     background-color: transparent;
