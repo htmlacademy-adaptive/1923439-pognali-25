@@ -3,6 +3,47 @@
   background-image: url("../img/png/travelers-background.png");
   background-repeat: no-repeat;
   background-position: 40% 5%;
+  border-radius: 0 0 25px 25px;
+
+  .travelers__title {
+    margin-top: 80px;
+    margin-left: 30px;
+  }
+
+  .travelers__text {
+    display: block;
+    width: 217px;
+    margin-left: 30px;
+  }
+
+  .travelers__description {
+    width: 217px;
+    margin-left: 30px;
+    margin-bottom: 54px;
+  }
+
+  .travelers-flags {
+    width: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -13px;
+    left: 23%;
+  }
+
+  .travelers-flags__item + .travelers-flags__item {
+    margin-left: 15px;
+  }
+
+  .travelers__item + .travelers__item {
+    margin-top: 10px;
+  }
+
+  .travelers__link {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
 }
 
 .travelers__list {
@@ -13,24 +54,51 @@
 
 @media (min-width: @tablet-width) {
   .travelers {
-    background: url("../img/png/travelers-back-tablet.png") 83% 5% no-repeat, url("../img/png/travelers-back-tablet-small.png") left center no-repeat;
+    background: url("../img/png/travelers-back-tablet.png") 83% 11% no-repeat, url("../img/png/travelers-back-tablet-small.png") 5% 35% no-repeat;
     background-color: #192144;
-  }
+    padding-top: 141px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 87px;
+    box-sizing: border-box;
 
-  .travelers__title {
-    width: 420px;
-  }
+    .travelers__title {
+      width: 420px;
+      margin: 0;
+      margin-bottom: 55px;
+    }
 
-  .travelers__text {
-    display: block;
-    width: 430px;
-    font-size: 28px;
-    line-height: 34px;
-  }
+    .travelers__text {
+      display: block;
+      width: 430px;
+      font-size: 28px;
+      line-height: 34px;
+      margin-left: 0;
+    }
 
-  .travelers__description {
-    font-size: 21px;
-    line-height: 24px;
+    .travelers__description {
+      font-size: 21px;
+      line-height: 24px;
+      margin-left: 0;
+      width: 260px;
+    }
+
+    .travelers-card__image {
+      width: 285px;
+    }
+
+    .travelers__item + .travelers__item {
+      margin-top: 0;
+    }
+
+    .travelers-card__tag {
+      text-align: center;
+    }
+
+    .travelers__link {
+      width: 100%;
+      margin-top: 81px;
+    }
   }
 
   .travelers__link {
@@ -43,7 +111,7 @@
     justify-content: space-between;
   }
 
-  .travelers__item {
+  .tra1velers__item {
     width: 44%;
   }
 }
@@ -52,15 +120,15 @@
   .travelers {
     background: url("../img/png/travelers-back-tablet.png") 10% 70% no-repeat, url("../img/png/travelers-back-tablet-small.png") 40% 15% no-repeat;
     background-color: #192144;
+
+    .travelers__link {
+      width: 280px;
+    }
   }
 
   .travelers__list {
     width: 630px;
     display: flex;
     justify-content: space-between;
-  }
-
-  .travelers__link {
-    width: 280px;
   }
 }

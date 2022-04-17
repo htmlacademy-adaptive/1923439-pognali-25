@@ -1,6 +1,5 @@
 .main-header {
-  position: relative;
-  background: url("../img/png/traveller-illustration-mobile.png") center 45% no-repeat, url("../img/png/header-back-mobile.png") center 10%  no-repeat;
+  background: url("../img/png/traveller-illustration-mobile.png") 65% 38% no-repeat, url("../img/png/header-back-mobile.png") center -2%  no-repeat;
   background-color: #161c35;
   padding-top: 25px;
 
@@ -10,13 +9,13 @@
     padding: 0;
     width: 320px;
     justify-content: space-between;
-  }
 
-  .main-header__navigation-list,
-  .main-header__log-in,
-  .contacts-wrapper,
-  .social-wrapper {
-    display: none;
+    .container {
+      width: 270px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   .logo__image {
@@ -31,22 +30,48 @@
   .main-header__welcome-contacts-wrapper {
     margin-top: 313px;
   }
+
+  .main-header__features-quote {
+    margin-left: 20px;
+    margin-top: 25px;
+  }
+
+  .main-header__features-list {
+    position: relative;
+  }
+}
+
+
+// Закрытая выпадашка //
+.main-header--close {
+  .main-header__navigation-list,
+  .main-header__log-in,
+  .contacts-wrapper,
+  .social-wrapper {
+    display: none;
+  }
 }
 // открытая выпадашка//
 .main-header--open {
-  position: relative;
+  width: 100%;
+  margin: 0 auto;
   padding: 0;
 
   .main-header-container {
     width: 320px;
+    margin: 0 auto;
+    position: relative;
   }
 
 
   .main-header__logo-wrapper {
     background-color: #ffffff;
     margin-bottom: 0;
-    padding: 25px;
-    width: 100%;
+    padding-bottom: 35px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 320px;
   }
 
   .navigation-menu::before,
@@ -60,26 +85,82 @@
     display: flex;
   }
 
+  .main-header__log-in-wrapper {
+    position: absolute;
+    top: 286px;
+    left: 0;
+    background-color: #ffffff;
+    padding-bottom: 51px;
+    width: 320px;
+  }
+
+  .contacts-wrapper {
+    padding-left: 25px;
+    box-sizing: border-box;
+  }
+
+  .contacts-wrapper--email {
+    position: absolute;
+    top: 432px;
+    left: 0;
+  }
+
+  .contacts-wrapper--phone {
+    position: absolute;
+    top: 387px;
+    left: 0;
+  }
+
+  .social-wrapper {
+    position: absolute;
+    top: 477px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 35px;
+  }
+
   .main-header__navigation-list {
+    position: absolute;
+    top: 70px;
+    left: 0;
     display: block;
     background-color: #ffffff;
-    width: 100%;
+    width: 320px;
+    padding-top: 60px;
   }
 
   .contacts-wrapper,
   .social-wrapper {
     background-color: #ffffff;
-    width: 100%;
-  }
-
-  .main-header__log-in-wrapper {
-    background-color: #ffffff;
-    padding-bottom: 51px;
-    width: 100%;
+    width: 320px;
   }
 
   .logo__image {
     color: #182044;
+  }
+
+  .social-wrapper__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-wrapper__item {
+    width: 30px;
+  }
+
+  .social-wrapper__item + .social-wrapper__item {
+    margin-left: 15px;
+  }
+
+  .social-wrapper__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
   }
 }
 
@@ -91,14 +172,93 @@
   padding: 20px;
   background-color: #ffffff;
 }
+// не подгрузился js //
+.main-header--nojs {
+  padding-top: 0;
+  background: url("../img/png/traveller-illustration-mobile.png") center 62% no-repeat, url("../img/png/header-back-mobile.png") center 50% no-repeat;
+  background-color: #161c35;
+
+  .main-header-container {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .logo__image {
+    color: #182044;
+  }
+
+  .main-header__logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 320px;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-bottom: 0;
+    box-sizing: border-box;
+  }
+
+  .navigation-menu::before,
+  .navigation-menu::after {
+    display: none;
+  }
+
+  .main-header__navigation-list {
+    display: block;
+    background-color: #ffffff;
+    width: 320px;
+    padding-top: 60px;
+  }
+
+  .main-header__log-in-wrapper {
+    position: static;
+    display: flex;
+    background-color: #ffffff;
+    padding: 0;
+    padding-bottom: 60px;
+    width: 320px;
+  }
+
+  .main-header__log-in {
+    display: flex;
+  }
+
+  .social-wrapper,
+  .contacts-wrapper {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: #ffffff;
+    width: 320px;
+    box-sizing: border-box;
+  }
+
+  .social-wrapper__list {
+    width: 200px;
+  }
+
+  .social-wrapper__item + .social-wrapper__item {
+    margin-left: 15px;
+  }
+
+  .contacts-wrapper {
+    justify-content: flex-start;
+    padding-left: 25px;
+  }
+
+  .social-wrapper {
+    padding-bottom: 25px;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .main-header {
     background: url("../img/png/traveller-illustration-tablet.png") 80% 61% no-repeat, url("../img/png/globe-back-tablet.svg.png") center 74%  no-repeat;
     background-color: #182044;
-    padding: 40px;
+    padding-top: 40px;
     padding-bottom: 0;
-    margin: 0 auto;
 
     .main-header__log-in {
       display: flex;
@@ -113,6 +273,7 @@
       margin-bottom: 0;
       align-items: center;
       background-color: #182044;
+      padding-right: 0;
     }
 
     .main-header__welcome-title {
@@ -123,7 +284,7 @@
       line-height: 70px;
       order: 1;
       margin-bottom: 86px;
-      margin-top: 30px;
+      margin-top: 70px;
     }
 
     .main-header__welcome-contacts-wrapper {
@@ -172,12 +333,18 @@
     flex-direction: column;
     align-items: flex-start;
   }
-
+  // Открывашка открыта //
   .main-header--open {
     padding: 0;
 
+    .main-header__features-list {
+      margin: 0 50px;
+    }
+
+
     .main-header-container {
       width: 768px;
+      position: relative;
     }
 
     .main-header__navigation-link {
@@ -190,22 +357,125 @@
       background-color: #ffffff;
       width: 50%;
       padding: 40px;
+      padding-bottom: 15px;
+      padding-right: 0;
+      padding-top: 55px;
       box-sizing: border-box;
+
+      .container {
+        width: 100%;
+      }
+    }
+
+    .main-header__log-in {
+      margin-left: 0;
     }
 
     .main-header__log-in-wrapper {
+      display: flex;
+      justify-content: flex-end;
       width: 50%;
       order: 0;
-      padding: 25px;
       box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: auto;
+      right: 0;
+      padding-top: 40px;
+      padding-bottom: 0;
+      padding-right: 47px;
+    }
+
+    .main-header__navigation-list {
+      width: 100%;
+      padding-left: 100px;
+      box-sizing: border-box;
+      top: 90px;
     }
 
     .contacts-wrapper {
       order: 1;
+      width: 100%;
+      padding-left: 100px;
+    }
+
+    .main-header__features-quote {
+      margin-left: 90px;
     }
 
     .social-wrapper {
       order: 1;
+      width: 100%;
+      box-sizing: border-box;
+      justify-content: flex-start;
+      padding-left: 100px;
+    }
+  }
+
+  // Не подгрузился js //
+  .main-header--nojs {
+    padding: 0;
+    background: url("../img/png/traveller-illustration-tablet.png") 80% 75% no-repeat, url("../img/png/globe-back-tablet.svg.png") center 74%  no-repeat;
+    background-color: #182044;
+
+    .main-header-container {
+      width: 768px;
+    }
+
+    .main-header__logo-wrapper {
+      background-color: #ffffff;
+      width: 50%;
+      padding-bottom: 15px;
+      padding-right: 0;
+      padding-top: 55px;
+      padding-left: 100px;
+      box-sizing: border-box;
+    }
+
+    .main-header__log-in-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+      order: 0;
+      box-sizing: border-box;
+      padding-top: 40px;
+      padding-bottom: 0;
+      padding-right: 40px;
+    }
+
+    .main-header__log-in {
+      margin: 0;
+    }
+
+    .main-header__navigation-list {
+      width: 100%;
+      display: block;
+      position: static;
+      padding-left: 100px;
+      order: 1;
+    }
+
+    .social-wrapper {
+      position: static;
+      order: 1;
+      justify-content: flex-start;
+      padding-left: 100px;
+      width: 100%;
+    }
+
+    .social-wrapper__list {
+      justify-content: flex-start;
+    }
+
+    .contacts-wrapper {
+      order: 1;
+      padding-left: 100px;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    .main-header__features-list {
+      margin: 0 50px;
     }
   }
 }
@@ -216,7 +486,7 @@
     background-color: #161c35;
     display: flex;
     justify-content: space-between;
-    padding: 80px;
+    padding: 60px;
 
     .main-header__log-in {
       display: none;
@@ -225,6 +495,7 @@
     .main-header__navigation-list {
       display: flex;
       margin: 0;
+      width: 460px;
     }
 
     .main-header__logo-wrapper {
@@ -323,6 +594,7 @@
     }
 
     .main-header__navigation-list {
+      position: static;
       display: flex;
       justify-self: flex-start;
       margin: 0;
@@ -345,6 +617,47 @@
 
     .main-header__welcome-contacts-wrapper {
       margin-left: 0;
+    }
+
+    .main-header__features-list {
+      margin-top: 101px;
+    }
+  }
+  // Не подгрузился JS //
+  .main-header--nojs {
+    .main-header-container {
+      width: 1320px;
+    }
+
+    .main-header__log-in-wrapper {
+      display: none;
+    }
+
+    .main-header__log-in,
+    .contacts-wrapper,
+    .social-wrapper {
+      display: none;
+    }
+
+    .main-header__logo-wrapper {
+      display: block;
+      width: 20%;
+      height: 20px;
+      order: 0;
+      margin-bottom: 150px;
+      background-color: #161c35;
+    }
+
+    .main-header__navigation-list {
+      background-color: transparent;
+    }
+
+    .logo__image {
+      color: #ffffff;
+    }
+
+    .main-header__features-list {
+      margin-top: 100px;
     }
   }
 }

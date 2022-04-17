@@ -1,6 +1,10 @@
 .add-profile-container {
   padding-left: 25px;
   padding-right: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (min-width: @tablet-width) {
@@ -13,6 +17,7 @@
 
 @media (min-width: @desktop-width) {
   .add-profile-container {
-    padding: 107px 133px 165px 130px;
+    justify-content: center;
+    width: 1320px;
   }
 }

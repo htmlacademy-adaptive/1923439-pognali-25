@@ -1,5 +1,6 @@
 .main-footer {
   background-color: #ffffff;
+  padding-top: 37px;
 }
 
 .main-footer__logo {
@@ -7,10 +8,33 @@
   width: 96px;
   height: 15px;
   margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.footer-social {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.footer-copyright {
+  margin-top: 13px;
 }
 
 @media (min-width: @tablet-width) {
+  .main-footer {
+    padding-bottom: 40px;
+  }
+
   .main-footer__logo {
     margin: 0;
+  }
+
+  .footer-social {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .footer-copyright {
+    margin-top: 0;
   }
 }

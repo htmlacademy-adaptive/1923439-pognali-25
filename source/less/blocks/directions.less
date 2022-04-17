@@ -1,11 +1,28 @@
 .directions {
   background-color: #edeff6;
+  border-radius: 0 0 25px 25px;
+  padding-bottom: 30px;
+
+  .directions-container {
+    padding-top: 71px;
+  }
+
+  .directions__title {
+    margin-left: 30px;
+  }
 }
 
 .directions__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.directions__text {
+  display: block;
+  width: 216px;
+  margin-left: 30px;
+  margin-bottom: 60px;
 }
 
 @media (min-width: @tablet-width) {
@@ -23,7 +40,33 @@
       line-height: 33px;
     }
 
-    .directions__list {
+    .directions-card__counter {
+      background-position: 0 center;
+      padding-left: 20px;
+    }
+
+    .directions-card__image {
+      border-radius: 0 15px 15px 0;
+    }
+
+    .directions-card__flag {
+      top: 17px;
+      right: -35px;
+      left: auto;
+      width: 70px;
+      height: 47px;
+    }
+
+    .directions-card__content {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      order: 1;
+      width: 100%;
+      border-radius: 15px 0 0 15px;
+    }
+
+    .direc1tions__list {
       display: flex;
       flex-wrap: wrap;
       width: 100%;
@@ -37,15 +80,11 @@
     .directions__article {
       display: flex;
       width: 100%;
+      align-items: flex-start;
     }
 
     .directions-card__image {
       order: 2;
-    }
-
-    .directions-card__content {
-      order: 1;
-      width: 100%;
     }
 
     .directions__link {
