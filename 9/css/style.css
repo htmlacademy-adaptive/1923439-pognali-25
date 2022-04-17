@@ -1797,15 +1797,19 @@
   }
 }
 @media (min-width: 1440px) {
+  .subscribe .contacts-wrapper {
+    display: flex;
+    width: 350px;
+    justify-content: flex-start;
+  }
   .subscribe .subscribe__contacts-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
   }
-  .subscribe .contacts-wrapper {
-    width: 300px;
-    justify-content: flex-start;
+  .subscribe .subscribe__form {
+    width: 1180px;
   }
   .subscribe .subscribe__description {
     width: 655px;
