@@ -889,6 +889,13 @@
 .location .location__link {
   margin-bottom: 20px;
 }
+.location .location__map-wrapper {
+  width: 320px;
+}
+.location .location__map {
+  width: 320px;
+  display: block;
+}
 .location__description {
   font-family: "Blogger Sans", sans-serif;
   font-style: normal;
@@ -912,6 +919,13 @@
   width: 100%;
 }
 @media (min-width: 768px) {
+  .location .location__map-wrapper {
+    width: 100%;
+  }
+  .location .location__map {
+    width: 100%;
+    margin: 0 auto;
+  }
   .location__link {
     width: 100%;
   }
@@ -920,12 +934,15 @@
     line-height: 28px;
     width: 430px;
   }
-  .location__map {
-    width: 752px;
-    margin: 0 auto;
-  }
 }
 @media (min-width: 1440px) {
+  .location .location__map-wrapper {
+    width: 100%;
+  }
+  .location .location__map {
+    width: 100%;
+    margin: 0 auto;
+  }
   .location__link {
     width: 324px;
   }
