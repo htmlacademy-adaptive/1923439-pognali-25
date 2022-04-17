@@ -9,6 +9,15 @@
   .location__link {
     margin-bottom: 20px;
   }
+
+  .location__map-wrapper {
+    width: 320px;
+  }
+
+  .location__map {
+    width: 320px;
+    display: block;
+  }
 }
 
 .location__description {
@@ -38,6 +47,17 @@
 }
 
 @media (min-width: @tablet-width) {
+  .location {
+    .location__map-wrapper {
+      width: 100%;
+    }
+
+    .location__map {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
   .location__link {
     width: 100%;
   }
@@ -47,14 +67,20 @@
     line-height: 28px;
     width: 430px;
   }
-
-  .location__map {
-    width: 752px;
-    margin: 0 auto;
-  }
 }
 
 @media (min-width: @desktop-width) {
+  .location {
+    .location__map-wrapper {
+      width: 100%;
+    }
+
+    .location__map {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
   .location__link {
     width: 324px;
   }
