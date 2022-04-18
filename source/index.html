@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="page__main">
-    <header class="main-header">
+    <header class="main-header main-header--close main-header--nojs">
       <div class="main-header-container">
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo logo">
@@ -39,7 +39,7 @@
       <div class="main-header__log-in-wrapper">
         <a class="main-header__log-in button button--log-in" href="/">Авторизация</a>
       </div>
-      <div class="contacts-wrapper">
+      <div class="contacts-wrapper contacts-wrapper--phone">
         <div class="contacts-wrapper__image-wrapper">
           <svg class="contacts-wrapper__image" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.50001 0.0861511C5.70356 0.0861511 2.90039 0.558819 1.88328 1.50092C1.0394 2.28252 0.7581 3.66329 0.663275 4.53753C0.663275 4.53753 0.650208 4.62393 0.650208 4.66109C0.650208 5.00391 0.944508 5.27887 1.30433 5.27887C1.34684 5.27887 2.92008 5.15837 3.86857 5.08425C3.8914 5.08112 3.9144 5.07806 3.93722 5.07191C4.29049 5.0627 4.57511 4.7908 4.57511 4.45413L4.57828 3.237C4.57828 2.86014 4.9022 2.55737 5.30126 2.55737H11.6987C12.0979 2.55737 12.4218 2.86011 12.4218 3.237L12.425 4.45413C12.425 4.7908 12.7096 5.0627 13.0628 5.07191C13.0855 5.0781 13.1085 5.08112 13.1316 5.08425C14.0802 5.15834 15.6534 5.27887 15.6957 5.27887C16.0554 5.27887 16.3499 5.00391 16.3499 4.66109C16.3499 4.62393 16.3369 4.53753 16.3369 4.53753C16.242 3.66329 15.961 2.28255 15.1171 1.50092C14.0996 0.558819 11.2965 0.0861511 8.50001 0.0861511ZM8.50001 8.11773C7.77717 8.11773 7.1917 8.67064 7.1917 9.35333C7.1917 10.036 7.77717 10.5889 8.50001 10.5889C9.22285 10.5889 9.80829 10.036 9.80829 9.35333C9.80829 8.67064 9.22285 8.11773 8.50001 8.11773ZM7.51879 5.33752V4.56528C7.51879 4.13902 7.15242 3.79303 6.70113 3.79303C6.24983 3.79303 5.88346 4.13905 5.88346 4.56528V5.33752L1.47101 9.7889C1.16695 10.07 0.977196 10.4622 0.977196 10.8948V12.1335C0.977196 12.8162 1.5627 13.3691 2.28551 13.3691H2.6126V14.1414C2.6126 14.5677 2.97901 14.9136 3.43031 14.9136C3.8816 14.9136 4.24798 14.5677 4.24798 14.1414V13.3691H12.752V14.1414C12.752 14.5677 13.1183 14.9136 13.5698 14.9136C14.0211 14.9136 14.3874 14.5677 14.3874 14.1414V13.3691H14.7145C15.4373 13.3691 16.0228 12.8162 16.0228 12.1335V10.8948C16.0228 10.4622 15.833 10.07 15.5289 9.7889L11.1167 5.33752V4.56528C11.1167 4.13902 10.7502 3.79303 10.2989 3.79303C9.84763 3.79303 9.4813 4.13905 9.4813 4.56528V5.33752H7.51879ZM8.50001 6.8821C9.9457 6.8821 11.1167 7.98799 11.1167 9.35333C11.1167 10.7187 9.94573 11.8246 8.50001 11.8246C7.05432 11.8246 5.88342 10.7187 5.88342 9.35333C5.88342 7.98795 7.05432 6.8821 8.50001 6.8821Z" fill="#FFD74B"/>
@@ -47,7 +47,7 @@
         </div>
         <a class="contacts-wrapper__link" href="/">8 800 555-86-28</a>
       </div>
-      <div class="contacts-wrapper">
+      <div class="contacts-wrapper contacts-wrapper--email">
         <div class="contacts-wrapper__image-wrapper">
           <svg class="contacts-wrapper__image" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1393 10.4663L11.8089 6.5L16.1393 2.53365L15.5488 1.90264L9.25 7.67188L2.9512 1.90264L2.36069 2.53365L6.69112 6.5L2.36069 10.4663L2.9512 11.0974L7.33084 7.08594L9.25 8.84375L11.1692 7.08594L15.5488 11.0974L16.1393 10.4663ZM1.57597 0.25C0.76695 0.25 0.111115 0.948839 0.111115 1.80786V11.1921C0.111115 12.0525 0.76163 12.75 1.57597 12.75H16.924C17.7331 12.75 18.3889 12.0512 18.3889 11.1921V1.80786C18.3889 0.947478 17.7384 0.25 16.924 0.25H1.57597Z" fill="#FFD74B"/>
@@ -228,10 +228,12 @@
             <li class="travelers__item">
               <article class="travelers__article travelers-card">
                 <div class="travelers-card__lvl card-lvl">
-                  <span class="card-lvl__number">99</span>
-                  <span class="card-lvl__description">level</span>
+                  <div class="card-lvl__background">
+                    <span class="card-lvl__number">99</span>
+                    <span class="card-lvl__description">level</span>
+                  </div>
                 </div>
-                <img class="travelers-card__image" src="./img/jpeg/travelers-tanya.jpg" width="270" height="270" alt="Красивая девушка в купальнике">
+                <img class="travelers-card__image" src="./img/jpeg/travelers-tanya.jpg" width="285" height="285" alt="Красивая девушка в купальнике">
                 <div class="travelers-card__content">
                   <ul class="travelers-flags travelers-flags-list">
                     <li class="travelers-flags__item">
@@ -296,10 +298,12 @@
             <li class="travelers__item">
               <article class="travelers__article travelers-card">
                 <div class="travelers-card__lvl card-lvl">
-                  <span class="card-lvl__number">80</span>
-                  <span class="card-lvl__description">level</span>
+                  <div class="card-lvl__background">
+                    <span class="card-lvl__number">80</span>
+                    <span class="card-lvl__description">level</span>
+                  </div>
                 </div>
-                <img class="travelers-card__image" src="./img/jpeg/travelers-pierre.jpg" width="270" height="270" alt="Бородатый лесоруб в очках">
+                <img class="travelers-card__image" src="./img/jpeg/travelers-pierre.jpg" width="285" height="285" alt="Бородатый лесоруб в очках">
                 <div class="travelers-card__content">
                   <ul class="travelers-flags travelers-flags-list">
                     <li class="travelers-flags__item">
@@ -364,7 +368,15 @@
             Добавьте свой
             профиль
           </h2>
-          <img class="add-profile__image" src="./img/png/add-profile-image.png" width="100" height="100" alt="Здесь может быть ваш профиль">
+          <svg class="add-profile__image" width="198" height="198" viewBox="0 0 198 198" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="198" height="198" fill="url(#pattern0)"/>
+            <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_13536_3985" transform="scale(0.00505051)"/>
+            </pattern>
+            <image id="image0_13536_3985" width="198" height="198" xlink:href="data:image/png;base64,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"/>
+            </defs>
+          </svg>
           <div class="add-profile__list-wrapper">
             <div class="add-profile__wrapper">
               <dl class="add-profile__list">
@@ -373,12 +385,12 @@
               </dl>
               <span class="add-profile__counter">1</span>
             </div>
-            <div class="add-profile__wrapper">
+            <div class="add-profile__wrapper add-profile__wrapper--background">
               <dl class="add-profile__list">
                 <dt class="add-profile__dt">Вывод на первых позициях</dt>
                 <dd class="add-profile__dd">99 руб./мес</dd>
               </dl>
-              <span class="add-profile__counter">2</span>
+              <span class="add-profile__counter add-profile__counter--background">2</span>
             </div>
             <div class="add-profile__wrapper">
               <dl class="add-profile__list">
@@ -389,10 +401,12 @@
             </div>
           </div>
           <div class="for-busines-wrapper">
-            <svg class="add-profile__link-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M23.3755 23.2418V19.8933C23.3755 18.9558 23.2416 18.0182 22.7058 17.0806C22.1701 16.143 21.5004 15.3394 20.5628 14.8036C19.6252 14.1339 17.6161 14 16.6786 14L14.5355 16.277L15.3392 18.0182V22.0364L13.9998 23.5097L12.6604 22.0364V18.0182L13.598 16.277L11.321 14C10.2495 14 8.24039 14.1339 7.30281 14.8036C6.36524 15.3394 5.82948 16.143 5.29372 17.0806C4.75796 18.0182 4.62402 18.8218 4.62402 19.8933V23.2418C4.62402 23.2418 8.10645 24.7151 13.9998 24.7151C19.8931 24.7151 23.3755 23.2418 23.3755 23.2418Z" fill="#132576"/>
-              <path d="M13.9998 3.4187C11.455 3.4187 9.98165 5.82961 10.3835 8.5084C10.7853 11.1872 12.1247 13.0623 13.9998 13.0623C15.875 13.0623 17.2144 11.1872 17.6162 8.5084C18.018 5.69567 16.5447 3.4187 13.9998 3.4187Z" fill="#132576"/>
-            </svg>
+            <div class="add-profile__link__wrapper">
+              <svg class="add-profile__link-icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.3755 23.2418V19.8933C23.3755 18.9558 23.2416 18.0182 22.7058 17.0806C22.1701 16.143 21.5004 15.3394 20.5628 14.8036C19.6252 14.1339 17.6161 14 16.6786 14L14.5355 16.277L15.3392 18.0182V22.0364L13.9998 23.5097L12.6604 22.0364V18.0182L13.598 16.277L11.321 14C10.2495 14 8.24039 14.1339 7.30281 14.8036C6.36524 15.3394 5.82948 16.143 5.29372 17.0806C4.75796 18.0182 4.62402 18.8218 4.62402 19.8933V23.2418C4.62402 23.2418 8.10645 24.7151 13.9998 24.7151C19.8931 24.7151 23.3755 23.2418 23.3755 23.2418Z" fill="#132576"/>
+                <path d="M13.9998 3.4187C11.455 3.4187 9.98165 5.82961 10.3835 8.5084C10.7853 11.1872 12.1247 13.0623 13.9998 13.0623C15.875 13.0623 17.2144 11.1872 17.6162 8.5084C18.018 5.69567 16.5447 3.4187 13.9998 3.4187Z" fill="#132576"/>
+              </svg>
+            </div>
             <a class="add-profile__link button button--for-busines" href="/">
               Показать тарифы для бизнеса
             </a>
@@ -454,7 +468,9 @@
           <a class="location__link button button--location" href="/">Проложить маршрут</a>
         </div>
         <div class="location__map-wrapper">
-          <img class="location__map" src="./img/jpeg/background_map.jpg" width="320" height="424" alt="Как проехать?">
+          <iframe class="location__map" cla src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989054779363!2d30.32128831609696!3d59.938797481876236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0xbbeecda9980bbc58!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1650219821405!5m2!1sru!2sby"
+            width="680" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </section>
     </main>
@@ -542,5 +558,6 @@
         <a class="modal-contant__link button modal-contant__link--close" href="/">Закрыть окно</a>
       </div>
     </div>
+    <script src="../js/main.js"></script>
   </body>
   </html>

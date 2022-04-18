@@ -27,6 +27,22 @@
   border-radius: 1.5px;
 }
 
+.main-header--open {
+  .navigation-menu::before {
+    transform: rotate(45deg);
+    top: 4px;
+    left: 0;
+    background-color: #cccccc;
+  }
+
+  .navigation-menu::after {
+    transform: rotate(-45deg);
+    bottom: 4px;
+    left: 0;
+    background-color: #cccccc;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .navigation-menu {
     display: none;

@@ -1,6 +1,17 @@
+.directions__item + .directions__item {
+  margin-top: 10px;
+}
+
 .directions-card__content {
   background: #ffffff;
   border-radius: 10px;
+  position: relative;
+  padding: 25px;
+  box-sizing: border-box;
+  margin-top: calc(100% - 277px);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 21px 16px;
 }
 
 .directions-card__title {
@@ -11,6 +22,8 @@
   line-height: 21px;
   color: #000000;
   margin: 0;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 .directions-card__text {
@@ -22,6 +35,8 @@
   color: #444444;
   opacity: 0.3;
   margin: 0;
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 
 .directions-card__counter {
@@ -30,6 +45,25 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #161c35;
-  opacity: 0.3;
+  color: rgba(22, 28, 53, 0.3);
+  padding-left: 25px;
+  background-image: url("../img/svg/icon_user.svg");
+  background-repeat: no-repeat;
+  background-position: 12% center;
+  opacity: 1;
+}
+
+.directions-card__image {
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.directions-card__flag {
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+.directions__link {
+  margin-top: 25px;
 }
