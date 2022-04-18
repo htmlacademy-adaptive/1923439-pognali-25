@@ -18,6 +18,12 @@
     }
   }
 
+  .main-header--inner {
+    .main-header__logo-wrapper {
+      margin-bottom: 60px;
+    }
+  }
+
   .logo__image {
     color: #ffffff;
   }
@@ -61,6 +67,7 @@
     width: 320px;
     margin: 0 auto;
     position: relative;
+    z-index: 2;
   }
 
 
@@ -253,6 +260,12 @@
   }
 }
 
+.main-header.main-header--inner {
+  .main-header__welcome-contacts-wrapper {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-header {
     background: url("../img/png/traveller-illustration-tablet.png") 80% 61% no-repeat, url("../img/png/globe-back-tablet.svg.png") center 74%  no-repeat;
@@ -270,7 +283,6 @@
     .main-header__logo-wrapper {
       width: 50%;
       order: 0;
-      margin-bottom: 0;
       align-items: center;
       background-color: #182044;
       padding-right: 0;
@@ -491,7 +503,6 @@
     background-color: #161c35;
     display: flex;
     justify-content: space-between;
-    padding: 60px;
 
     .main-header__log-in {
       display: none;
@@ -508,7 +519,7 @@
       width: 20%;
       height: 20px;
       order: 0;
-      margin-bottom: 150px;
+      margin-bottom: 0;
       background-color: #161c35;
     }
 
@@ -666,4 +677,14 @@
       margin-top: 100px;
     }
   }
+
+  .main-header.main-header--inner {
+    .main-header__welcome-contacts-wrapper {
+      display: flex;
+    }
+  }
+}
+
+.main-header--inner {
+  background-image: none;
 }

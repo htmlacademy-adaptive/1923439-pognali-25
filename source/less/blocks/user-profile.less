@@ -9,12 +9,130 @@
     align-items: center;
     justify-content: space-around;
   }
+
+  .card-lvl__wrapper {
+    margin-top: 50px;
+  }
+
+  .user-profile-avatar__wrapper {
+    margin-top: 50px;
+  }
+
+  .user-profile__link {
+    margin-top: 18px;
+    margin-bottom: 25px;
+  }
+
+  .user-profile-wrapper__title {
+    font-family: "Blogger Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1d2e5b;
+  }
+
+  .user-profile-wrapper__description {
+    width: 270px;
+    min-height: 89px;
+    border: 1px solid #cbced9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 27px 28px 27px 25px;
+    font-family: "Blogger Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    opacity: 0.6;
+    margin-bottom: 18px;
+    background-color: transparent;
+  }
+
+  .user-profile__list {
+    display: flex;
+    justify-content: center;
+    width: 270px;
+    min-height: 63px;
+    border: 1px solid #cbced9;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+}
+
+.transport-list__label {
+  display: block;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.transport-list__label--aero {
+  background-image: url("../img/svg/icon_plane.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.transport-list__label--bus {
+  background-image: url("../img/svg/icon_bus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.transport-list__label--walk {
+  background-image: url("../img/svg/icon_run.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.transport-list__label--cycle {
+  background-image: url("../img/svg/icon_bicycle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.transport-list__input--aero:checked + .transport-list__label {
+  background-image: url("../img/svg/icon_plane_checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.transport-list__input--bus:checked + .transport-list__label {
+  background-image: url("../img/svg/icon_bus_checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.transport-list__input--walk:checked + .transport-list__label {
+  background-image: url("../img/svg/icon_run_checked.svg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: 75%;
+}
+
+.transport-list__input--cycle:checked + .transport-list__label {
+  background-image: url("../img/svg/icon_bicycle_checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 68%;
+}
+
+.user-profile-wrapper__transport {
+  margin-bottom: 34px;
 }
 
 .user-profile::before {
   position: absolute;
   width: 100%;
-  height: 76px;
+  height: 62px;
   top: 0;
   left: 0;
   background-color: #161c35;
@@ -25,12 +143,10 @@
 
 .user-profile__title {
   border-bottom: 5px solid #ff8d30;
-  padding-bottom: 8px;
-  padding-left: 7px;
+  padding-bottom: 9px;
 }
 
 .user-profile-title-wrapper {
-  padding: 15px;
   border-radius: 0 0 20px 20px;
   width: 100%;
   z-index: 1;
@@ -66,7 +182,7 @@
   .user-profile::before {
     position: absolute;
     width: 100%;
-    height: 66px;
+    height: 224px;
     top: 0;
     left: 0;
     background-color: #182044;
@@ -78,20 +194,70 @@
   .user-profile {
     justify-content: space-around;
 
+    .user-profile__title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
     .container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 618px;
     }
-  }
 
-  .user-profile__title {
-    margin-left: 25px;
-  }
+    .user-profile-title-wrapper {
+      margin-top: 134px;
+    }
 
-  .user-profile-wrapper__transport {
-    width: 308px;
-    order: 1;
+    .user-profile-wrapper__transport {
+      width: 308px;
+      order: 1;
+      margin-bottom: 0;
+      margin-top: 80px;
+    }
+
+    .user-profile__lvl {
+      margin-left: 0;
+    }
+
+    .user-profile-avatar__wrapper {
+      margin-right: 0;
+      margin-top: 0;
+    }
+
+    .user-profile__list {
+      width: 308px;
+      min-height: 105px;
+    }
+
+    .transport-list__label {
+      width: 45px;
+      height: 45px;
+    }
+
+    .card-lvl__wrapper {
+      margin-top: 0;
+    }
+
+    .user-profile__link {
+      order: 4;
+      width: 618px;
+      margin: 0 auto;
+      margin-top: 40px;
+      min-height: 60px;
+      margin-bottom: 21px;
+    }
+
+    .user-profile__avatar {
+      border-radius: 7px;
+    }
+
+    .user-profile-wrapper__description {
+      width: 618px;
+      height: 105px;
+    }
   }
 
   .user-profile-avatar__wrapper {
@@ -104,12 +270,6 @@
     margin-left: 25px;
   }
 
-  .user-profile__link {
-    order: 4;
-    width: 80%;
-    justify-self: center;
-  }
-
   .user-profile-wrapper__tag {
     order: 6;
     width: 100%;
@@ -120,7 +280,7 @@
   .user-profile::before {
     position: absolute;
     width: 100%;
-    height: 190px;
+    height: 201px;
     top: 0;
     left: 0;
     background-color: #161c35;
@@ -138,6 +298,44 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      align-items: flex-start;
+      width: 1256px;
+    }
+
+    .user-profile-title-wrapper {
+      margin-top: 0;
+      width: 750px;
+    }
+
+    .user-profile-wrapper__description {
+      width: 732px;
+      margin-bottom: 0;
+      order: 3;
+    }
+
+    .user-profile__link {
+      width: 190px;
+      min-height: 47px;
+      margin: 0;
+      order: 0;
+      margin-left: 1056px;
+      border-radius: 8px;
+      margin-bottom: 27px;
+    }
+
+    .user-profile__list {
+      width: 384px;
+      min-height: 105px;
+    }
+
+    .user-profile-wrapper {
+      margin-top: 0;
+      order: 3;
+      width: 732px;
+    }
+
+    .user-profile-wrapper__transport {
+      width: 384px;
     }
   }
 
