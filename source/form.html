@@ -190,9 +190,9 @@
             </div>
             <div class="add-plans__algoritm plans-algoritm">
               <div class="add-plans_header-wrapper">
-                <h3 class="plans-algoritm__title">Шаг 1. Даты пребывания</h3>
+                <h3 class="plans-algoritm__title">Шаг 1.<br> Даты пребывания</h3>
                 <p class="plans-algoritm__description">
-                  Укажите предпочтительное количество попутчиков, которых
+                  Укажите предпочтительное количество попутчиков, которых<br>
                   вы хотели бы позвать в поездку, и ее предполагаемую длительность.
                 </p>
                 <ul class="add-plans__step-list">
@@ -226,8 +226,8 @@
                   <button class="plans-algoritm__button plans-algoritm__button--max" type="button">+</button>
                 </li>
                 <li class="plans-algoritm__item plans-algoritm__item-children plans-algoritm__item--short">
-                  <input class="plans-algoritm__input" id="with-children" name="with-children" type="checkbox" checked>
-                  <label class="plans-algoritm__label" for="with-children">Можно с детьми</label>
+                  <input class="plans-algoritm__input-children visually-hidden" id="with-children" name="with-children" type="checkbox" checked>
+                  <label class="plans-algoritm__label plans-algoritm__label--children" for="with-children">Можно с детьми</label>
                 </li>
                 <li class="plans-algoritm__item plans-algoritm__item-mounts">
                   <label class="visually-hidden" for="mounts">Выберите месяц</label>
@@ -238,67 +238,67 @@
                 <li class="plans-algoritm__item plans-algoritm__item--calendar">
                   <table class="plans-algoritm__calendar plans-algoritm-calendar">
                     <tr class="plans-algoritm-calendar__tr plans-algoritm-calendar__tr--day">
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">П</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">В</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">С</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">Ч</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">П</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">С</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">В</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">П<span class="plans-algoritm-calendar__td-day-non">н</span></td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">В<span class="plans-algoritm-calendar__td-day-non">т</span></td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">С<span class="plans-algoritm-calendar__td-day-non">р</span></td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">Ч<span class="plans-algoritm-calendar__td-day-non">т</span></td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">П<span class="plans-algoritm-calendar__td-day-non">н</span></td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day plans-algoritm-calendar__td--weekand">С<span class="plans-algoritm-calendar__td-day-non">б</span></td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day plans-algoritm-calendar__td--weekand">В<span class="plans-algoritm-calendar__td-day-non">с</span></td>
                     </tr>
-                    <tr class="plans-algoritm-calendar__tr plans-algoritm-calendar__tr--day">
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">23</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">24</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">25</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">26</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">27</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">28</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">1</td>
+                    <tr class="plans-algoritm-calendar__tr plans-algoritm-calendar__tr--number">
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">23</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">24</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">25</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">26</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">27</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">28</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">1</td>
                     </tr>
-                    <tr class="plans-algoritm-calendar__tr plans-algoritm-calendar__tr--day">
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">2</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">3</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">4</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">5</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">6</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">7</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">8</td>
+                    <tr class="plans-algoritm-calendar__tr plans-algoritm-calendar__tr--number">
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">2</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">3</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">4</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">5</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">6</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">7</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">8</td>
                     </tr>
-                    <tr class="plans-algoritm-calendar__tr plans-algoritm-calendar__tr--day">
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">9</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">10</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">11</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">12</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">13</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">14</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">15</td>
+                    <tr class="plans-algoritm-calendar__tr plans-algoritm-calendar__tr--number">
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">9</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">10</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">11</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">12</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">13</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">14</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">15</td>
                     </tr>
-                    <tr class="plans-algoritm-calendar__tr plans-algoritm-calendar__tr--day">
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">16</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">17</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">18</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">19</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">20</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">21</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">22</td>
+                    <tr class="plans-algoritm-calendar__tr plans-algoritm-calendar__tr--number">
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">16</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">17</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">18</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">19</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">20</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">21</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">22</td>
                     </tr>
-                    <tr class="plans-algoritm-calendar__tr plans-algoritm-calendar__tr--day">
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">23</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">24</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">25</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">26</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">27</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">28</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">29</td>
+                    <tr class="plans-algoritm-calendar__tr plans-algoritm-calendar__tr--number">
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">23</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">24</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">25</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--choisen">26</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--choisen">27</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--choisen">28</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--open">29</td>
                     </tr>
-                    <tr class="plans-algoritm-calendar__tr plans-algoritm-calendar__tr--day">
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">30</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">31</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">1</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">2</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">3</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">4</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--day">5</td>
+                    <tr class="plans-algoritm-calendar__tr plans-algoritm-calendar__tr--number">
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--open">30</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--open">31</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--open">1</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--open">2</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--open">3</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--open">4</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--open">5</td>
                     </tr>
                   </table>
                 </li>

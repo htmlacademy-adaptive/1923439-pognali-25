@@ -2,6 +2,7 @@
   background-color: #ffffff;
   border-radius: 10px;
   padding: 25px;
+  margin-bottom: 10px;
 }
 
 .plans-algoritm__title {
@@ -33,6 +34,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   width: 100%;
   margin-bottom: 22px;
 }
@@ -52,11 +54,13 @@
   font-family: "Blogger Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 16px;
   color: #1d2e5b;
-  width: 87%;
-  margin-bottom: 8px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  width: 84%;
+  margin-bottom: 10px;
 }
 
 .plans-algoritm__calendar {
@@ -74,10 +78,106 @@
   margin-bottom: 20px;
 }
 
+.plans-algoritm__button--min {
+  width: 40px;
+  height: 43px;
+  border: 1px solid #cbced9;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.plans-algoritm__button--max {
+  width: 40px;
+  height: 43px;
+  border: 1px solid #cbced9;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.plans-algoritm__input {
+  width: 138px;
+  height: 43px;
+  border: 1px solid #cbced9;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  text-align: center;
+  font-family: "Blogger Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.86px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.plans-algoritm__label--children {
+  position: relative;
+  padding-left: 39px;
+}
+
+.plans-algoritm__label--children::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #cbced9;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.plans-algoritm__input-children:checked + .plans-algoritm__label--children::before {
+  background-image: url("../img/svg/tick_checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.plans-algoritm__input--mounts {
+  font-family: "Blogger Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  background-color: #ffffff;
+}
+
+.plans-algoritm__input--mounts::placeholder {
+  color: #1d2e5b;
+}
+
+.plans-algoritm__button--earler,
+.plans-algoritm__button--later {
+  width: 40px;
+  height: 43px;
+  border: 1px solid #cbced9;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+}
+
 
 @media (min-width: @tablet-width) {
   .plans-algoritm {
+    width: 618px;
     padding: 48px 40px 56px 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 39px;
+  }
+
+  .plans-algoritm__description {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #e1e3e9;
   }
 
   .plans-algoritm__title {
@@ -91,8 +191,53 @@
   }
 
   .plans-algoritm__label {
-    width: 95%;
+    width: 93%;
     margin-bottom: 24px;
+  }
+
+  .plans-algoritm__input,
+  .plans-algoritm__button--min,
+  .plans-algoritm__button--max {
+    width: 179px;
+    height: 70px;
+  }
+
+  .plans-algoritm__button--min {
+    text-align: start;
+    padding-left: 40px;
+  }
+
+  .plans-algoritm__button--max {
+    text-align: end;
+    padding-right: 40px;
+  }
+
+  .plans-algoritm__input::placeholder {
+    color: #1d2e5b;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .plans-algoritm__label--children {
+    margin-bottom: 0;
+  }
+
+  .plans-algoritm__item-children {
+    padding-bottom: 34px;
+    border-bottom: 1px solid #e1e3e9;
+    order: 1;
+  }
+
+  .plans-algoritm__input--mounts {
+    width: 336px;
+    height: 86px;
+  }
+
+  .plans-algoritm__button--earler,
+  .plans-algoritm__button--later {
+    width: 100px;
+    height: 86px;
   }
 
   .plans-algoritm__item + .plans-algoritm__item {
@@ -107,10 +252,6 @@
   .plans-algoritm__item-mounts,
   .plans-algoritm__item--calendar {
     order: 2;
-  }
-
-  .plans-algoritm__item-children {
-    order: 1;
   }
 
   .algoritm-form__list {
@@ -134,15 +275,25 @@
 
 @media (min-width: @desktop-width) {
   .plans-algoritm {
-    padding: 101px 152px 106px 152px;
+    padding: 101px 160px 106px 160px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 1320px;
+    border-radius: 30px;
   }
 
   .plans-algoritm__label {
     width: max-content;
     margin: 0;
+    margin-right: auto;
+    font-family: "Blogger Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #1d2e5b;
   }
 
   .plans-algoritm__title {
@@ -153,6 +304,9 @@
   .plans-algoritm__description {
     width: 581px;
     order: 3;
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 0;
   }
 
   .plans-algoritm__list {
@@ -161,6 +315,7 @@
     grid-template-columns: 5fr 1fr;
     grid-template-rows: min-content min-content min-content min-content min-content;
     row-gap: 30px;
+    margin-top: 30px;
   }
 
   .plans-algoritm__item + .plans-algoritm__item {
@@ -169,6 +324,48 @@
 
   .plans-algoritm__item {
     justify-content: flex-start;
+    align-items: center;
+    border-bottom: none;
+  }
+
+  .plans-algoritm__explanation {
+    font-family: "Blogger Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    color: #1d2e5b;
+    margin-left: 25px;
+    order: 1;
+  }
+
+  .plans-algoritm__input,
+  .plans-algoritm__button--min,
+  .plans-algoritm__button--max {
+    width: 58px;
+    height: 70px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .plans-algoritm__input--mounts {
+    width: 800px;
+    height: 86px;
+  }
+
+  .plans-algoritm__input--mounts::placeholder {
+    font-family: "Blogger Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #1d2e5b;
+  }
+
+  .plans-algoritm__button--earler,
+  .plans-algoritm__button--later {
+    width: 100px;
+    height: 86px;
   }
 
   .plans-algoritm__item-children {
@@ -177,30 +374,23 @@
   }
 
   .plans-algoritm__item-human {
+    justify-content: flex-end;
     grid-column: 1/2;
     grid-row: 1/2;
-    width: 100%;
+    width: 450px;
   }
 
   .plans-algoritm__item-day {
+    justify-content: flex-end;
     grid-column: 1/2;
     grid-row: 2/3;
-    width: 100%;
-  }
-
-  .plans-algoritm__explanation {
-    order: 1;
+    width: 440px;
   }
 
   .plans-algoritm__item-mounts {
     grid-column: 1/-1;
     grid-row: 3/4;
     width: 100%;
-  }
-
-  .plans-algoritm__input--mounts {
-    width: 94%;
-    text-align: center;
   }
 
   .plans-algoritm__item--calendar {

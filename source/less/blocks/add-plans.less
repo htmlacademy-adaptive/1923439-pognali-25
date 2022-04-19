@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 29px;
+  margin-top: 30px;
 }
 
 .add-plans__pagination-list {
@@ -16,6 +17,19 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.plans-algoritm__explanation {
+  font-family: "Blogger Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #1d2e5b;
+  opacity: 0.3;
 }
 
 .add-plans__step-list {
@@ -58,12 +72,40 @@
   opacity: 1;
 }
 
+@media (min-width: @tablet-width) {
+  .add-plans-title__wrapper {
+    width: 618px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    margin-top: 108px;
+  }
+
+  .container {
+    padding-top: 1px;
+  }
+}
+
+
 @media (min-width: @desktop-width) {
+  .add-plans {
+    .container {
+      padding: 0;
+      padding-top: 1px;
+    }
+
+    .add-plans-title__wrapper {
+      margin-left: 70px;
+    }
+  }
+
   .add-plans_header-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: min-content 100px;
+    row-gap: 33px;
     column-gap: auto;
     width: 100%;
+    border-bottom: 1px solid #e1e3e9;
   }
 
   .add-plans__step-list {
@@ -72,10 +114,26 @@
     order: 0;
     list-style-type: none;
     margin: 0;
+    margin-top: 15px;
     padding: 0;
     grid-row: 1/3;
     grid-column: 2/3;
     justify-self: flex-end;
+  }
+
+  .add-plans__step-item + .add-plans__step-item {
+    margin-top: 27px;
+  }
+
+  .add-plans__step-link {
+    font-family: "Blogger Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #000000;
   }
 
   .add-plans__pagination-list {
