@@ -286,9 +286,13 @@
                       <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">23</td>
                       <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">24</td>
                       <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">25</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--choisen">26</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--choisen plans-algoritm-calendar__td--active">
+                        26<span class="plans-algoritm-calendar__td--in">заезд</span>
+                      </td>
                       <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--choisen">27</td>
-                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--choisen">28</td>
+                      <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--choisen">
+                        28<span class="plans-algoritm-calendar__td--in">выезд</span>
+                      </td>
                       <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--open">29</td>
                     </tr>
                     <tr class="plans-algoritm-calendar__tr plans-algoritm-calendar__tr--number">
@@ -346,12 +350,12 @@
                     <img class="plans-algoritm__flags" src="./img/png/czechia.png"  width="35" height="24" alt="Флаг Чехии">
                   </div>
                 </li>
-                <li class="plans-algoritm-countries__item">
+                <li class="plans-algoritm-countries__item plans-algoritm-countries__item--decore plans-algoritm-countries__item--select">
                   <label class="visually-hidden" for="chouse-countries">Выберите страну</label>
-                  <input class="plans-algoritm__input-countries" id="chouse-countries" type="text" placeholder="Выберите страну" required>
+                  <input class="plans-algoritm__input-countries plans-algoritm__input-countries--choisen" id="chouse-countries" type="text" placeholder="Выберите страну" autocomplete="off" required>
                 </li>
-                <li class="plans-algoritm-countries__item">
-                  <div class="add-plans__popup popup-countries">
+                <li class="plans-algoritm-countries__item plans-algoritm-countries__item--popup">
+                  <div class="add-plans__popup popup-countries popup-countries--close">
                     <ol class="countries-filter__list">
                       <li class="countries-filter__item countries-filter__item--button grid-1">
                         <button class="countries-filter__button countries-filter__button--key-letter countries-filter__button--key-letter-active">А</button>
@@ -1631,9 +1635,9 @@
                     </ol>
                   </div>
                 </li>
-                <li class="plans-algoritm-countries__item">
+                <li class="plans-algoritm-countries__item plans-algoritm-countries__item--decore">
                   <label class="visually-hidden" for="add-countries">Добавьте страну</label>
-                  <input class="plans-algoritm__input-countries" id="add-countries" type="text" placeholder="Добавить страну">
+                  <input class="plans-algoritm__input-countries plans-algoritm__input-countries--add" id="add-countries" type="text" placeholder="Добавить страну">
                 </li>
               </ul>
               <div class="plans-algoritm__button-wrapper">
@@ -1664,12 +1668,12 @@
                 </ul>
               </div>
               <ul class="algoritm-form__list">
-                <li class="algoritm-form__item">
-                  <label class="plans-algoritm__label plans-algoritm__label-textarea" for="plan-fun-one">Босния и Герцеговина</label>
-                  <textarea class="plans-algoritm__textarea" form="add-plans" id="plan-fun-one" name="fun-plans" placeholder="План действий"></textarea>
+                <li class="algoritm-form__item algoritm-form__item--first">
+                  <label class="plans-algoritm__label plans-algoritm__label-textarea plans-algoritm__label-textarea--first" for="plan-fun-one">Босния и Герцеговина</label>
+                  <textarea class="plans-algoritm__textarea plans-algoritm__textarea--first" form="add-plans" id="plan-fun-one" name="fun-plans" placeholder="План действий"></textarea>
                 </li>
                 <li class="algoritm-form__item">
-                  <label class="plans-algoritm__label plans-algoritm__label-textarea" for="plan-fun-two">Чехия</label>
+                  <label class="plans-algoritm__label plans-algoritm__label-textarea plans-algoritm__label-textarea--second" for="plan-fun-two">Чехия</label>
                   <textarea class="plans-algoritm__textarea" form="add-plans" id="plan-fun-two" name="fun-plans" placeholder="Пить пиво и лазить
                   по старым замкам, наслаждаться архитектурой и вот это все.">
                   </textarea>
