@@ -112,18 +112,13 @@
           </div>
         </nav>
         <form class="catalog-form container" action="https://echo.htmlacademy.ru" method="post">
-        <section class="countries-filter countries-filter--">
+        <section class="countries-filter countries-filter--close countries-filter--desktop">
           <div class="countries-filter_container container">
             <div class="countries-filter__header-wrapper">
-              <a class="countries-filter__link" href="/">
+              <a class="countries-filter__link">
                 Фильтрация по странам:
               </a>
-              <button class="countries-filter__button countries-filter__button--open countries-filter__button--close">
-                <svg width="17" height="17" viewBox="0 0 17 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="1.5" cy="1.5" r="1.5" fill="#192144"/>
-                  <circle cx="8.5" cy="1.5" r="1.5" fill="#192144"/>
-                  <circle cx="15.5" cy="1.5" r="1.5" fill="#192144"/>
-                </svg>
+              <button class="countries-filter__button countries-filter__button--open countries-filter__button--close countries-filter__button--dots" type="button">
               </button>
             </div>
               <ul class="countries-filter__continent-list">
@@ -1423,13 +1418,15 @@
                   </ol>
                 </li>
               </ol>
-              <a class="countries-filter__close button button--close">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12.25 1.75L1.75 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M1.75 1.75L12.25 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Свернуть
-              </a>
+              <div class="countries-filter__close-wrapper">
+                <a class="countries-filter__close button button--close">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.25 1.75L1.75 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.75 1.75L12.25 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Свернуть
+                </a>
+              </div>
           </div>
         </section>
         <section class="travelers-search">
