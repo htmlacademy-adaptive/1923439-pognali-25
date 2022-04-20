@@ -1439,87 +1439,107 @@
               </h2>
               <div class="travelers-search__fieldset">
                 <h4 class="travelers-search__category">Хобби</h4>
-                <button class="travelers-search__button travelers-search__button--open"></button>
+                <button class="travelers-search__button"></button>
                 <ul class="travelers-search__list travelers-search__list--close">
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-rok" name="music-rok" type="checkbox" checked>
-                    <label class="travelers-search__label" for="music-rok">Спортзал</label>
+                    <input class="travelers-search__input visually-hidden" id="fitnes" name="fitnes" type="checkbox" checked>
+                    <label class="travelers-search__label" for="fitnes">Спортзал</label>
                   </li>
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-rap" name="music-rap" type="checkbox" checked>
-                    <label class="travelers-search__label" for="music-rap">Кальян</label>
+                    <input class="travelers-search__input visually-hidden" id="smoke" name="smoke" type="checkbox" checked>
+                    <label class="travelers-search__label" for="smoke">Кальян</label>
                   </li>
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-dance" name="music-dance" type="checkbox">
-                    <label class="travelers-search__label" for="music-dance">Диван</label>
+                    <input class="travelers-search__input visually-hidden" id="chair" name="chair" type="checkbox">
+                    <label class="travelers-search__label" for="chair">Диван</label>
                   </li>
                 </ul>
               </div>
               <div class="travelers-search__fieldset">
                 <h4 class="travelers-search__category">Музыка</h4>
-                <button class="travelers-search__button travelers-search__button--close"></button>
+                <button class="travelers-search__button travelers-search__button--open"></button>
                 <ul class="travelers-search__list">
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-rok" name="music-rok" type="checkbox" checked>
+                    <input class="travelers-search__input visually-hidden" id="music-rok" name="music-rok" type="checkbox" checked>
                     <label class="travelers-search__label" for="music-rok">Тяжелый рок</label>
                   </li>
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-rap" name="music-rap" type="checkbox" checked>
+                    <input class="travelers-search__input visually-hidden" id="music-rap" name="music-rap" type="checkbox" checked>
                     <label class="travelers-search__label" for="music-rap">Русский рэп</label>
                   </li>
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-dance" name="music-dance" type="checkbox">
+                    <input class="travelers-search__input visually-hidden" id="music-dance" name="music-dance" type="checkbox">
                     <label class="travelers-search__label" for="music-dance">Евроденс</label>
                   </li>
                 </ul>
               </div>
               <div class="travelers-search__fieldset">
                 <h4 class="travelers-search__category">Еда</h4>
-                <button class="travelers-search__button travelers-search__button--open"></button>
+                <button class="travelers-search__button"></button>
                 <ul class="travelers-search__list travelers-search__list--close">
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-rok" name="music-rok" type="checkbox" checked>
-                    <label class="travelers-search__label" for="music-rok">Мясоед</label>
+                    <input class="travelers-search__input visually-hidden" id="meat" name="meat" type="checkbox" checked>
+                    <label class="travelers-search__label" for="meat">Мясоед</label>
                   </li>
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-rap" name="music-rap" type="checkbox" checked>
-                    <label class="travelers-search__label" for="music-rap">Сидит на ПП</label>
+                    <input class="travelers-search__input visually-hidden" id="pp" name="music-rap" type="checkbox" checked>
+                    <label class="travelers-search__label" for="pp">Сидит на ПП</label>
                   </li>
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-dance" name="music-dance" type="checkbox">
-                    <label class="travelers-search__label" for="music-dance">Веган-сыроед</label>
+                    <input class="travelers-search__input visually-hidden" id="vegan" name="music-dance" type="checkbox">
+                    <label class="travelers-search__label" for="vegan">Веган-сыроед</label>
                   </li>
                 </ul>
               </div>
               <div class="travelers-search__fieldset">
                 <h4 class="travelers-search__category">транспорт</h4>
                 <button class="travelers-search__button travelers-search__button--close"></button>
-                <ul class="travelers-search__list travelers-search__list--transport">
+                <ul class="travelers-search__list travelers-search__list--transport transport-list">
                   <li class="travelers-search__item travelers-search__item--transport">
-                    <input class="travelers-search__input" id="aero" name="aero" type="checkbox" checked>
-                    <label class="travelers-search__label" for="aero">Самолёт</label>
+                    <input class="travelers-search__input transport-list__input--aero visually-hidden" id="aero" name="aero" type="checkbox" checked>
+                    <label class="transport-list__label transport-list__label--aero" for="aero">
+                      <span class="visually-hidden">Самолёт</span>
+                    </label>
                   </li>
                   <li class="travelers-search__item travelers-search__item--transport">
-                    <input class="travelers-search__input" id="bus" name="bus" type="checkbox" checked>
-                    <label class="travelers-search__label" for="bus">Автобус</label>
+                    <input class="travelers-search__input transport-list__input--bus visually-hidden" id="bus" name="bus" type="checkbox" checked>
+                    <label class=" transport-list__label transport-list__label--bus" for="bus">
+                      <span class="visually-hidden">Автобус</span>
+                    </label>
                   </li>
                   <li class="travelers-search__item travelers-search__item--transport">
-                    <input class="travelers-search__input" id="becikle" name="becikle" type="checkbox">
-                    <label class="travelers-search__label" for="becikle">Велосипед</label>
+                    <input class="travelers-search__input transport-list__input--cycle visually-hidden" id="becikle" name="becikle" type="checkbox">
+                    <label class="transport-list__label transport-list__label--cycle" for="becikle">
+                      <span class="visually-hidden">Велосипед</span>
+                    </label>
                   </li>
                   <li class="travelers-search__item travelers-search__item--transport">
-                    <input class="travelers-search__input" id="legs" name="legs" type="checkbox" checked>
-                    <label class="travelers-search__label" for="legs">Пешком</label>
+                    <input class="travelers-search__input transport-list__input--walk visually-hidden" id="legs" name="legs" type="checkbox" checked>
+                    <label class="transport-list__label transport-list__label--walk" for="legs">
+                      <span class="visually-hidden">Пешком</span>
+                    </label>
                   </li>
                 </ul>
               </div>
               <div class="travelers-search__fieldset">
                 <h4 class="travelers-search__category">левел</h4>
                 <button class="travelers-search__button travelers-search__button--close"></button>
-                <ul class="travelers-search__list travelers-search__list--transport">
-                  <li class="travelers-search__item travelers-search__item--transport">
-                    <input class="travelers-search__input" id="lvl" name="lvl" type="range">
-                    <label class="travelers-search__label visually-hidden" for="lvl">Уровень попутчика</label>
+                <ul class="travelers-search__list travelers-search__list--lvl">
+                  <li class="travelers-search__item travelers-search__item--lvl">
+                    <div class="travelers-search__item-wrapper travelers-search__item-wrapper--input">
+                      <input class="travelers-search__input-lvl travelers-search__input-lvl--min" id="min-lvl" name="min-lvl" type="number" placeholder="30">
+                      <label class="travelers-search__label visually-hidden" for="min-lvl">Уровень попутчика</label>
+                      <input class="travelers-search__input-lvl travelers-search__input-lvl--max" id="max-lvl" name="max-lvl" type="number" placeholder="100">
+                      <label class="travelers-search__label visually-hidden" for="max-lvl">Уровень попутчика</label>
+                    </div>
+                  </li>
+                  <li class="travelers-search__item travelers-search__item--range">
+                    <div class="travelers-search__item-wrapper range">
+                      <div class="range__scale">
+                        <button class="range__button range__button--min" type="button"></button>
+                        <button class="range__button range__button--max" type="button"></button>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>

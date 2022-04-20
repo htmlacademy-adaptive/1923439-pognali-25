@@ -31,15 +31,16 @@ countriesFilterToggleButton.addEventListener('click', function () {
   }
 });
 
-// countriesFilterToggle2.addEventListener('click', function () {
-//   if (countriesFilter.classList.contains('countries-filter--close')) {
-//     countriesFilter.classList.remove('countries-filter--desktop');
-//     countriesFilterToggleButton.classList.remove('countries-filter__button--x');
-//     countriesFilterToggleButton.classList.add('countries-filter__button--dots');
-//   } else {
-//     countriesFilter.classList.add('countries-filter--close');
-//   }
-// });
+countriesFilterToggle2.addEventListener('click', function () {
+  if (countriesFilterToggleButton.classList.contains('countries-filter__button--x')) {
+    countriesFilter.classList.remove('countries-filter--desktop');
+    countriesFilterToggleButton.classList.remove('countries-filter__button--x');
+    countriesFilterToggleButton.classList.add('countries-filter__button--dots');
+    countriesFilter.classList.add('countries-filter--close');
+  } else {
+    countriesFilter.classList.remove('countries-filter--desktop');
+  }
+});
 
 countriesFilterToggleDesktop.addEventListener('click', function () {
   if (countriesFilter.classList.contains('countries-filter--desktop')) {

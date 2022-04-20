@@ -273,6 +273,10 @@
     padding-top: 40px;
     padding-bottom: 0;
 
+    .main-header-container {
+      width: 688px;
+    }
+
     .main-header__log-in {
       display: flex;
       width: 188px;
@@ -403,12 +407,22 @@
       padding-left: 100px;
       box-sizing: border-box;
       top: 90px;
+      z-index: 20;
     }
 
     .contacts-wrapper {
       order: 1;
       width: 100%;
       padding-left: 100px;
+      z-index: 10;
+    }
+
+    .contacts-wrapper--email {
+      top: 459px;
+    }
+
+    .contacts-wrapper--phone {
+      top: 414px;
     }
 
     .main-header__features-quote {
@@ -421,6 +435,8 @@
       box-sizing: border-box;
       justify-content: flex-start;
       padding-left: 100px;
+      z-index: 20;
+      top: 504px;
     }
   }
 
@@ -503,6 +519,10 @@
     background-color: #161c35;
     display: flex;
     justify-content: space-between;
+
+    .main-header-container {
+      width: 1320px;
+    }
 
     .main-header__log-in {
       display: none;
