@@ -26,7 +26,7 @@ countriesFilterToggleButton.addEventListener('click', function () {
     countriesFilterToggleButton.classList.remove('countries-filter__button--dots');
     countriesFilterToggleButton.classList.add('countries-filter__button--x');
   } else {
-    countriesFilterToggleButton.classList.remove('countries-filter__button--x')
+    countriesFilterToggleButton.classList.remove('countries-filter__button--x');
     countriesFilterToggleButton.classList.add('countries-filter__button--dots');
   }
 });
