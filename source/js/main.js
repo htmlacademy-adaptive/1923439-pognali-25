@@ -65,5 +65,3 @@ countriesSelectToggle.addEventListener('click', function () {
     countriesSelect.classList.add('popup-countries--close');
   }
 });
-
-
