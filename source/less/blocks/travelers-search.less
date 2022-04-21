@@ -1,6 +1,7 @@
 .travelers-search {
   background-color: #dfe3f0;
   position: relative;
+  margin-bottom: 28px;
 }
 
 .travelers-search__title {
@@ -162,6 +163,14 @@
 
 
 @media (min-width: @tablet-width) and (max-width: 1439px) {
+  .travelers-search {
+    .container {
+      width: 688px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   .travelers-search__title {
     font-weight: 700;
     font-size: 30px;
@@ -277,12 +286,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .travelers-search {
+    width: 280px;
+
+  }
+
   .travelers-search__list--close {
     display: none;
   }
 
   .travelers-search-container {
-    width: 285px;
+    width: 280px;
   }
 
   .travelers-search__list {
