@@ -6,10 +6,11 @@
   .directions-container {
     padding-top: 71px;
   }
+}
 
-  .directions__title {
-    margin-left: 30px;
-  }
+.directions__title.page-title {
+  margin-left: 20px;
+  margin-bottom: 30px;
 }
 
 .directions__list {
@@ -21,8 +22,8 @@
 .directions__text {
   display: block;
   width: 216px;
-  margin-left: 30px;
   margin-bottom: 60px;
+  margin-left: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -31,6 +32,10 @@
     background-image: url("../img/png/directions-background-tablet.png");
     background-position: right center;
     background-repeat: no-repeat;
+
+    .container {
+      width: 618px;
+    }
 
     .directions__text {
       width: 380px;
@@ -87,6 +92,10 @@
     .directions__link {
       width: 100%;
     }
+
+    .directions__title {
+      margin-bottom: 57px;
+    }
   }
 }
 
@@ -96,6 +105,10 @@
     background-image: url("../img/png/directions-background-tablet.png");
     background-position: right center;
     background-repeat: no-repeat;
+
+    .container {
+      width: 1320px;
+    }
 
     .directions__title {
       grid-column: 2/3;
