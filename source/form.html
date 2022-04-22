@@ -104,7 +104,7 @@
       </div>
     </header>
     <main class="inner-container">
-      <form class="add-plans__form algoritm-form" id="add-plans" action="https://echo.htmlacademy.ru" method="post">
+      <form class="algoritm-form" id="add-plans" action="https://echo.htmlacademy.ru" method="post">
         <h1 class="visually-hidden">Выбор направления путешествия</h1>
         <section class="user-profile">
           <div class="container">
@@ -112,7 +112,7 @@
             <a class="user-profile__title main-header-title main-header-title--active">Направления</a>
           </div>
           <h2 class="visually-hidden">Профиль пользователя</h2>
-          <div class="card-lvl__wrapper">
+          <div class="user-profile__card-lvl-wrapper">
             <div class="user-profile__lvl card-lvl">
               <div class="card-lvl__background">
                 <span class="card-lvl__number">80</span>
@@ -120,19 +120,19 @@
               </div>
             </div>
           </div>
-            <div class="user-profile-avatar__wrapper">
+            <div class="user-profile__avatar-wrapper">
               <img class="user-profile__avatar user-profile-avatar" src="./img/jpeg/profile-avatar.jpg" width="190" height="190" alt="Ваша аватарка">
             </div>
             <a class="user-profile__link button button--change-photo" href="/">сменить фото</a>
-            <div class="user-profile-wrapper user-profile-wrapper__tag">
+            <div class="user-profile-wrapper user-profile__wrapper-tag">
               <label class="user-profile-wrapper__title" for="tags-profile">ТЭГИ</label>
               <textarea class="user-profile-wrapper__description" id="tags-profile">#бургер #бар #футбол #концерт #крафт</textarea>
             </div>
-            <div class="user-profile-wrapper user-profile-wrapper__transport">
+            <div class="user-profile-wrapper user-profile__wrapper-transport">
               <label class="user-profile-wrapper__title">транспорт</label>
               <ul class="user-profile__list transport-list">
                 <li class="user-profile__item transport-item">
-                  <input class="transport-list__input--aero visually-hidden" id="aero" type="checkbox" name="aero" checked>
+                  <input class="transport-list__input transport-list__input--aero visually-hidden" id="aero" type="checkbox" name="aero" checked>
                   <label class="transport-list__label transport-list__label--aero" for="aero"><span class="visually-hidden">самолёт</span></label>
                 </li>
                 <li class="user-profile__item transport-item">
@@ -174,7 +174,7 @@
         </section>
         <section class="add-plans">
           <div class="add-plans-container container">
-            <div class="add-plans-title__wrapper">
+            <div class="add-plans__title-wrapper">
               <h2 class="add-plans__title inner-title">Добавить план:</h2>
               <ul class="add-plans__pagination-list">
                 <li class="add-plans__pagination-item add-plans__pagination-item--active">
@@ -189,7 +189,7 @@
               </ul>
             </div>
             <div class="add-plans__algoritm plans-algoritm">
-              <div class="add-plans_header-wrapper">
+              <div class="add-plans__header-wrapper">
                 <h3 class="plans-algoritm__title">Шаг 1.<br> Даты пребывания</h3>
                 <p class="plans-algoritm__description">
                   Укажите предпочтительное количество попутчиков, которых<br>
@@ -287,11 +287,11 @@
                       <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">24</td>
                       <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number">25</td>
                       <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--choisen plans-algoritm-calendar__td--active">
-                        26<span class="plans-algoritm-calendar__td--in">заезд</span>
+                        26<span class="plans-algoritm-calendar__td-in">заезд</span>
                       </td>
                       <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--choisen">27</td>
                       <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--choisen">
-                        28<span class="plans-algoritm-calendar__td--in">выезд</span>
+                        28<span class="plans-algoritm-calendar__td-in">выезд</span>
                       </td>
                       <td class="plans-algoritm-calendar__td plans-algoritm-calendar__td--number plans-algoritm-calendar__td--open">29</td>
                     </tr>
@@ -310,7 +310,7 @@
               <a class="plans-algoritm__button button button--next-step" href="/">Следующий шаг</a>
             </div>
             <div class="add-plans__algoritm plans-algoritm">
-              <div class="add-plans_header-wrapper">
+              <div class="add-plans__header-wrapper">
               <h3 class="plans-algoritm__title">Шаг 2.<br>Маршрут</h3>
               <p class="plans-algoritm__description">
                 Укажите страны, которые вы хотели бы посетить.
@@ -332,7 +332,7 @@
               </ul>
             </div>
               <ul class="plans-algoritm-countries-list">
-                <li class="plans-algoritm-countries__item">
+                <li class="plans-algoritm-countries-list__item">
                   <label class="visually-hidden" for="your-countries-one">Выбранная страна</label>
                   <select class="plans-algoritm__select plans-algoritm__select--countries" id="your-countries-one">
                     <option class="plans-algoritm__option">Босния и герцеговина</option>
@@ -341,7 +341,7 @@
                     <img class="plans-algoritm__flags" src="./img/png/bosnia-and-herzegovina.png"  width="35" height="24" alt="Флаг Боснии и Герцоговины">
                   </div>
                 </li>
-                <li class="plans-algoritm-countries__item">
+                <li class="plans-algoritm-countries-list__item">
                   <label class="visually-hidden" for="your-countries-two">Выбранная страна</label>
                   <select class="plans-algoritm__select plans-algoritm__select--countries" id="your-countries-two">
                     <option class="plans-algoritm__option">чехия</option>
@@ -350,11 +350,11 @@
                     <img class="plans-algoritm__flags" src="./img/png/czechia.png"  width="35" height="24" alt="Флаг Чехии">
                   </div>
                 </li>
-                <li class="plans-algoritm-countries__item plans-algoritm-countries__item--decore plans-algoritm-countries__item--select">
+                <li class="plans-algoritm-countries-list__item plans-algoritm-countries-list__item--decore plans-algoritm-countries-list__item--select">
                   <label class="visually-hidden" for="chouse-countries">Выберите страну</label>
                   <input class="plans-algoritm__input-countries plans-algoritm__input-countries--choisen" id="chouse-countries" type="text" placeholder="Выберите страну" autocomplete="off" required>
                 </li>
-                <li class="plans-algoritm-countries__item plans-algoritm-countries__item--popup">
+                <li class="plans-algoritm-countries-list__item plans-algoritm-countries-list__item--popup">
                   <div class="add-plans__popup popup-countries popup-countries--close countries-filter">
                     <ol class="popup-countries__list countries-filter__list">
                       <li class="popup-countries__item countries-filter__item countries-filter__item--button grid-1">
@@ -1635,7 +1635,7 @@
                     </ol>
                   </div>
                 </li>
-                <li class="plans-algoritm-countries__item plans-algoritm-countries__item--decore">
+                <li class="plans-algoritm-countries-list__item plans-algoritm-countries-list__item--decore">
                   <label class="visually-hidden" for="add-countries">Добавьте страну</label>
                   <input class="plans-algoritm__input-countries plans-algoritm__input-countries--add" id="add-countries" type="text" placeholder="Добавить страну">
                 </li>
@@ -1646,7 +1646,7 @@
               </div>
             </div>
             <div class="add-plans__algoritm plans-algoritm">
-              <div class="add-plans_header-wrapper">
+              <div class="add-plans__header-wrapper">
                 <h3 class="plans-algoritm__title">Шаг 3.<br>Развлечения</h3>
                 <p class="plans-algoritm__description">
                   Наконец, расскажите о своих планах времяпровождения.

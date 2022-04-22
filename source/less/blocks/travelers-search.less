@@ -108,6 +108,34 @@
   background-position: center;
 }
 
+.travelers-search__input--aero:checked + .transport-list__label {
+  background-image: url("../img/svg/icon_plane_checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.travelers-search__input--bus:checked + .transport-list__label {
+  background-image: url("../img/svg/icon_bus_checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.travelers-search__input--walk:checked + .transport-list__label {
+  background-image: url("../img/svg/icon_run_checked.svg");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: 75%;
+}
+
+.travelers-search__input--cycle:checked + .transport-list__label {
+  background-image: url("../img/svg/icon_bicycle_checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 68%;
+}
+
 .travelers-search__item--transport + .travelers-search__item--transport {
   margin-top: 0;
 }
@@ -288,7 +316,6 @@
 @media (min-width: @desktop-width) {
   .travelers-search {
     width: 280px;
-
   }
 
   .travelers-search__list--close {
