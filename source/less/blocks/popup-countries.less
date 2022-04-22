@@ -1,7 +1,7 @@
 .popup-countries {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -1px;
   display: flex;
   flex-direction: column;
   width: 220px;
@@ -21,18 +21,17 @@
     left: 0;
     background-color: #ffffff;
   }
+}
 
-
-  .popup-countries--close {
-    display: none;
-  }
+.popup-countries--close {
+  display: none;
 }
 
 
 @media (min-width: @tablet-width) {
   .popup-countries {
     flex-direction: row;
-    width: 107%;
+    width: 578px;
     min-height: 420px;
     justify-content: space-between;
     background-color: #ffffff;
