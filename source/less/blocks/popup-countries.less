@@ -1,14 +1,25 @@
 .popup-countries {
+  position: absolute;
+  top: 0;
+  left: -1px;
   display: flex;
   flex-direction: column;
   width: 220px;
+  min-height: 440px;
   background: #ffffff;
   box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
   border: 1px solid #cbced9;
   border-radius: 4px;
+  z-index: 1;
+
 
   .countries-filter__list {
     padding: 0;
+    width: 220px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
   }
 }
 
@@ -20,18 +31,21 @@
 @media (min-width: @tablet-width) {
   .popup-countries {
     flex-direction: row;
-    width: 100%;
-    min-height: 414px;
+    width: 578px;
+    min-height: 420px;
     justify-content: space-between;
-    padding: 35px 23px;
-    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
+    border: none;
 
     .countries-filter__list {
       display: grid;
-      grid-template-columns: repeat(5, 55px) 100px 230px;
+      grid-template-columns: repeat(5, 55px) 60px 230px;
       grid-template-rows: repeat(5, 70px);
       width: 100%;
       height: 360px;
+      padding: 35px 20px 35px 21px;
+      background-color: transparent;
     }
 
     .countries-filter__button {
@@ -175,11 +189,11 @@
   .popup-countries {
     width: 730px;
     height: 476px;
-    padding: 32px 26px;
 
     .countries-filter__list {
       column-gap: 15px;
       row-gap: 15px;
+      min-height: 476px;
     }
 
     .countries-filter__button {

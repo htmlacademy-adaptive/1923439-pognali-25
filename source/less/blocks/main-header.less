@@ -18,6 +18,12 @@
     }
   }
 
+  .main-header--inner {
+    .main-header__logo-wrapper {
+      margin-bottom: 60px;
+    }
+  }
+
   .logo__image {
     color: #ffffff;
   }
@@ -61,6 +67,7 @@
     width: 320px;
     margin: 0 auto;
     position: relative;
+    z-index: 2;
   }
 
 
@@ -253,12 +260,22 @@
   }
 }
 
+.main-header.main-header--inner {
+  .main-header__welcome-contacts-wrapper {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-header {
     background: url("../img/png/traveller-illustration-tablet.png") 80% 61% no-repeat, url("../img/png/globe-back-tablet.svg.png") center 74%  no-repeat;
     background-color: #182044;
     padding-top: 40px;
     padding-bottom: 0;
+
+    .main-header-container {
+      width: 688px;
+    }
 
     .main-header__log-in {
       display: flex;
@@ -270,7 +287,6 @@
     .main-header__logo-wrapper {
       width: 50%;
       order: 0;
-      margin-bottom: 0;
       align-items: center;
       background-color: #182044;
       padding-right: 0;
@@ -391,12 +407,22 @@
       padding-left: 100px;
       box-sizing: border-box;
       top: 90px;
+      z-index: 20;
     }
 
     .contacts-wrapper {
       order: 1;
       width: 100%;
       padding-left: 100px;
+      z-index: 10;
+    }
+
+    .contacts-wrapper--email {
+      top: 459px;
+    }
+
+    .contacts-wrapper--phone {
+      top: 414px;
     }
 
     .main-header__features-quote {
@@ -409,6 +435,8 @@
       box-sizing: border-box;
       justify-content: flex-start;
       padding-left: 100px;
+      z-index: 20;
+      top: 504px;
     }
   }
 
@@ -420,6 +448,7 @@
 
     .main-header-container {
       width: 768px;
+      box-sizing: border-box;
     }
 
     .main-header__logo-wrapper {
@@ -477,6 +506,10 @@
     .main-header__features-list {
       margin: 0 50px;
     }
+
+    .main-header__menu {
+      display: none;
+    }
   }
 }
 
@@ -486,7 +519,10 @@
     background-color: #161c35;
     display: flex;
     justify-content: space-between;
-    padding: 60px;
+
+    .main-header-container {
+      width: 1320px;
+    }
 
     .main-header__log-in {
       display: none;
@@ -503,7 +539,7 @@
       width: 20%;
       height: 20px;
       order: 0;
-      margin-bottom: 150px;
+      margin-bottom: 0;
       background-color: #161c35;
     }
 
@@ -537,6 +573,7 @@
       text-align: start;
       margin: 0;
       order: 3;
+      margin-top: 110px;
     }
   }
 
@@ -661,4 +698,14 @@
       margin-top: 100px;
     }
   }
+
+  .main-header.main-header--inner {
+    .main-header__welcome-contacts-wrapper {
+      display: flex;
+    }
+  }
+}
+
+.main-header--inner {
+  background-image: none;
 }

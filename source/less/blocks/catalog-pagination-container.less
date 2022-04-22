@@ -1,4 +1,19 @@
 .catalog-pagination-container {
   padding-left: 25px;
   padding-right: 25px;
+  margin-bottom: 36px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-pagination-container {
+    margin-bottom: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-pagination {
+    .catalog-pagination-container.container {
+      width: 949px;
+    }
+  }
 }

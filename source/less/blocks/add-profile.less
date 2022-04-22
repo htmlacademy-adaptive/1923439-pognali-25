@@ -5,12 +5,22 @@
   border-radius: 0 0 25px 25px;
 
   .add-profile__title {
-    margin-left: 30px;
+    margin-left: 0;
   }
 
   .add-profile__link {
-    margin-left: 30px;
     margin-top: 46px;
+    margin-left: 0;
+  }
+
+  .container {
+    width: 246px;
+  }
+
+  .add-profile__wrapper {
+    display: flex;
+    align-items: center;
+    width: 246px;
   }
 }
 
@@ -21,11 +31,6 @@
 
 .add-profile__title {
   width: 107px;
-}
-
-.add-profile__wrapper {
-  display: flex;
-  align-items: center;
 }
 
 .add-profile__wrapper + .add-profile__wrapper {
@@ -39,7 +44,6 @@
 
 .add-profile__list {
   margin: 0;
-  margin-left: 30px;
   margin-right: auto;
   padding: 0;
   list-style-type: none;
@@ -78,6 +82,10 @@
     padding-bottom: 45px;
     border-radius: 0 0 25px 25px;
 
+    .container {
+      width: 688px;
+    }
+
     .add-profile__link {
       width: 274px;
       text-align: start;
@@ -89,7 +97,7 @@
     }
 
     .add-profile__wrapper {
-      width: 90%;
+      width: 650px;
       display: flex;
       z-index: 2;
     }
@@ -106,7 +114,7 @@
       border-radius: 20px;
       position: absolute;
       top: -100px;
-      right: -568px;
+      right: -622px;
       z-index: 0;
     }
 
@@ -128,6 +136,7 @@
       height: 65px;
       font-size: 28px;
       line-height: 28px;
+      margin-right: 22px;
     }
 
     .add-profile__link__wrapper {
@@ -175,30 +184,36 @@
 @media (min-width: @desktop-width) {
   .add-profile {
     box-sizing: border-box;
+    padding-right: 0;
+
+    .container {
+      width: 1320px;
+    }
 
     .add-profile__image {
       width: 198px;
       height: 198px;
+      margin-left: 100px;
     }
 
     .add-profile__wrapper {
-      width: 812px;
+      width: 906px;
     }
 
     .add-profile__list-wrapper {
-      width: 68%;
+      width: 906px;
     }
 
     .add-profile__counter--background::before {
       top: -113px;
-      right: -908px;
+      right: -988px;
       width: 446px;
       height: 300px;
     }
 
     .for-busines-wrapper {
       margin-right: auto;
-      margin-left: 114px;
+      margin-left: 56px;
       margin-top: 60px;
     }
   }

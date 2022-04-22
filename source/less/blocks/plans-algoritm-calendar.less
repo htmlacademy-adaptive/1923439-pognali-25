@@ -1,0 +1,116 @@
+.plans-algoritm-calendar {
+  border-top: none;
+  border-collapse: collapse;
+}
+
+.plans-algoritm-calendar__td--day {
+  text-align: center;
+  border-left: none;
+  border-right: none;
+  background-color: #ffffff;
+  font-family: "Blogger Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.plans-algoritm-calendar__td--in {
+  font-family: "Blogger Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+  display: none;
+}
+
+.plans-algoritm-calendar__td--weekand {
+  color: #ff5c23;
+}
+
+.plans-algoritm-calendar__tr--number,
+.plans-algoritm-calendar__td--number {
+  border-collapse: collapse;
+  border: 1px solid #d6d9e6;
+  padding: 0;
+}
+
+.plans-algoritm-calendar__td--number {
+  width: 33px;
+  height: 32px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Blogger Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.plans-algoritm-calendar__td--choisen {
+  background-color: #1d2e5b;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.plans-algoritm-calendar__td--open {
+  color: #1d2e5b;
+  background: #edeff6;
+}
+
+.plans-algoritm-calendar__td-day-non {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .plans-algoritm-calendar__td-day-non {
+    display: inline;
+  }
+
+  .plans-algoritm-calendar__td--number {
+    width: 80px;
+    height: 71px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .plans-algoritm-calendar__td--day {
+    padding-bottom: 9px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .plans-algoritm-calendar__td--day,
+  .plans-algoritm-calendar__td--number {
+    text-align: start;
+    padding-left: 16px;
+  }
+
+  .plans-algoritm-calendar__td {
+    width: 148px;
+    height: 76px;
+    text-align: start;
+    vertical-align: top;
+    padding-top: 14px;
+  }
+
+  .plans-algoritm-calendar__td--in {
+    display: block;
+    margin-top: 9px;
+  }
+
+  .plans-algoritm-calendar__td--active {
+    outline: 4px solid #ff5c23;
+    outline-offset: -1px;
+  }
+
+  .plans-algoritm-calendar__td--day {
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 20px;
+    vertical-align: middle;
+  }
+}

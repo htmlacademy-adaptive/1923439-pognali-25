@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="page__catalog main">
-    <header class="main-header header-inner main-header--close">
+    <header class="main-header main-header--inner main-header--close main-header--nojs">
       <div class="main-header-container">
         <div class="main-header__logo-wrapper">
           <a class="main-header__logo logo" href="index.html">
@@ -39,7 +39,7 @@
         <div class="main-header__log-in-wrapper">
           <a class="main-header__log-in button button--log-in" href="/">Авторизация</a>
         </div>
-        <div class="contacts-wrapper">
+        <div class="contacts-wrapper contacts-wrapper--phone">
           <div class="contacts-wrapper__image-wrapper">
             <svg class="contacts-wrapper__image" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M8.50001 0.0861511C5.70356 0.0861511 2.90039 0.558819 1.88328 1.50092C1.0394 2.28252 0.7581 3.66329 0.663275 4.53753C0.663275 4.53753 0.650208 4.62393 0.650208 4.66109C0.650208 5.00391 0.944508 5.27887 1.30433 5.27887C1.34684 5.27887 2.92008 5.15837 3.86857 5.08425C3.8914 5.08112 3.9144 5.07806 3.93722 5.07191C4.29049 5.0627 4.57511 4.7908 4.57511 4.45413L4.57828 3.237C4.57828 2.86014 4.9022 2.55737 5.30126 2.55737H11.6987C12.0979 2.55737 12.4218 2.86011 12.4218 3.237L12.425 4.45413C12.425 4.7908 12.7096 5.0627 13.0628 5.07191C13.0855 5.0781 13.1085 5.08112 13.1316 5.08425C14.0802 5.15834 15.6534 5.27887 15.6957 5.27887C16.0554 5.27887 16.3499 5.00391 16.3499 4.66109C16.3499 4.62393 16.3369 4.53753 16.3369 4.53753C16.242 3.66329 15.961 2.28255 15.1171 1.50092C14.0996 0.558819 11.2965 0.0861511 8.50001 0.0861511ZM8.50001 8.11773C7.77717 8.11773 7.1917 8.67064 7.1917 9.35333C7.1917 10.036 7.77717 10.5889 8.50001 10.5889C9.22285 10.5889 9.80829 10.036 9.80829 9.35333C9.80829 8.67064 9.22285 8.11773 8.50001 8.11773ZM7.51879 5.33752V4.56528C7.51879 4.13902 7.15242 3.79303 6.70113 3.79303C6.24983 3.79303 5.88346 4.13905 5.88346 4.56528V5.33752L1.47101 9.7889C1.16695 10.07 0.977196 10.4622 0.977196 10.8948V12.1335C0.977196 12.8162 1.5627 13.3691 2.28551 13.3691H2.6126V14.1414C2.6126 14.5677 2.97901 14.9136 3.43031 14.9136C3.8816 14.9136 4.24798 14.5677 4.24798 14.1414V13.3691H12.752V14.1414C12.752 14.5677 13.1183 14.9136 13.5698 14.9136C14.0211 14.9136 14.3874 14.5677 14.3874 14.1414V13.3691H14.7145C15.4373 13.3691 16.0228 12.8162 16.0228 12.1335V10.8948C16.0228 10.4622 15.833 10.07 15.5289 9.7889L11.1167 5.33752V4.56528C11.1167 4.13902 10.7502 3.79303 10.2989 3.79303C9.84763 3.79303 9.4813 4.13905 9.4813 4.56528V5.33752H7.51879ZM8.50001 6.8821C9.9457 6.8821 11.1167 7.98799 11.1167 9.35333C11.1167 10.7187 9.94573 11.8246 8.50001 11.8246C7.05432 11.8246 5.88342 10.7187 5.88342 9.35333C5.88342 7.98795 7.05432 6.8821 8.50001 6.8821Z" fill="#FFD74B"/>
@@ -47,7 +47,7 @@
           </div>
           <a class="contacts-wrapper__link" href="/">8 800 555-86-28</a>
         </div>
-        <div class="contacts-wrapper">
+        <div class="contacts-wrapper contacts-wrapper--email">
           <div class="contacts-wrapper__image-wrapper">
             <svg class="contacts-wrapper__image" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1393 10.4663L11.8089 6.5L16.1393 2.53365L15.5488 1.90264L9.25 7.67188L2.9512 1.90264L2.36069 2.53365L6.69112 6.5L2.36069 10.4663L2.9512 11.0974L7.33084 7.08594L9.25 8.84375L11.1692 7.08594L15.5488 11.0974L16.1393 10.4663ZM1.57597 0.25C0.76695 0.25 0.111115 0.948839 0.111115 1.80786V11.1921C0.111115 12.0525 0.76163 12.75 1.57597 12.75H16.924C17.7331 12.75 18.3889 12.0512 18.3889 11.1921V1.80786C18.3889 0.947478 17.7384 0.25 16.924 0.25H1.57597Z" fill="#FFD74B"/>
@@ -112,36 +112,31 @@
           </div>
         </nav>
         <form class="catalog-form container" action="https://echo.htmlacademy.ru" method="post">
-        <section class="countries-filter countries-filter--">
-          <div class="countries-filter_container container">
+        <section class="countries-filter countries-filter--close countries-filter--desktop">
+          <div class="countries-filter__container container">
             <div class="countries-filter__header-wrapper">
-              <a class="countries-filter__link" href="/">
+              <a class="countries-filter__link">
                 Фильтрация по странам:
               </a>
-              <button class="countries-filter__button countries-filter__button--open countries-filter__button--close">
-                <svg width="17" height="17" viewBox="0 0 17 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="1.5" cy="1.5" r="1.5" fill="#192144"/>
-                  <circle cx="8.5" cy="1.5" r="1.5" fill="#192144"/>
-                  <circle cx="15.5" cy="1.5" r="1.5" fill="#192144"/>
-                </svg>
+              <button class="countries-filter__button countries-filter__button--open countries-filter__button--close countries-filter__button--dots" type="button">
               </button>
             </div>
               <ul class="countries-filter__continent-list">
                 <li class="countries-filter__continent-item">
-                  <input class="countries-filter__continent-checkbox countries-filter__button--continent popup-countries__button--active" id="europe" name="europe" type="checkbox" checked>
-                  <label class="countries-filter__continent-label countries-filter__label--continent popup-countries__label--active" for="europe">Европа</label>
+                  <input class="countries-filter__continent-checkbox countries-filter__button-continent" id="europe" name="europe" type="checkbox" checked>
+                  <label class="countries-filter__continent-label countries-filter__label-continent" for="europe">Европа</label>
                 </li>
                 <li class="countries-filter__continent-item">
-                  <input class="countries-filter__continent-checkbox countries-filter__button--continent" id="asia" name="asia" type="checkbox">
-                  <label class="countries-filter__continent-label countries-filter__label--continent" for="asia">Азия</label>
+                  <input class="countries-filter__continent-checkbox countries-filter__button-continent" id="asia" name="asia" type="checkbox">
+                  <label class="countries-filter__continent-label countries-filter__label-continent" for="asia">Азия</label>
                 </li>
                 <li class="countries-filter__continent-item">
-                  <input class="countries-filter__continent-checkbox countries-filter__button--continent" id="america" name="america" type="checkbox">
-                  <label class="countries-filter__continent-label countries-filter__label--continent" for="america">Америка</label>
+                  <input class="countries-filter__continent-checkbox countries-filter__button-continent" id="america" name="america" type="checkbox">
+                  <label class="countries-filter__continent-label countries-filter__label-continent" for="america">Америка</label>
                 </li>
                 <li class="countries-filter__continent-item">
-                  <input class="countries-filter__continent-checkbox countries-filter__button--continent" id="island" name="island" type="checkbox">
-                  <label class="countries-filter__continent-label countries-filter__label--continent" for="island">Острова</label>
+                  <input class="countries-filter__continent-checkbox countries-filter__button-continent" id="island" name="island" type="checkbox">
+                  <label class="countries-filter__continent-label countries-filter__label-continent" for="island">Острова</label>
                 </li>
               </ul>
               <button class="countries-filter__show-all" type="button">Показать все</button>
@@ -151,50 +146,50 @@
                   <button class="countries-filter__button countries-filter__button--key-letter countries-filter__button--key-letter-active">А</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--active grid-countries-1">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside ">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                      <input class="countries-filter__key-letter-checkbox" id="austria" name="austia" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="austria">Австрия</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                      <input class="countries-filter__key-letter-checkbox" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="аzerbaijan">Азербайджан</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                      <input class="countries-filter__key-letter-checkbox" id="alban" name="alban" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="alban">Албания</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                      <input class="countries-filter__key-letter-checkbox" id="aljir" name="aljir" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="aljir">Алжир</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                      <input class="countries-filter__key-letter-checkbox" id="angola" name="angola" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="angola">Ангола</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                      <input class="countries-filter__key-letter-checkbox" id="andorra" name="andorra" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="andorra">Андорра</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                      <input class="countries-filter__key-letter-checkbox" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                      <label class="countries-filter__key-letter-label " for="antigua-barbuda">Антигуа и Барбуда</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                      <input class="countries-filter__key-letter-checkbox" id="argentina" name="argentina" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="argentina">Аргентина</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                      <input class="countries-filter__key-letter-checkbox" id="armenia" name="armenia" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="armenia">Армения</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                      <input class="countries-filter__key-letter-checkbox" id="auganistan" name="auganistan" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="auganistan">Афганистан</label>
                     </li>
                   </ol>
                 </li>
@@ -202,7 +197,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">Б</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-2">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -253,7 +248,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">В</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-3">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -304,7 +299,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">Г</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-4">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -355,7 +350,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">Д</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-5">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -406,7 +401,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">Е</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-6">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -457,7 +452,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">З</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-7">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -508,7 +503,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">И</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-8">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -559,7 +554,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">К</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-9">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -610,7 +605,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">Л</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-10">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -661,7 +656,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">М</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-11">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -712,7 +707,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">н</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-12">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -763,7 +758,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">о</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-13">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -814,7 +809,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">п</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-14">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -865,7 +860,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">р</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-15">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -916,7 +911,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">с</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-16">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -967,7 +962,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">т</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-17">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1018,7 +1013,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">у</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-18">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1069,7 +1064,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">ф</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-19">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1120,7 +1115,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">х</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-20">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1171,7 +1166,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">ч</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-21">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1222,7 +1217,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">ш</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-22">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1273,7 +1268,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">э</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-23">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1324,7 +1319,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">ю</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-24">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1375,7 +1370,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">я</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-25">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1423,17 +1418,19 @@
                   </ol>
                 </li>
               </ol>
-              <a class="countries-filter__close button button--close">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12.25 1.75L1.75 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M1.75 1.75L12.25 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                Свернуть
-              </a>
+              <div class="countries-filter__close-wrapper">
+                <a class="countries-filter__close button button--close">
+                  <svg class="countries-filter__close-image" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.25 1.75L1.75 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1.75 1.75L12.25 12.25" stroke="#192144" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Свернуть
+                </a>
+              </div>
           </div>
         </section>
         <section class="travelers-search">
-          <div class="travelers-search-container container">
+          <div class="travelers-search-container">
             <div class="travelers-search-container__background">
               <h2 class="travelers-search__title">
                 Подберите
@@ -1442,87 +1439,107 @@
               </h2>
               <div class="travelers-search__fieldset">
                 <h4 class="travelers-search__category">Хобби</h4>
-                <button class="travelers-search__button travelers-search__button--open"></button>
+                <button class="travelers-search__button"></button>
                 <ul class="travelers-search__list travelers-search__list--close">
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-rok" name="music-rok" type="checkbox" checked>
-                    <label class="travelers-search__label" for="music-rok">Спортзал</label>
+                    <input class="travelers-search__input visually-hidden" id="fitnes" name="fitnes" type="checkbox" checked>
+                    <label class="travelers-search__label" for="fitnes">Спортзал</label>
                   </li>
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-rap" name="music-rap" type="checkbox" checked>
-                    <label class="travelers-search__label" for="music-rap">Кальян</label>
+                    <input class="travelers-search__input visually-hidden" id="smoke" name="smoke" type="checkbox" checked>
+                    <label class="travelers-search__label" for="smoke">Кальян</label>
                   </li>
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-dance" name="music-dance" type="checkbox">
-                    <label class="travelers-search__label" for="music-dance">Диван</label>
+                    <input class="travelers-search__input visually-hidden" id="chair" name="chair" type="checkbox">
+                    <label class="travelers-search__label" for="chair">Диван</label>
                   </li>
                 </ul>
               </div>
               <div class="travelers-search__fieldset">
                 <h4 class="travelers-search__category">Музыка</h4>
-                <button class="travelers-search__button travelers-search__button--close"></button>
+                <button class="travelers-search__button travelers-search__button--open"></button>
                 <ul class="travelers-search__list">
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-rok" name="music-rok" type="checkbox" checked>
+                    <input class="travelers-search__input visually-hidden" id="music-rok" name="music-rok" type="checkbox" checked>
                     <label class="travelers-search__label" for="music-rok">Тяжелый рок</label>
                   </li>
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-rap" name="music-rap" type="checkbox" checked>
+                    <input class="travelers-search__input visually-hidden" id="music-rap" name="music-rap" type="checkbox" checked>
                     <label class="travelers-search__label" for="music-rap">Русский рэп</label>
                   </li>
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-dance" name="music-dance" type="checkbox">
+                    <input class="travelers-search__input visually-hidden" id="music-dance" name="music-dance" type="checkbox">
                     <label class="travelers-search__label" for="music-dance">Евроденс</label>
                   </li>
                 </ul>
               </div>
               <div class="travelers-search__fieldset">
                 <h4 class="travelers-search__category">Еда</h4>
-                <button class="travelers-search__button travelers-search__button--open"></button>
+                <button class="travelers-search__button"></button>
                 <ul class="travelers-search__list travelers-search__list--close">
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-rok" name="music-rok" type="checkbox" checked>
-                    <label class="travelers-search__label" for="music-rok">Мясоед</label>
+                    <input class="travelers-search__input visually-hidden" id="meat" name="meat" type="checkbox" checked>
+                    <label class="travelers-search__label" for="meat">Мясоед</label>
                   </li>
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-rap" name="music-rap" type="checkbox" checked>
-                    <label class="travelers-search__label" for="music-rap">Сидит на ПП</label>
+                    <input class="travelers-search__input visually-hidden" id="pp" name="music-rap" type="checkbox" checked>
+                    <label class="travelers-search__label" for="pp">Сидит на ПП</label>
                   </li>
                   <li class="travelers-search__item">
-                    <input class="travelers-search__input" id="music-dance" name="music-dance" type="checkbox">
-                    <label class="travelers-search__label" for="music-dance">Веган-сыроед</label>
+                    <input class="travelers-search__input visually-hidden" id="vegan" name="music-dance" type="checkbox">
+                    <label class="travelers-search__label" for="vegan">Веган-сыроед</label>
                   </li>
                 </ul>
               </div>
               <div class="travelers-search__fieldset">
                 <h4 class="travelers-search__category">транспорт</h4>
                 <button class="travelers-search__button travelers-search__button--close"></button>
-                <ul class="travelers-search__list travelers-search__list--transport">
+                <ul class="travelers-search__list travelers-search__list--transport transport-list">
                   <li class="travelers-search__item travelers-search__item--transport">
-                    <input class="travelers-search__input" id="aero" name="aero" type="checkbox" checked>
-                    <label class="travelers-search__label" for="aero">Самолёт</label>
+                    <input class="travelers-search__input transport-list__input--aero visually-hidden" id="aero" name="aero" type="checkbox" checked>
+                    <label class="transport-list__label transport-list__label--aero" for="aero">
+                      <span class="visually-hidden">Самолёт</span>
+                    </label>
                   </li>
                   <li class="travelers-search__item travelers-search__item--transport">
-                    <input class="travelers-search__input" id="bus" name="bus" type="checkbox" checked>
-                    <label class="travelers-search__label" for="bus">Автобус</label>
+                    <input class="travelers-search__input transport-list__input--bus visually-hidden" id="bus" name="bus" type="checkbox" checked>
+                    <label class=" transport-list__label transport-list__label--bus" for="bus">
+                      <span class="visually-hidden">Автобус</span>
+                    </label>
                   </li>
                   <li class="travelers-search__item travelers-search__item--transport">
-                    <input class="travelers-search__input" id="becikle" name="becikle" type="checkbox">
-                    <label class="travelers-search__label" for="becikle">Велосипед</label>
+                    <input class="travelers-search__input transport-list__input--cycle visually-hidden" id="becikle" name="becikle" type="checkbox">
+                    <label class="transport-list__label transport-list__label--cycle" for="becikle">
+                      <span class="visually-hidden">Велосипед</span>
+                    </label>
                   </li>
                   <li class="travelers-search__item travelers-search__item--transport">
-                    <input class="travelers-search__input" id="legs" name="legs" type="checkbox" checked>
-                    <label class="travelers-search__label" for="legs">Пешком</label>
+                    <input class="travelers-search__input transport-list__input--walk visually-hidden" id="legs" name="legs" type="checkbox" checked>
+                    <label class="transport-list__label transport-list__label--walk" for="legs">
+                      <span class="visually-hidden">Пешком</span>
+                    </label>
                   </li>
                 </ul>
               </div>
               <div class="travelers-search__fieldset">
                 <h4 class="travelers-search__category">левел</h4>
                 <button class="travelers-search__button travelers-search__button--close"></button>
-                <ul class="travelers-search__list travelers-search__list--transport">
-                  <li class="travelers-search__item travelers-search__item--transport">
-                    <input class="travelers-search__input" id="lvl" name="lvl" type="range">
-                    <label class="travelers-search__label visually-hidden" for="lvl">Уровень попутчика</label>
+                <ul class="travelers-search__list travelers-search__list--lvl">
+                  <li class="travelers-search__item travelers-search__item--lvl">
+                    <div class="travelers-search__item-wrapper travelers-search__item-wrapper--input">
+                      <input class="travelers-search__input-lvl travelers-search__input-lvl--min" id="min-lvl" name="min-lvl" type="number" placeholder="30">
+                      <label class="travelers-search__label visually-hidden" for="min-lvl">Уровень попутчика</label>
+                      <input class="travelers-search__input-lvl travelers-search__input-lvl--max" id="max-lvl" name="max-lvl" type="number" placeholder="100">
+                      <label class="travelers-search__label visually-hidden" for="max-lvl">Уровень попутчика</label>
+                    </div>
+                  </li>
+                  <li class="travelers-search__item travelers-search__item--range">
+                    <div class="travelers-search__item-wrapper range">
+                      <div class="range__scale">
+                        <button class="range__button range__button--min" type="button"></button>
+                        <button class="range__button range__button--max" type="button"></button>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -1534,8 +1551,10 @@
         <h2 class="visually-hidden">Результаты поиска</h2>
         <div class="search-results-container container">
           <article class="search-results__cards product-card">
-            <img class="product-card__avatar" src="./img/jpeg/travelers-tanya.jpg" width="285" height="285" alt="Таня Фирсова">
-            <h3 class="product-card__title">Таня Фирсова</h3>
+            <div class="product-card__avatar-wrapper product-card__avatar-wrapper--like">
+              <img class="product-card__avatar" src="./img/jpeg/travelers-tanya.jpg" width="285" height="285" alt="Таня Фирсова">
+            </div>
+            <h3 class="product-card__title">Таня<br> Фирсова</h3>
             <span class="product-card__distance">1,5 М</span>
             <span class="product-card__indicator"></span>
             <p class="product-card__tag tag-list">
@@ -1603,18 +1622,21 @@
               </ul>
             </div>
             <div class="product-card__fieldset product-card__fieldset--lvl">
-              <h4 class="product-card__legend">левел:</h4>
+              <h4 class="product-card__legend product-card__legend--lvl">левел:</h4>
               <ul class="product-card__list product-card__lvl-list">
                 <li class="product-card__list product-card__lvl-item">
                   <span class="product-card__lvl">99</span>
+                  <span class="product-card__lvl-description">level</span>
                 </li>
               </ul>
             </div>
             <a class="product-card__link button product-card__link--go" href="/">Позвать!</a>
           </article>
           <article class="search-results__cards product-card">
-            <img class="product-card__avatar" src="./img/jpeg/travelers-pierre.jpg" width="285" height="285" alt="Петя Демин">
-            <h3 class="product-card__title">Петя Демин</h3>
+            <div class="product-card__avatar-wrapper">
+              <img class="product-card__avatar" src="./img/jpeg/travelers-pierre.jpg" width="285" height="285" alt="Петя Демин">
+            </div>
+            <h3 class="product-card__title">Петя<br> Демин</h3>
             <span class="product-card__distance">1500</span>
             <span class="product-card__indicator"></span>
             <p class="product-card__tag tag-list">
@@ -1673,18 +1695,21 @@
               </ul>
             </div>
             <div class="product-card__fieldset product-card__fieldset--lvl">
-              <h4 class="product-card__legend">левел:</h4>
+              <h4 class="product-card__legend product-card__legend--lvl">левел:</h4>
               <ul class="product-card__list product-card__lvl-list">
                 <li class="product-card__list product-card__lvl-item">
                   <span class="product-card__lvl">80</span>
+                  <span class="product-card__lvl-description">level</span>
                 </li>
               </ul>
             </div>
             <a class="product-card__link button product-card__link--go" href="/">Позвать!</a>
           </article>
           <article class="search-results__cards product-card">
-            <img class="product-card__avatar" src="./img/jpeg/travelers-mark.jpg" width="285" height="285" alt="Марк Смолов">
-            <h3 class="product-card__title">Марк Смолов</h3>
+            <div class="product-card__avatar-wrapper">
+              <img class="product-card__avatar" src="./img/jpeg/travelers-mark.jpg" width="285" height="285" alt="Марк Смолов">
+            </div>
+            <h3 class="product-card__title">Марк<br> Смолов</h3>
             <span class="product-card__distance">170</span>
             <span class="product-card__indicator"></span>
             <p class="product-card__tag tag-list">
@@ -1747,18 +1772,21 @@
               </ul>
             </div>
             <div class="product-card__fieldset product-card__fieldset--lvl">
-              <h4 class="product-card__legend">левел:</h4>
+              <h4 class="product-card__legend product-card__legend--lvl">левел:</h4>
               <ul class="product-card__list product-card__lvl-list">
                 <li class="product-card__list product-card__lvl-item">
                   <span class="product-card__lvl">25</span>
+                  <span class="product-card__lvl-description">level</span>
                 </li>
               </ul>
             </div>
             <a class="product-card__link button product-card__link--go" href="/">Позвать!</a>
           </article>
           <article class="search-results__cards product-card">
-            <img class="product-card__avatar" src="./img/jpeg/travelers-larisa.jpg" width="285" height="285" alt="Лариса Роговая">
-            <h3 class="product-card__title">Лариса Роговая</h3>
+            <div class="product-card__avatar-wrapper">
+              <img class="product-card__avatar" src="./img/jpeg/travelers-larisa.jpg" width="285" height="285" alt="Лариса Роговая">
+            </div>
+            <h3 class="product-card__title product-card__title--online">Лариса<br> Роговая</h3>
             <span class="product-card__distance">23</span>
             <span class="product-card__indicator"></span>
             <p class="product-card__tag tag-list">
@@ -1818,17 +1846,18 @@
               </ul>
             </div>
             <div class="product-card__fieldset product-card__fieldset--lvl">
-              <h4 class="product-card__legend">левел:</h4>
+              <h4 class="product-card__legend product-card__legend--lvl">левел:</h4>
               <ul class="product-card__list product-card__lvl-list">
                 <li class="product-card__item product-card__lvl-item">
                   <span class="product-card__lvl">50</span>
+                  <span class="product-card__lvl-description">level</span>
                 </li>
               </ul>
             </div>
             <a class="product-card__link button product-card__link--go" href="/">Позвать!</a>
           </article>
           <a class="search-results__link button search-results__link--show-more" href="/">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="search-results__link-image-more" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect y="8.30762" width="18" height="1.38461" rx="0.692307" fill="#1D2E5B"/>
               <rect x="8.30769" y="18" width="18" height="1.38461" rx="0.692307" transform="rotate(-90 8.30769 18)" fill="#1D2E5B"/>
             </svg>
@@ -1940,5 +1969,6 @@
         </section>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

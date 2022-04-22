@@ -1,0 +1,49 @@
+.range {
+  position: relative;
+  width: 220px;
+  height: 2px;
+  background-color: rgba(29, 46, 91, 0.2);
+}
+
+.range__scale {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 138px;
+  height: 2px;
+  background-color: rgba(29, 46, 91, 1);
+}
+
+.range__button {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  border: none;
+  background-color: rgba(29, 46, 91, 1);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.range__button--min {
+  right: 129px;
+}
+
+@media (min-width: @tablet-width) and (max-width: 1400px) {
+  .range {
+    width: 281px;
+  }
+
+  .range__scale {
+    width: 166px;
+  }
+
+  .range__button {
+    top: -5px;
+    right: 0;
+  }
+
+  .range__button--min {
+    right: 160px;
+  }
+}

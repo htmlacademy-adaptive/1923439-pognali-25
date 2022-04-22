@@ -1,6 +1,5 @@
 .location {
   background-color: #ffd74b;
-  padding-top: 40px;
 
   .location-wrapper {
     margin-bottom: 31px;
@@ -17,6 +16,11 @@
   .location__map {
     width: 320px;
     display: block;
+    border: none;
+  }
+
+  .location-container {
+    padding-bottom: 30px;
   }
 }
 
@@ -52,6 +56,12 @@
       width: 100%;
     }
 
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+      width: 618px;
+    }
+
     .location__map {
       width: 100%;
       margin: 0 auto;
@@ -66,6 +76,7 @@
     font-size: 28px;
     line-height: 28px;
     width: 430px;
+    margin-left: 26px;
   }
 }
 
@@ -75,14 +86,32 @@
       width: 100%;
     }
 
+    .container {
+      width: 1022px;
+    }
+
+    .location-container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
     .location__map {
       width: 100%;
       margin: 0 auto;
     }
-  }
 
-  .location__link {
-    width: 324px;
+    .location-wrapper {
+      margin-bottom: 0;
+      padding-top: 0;
+    }
+
+    .location__link {
+      width: 324px;
+      min-height: 80px;
+      display: flex;
+      box-sizing: border-box;
+      margin-bottom: 0;
+    }
   }
 
   .location__map {

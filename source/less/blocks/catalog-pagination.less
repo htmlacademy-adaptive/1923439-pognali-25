@@ -49,7 +49,19 @@
   display: none;
 }
 
+.catalog-pagination__img--previos,
+.catalog-pagination__img--next {
+  width: 20px;
+  height: 13px;
+}
+
 @media (min-width: @tablet-width) {
+  .catalog-pagination {
+    .catalog-pagination-container.container {
+      width: 688px;
+    }
+  }
+
   .catalog-pagination__list {
     display: flex;
   }
@@ -64,5 +76,16 @@
     align-items: center;
     justify-content: space-between;
     width: 90px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .catalog-pagination {
+    width: 949px;
+
+    .catalog-pagination-container.container {
+      width: 949px;
+    }
   }
 }
