@@ -114,7 +114,7 @@
         </nav>
         <form class="catalog-form container" action="https://echo.htmlacademy.ru" method="post">
         <section class="countries-filter countries-filter--close countries-filter--desktop">
-          <div class="countries-filter_container container">
+          <div class="countries-filter__container container">
             <div class="countries-filter__header-wrapper">
               <a class="countries-filter__link">
                 Фильтрация по странам:
@@ -124,20 +124,20 @@
             </div>
               <ul class="countries-filter__continent-list">
                 <li class="countries-filter__continent-item">
-                  <input class="countries-filter__continent-checkbox countries-filter__button--continent popup-countries__button--active" id="europe" name="europe" type="checkbox" checked>
-                  <label class="countries-filter__continent-label countries-filter__label--continent popup-countries__label--active" for="europe">Европа</label>
+                  <input class="countries-filter__continent-checkbox countries-filter__button-continent" id="europe" name="europe" type="checkbox" checked>
+                  <label class="countries-filter__continent-label countries-filter__label-continent" for="europe">Европа</label>
                 </li>
                 <li class="countries-filter__continent-item">
-                  <input class="countries-filter__continent-checkbox countries-filter__button--continent" id="asia" name="asia" type="checkbox">
-                  <label class="countries-filter__continent-label countries-filter__label--continent" for="asia">Азия</label>
+                  <input class="countries-filter__continent-checkbox countries-filter__button-continent" id="asia" name="asia" type="checkbox">
+                  <label class="countries-filter__continent-label countries-filter__label-continent" for="asia">Азия</label>
                 </li>
                 <li class="countries-filter__continent-item">
-                  <input class="countries-filter__continent-checkbox countries-filter__button--continent" id="america" name="america" type="checkbox">
-                  <label class="countries-filter__continent-label countries-filter__label--continent" for="america">Америка</label>
+                  <input class="countries-filter__continent-checkbox countries-filter__button-continent" id="america" name="america" type="checkbox">
+                  <label class="countries-filter__continent-label countries-filter__label-continent" for="america">Америка</label>
                 </li>
                 <li class="countries-filter__continent-item">
-                  <input class="countries-filter__continent-checkbox countries-filter__button--continent" id="island" name="island" type="checkbox">
-                  <label class="countries-filter__continent-label countries-filter__label--continent" for="island">Острова</label>
+                  <input class="countries-filter__continent-checkbox countries-filter__button-continent" id="island" name="island" type="checkbox">
+                  <label class="countries-filter__continent-label countries-filter__label-continent" for="island">Острова</label>
                 </li>
               </ul>
               <button class="countries-filter__show-all" type="button">Показать все</button>
@@ -147,50 +147,50 @@
                   <button class="countries-filter__button countries-filter__button--key-letter countries-filter__button--key-letter-active">А</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--active grid-countries-1">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside ">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="austria" name="austia" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="austria">Австрия</label>
+                      <input class="countries-filter__key-letter-checkbox" id="austria" name="austia" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="austria">Австрия</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="аzerbaijan" name="аzerbaijan" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="аzerbaijan">Азербайджан</label>
+                      <input class="countries-filter__key-letter-checkbox" id="аzerbaijan" name="аzerbaijan" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="аzerbaijan">Азербайджан</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="alban" name="alban" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="alban">Албания</label>
+                      <input class="countries-filter__key-letter-checkbox" id="alban" name="alban" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="alban">Албания</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="aljir" name="aljir" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="aljir">Алжир</label>
+                      <input class="countries-filter__key-letter-checkbox" id="aljir" name="aljir" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="aljir">Алжир</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="angola" name="angola" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="angola">Ангола</label>
+                      <input class="countries-filter__key-letter-checkbox" id="angola" name="angola" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="angola">Ангола</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="andorra" name="andorra" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="andorra">Андорра</label>
+                      <input class="countries-filter__key-letter-checkbox" id="andorra" name="andorra" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="andorra">Андорра</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="antigua-barbuda">Антигуа и Барбуда</label>
+                      <input class="countries-filter__key-letter-checkbox" id="antigua-barbuda" name="antigua-barbuda" type="checkbox">
+                      <label class="countries-filter__key-letter-label " for="antigua-barbuda">Антигуа и Барбуда</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="argentina" name="argentina" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="argentina">Аргентина</label>
+                      <input class="countries-filter__key-letter-checkbox" id="argentina" name="argentina" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="argentina">Аргентина</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="armenia" name="armenia" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="armenia">Армения</label>
+                      <input class="countries-filter__key-letter-checkbox" id="armenia" name="armenia" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="armenia">Армения</label>
                     </li>
                     <li>
-                      <input class="countries-filter__key-letter-checkbox popup-countries__button--list" id="auganistan" name="auganistan" type="checkbox">
-                      <label class="countries-filter__key-letter-label popup-countries__label--list" for="auganistan">Афганистан</label>
+                      <input class="countries-filter__key-letter-checkbox" id="auganistan" name="auganistan" type="checkbox">
+                      <label class="countries-filter__key-letter-label" for="auganistan">Афганистан</label>
                     </li>
                   </ol>
                 </li>
@@ -198,7 +198,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">Б</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-2">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -249,7 +249,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">В</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-3">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -300,7 +300,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">Г</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-4">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -351,7 +351,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">Д</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-5">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -402,7 +402,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">Е</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-6">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -453,7 +453,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">З</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-7">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -504,7 +504,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">И</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-8">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -555,7 +555,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">К</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-9">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -606,7 +606,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">Л</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-10">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -657,7 +657,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">М</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-11">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -708,7 +708,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">н</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-12">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -759,7 +759,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">о</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-13">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -810,7 +810,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">п</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-14">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -861,7 +861,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">р</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-15">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -912,7 +912,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">с</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-16">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -963,7 +963,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">т</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-17">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1014,7 +1014,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">у</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-18">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1065,7 +1065,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">ф</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-19">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1116,7 +1116,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">х</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-20">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1167,7 +1167,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">ч</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-21">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1218,7 +1218,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">ш</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-22">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1269,7 +1269,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">э</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-23">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1320,7 +1320,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">ю</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-24">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>
@@ -1371,7 +1371,7 @@
                   <button class="countries-filter__button countries-filter__button--key-letter">я</button>
                 </li>
                 <li class="countries-filter__item countries-filter__item--countries countries-filter__item--hidden grid-countries-25">
-                  <ol class="countries-filter__list--inside">
+                  <ol class="countries-filter__list-inside">
                     <li>
                       <input class="countries-filter__key-letter-checkbox" id="australia" name="australia" type="checkbox">
                       <label class="countries-filter__key-letter-label" for="australia">Австралия</label>

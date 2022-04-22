@@ -3265,6 +3265,7 @@
   display: flex;
   flex-direction: column;
   width: 220px;
+  min-height: 440px;
   background: #ffffff;
   box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
   border: 1px solid #cbced9;
@@ -3273,18 +3274,24 @@
 }
 .popup-countries .countries-filter__list {
   padding: 0;
+  width: 220px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
 }
-.popup-countries--close {
+.popup-countries .popup-countries--close {
   display: none;
 }
 @media (min-width: 768px) {
   .popup-countries {
     flex-direction: row;
-    width: 100%;
-    min-height: 414px;
+    width: 107%;
+    min-height: 420px;
     justify-content: space-between;
-    padding: 35px 23px;
-    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(54, 80, 148, 0.18);
+    border: none;
   }
   .popup-countries .countries-filter__list {
     display: grid;
@@ -3292,6 +3299,8 @@
     grid-template-rows: repeat(5, 70px);
     width: 100%;
     height: 360px;
+    padding: 35px 20px 35px 21px;
+    background-color: transparent;
   }
   .popup-countries .countries-filter__button {
     width: 55px;
@@ -3406,11 +3415,11 @@
   .popup-countries {
     width: 730px;
     height: 476px;
-    padding: 32px 26px;
   }
   .popup-countries .countries-filter__list {
     column-gap: 15px;
     row-gap: 15px;
+    min-height: 476px;
   }
   .popup-countries .countries-filter__button {
     width: 60px;
@@ -4171,10 +4180,6 @@
     width: 618px;
   }
 }
-.count1ries-filter-container {
-  padding-left: 25px;
-  padding-right: 25px;
-}
 .countries-filter {
   background-color: #e2e5f2;
   position: relative;
@@ -4192,7 +4197,7 @@
   z-index: 1;
   background-color: #e2e5f2;
 }
-.countries-filter__list--inside {
+.countries-filter__list-inside {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -4352,7 +4357,7 @@
   .countries-filter.countries-filter--close .countries-filter__link {
     display: none;
   }
-  .countries-filter.countries-filter--close .countries-filter_container {
+  .countries-filter.countries-filter--close .countries-filter__container {
     display: flex;
     min-height: auto;
     align-items: center;
@@ -4591,7 +4596,7 @@
     width: 22px;
     height: 24px;
   }
-  .countries-filter_container {
+  .countries-filter__container {
     display: flex;
     flex-wrap: wrap;
     min-height: 70px;
@@ -4665,7 +4670,7 @@
     display: flex;
     flex-direction: column;
   }
-  .countries-filter.countries-filter--desktop .countries-filter_container {
+  .countries-filter.countries-filter--desktop .countries-filter__container {
     height: auto;
   }
   .countries-filter.countries-filter--desktop .countries-filter__list {
