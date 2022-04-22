@@ -153,7 +153,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .countries-filter.countries-filter--close {
+  .countries-filter.countries-filter--close.countries-filter--catalog {
     .countries-filter__list {
       display: none;
     }
@@ -247,7 +247,7 @@
   }
 
   // Выпадашка открыта //
-  .countries-filter {
+  .countries-filter.countries-filter--catalog {
     .countries-filter__header-wrapper {
       display: flex;
       order: 1;
@@ -516,13 +516,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .countries-filter--close.countries-filter {
+  .countries-filter--close.countries-filter.countries-filter--catalog {
     .container {
       width: 1320px;
     }
   }
 
-  .countries-filter.countries-filter--close {
+  .countries-filter.countries-filter--close.countries-filter--catalog {
     .countries-filter__header-wrapper {
       display: flex;
       order: -1;
@@ -534,6 +534,7 @@
 
     .countries-filter__link {
       display: flex;
+      margin-right: 20px;
     }
 
     .countries-filter__button--close {
@@ -550,7 +551,7 @@
   }
 
   // Выпадашка открыта //
-  .countries-filter.countries-filter--desktop {
+  .countries-filter.countries-filter--desktop.countries-filter--catalog {
     .countries-filter__hidden {
       display: none;
     }
@@ -578,7 +579,7 @@
     }
 
     .countries-filter__continent-list {
-      width: 79%;
+      width: 55%;
       margin-top: 58px;
     }
 
