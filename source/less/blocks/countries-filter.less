@@ -11,7 +11,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 225px;
-  top: 124px;
+  top: 160px;
   left: 0;
   z-index: 1;
   background-color: #e2e5f2;
@@ -25,12 +25,14 @@
 
 .countries-filter__item--countries {
   order: 1;
+  margin-top: 20px;
 }
 
 .countries-filter__continent-list {
   list-style-type: none;
   margin: 0;
   padding: 0 25px;
+  padding-bottom: 21px;
   position: absolute;
   width: 225px;
   top: 44px;
@@ -116,7 +118,7 @@
   width: 270px;
   height: 100px;
   position: absolute;
-  top: 564px;
+  top: 620px;
   left: 0;
   z-index: 5;
   background-color: #e2e5f2;
@@ -151,6 +153,42 @@
 .countries-filter__close-image {
   margin-right: 10px;
 }
+
+.countries-filter__label-continent {
+  font-family: 'Blogger Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: rgba(25, 33, 68, 0.3);
+}
+
+.countries-filter__continent-checkbox {
+  .visually-hidden();
+}
+
+.countries-filter__key-letter-checkbox {
+  .visually-hidden();
+}
+
+.countries-filter__continent-item + .countries-filter__continent-item  {
+  margin-top: 5px;
+}
+
+.countries-filter__key-letter-label {
+  font-family: "Blogger Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.countries-filter__label-continen--active {
+  color: #192144;
+}
+
 
 @media (min-width: @tablet-width) {
   .countries-filter.countries-filter--close.countries-filter--catalog {
@@ -218,7 +256,7 @@
       margin-right: auto;
       width: 390px;
       margin-top: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 0;
     }
 
     .countries-filter__button--open {
@@ -243,6 +281,10 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: 18px;
+    }
+
+    .countries-filter__continent-item + .countries-filter__continent-item  {
+      margin-top: 0;
     }
   }
 
@@ -354,6 +396,7 @@
     .countries-filter__item--active {
       grid-column: 7/8;
       grid-row: 1/-1;
+      margin-top: 0;
     }
 
     .grid-1 {
@@ -494,6 +537,11 @@
       width: 22px;
       height: 24px;
     }
+
+    .countries-filter__continent-item + .countries-filter__continent-item  {
+      margin-top: 0;
+      margin-left: 20px;
+    }
   }
 
   .countries-filter__container {
@@ -529,6 +577,10 @@
 
       .container {
         width: 1320px;
+      }
+
+      .countries-filter__continent-list {
+        margin-bottom: 0;
       }
     }
 
