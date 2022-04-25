@@ -2608,6 +2608,29 @@
   align-items: center;
   justify-content: center;
 }
+.plans-algoritm-countries-list__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -12px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+  background-color: #edeff6;
+  border-radius: 50%;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  cursor: pointer;
+}
+.plans-algoritm-countries-list__button-image {
+  width: 9px;
+  height: 9px;
+  z-index: 1;
+  fill: #afb0b5;
+}
 @media (min-width: 768px) {
   .plans-algoritm__select,
   .plans-algoritm__input-countries {
@@ -2635,6 +2658,17 @@
   .button--previos-step {
     order: 4;
   }
+  .plans-algoritm-countries-list__button {
+    position: static;
+    background-color: transparent;
+    margin-left: auto;
+    width: 24px;
+    height: 24px;
+  }
+  .plans-algoritm-countries-list__button-image {
+    width: 24px;
+    height: 24px;
+  }
 }
 @media (min-width: 1440px) {
   .plans-algoritm__select,
@@ -2645,7 +2679,16 @@
     padding: 0;
   }
   .plans-algoritm-countries-list {
-    width: 890px;
+    width: 100%;
+  }
+  .plans-algoritm-countries-list__button {
+    position: static;
+    background-color: transparent;
+    margin-left: auto;
+  }
+  .plans-algoritm-countries-list__button-image {
+    width: 24px;
+    height: 24px;
   }
 }
 .plans-algoritm {
@@ -2912,19 +2955,6 @@
 .plans-algoritm__flags-wrapper {
   position: relative;
 }
-.plans-algoritm__flags-wrapper::before {
-  content: "";
-  position: absolute;
-  top: -12px;
-  right: -10px;
-  width: 21px;
-  height: 21px;
-  background-color: #edeff6;
-  border-radius: 50%;
-  background-image: url("../img/svg/icon_close_gray.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .plans-algoritm__flags-wrapper::after {
   content: "";
   position: absolute;
@@ -2952,19 +2982,6 @@
   box-sizing: border-box;
   border-radius: 4px;
   background-color: transparent;
-}
-.plans-algoritm-countries-list__item--select::after {
-  content: "";
-  position: absolute;
-  top: -12px;
-  right: -10px;
-  width: 21px;
-  height: 21px;
-  background-color: #edeff6;
-  border-radius: 50%;
-  background-image: url("../img/svg/icon_close_gray.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 @media (min-width: 768px) {
   .plans-algoritm {
@@ -3289,7 +3306,7 @@
     letter-spacing: 0.1em;
   }
   .plans-algoritm-countries-list__item--decore::before {
-    right: 93px;
+    right: 202px;
   }
   .plans-algoritm__flags-wrapper {
     margin-left: 85px;
