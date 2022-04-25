@@ -1,13 +1,21 @@
-.logo__image {
+.logo--footer {
   color: #192144;
 }
 
-.logo--footer {
-  color: #192144;
+@media (min-width: @tablet-width) {
+  .logo__adaptive {
+    width: 166px;
+    height: 42px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .logo__image {
     color: #192144;
+  }
+
+  .logo__adaptive {
+    width: 200px;
+    height: 50px;
   }
 }

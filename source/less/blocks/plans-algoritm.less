@@ -135,7 +135,7 @@
   content: "";
   width: 61px;
   height: 24px;
-  background-image: url(../img/png/bosnia-and-herzegovina.png);
+  background-image: url("../img/png/bosnia-and-herzegovina.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 35px;
@@ -282,30 +282,16 @@
   color: #1d2e5b;
 }
 
-.plans-algoritm-countries__item + .plans-algoritm-countries__item {
+.plans-algoritm-countries-list__item + .plans-algoritm-countries-list__item {
   margin-top: 22px;
 }
 
-.plans-algoritm-countries__item {
+.plans-algoritm-countries-list__item {
   position: relative;
 }
 
 .plans-algoritm__flags-wrapper {
   position: relative;
-}
-
-.plans-algoritm__flags-wrapper::before {
-  content: "";
-  position: absolute;
-  top: -12px;
-  right: -10px;
-  width: 21px;
-  height: 21px;
-  background-color: #edeff6;
-  border-radius: 50%;
-  background-image: url("../img/svg/icon_close_gray.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .plans-algoritm__flags-wrapper::after {
@@ -319,7 +305,7 @@
   border-radius: 50%;
 }
 
-.plans-algoritm .plans-algoritm-countries__item--popup {
+.plans-algoritm .plans-algoritm-countries-list__item--popup {
   margin-top: 0;
 }
 
@@ -327,7 +313,7 @@
   background-color: #edeff6;
 }
 
-.plans-algoritm-countries__item--decore::before {
+.plans-algoritm-countries-list__item--decore::before {
   content: "";
   position: absolute;
   top: 16px;
@@ -338,20 +324,6 @@
   box-sizing: border-box;
   border-radius: 4px;
   background-color: transparent;
-}
-
-.plans-algoritm-countries__item--select::after {
-  content: "";
-  position: absolute;
-  top: -12px;
-  right: -10px;
-  width: 21px;
-  height: 21px;
-  background-color: #edeff6;
-  border-radius: 50%;
-  background-image: url("../img/svg/icon_close_gray.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 
@@ -504,7 +476,7 @@
     height: 14px;
   }
 
-  .plans-algoritm-countries__item--decore::before {
+  .plans-algoritm-countries-list__item--decore::before {
     content: "";
     position: absolute;
     top: 30px;
@@ -568,7 +540,7 @@
     display: none;
   }
 
-  .plans-algoritm-countries__item--select::after {
+  .plans-algoritm-countries-list__item--select::after {
     display: none;
   }
 }
@@ -732,8 +704,8 @@
     letter-spacing: 0.1em;
   }
 
-  .plans-algoritm-countries__item--decore::before {
-    right: 93px;
+  .plans-algoritm-countries-list__item--decore::before {
+    right: 202px;
   }
 
   .plans-algoritm__flags-wrapper {
