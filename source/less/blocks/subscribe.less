@@ -2,7 +2,8 @@
   background-color: #192144;
   padding-top: 40px;
   padding-bottom: 30px;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
+  position: relative;
 
   .subscribe__description {
     width: 210px;
@@ -12,6 +13,17 @@
   .subscribe__notation {
     text-align: center;
   }
+}
+
+.subscribe::before {
+  content: "";
+  width: 100%;
+  height: 25px;
+  background-color: #ffd74b;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .subscribe-form__text {

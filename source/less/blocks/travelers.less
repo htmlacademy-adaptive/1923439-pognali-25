@@ -3,9 +3,10 @@
   background-image: url("../img/png/travelers-background.png");
   background-repeat: no-repeat;
   background-position: 40% 5%;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 30px 30px;
   padding-top: 40px;
   padding-bottom: 1px;
+  position: relative;
 
   .travelers__title {
     margin-left: 30px;
@@ -52,6 +53,17 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.travelers::before {
+  content: "";
+  width: 100%;
+  height: 25px;
+  background-color: #e6e8f1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
 }
 
 @media (min-width: @tablet-width) {
