@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.countries-filter__key-letter-checkbox:checked + .countries-filter__key-letter-label {
+  color: #ece50f;
+}
+
 .countries-filter__list {
   position: absolute;
   list-style-type: none;
@@ -606,6 +610,10 @@
   .countries-filter.countries-filter--desktop.countries-filter--catalog {
     .countries-filter__hidden {
       display: none;
+    }
+
+    .countries-filter__item--countries {
+      margin-top: 0;
     }
 
     .countries-filter__close-wrapper {

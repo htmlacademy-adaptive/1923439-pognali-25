@@ -260,6 +260,7 @@
   border-radius: 4px;
 }
 
+
 .plans-algoritm__input-countries {
   border: 1px solid #cbced9;
   border-radius: 4px;
@@ -269,6 +270,14 @@
   background-image: url("../img/svg/arrow-back.svg");
   background-repeat: no-repeat;
   background-position: 195px center;
+}
+
+.plans-algoritm__input-countries--active {
+  background-color: #1d2e5b;
+  color: #ffffff;
+  background-image: url("../img/svg/icon_close_gray.svg");
+  background-repeat: no-repeat;
+  background-size: 12px;
 }
 
 .plans-algoritm__input-countries::placeholder {
@@ -311,6 +320,10 @@
 
 .plans-algoritm__input-countries--add {
   background-color: #edeff6;
+  background-image: url("../img/svg/icon_plus.svg");
+  background-repeat: no-repeat;
+  background-position: 195px center;
+  background-size: 13px;
 }
 
 .plans-algoritm-countries-list__item--decore::before {
@@ -325,7 +338,6 @@
   border-radius: 4px;
   background-color: transparent;
 }
-
 
 @media (min-width: @tablet-width) {
   .plans-algoritm {
@@ -431,6 +443,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 90%;
+  }
+
+  .plans-algoritm__input-countries--active {
+    background-size: 15px;
   }
 
   .plans-algoritm__textarea {

@@ -18,22 +18,26 @@
   margin-bottom: 14px;
 }
 
-.product-card__avatar-wrapper::before {
-  content: "";
+.product-card__label-like {
   position: absolute;
-  bottom: 4px;
-  right: -9px;
+  top: 54px;
+  left: 65px;
   width: 30px;
   height: 30px;
-  background-color: #f9eaea;
+  background-color: #e2e5f2;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-image: url("../img/svg/icon_heart.svg");
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
 }
 
-.product-card__avatar-wrapper--like::before {
+.product-card__input-like:checked + .product-card__label-like {
   background-image: url("../img/svg/icon_heart_fill.svg");
+  background-color: #f9eaea;
 }
 
 .product-card__avatar {
@@ -265,13 +269,15 @@
     left: -65px;
   }
 
-  .product-card__avatar-wrapper::before {
+  .product-card__label-like {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    align-self: flex-end;
+    position: static;
     width: 50px;
     height: 50px;
     background-size: 25px;
-    top: 140px;
-    right: auto;
-    left: 376px;
+    margin-left: 150px;
   }
 
   .product-card + .product-card {
@@ -447,6 +453,11 @@
     width: 26px;
     height: 26px;
   }
+
+  .wishes-countries-image {
+    width: 35px;
+    height: 24px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -469,6 +480,10 @@
   .product-card__avatar-wrapper {
     width: 285px;
     height: 285px;
+  }
+
+  .product-card__label-like {
+    grid-row: 4/5;
   }
 
   .product-card__title {
@@ -541,12 +556,6 @@
     grid-row: 4/5;
     margin-left: 210px;
     width: 80px;
-  }
-
-  .product-card__avatar-wrapper::before {
-    top: 193px;
-    right: auto;
-    left: 497px;
   }
 
   .product-card__fieldset--lvl {
