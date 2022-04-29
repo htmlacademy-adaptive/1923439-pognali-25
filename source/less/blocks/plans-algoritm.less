@@ -350,6 +350,7 @@
 
   .plans-algoritm__select {
     position: relative;
+    background-size: 18px;
   }
 
   .plans-algoritm__description {
@@ -469,7 +470,7 @@
   .plans-algoritm__input-countries {
     width: 369px;
     height: 70px;
-    background-position: 335px center;
+    background-position: 325px center;
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
@@ -505,6 +506,10 @@
     border-radius: 50%;
     background-color: #ffffff;
     z-index: 2;
+  }
+
+  .plans-algoritm-countries-list__item--not-choisen::before {
+    background-color: #edeff6;
   }
 
   .plans-algoritm__input-countries::placeholder {
