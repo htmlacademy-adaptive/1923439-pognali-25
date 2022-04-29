@@ -2,7 +2,7 @@
   background-color: #ffffff;
   border-radius: 10px;
   padding: 23px;
-  margin-bottom: 10px;
+  margin-bottom: 70px;
 }
 
 .plans-algoritm__title {
@@ -157,6 +157,9 @@
 }
 
 .plans-algoritm__button--min {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 43px;
   border: 1px solid #cbced9;
@@ -167,6 +170,9 @@
 }
 
 .plans-algoritm__button--max {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 43px;
   border: 1px solid #cbced9;
@@ -239,9 +245,20 @@
   border-right: none;
   border-left: none;
   background-color: transparent;
+  padding: 0;
 }
 
+.plans-algoritm__button--earler {
+  text-align: start;
+}
+
+.plans-algoritm__button--later {
+  text-align: end;
+}
+
+
 .plans-algoritm__select {
+  position: relative;
   font-family: "Blogger Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -251,13 +268,26 @@
   text-transform: uppercase;
   color: #1d2e5b;
   padding: 11px;
-  padding-right: 27px;
+  padding-right: 36px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("../img/svg/arrow-back.svg");
+  background-image: url("../img/svg/arrow_down.svg");
   background-repeat: no-repeat;
-  background-position: 145px center;
+  background-size: 16px;
+  background-position: 137px center;
   border-radius: 4px;
+}
+
+.plans-algoritm-countries-list__button--shadow::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 24px;
+  right: 120px;
+  background-color: transparent;
+  box-shadow: 26px 0 11px 0 #ffffff;
+  z-index: 1;
 }
 
 .plans-algoritm__input-countries {
@@ -266,9 +296,10 @@
   padding: 11px;
   box-sizing: border-box;
   padding-right: 27px;
-  background-image: url("../img/svg/arrow-back.svg");
+  background-image: url("../img/svg/arrow_down.svg");
+  background-size: 16px;
   background-repeat: no-repeat;
-  background-position: 195px center;
+  background-position: 192px center;
 }
 
 .plans-algoritm__input-countries--active {
@@ -388,13 +419,13 @@
   }
 
   .plans-algoritm__button--min {
-    text-align: start;
-    padding-left: 40px;
+    justify-content: flex-start;
+    padding-left: 23px;
   }
 
   .plans-algoritm__button--max {
-    text-align: end;
-    padding-right: 40px;
+    padding-right: 23px;
+    justify-content: flex-end;
   }
 
   .plans-algoritm__input::placeholder {
@@ -419,10 +450,27 @@
     height: 86px;
   }
 
+  .plans-algoritm__input--mounts::placeholder {
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: none;
+    vertical-align: middle;
+  }
+
   .plans-algoritm__button--earler,
   .plans-algoritm__button--later {
     width: 100px;
     height: 86px;
+  }
+
+  .plans-algoritm__button-image {
+    width: 20px;
+    height: 20px;
+  }
+
+  .plans-algoritm__button-image--mounth {
+    width: 30px;
+    height: 36px;
   }
 
   .plans-algoritm__item + .plans-algoritm__item {
@@ -566,6 +614,10 @@
   .plans-algoritm-countries-list__item--select::after {
     display: none;
   }
+
+  .plans-algoritm-countries-list__button--shadow::after {
+    display: none;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -641,6 +693,11 @@
     height: 70px;
     padding: 0;
     text-align: center;
+  }
+
+  .plans-algoritm__button--min,
+  .plans-algoritm__button--max {
+    justify-content: center;
   }
 
   .plans-algoritm__input--mounts {
