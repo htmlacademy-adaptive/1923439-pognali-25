@@ -1,17 +1,19 @@
 .main-header {
-  background: url("../img/png/traveller-illustration-mobile.png") 65% 38% no-repeat, url("../img/png/header-back-mobile.png") center -2%  no-repeat;
+  position: relative;
+  background: url("../img/png/traveller-illustration-mobile.png") 80px 222px no-repeat, url("../img/png/header-back-mobile.png") center -2%  no-repeat;
   background-color: #161c35;
-  padding-top: 25px;
+  padding-top: 18px;
+  z-index: 1;
 
   @media (min-resolution: 2dppx) {
     .main-header {
-      background: url("../img/png/traveller-illustration-mobile-2x.png") 65% 38% no-repeat, url("../img/png/header-back-mobile-2x.png") center -2%  no-repeat;
+      background: url("../img/png/traveller-illustration-mobile-2x.png") 80px 222px no-repeat, url("../img/png/header-back-mobile-2x.png") center -2%  no-repeat;
     }
   }
 
   .main-header__logo-wrapper {
     background-color: #161c35;
-    margin-bottom: 60px;
+    margin-bottom: 51px;
     padding: 0;
     width: 320px;
     justify-content: space-between;
@@ -40,20 +42,26 @@
   }
 
   .main-header__welcome-contacts-wrapper {
-    margin-top: 313px;
+    margin-top: 248px;
   }
 
   .main-header__features-quote {
-    margin-left: 20px;
+    margin-left: 25px;
     margin-top: 25px;
+    width: 170px;
+  }
+
+  .main-header__features-cite {
+    margin-top: 20px;
   }
 
   .main-header__features-list {
     position: relative;
+    margin-top: 33px;
   }
 
   .main-header__features-item {
-    margin-top: -15px;
+    margin-top: -20px;
   }
 
   .main-header__features-item:nth-child(1) {
@@ -73,8 +81,19 @@
 
   .main-header__features-item:nth-child(4) {
     background-color: #ffd74b;
-    min-height: 80px;
+    min-height: 81px;
   }
+}
+
+.main-header::before {
+  content: "";
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 476px;
+  left: 0;
+  background-color: #161c35;
+  z-index: -1;
 }
 
 
@@ -108,10 +127,20 @@
     background-color: #ffffff;
     margin-bottom: 0;
     padding-bottom: 35px;
-    padding-top: 25px;
+    padding-top: 26px;
     padding-left: 25px;
     padding-right: 25px;
     width: 320px;
+  }
+
+  .main-header__features-quote {
+    margin-left: 50px;
+    margin-top: 41px;
+  }
+
+  .main-header__features-list {
+    margin-left: 25px;
+    margin-top: 35px;
   }
 
   .navigation-menu::before,
@@ -127,11 +156,12 @@
 
   .main-header__log-in-wrapper {
     position: absolute;
-    top: 286px;
+    top: 270px;
     left: 0;
     background-color: #ffffff;
     padding-bottom: 51px;
     width: 320px;
+    padding-top: 5px;
   }
 
   .contacts-wrapper {
@@ -141,24 +171,38 @@
 
   .contacts-wrapper--email {
     position: absolute;
-    top: 432px;
+    top: 420px;
     left: 0;
   }
 
   .contacts-wrapper--phone {
     position: absolute;
-    top: 387px;
+    top: 375px;
     left: 0;
+  }
+
+  .contacts-wrapper__link {
+    font-family: "Blogger Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #192144;
+  }
+
+  .contacts-wrapper__image-wrapper {
+    margin-right: 15px;
   }
 
   .social-wrapper {
     position: absolute;
-    top: 477px;
+    top: 465px;
     left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 35px;
+    padding-bottom: 40px;
   }
 
   .main-header__navigation-list {
@@ -168,7 +212,7 @@
     display: block;
     background-color: #ffffff;
     width: 320px;
-    padding-top: 60px;
+    padding-top: 44px;
   }
 
   .contacts-wrapper,
@@ -185,6 +229,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 41px;
   }
 
   .social-wrapper__item {
@@ -199,7 +244,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 22px;
+    width: 30px;
     height: 22px;
   }
 }
@@ -651,15 +696,27 @@
     }
 
     .main-header__navigation-list {
+      position: relative;
       display: flex;
       margin: 0;
       width: 460px;
       padding-bottom: 0;
     }
 
+    .main-header__navigation-list::before {
+      content: "";
+      width: 60px;
+      height: 2px;
+      position: absolute;
+      top: 11px;
+      left: -113px;
+      background-color: #ffffff;
+      z-index: 1;
+    }
+
     .main-header__logo-wrapper {
       display: flex;
-      width: 25%;
+      width: 28%;
       order: 0;
       margin-bottom: 0;
       background-color: #161c35;
