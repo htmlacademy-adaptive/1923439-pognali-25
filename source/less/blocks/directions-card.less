@@ -61,6 +61,8 @@
 .directions-card__image {
   display: block;
   border-radius: 10px 10px 0 0;
+  width: 270px;
+  height: 110px;
 }
 
 .directions-card__flag {
@@ -71,4 +73,27 @@
 
 .directions__link {
   margin-top: 27px;
+}
+
+@media (min-width: @tablet-width) {
+  .directions-card__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+
+  .directions-card__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .directions-card__counter {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    background-size: 22px;
+  }
 }

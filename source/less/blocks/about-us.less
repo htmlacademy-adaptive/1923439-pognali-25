@@ -34,6 +34,10 @@
   display: block;
   width: 211px;
   margin-left: 20px;
+
+  br {
+    display: none;
+  }
 }
 
 .about-us__description {
@@ -45,13 +49,15 @@
 @media (min-width: @tablet-width) {
   .about-us {
     background-image: url("../img/png/about-tablet.png");
-    background-position: right center;
-    padding-top: 137px;
+    background-position: 384px 143px;
+    padding-top: 131px;
     padding-bottom: 89px;
+    border-radius: 0 0 60px 60px;
 
     @media (min-resolution: 2dppx) {
       .about-us {
         background-image: url("../img/png/about-tablet-2x.png");
+        background-position: 384px 143px;
       }
     }
 
@@ -60,27 +66,47 @@
     }
 
     .about-us__title {
-      margin-bottom: 51px;
+      margin-bottom: 43px;
+      margin-left: 10px;
     }
 
     .button--more-info {
       display: flex;
+      width: 276px;
+      min-height: 80px;
+      font-size: 24px;
+      line-height: 24px;
+      margin-left: 9px;
+      border-radius: 16px;
+      padding-left: 32px;
+      margin-top: 1px;
     }
 
     .about-us__text {
-      width: 310px;
+      width: 300px;
       display: block;
       font-size: 28px;
       line-height: 33px;
+      margin-left: 10px;
+
+      br {
+        display: block;
+      }
     }
 
     .about-us__description {
       display: block;
       width: 310px;
-      margin-bottom: 51px;
+      margin-bottom: 53px;
       font-size: 21px;
       line-height: 25px;
+      margin-top: 31px;
+      margin-left: 11px;
     }
+  }
+
+  .about-us::before {
+    height: 100px;
   }
 }
 

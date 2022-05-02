@@ -42,8 +42,9 @@
   .directions {
     background-color: #edeff6;
     background-image: url("../img/png/directions-background-tablet.png");
-    background-position: right center;
+    background-position: 440px 81px;
     background-repeat: no-repeat;
+    border-radius: 0 0 60px 60px;
 
     @media (min-resolution: 2dppx) {
       .directions {
@@ -53,24 +54,38 @@
 
     .container {
       width: 618px;
+      padding-bottom: 46px;
     }
 
     .directions__text {
-      width: 380px;
+      position: relative;
+      width: 350px;
       display: block;
-      margin-bottom: 104px;
+      margin-bottom: 106px;
       font-size: 28px;
       line-height: 33px;
+      margin-left: 0;
+    }
+
+    .directions__text::before {
+      content: "";
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+      position: absolute;
+      bottom: -210px;
+      left: -34px;
     }
 
     .directions-card__counter {
       background-position: 0 center;
-      padding-left: 20px;
+      padding-left: 30px;
     }
 
     .directions-card__flag {
-      top: 17px;
-      right: -35px;
+      top: 18px;
+      right: -198px;
       left: auto;
       width: 70px;
       height: 47px;
@@ -81,8 +96,11 @@
       display: flex;
       flex-direction: column;
       order: 1;
-      width: 100%;
+      width: 270px;
+      margin-right: -211px;
       border-radius: 15px 0 0 15px;
+      min-height: 140px;
+      padding: 29px 20px 20px 30px;
     }
 
     .direc1tions__list {
@@ -104,16 +122,35 @@
 
     .directions-card__image {
       order: 2;
-      border-radius: 0 15px 15px 0;
+
+      object-fit: cover;
+    }
+
+    .directions-card__image--tablet {
+      border-radius: 0 20px 20px 0;
+      height: 142px;
     }
 
     .directions__link {
       width: 100%;
+      min-height: 82px;
+      border-radius: 20px;
+      margin-top: 48px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      padding-left: 32px;
+      background-position: 575px 38px;
     }
 
     .directions__title {
-      margin-bottom: 57px;
+      margin-bottom: 59px;
+      margin-left: 0;
     }
+  }
+
+  .directions::before {
+    height: 100px;
   }
 }
 

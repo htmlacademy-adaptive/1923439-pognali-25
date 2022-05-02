@@ -29,6 +29,14 @@
     z-index: 1;
     margin-bottom: 29px;
   }
+
+  .add-profile__counter--background {
+    background-color: #ffbd30;
+  }
+
+  .add-profile__counter--yellow {
+    background-color: #ffd74b;
+  }
 }
 
 .add-profile::before {
@@ -128,8 +136,9 @@
   .add-profile {
     padding-right: 35px;
     background-color: #edeff6;
-    padding-bottom: 45px;
-    border-radius: 0 0 25px 25px;
+    padding-bottom: 0;
+    padding-top: 68px;
+    border-radius: 0 0 60px 60px;
 
     .container {
       width: 688px;
@@ -139,16 +148,27 @@
       width: 274px;
       text-align: start;
       margin-top: 0;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      margin-left: 21px;
+      margin-bottom: 6px;
+    }
+
+    .add-profile__link-icon {
+      margin-bottom: 4px;
     }
 
     .add-profile__image {
       z-index: 3;
+      margin-right: 45px;
     }
 
     .add-profile__wrapper {
       width: 650px;
       display: flex;
       z-index: 2;
+      margin-bottom: 33px;
     }
 
     .add-profile__list-wrapper::before {
@@ -158,20 +178,21 @@
       background: #e2e5f2;
       border-radius: 20px;
       position: absolute;
-      top: -35px;
-      right: 0;
+      top: -58px;
+      right: -168px;
       z-index: 1;
     }
 
     .add-profile__wrapper::before {
-      top: 0;
-      width: 590px;
-      left: 92px;
+      top: -19px;
+      width: 500px;
+      left: 72px;
     }
 
     .add-profile__wrapper:last-of-type::after {
       width: 590px;
-      left: 92px;
+      left: 72px;
+      bottom: -13px;
     }
 
     .add-profile__wrapper + .add-profile__wrapper {
@@ -186,17 +207,21 @@
     }
 
     .add-profile__title {
-      width: 100%;
+      width: 600px;
       text-align: center;
-      margin-bottom: 73px;
+      margin-bottom: 54px;
+      margin-left: 44px;
     }
 
     .add-profile__counter {
-      width: 79px;
-      height: 65px;
+      width: 67px;
+      height: 67px;
       font-size: 28px;
       line-height: 28px;
       margin-right: 22px;
+      top: -18px;
+      right: auto;
+      left: -18px;
     }
 
     .add-profile__link__wrapper {
@@ -210,6 +235,10 @@
     }
   }
 
+  .add-profile::before {
+    height: 100px;
+  }
+
   .add-profile__image {
     align-self: flex-end;
     justify-self: flex-end;
@@ -218,18 +247,21 @@
   }
 
   .add-profile__list-wrapper {
-    width: 100%;
+    width: 500px;
   }
 
   .add-profile__list {
-    width: 100%;
+    width: 563px;
     display: flex;
     justify-content: space-between;
+    margin-right: 16px;
+    margin-left: auto;
   }
 
   .for-busines-wrapper {
     display: flex;
     align-items: center;
+    margin-top: 1px;
   }
 
   .add-profile__link-icon {
