@@ -283,6 +283,8 @@
   .add-profile {
     box-sizing: border-box;
     padding-right: 0;
+    padding-top: 100px;
+    padding-bottom: 118px;
 
     .container {
       width: 1320px;
@@ -292,14 +294,19 @@
       width: 198px;
       height: 198px;
       margin-left: 100px;
+      position: absolute;
+      top: 287px;
+      right: 89px;
     }
 
     .add-profile__wrapper {
-      width: 906px;
+      width: 830px;
     }
 
     .add-profile__list-wrapper {
-      width: 906px;
+      width: 1040px;
+      margin-top: 102px;
+      margin-left: 40px;
     }
 
     .add-profile__counter--background::before {
@@ -309,16 +316,27 @@
       height: 300px;
     }
 
+    .add-profile__wrapper::before {
+      top: -19px;
+      width: 653px;
+      left: 0;
+    }
+
     .for-busines-wrapper {
       margin-right: auto;
-      margin-left: 56px;
-      margin-top: 60px;
+      margin-left: 70px;
+      margin-top: 15px;
     }
 
     .add-profile__list-wrapper::before {
       width: 446px;
       height: 300px;
-      right: -160px;
+      right: 65px;
+      top: -68px;
+    }
+
+    .add-profile__counter {
+      left: -89px;
     }
   }
 
@@ -329,11 +347,6 @@
 
   .add-profile__list {
     width: 100%;
-  }
-
-  .add-profile__image {
-    order: 3;
-    margin-left: 0;
   }
 
   .for-busines-wrapper {

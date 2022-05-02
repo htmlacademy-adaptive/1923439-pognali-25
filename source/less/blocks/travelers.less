@@ -198,10 +198,12 @@
 
 @media (min-width: @desktop-width) {
   .travelers {
-    background: url("../img/png/travelers-back-tablet.png") 10% 70% no-repeat, url("../img/png/travelers-back-tablet-small.png") 40% 15% no-repeat;
+    background: url("../img/png/travelers-back-tablet.png") 190px 386px no-repeat, url("../img/png/travelers-back-tablet-small.png") 547px 134px no-repeat;
     background-color: #192144;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 125px;
+    padding-bottom: 127px;
 
     .travelers-container {
       padding: 0;
@@ -209,10 +211,42 @@
 
     .travelers__link {
       width: 280px;
+      margin-top: 12px;
+      margin-left: 71px;
+      padding-left: 33px;
+      grid-column: 1/2;
+      grid-row: 3/4;
+      background-position: 233px 34px;
+    }
+
+    .travelers-card__content {
+      padding-top: 27px;
+    }
+
+    .travelers-flags--short {
+      top: -15px;
     }
 
     .container {
       width: 1320px;
+    }
+
+    .travelers__title {
+      margin-left: 69px;
+    }
+
+    .travelers__title::before {
+      bottom: -112px;
+      left: -70px;
+    }
+
+    .travelers__text {
+      margin-left: 69px;
+    }
+
+    .travelers__description {
+      margin-left: 69px;
+      margin-bottom: 0;
     }
   }
 
@@ -220,5 +254,6 @@
     width: 630px;
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
   }
 }

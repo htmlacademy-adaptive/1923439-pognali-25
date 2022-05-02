@@ -718,16 +718,21 @@
 
 @media (min-width: @desktop-width) {
   .main-header {
-    background: url("../img/png/traveller-illustration-desktop.png") 50% bottom no-repeat, url("../img/png/globe-back-desktop.png") left bottom  no-repeat;
+    background: url("../img/png/traveller-illustration-desktop.png") 604px 110px no-repeat, url("../img/png/globe-back-desktop.png") 0 -2px  no-repeat;
     background-color: #161c35;
     display: flex;
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 47px;
 
     @media (min-resolution: 2dppx) {
       .main-header {
         background: url("../img/png/traveller-illustration-desktop-2x.png") 65% 38% no-repeat, url("../img/png/globe-back-desktop-2x.png") center -2%  no-repeat;
       }
+    }
+
+    .main-header__features-list {
+      margin-top: 17px;
+      margin-bottom: 70px;
     }
 
     .main-header__features-item {
@@ -739,32 +744,49 @@
 
     .main-header__features-item:nth-child(1) {
       width: 345px;
-      min-height: 107px;
+      height: 107px;
       background-color: #ff8d30;
       border-radius: 16px 0 0 16px;
+      box-sizing: border-box;
+      margin-left: 1px;
+      padding: 27px 44px 30px 33px;
     }
 
     .main-header__features-item:nth-child(2) {
-      width: 345px;
-      min-height: 107px;
+      width: 375px;
+      height: 107px;
       background-color: #ffa530;
-      margin-left: -10px;
+      margin-left: -14px;
       border-radius: 16px 0 0 16px;
+      box-sizing: border-box;
+      padding: 28px 43px 30px 30px;
     }
 
     .main-header__features-item:nth-child(3) {
-      width: 345px;
-      min-height: 107px;
+      width: 375px;
+      height: 107px;
+      margin-left: 0;
       background-color: #ffbd30;
       border-radius: 16px 0 0 16px;
+      box-sizing: border-box;
+      padding: 27px 41px 30px 31px;
     }
 
     .main-header__features-item:nth-child(4) {
-      width: 345px;
-      min-height: 107px;
+      width: 315px;
+      height: 107px;
       background-color: #ffd74b;
-      margin-left: -10px;
+      margin-left: 14px;
       border-radius: 16px;
+      box-sizing: border-box;
+      padding: 28px 10px 30px 31px;
+    }
+
+    .main-header__features-counter {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      margin-top: 0;
     }
 
     .main-header-container {
@@ -782,6 +804,7 @@
       margin: 0;
       width: 460px;
       padding-bottom: 0;
+      padding-top: 7px;
     }
 
     .main-header__navigation-list::before {
@@ -789,18 +812,19 @@
       width: 60px;
       height: 2px;
       position: absolute;
-      top: 11px;
-      left: -113px;
+      top: 15px;
+      left: -105px;
       background-color: #ffffff;
       z-index: 1;
     }
 
     .main-header__logo-wrapper {
       display: flex;
-      width: 28%;
+      width: 345px;
       order: 0;
       margin-bottom: 0;
       background-color: #161c35;
+      padding-top: 0;
     }
 
     .main-header__welcome-contacts-wrapper {
@@ -809,12 +833,14 @@
       margin-left: auto;
       justify-content: flex-end;
       align-items: flex-start;
+      padding-top: 2px;
     }
 
     .main-header__features-quote {
       margin: 0;
-      margin-top: 100px;
+      margin-top: 106px;
       margin-bottom: 90px;
+      margin-right: 20px;
     }
 
     .main-header__features-cite {
@@ -835,8 +861,9 @@
       text-align: start;
       margin: 0;
       order: 3;
-      margin-top: 100px;
+      margin-top: 104px;
       margin-bottom: 90px;
+      margin-left: 68px;
     }
   }
 
@@ -846,7 +873,7 @@
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: min-content;
     order: 5;
-    margin-top: 101px;
+    margin-top: 17px;
 
     .main-header__features-item {
       width: 100%;
@@ -925,6 +952,11 @@
 
     .main-header__features-list {
       margin-top: 101px;
+    }
+
+    .main-header__welcome-link {
+      width: 50px;
+      height: 50px;
     }
   }
   // Не подгрузился JS //

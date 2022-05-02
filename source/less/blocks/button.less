@@ -23,6 +23,17 @@
   align-items: center;
 }
 
+@media (min-width: @desktop-width) {
+  .button--log-in {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    min-height: 50px;
+  }
+}
+
 .button--more-info {
   background-image: url("../img/svg/button-treangle.svg");
   background-position: 87% 50%;
@@ -58,9 +69,23 @@
   border-radius: 50%;
 }
 
+@media (min-width: @desktop-width) {
+  .button--phone,
+  .button--email {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .button--log-in-welcome {
   width: 190px;
   min-height: 40px;
+}
+
+@media (min-width: @desktop-width) {
+  .button--log-in-welcome {
+    min-height: 50px;
+  }
 }
 
 .button--show-all {

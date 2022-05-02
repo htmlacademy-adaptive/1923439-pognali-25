@@ -1,7 +1,7 @@
 .about-us {
   background-color: #192144;
   background-image: url("../img/png/about-mobile.png");
-  background-position: center;
+  background-position: 20px 39px;
   background-repeat: no-repeat;
   padding: 69px 52px 67px 30px;
   border-radius: 0 0 25px 25px;
@@ -113,9 +113,9 @@
 @media (min-width: @desktop-width) {
   .about-us {
     background-image: url("../img/png/about-desktop.png");
-    background-position: 90% center;
+    background-position: 750px 85px;
     padding-bottom: 163px;
-    padding-top: 42px;
+    padding-top: 126px;
 
     @media (min-resolution: 2dppx) {
       .about-us {
@@ -127,23 +127,52 @@
       width: 1320px;
     }
 
+    .about-us__title {
+      position: relative;
+      margin-left: 80px;
+      margin-bottom: 59px;
+      z-index: 1;
+    }
+
+    .about-us__title::before {
+      content: "";
+      width: 212px;
+      height: 212px;
+      background-color: #141a39;
+      border-radius: 20px;
+      position: absolute;
+      top: -58px;
+      left: -69px;
+      z-index: -1;
+    }
+
     .about-us__text {
+      position: relative;
       width: 620px;
       display: block;
       font-size: 28px;
       line-height: 33px;
+      margin-left: 80px;
+      z-index: 1;
+
+      br {
+        display: none;
+      }
     }
 
     .about-us__description {
       display: block;
       width: 425px;
-      margin-bottom: 51px;
+      margin-bottom: 86px;
       font-size: 21px;
       line-height: 25px;
+      margin-top: 41px;
+      margin-left: 80px;
     }
 
     .button--more-info {
       display: flex;
+      margin-left: 81px;
     }
   }
 }
