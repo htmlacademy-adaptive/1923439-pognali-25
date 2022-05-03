@@ -1,8 +1,17 @@
 .plans-algoritm {
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 23px;
-  margin-bottom: 70px;
+  padding: 21px 23px 10px 23px;
+  margin-bottom: 6px;
+
+  .plans-algoritm__item--short.plans-algoritm__item--children {
+    margin-top: 25px;
+    margin-bottom: 1px;
+  }
+
+  .plans-algoritm__item.plans-algoritm__item--calendar {
+    margin-top: 14px;
+  }
 }
 
 .plans-algoritm__title {
@@ -75,7 +84,7 @@
 .plans-algoritm__textarea {
   width: 220px;
   height: 220px;
-  margin-top: 20px;
+  margin-top: 16px;
   margin-bottom: 22px;
   border: 1px solid #cbced9;
   box-sizing: border-box;
@@ -84,16 +93,20 @@
   position: relative;
 }
 
+.plans-algoritm__textarea--second {
+  margin-bottom: 17px;
+}
+
 .algoritm-form__item {
   position: relative;
 }
 
 .algoritm-form__item--first::after {
   position: absolute;
-  top: 152px;
-  left: -157px;
+  top: 150px;
+  left: -155px;
   content: "";
-  width: 288px;
+  width: 284px;
   height: 2px;
   background-color: #1d2e5b;
   transform: rotate(-90deg);
@@ -112,7 +125,9 @@
   width: 235px;
   display: inline-block;
   margin: 0;
-  padding-left: 10px;
+  padding-left: 12px;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 .plans-algoritm__label-textarea::before {
@@ -145,7 +160,7 @@
 
 .plans-algoritm__label-textarea--second::after {
   position: absolute;
-  top: 0;
+  top: -4px;
   right: 26px;
   content: "";
   width: 35px;
@@ -203,6 +218,11 @@
 .plans-algoritm__label--children {
   position: relative;
   padding-left: 39px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 .plans-algoritm__label--children::before {
@@ -231,6 +251,7 @@
   font-size: 20px;
   line-height: 20px;
   background-color: #ffffff;
+  text-transform: none;
 }
 
 .plans-algoritm__input--mounts::placeholder {
@@ -273,8 +294,8 @@
   -moz-appearance: none;
   background-image: url("../img/svg/arrow_down.svg");
   background-repeat: no-repeat;
-  background-size: 16px;
-  background-position: 137px center;
+  background-size: 14px;
+  background-position: 140px 16px;
   border-radius: 4px;
 }
 
@@ -297,9 +318,9 @@
   box-sizing: border-box;
   padding-right: 27px;
   background-image: url("../img/svg/arrow_down.svg");
-  background-size: 16px;
+  background-size: 14px;
   background-repeat: no-repeat;
-  background-position: 192px center;
+  background-position: 192px 15px;
 }
 
 .plans-algoritm__input-countries--active {
@@ -353,8 +374,9 @@
   background-color: #edeff6;
   background-image: url("../img/svg/icon_plus.svg");
   background-repeat: no-repeat;
-  background-position: 195px center;
+  background-position: 193px 15px;
   background-size: 13px;
+  padding-left: 13px;
 }
 
 .plans-algoritm-countries-list__item--decore::before {
@@ -368,6 +390,19 @@
   box-sizing: border-box;
   border-radius: 4px;
   background-color: transparent;
+}
+
+.plans-algoritm.add-plans__algoritm--step-2 {
+  padding: 24px 23px 6px 23px;
+  margin-bottom: 11px;
+}
+
+.plans-algoritm.add-plans__algoritm--step-3 {
+  padding: 25px 23px 3px 24px;
+}
+
+.plans-algoritm__description--step-3 {
+  margin-bottom: 24px;
 }
 
 @media (min-width: @tablet-width) {
