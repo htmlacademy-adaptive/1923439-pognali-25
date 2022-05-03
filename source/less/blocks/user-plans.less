@@ -137,13 +137,14 @@
     height: 90px;
     background-color: #edeff6;
     position: absolute;
-    top: -58px;
+    top: -32px;
     left: 0;
     z-index: -1;
   }
 
   .user-plans {
-    padding: 60px 58px 64px 124px;
+    padding: 50px 58px 64px 122px;
+    border-radius: 60px 60px 0 0;
 
     .container {
       width: 1258px;
@@ -151,15 +152,37 @@
 
     .user-plans__item {
       width: 1258px;
-      padding: 36px 42px;
+      padding: 35px 42px 38px 43px;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .user-plans__item + .user-plans__item {
+      margin-top: 15px;
     }
 
     .user-plans__title {
       margin-top: 0;
+      margin-left: 8px;
     }
 
     .user-plans-item__title {
       margin-bottom: 0;
+      width: 230px;
+      margin-right: 301px;
+    }
+
+    .user-plans-item__counter {
+      margin-right: 36px;
+    }
+
+    .user-plans-item__link {
+      margin-right: 0;
+      margin-left: auto;
+    }
+
+    .travelers-date {
+      margin-right: 30px;
     }
 
     .user-plans__item::before {
@@ -167,7 +190,7 @@
     }
 
     .user-plans__item:last-child {
-      margin-bottom: 64px;
+      margin-bottom: 3px;
     }
 
     .user-plans__list {

@@ -355,12 +355,12 @@
   .user-profile::before {
     position: absolute;
     width: 100%;
-    height: 192px;
+    height: 252px;
     top: 0;
     left: 0;
     background-color: #161c35;
     z-index: 0;
-    border-radius: 0 0 30px 30px;
+    border-radius: 0 0 60px 60px;
     content: "";
   }
 
@@ -368,14 +368,34 @@
     position: relative;
     justify-content: space-between;
     width: 100%;
+    padding-top: 61px;
 
     .container {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: flex-start;
-      width: 1256px;
-      padding-bottom: 50px;
+      width: 1320px;
+      padding-bottom: 29px;
+    }
+
+    .user-profile__card-lvl-wrapper {
+      width: 100px;
+      height: 175px;
+      margin-top: 0;
+      margin-right: 42px;
+      order: 0;
+      background-color: #161c35;
+      z-index: 1;
+    }
+
+    .user-profile__lvl {
+      margin-left: 6px;
+    }
+
+    .card-lvl__background {
+      margin-right: 7px;
+      margin-top: 7px;
     }
 
     .card-lvl__number,
@@ -392,18 +412,20 @@
     }
 
     .user-profile-wrapper__title--tag {
-      top: 94px;
-      left: 45px;
+      top: 83px;
+      left: 23px;
     }
 
     .user-profile-wrapper__title--transport {
-      top: 93px;
-      left: 128px;
+      top: 82px;
+      left: 120px;
     }
 
     .user-profile-title-wrapper {
       margin-top: 0;
-      width: 750px;
+      margin-bottom: 0;
+      width: 665px;
+      margin-right: auto;
     }
 
     .user-profile-wrapper__description {
@@ -417,17 +439,18 @@
       min-height: 47px;
       margin: 0;
       order: 0;
-      margin-left: 1056px;
+      margin-left: 1035px;
       border-radius: 8px;
       margin-bottom: 27px;
       font-size: 20px;
       line-height: 18px;
       font-weight: 500;
+      letter-spacing: normal;
     }
 
     .user-profile__list {
       width: 384px;
-      min-height: 105px;
+      min-height: 94px;
     }
 
     .user-profile-wrapper {
@@ -445,7 +468,7 @@
       font-weight: 700;
       font-size: 60px;
       line-height: 60px;
-      margin-left: 0;
+      margin-left: 64px;
     }
 
     .user-profile__avatar {
@@ -454,26 +477,18 @@
       height: 190px;
       margin: 0;
     }
-  }
 
-  .user-profile__avatar-wrapper {
-    order: 0;
-    width: 198px;
-    border-radius: 0 0 20px 0;
-    margin-right: 0;
+    .user-profile__avatar-wrapper {
+      order: 0;
+      width: 198px;
+      border-radius: 0 0 20px 0;
+      margin-right: 87px;
+    }
   }
 
   .user-profile__lvl {
     margin-left: 0;
     order: 1;
-    z-index: 1;
-  }
-
-  .user-profile__card-lvl-wrapper {
-    width: 220px;
-    height: 190px;
-    order: 0;
-    background-color: #161c35;
     z-index: 1;
   }
 
@@ -499,11 +514,12 @@
 
   .user-profile__wrapper-tag {
     order: 6;
-    width: 40%;
+    width: 732px;
+    margin-left: 64px;
   }
 
   .user-profile__wrapper-transport {
-    width: 574px;
+    width: 384px;
     order: 7;
   }
 }

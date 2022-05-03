@@ -763,12 +763,61 @@
 
 @media (min-width: @desktop-width) {
   .plans-algoritm {
-    padding: 101px 160px 106px 160px;
+    padding: 96px 160px 106px 160px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 1320px;
-    border-radius: 30px;
+    border-radius: 60px;
+    margin-bottom: 45px;
+
+    .plans-algoritm__item.plans-algoritm__item-day {
+      margin-top: 5px;
+      width: 469px;
+    }
+
+    .plans-algoritm__item.plans-algoritm__item-mounts {
+      margin-top: 33px;
+    }
+
+    .plans-algoritm__button-image--mounth {
+      width: 21px;
+      height: 33px;
+    }
+
+    .plans-algoritm__item.plans-algoritm__item--calendar {
+      margin-top: 0;
+    }
+
+    .plans-algoritm__label-textarea {
+      margin-bottom: 20px;
+    }
+
+    .plans-algoritm__textarea {
+      width: 730px;
+      height: 142px;
+      margin-top: 20px;
+      margin-bottom: 43px;
+    }
+
+    .plans-algoritm__label-textarea--first::after {
+      top: -2px;
+      right: -588px;
+    }
+
+    .plans-algoritm__label-textarea--second::after {
+      top: -2px;
+      right: -806px;
+    }
+
+    .plans-algoritm__textarea--first {
+      padding-left: 25px;
+      padding-top: 25px;
+    }
+
+    .plans-algoritm__button-wrapper--step-3 {
+      margin-top: 12px;
+    }
   }
 
   .plans-algoritm__label {
@@ -782,11 +831,17 @@
     line-height: 18px;
     text-transform: uppercase;
     color: #1d2e5b;
+    letter-spacing: normal;
+    margin-top: 2px;
   }
 
   .plans-algoritm__title {
     width: max-content;
     margin-bottom: 0;
+
+    br {
+      display: none;
+    }
   }
 
   .plans-algoritm__description {
@@ -794,6 +849,7 @@
     order: 3;
     border-bottom: none;
     padding: 0;
+    padding-bottom: 20px;
     margin-bottom: 0;
   }
 
@@ -802,8 +858,8 @@
     display: grid;
     grid-template-columns: 5fr 1fr;
     grid-template-rows: min-content min-content min-content min-content min-content;
-    row-gap: 30px;
-    margin-top: 30px;
+    margin-top: 21px;
+    margin-bottom: 57px;
   }
 
   .plans-algoritm__item + .plans-algoritm__item {
@@ -823,7 +879,7 @@
     font-size: 20px;
     line-height: 18px;
     color: #1d2e5b;
-    margin-left: 25px;
+    margin-left: 37px;
     order: 1;
   }
 
@@ -843,7 +899,10 @@
 
   .plans-algoritm__input--mounts {
     width: 800px;
-    height: 86px;
+    height: 88px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .plans-algoritm__input--mounts::placeholder {
@@ -858,7 +917,7 @@
   .plans-algoritm__button--earler,
   .plans-algoritm__button--later {
     width: 100px;
-    height: 86px;
+    height: 88px;
   }
 
   .plans-algoritm__item-children {
@@ -866,11 +925,17 @@
     grid-row: 1/2;
   }
 
+  .plans-algoritm__label--children {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 9px;
+  }
+
   .plans-algoritm__item-human {
     justify-content: flex-end;
     grid-column: 1/2;
     grid-row: 1/2;
-    width: 450px;
+    width: 483px;
   }
 
   .plans-algoritm__item-day {
@@ -893,6 +958,7 @@
 
   .plans-algoritm__button-wrapper {
     width: 100%;
+    margin-top: 30px;
   }
 
   .algoritm-form__list {
@@ -900,18 +966,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 730px;
-    margin-top: 80px;
-  }
-
-  .plans-algoritm__textarea {
-    width: 730px;
-    height: 142px;
-    margin-top: 20px;
-    margin-bottom: 22px;
-  }
-
-  .plans-algoritm__label-textarea {
-    margin-bottom: 20px;
+    margin-top: 74px;
   }
 
   .plans-algoritm__select,
@@ -934,8 +989,8 @@
   }
 
   .plans-algoritm__flags-wrapper::after {
-    top: 17px;
-    left: -45px;
+    top: 14px;
+    left: -46px;
     width: 14px;
     height: 14px;
   }
@@ -953,11 +1008,25 @@
   }
 
   .algoritm-form__item--first::before {
-    top: -40px;
-    left: 760px;
+    top: -34px;
+    left: 753px;
   }
 
   .algoritm-form__item:last-child {
-    margin-bottom: 58px;
+    margin-bottom: 0;
+  }
+
+  .plans-algoritm.add-plans__algoritm--step-2 {
+    padding: 95px 160px 105px 159px;
+    margin-bottom: 44px;
+  }
+
+  .plans-algoritm.add-plans__algoritm--step-3 {
+    padding: 97px 160px 102px 159px;
+    margin-bottom: 49px;
+  }
+
+  .plans-algoritm__description--step-3 {
+    width: 483px;
   }
 }

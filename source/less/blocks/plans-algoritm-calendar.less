@@ -18,6 +18,10 @@
   color: #444444;
 }
 
+.day-hidden {
+  display: none;
+}
+
 .plans-algoritm-calendar__td-in {
   font-family: "Blogger Sans", sans-serif;
   font-style: normal;
@@ -102,6 +106,10 @@
     padding-left: 16px;
   }
 
+  .day-hidden {
+    display: inline;
+  }
+
   .plans-algoritm-calendar__td {
     width: 148px;
     height: 76px;
@@ -110,20 +118,31 @@
     padding-top: 14px;
   }
 
+  .plans-algoritm-calendar__td--day {
+    padding-left: 16px;
+    padding-top: 0;
+    height: 51px;
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+  }
+
+  .plans-algoritm-calendar__td--number {
+    height: 56px;
+  }
+
+  .plans-algoritm__button {
+    margin-bottom: 0;
+  }
+
   .plans-algoritm-calendar__td-in {
     display: block;
-    margin-top: 9px;
+    margin-top: 5px;
+    margin-left: 5px;
   }
 
   .plans-algoritm-calendar__td--active {
     outline: 4px solid #ff5c23;
     outline-offset: -1px;
-  }
-
-  .plans-algoritm-calendar__td--day {
-    font-size: 18px;
-    line-height: 18px;
-    padding-top: 20px;
-    vertical-align: middle;
   }
 }
