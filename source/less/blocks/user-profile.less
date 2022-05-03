@@ -207,33 +207,35 @@
   .user-profile::before {
     position: absolute;
     width: 100%;
-    height: 215px;
+    height: 212px;
     top: 0;
     left: 0;
     background-color: #182044;
     z-index: 0;
-    border-radius: 0 0 30px 30px;
+    border-radius: 0 0 60px 60px;
     content: "";
   }
 
   .user-profile {
     justify-content: space-around;
-    padding-bottom: 30px;
+    padding-bottom: 36px;
 
     .user-profile__title {
       font-size: 60px;
       line-height: 60px;
-      padding-bottom: 10px;
+      padding-bottom: 61px;
     }
 
     .user-profile-wrapper__title--tag {
-      top: 94px;
-      left: 273px;
+      top: 83px;
+      left: 268px;
+      letter-spacing: 0.07em;
     }
 
     .user-profile-wrapper__title--transport {
-      top: 93px;
-      left: 87px;
+      top: 81px;
+      left: 81px;
+      letter-spacing: 0.07em;
     }
 
     .user-profile__link {
@@ -248,9 +250,9 @@
       order: 4;
       width: 618px;
       margin: 0 auto;
-      margin-top: 40px;
+      margin-top: 49px;
       min-height: 60px;
-      margin-bottom: 21px;
+      margin-bottom: 53px;
     }
 
     .user-profile__link--hidden {
@@ -269,7 +271,8 @@
     }
 
     .user-profile-title-wrapper {
-      margin-top: 134px;
+      margin-top: 78px;
+      margin-bottom: 60px;
     }
 
     .user-profile-wrapper__title {
@@ -295,22 +298,40 @@
 
     .user-profile__list {
       width: 308px;
-      min-height: 105px;
+      min-height: 94px;
     }
 
     .user-profile__card-lvl-wrapper {
       margin-top: 0;
+      margin-bottom: 4px;
+      margin-left: 3px;
+      width: 90px;
+      height: 90px;
+    }
+
+    .user-profile__lvl::after {
+      width: 88px;
+      height: 88px;
+    }
+
+    .user-profile__lvl::before {
+      width: 88px;
+      height: 88px;
     }
 
     .user-profile__avatar {
-      border-radius: 7px;
+      border-radius: 6px;
+      width: 94px;
+      height: 95px;
     }
 
     .user-profile-wrapper__description {
       width: 618px;
-      height: 105px;
+      height: 94px;
       font-size: 20px;
       line-height: 22px;
+      padding: 32px 28px 23px 38px;
+      box-sizing: border-box;
     }
   }
 
