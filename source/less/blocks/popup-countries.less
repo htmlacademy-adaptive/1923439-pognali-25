@@ -238,14 +238,29 @@
     height: 476px;
 
     .countries-filter__list {
-      column-gap: 15px;
-      row-gap: 15px;
+      column-gap: 16px;
+      row-gap: 14px;
       min-height: 476px;
     }
 
     .countries-filter__button {
       width: 60px;
       height: 70px;
+    }
+
+    .countries-filter__item--active::before {
+      content: "";
+      width: 475px;
+      height: 1px;
+      transform: rotate(90deg);
+      position: absolute;
+      top: 201px;
+      left: -216px;
+      background-color: rgba(214, 217, 230, 0.5);
+    }
+
+    .countries-filter__button--key-letter {
+      border-radius: 4px;
     }
   }
 }
