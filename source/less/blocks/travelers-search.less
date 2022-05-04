@@ -1,7 +1,11 @@
 .travelers-search {
-  background-color: #dfe3f0;
+  background-color: #edeff6;
   position: relative;
   margin-bottom: 28px;
+
+  .travelers-search__item--transport + .travelers-search__item--transport {
+    margin-left: 1px;
+  }
 }
 
 .travelers-search__title {
@@ -14,6 +18,7 @@
   color: #1d2e5b;
   margin: 0;
   margin-bottom: 23px;
+  margin-left: 4px;
 }
 
 .travelers-search__list {
@@ -41,6 +46,16 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-left: 5px;
+  margin-right: 3px;
+}
+
+.travelers-search__fieldset--music {
+  padding-bottom: 19px;
+}
+
+.travelers-search__fieldset--transport {
+  padding-bottom: 19px;
 }
 
 .travelers-search__fieldset:nth-of-type(2n-1) {
@@ -53,7 +68,7 @@
 }
 
 .travelers-search__fieldset + .travelers-search__fieldset {
-  margin-top: 12px;
+  margin-top: 0;
 }
 
 .travelers-search__category {
@@ -65,17 +80,32 @@
   text-transform: uppercase;
   color: #1d2e5b;
   width: 165px;
-  margin: 12px 0;
+  margin-top: 10px;
+  margin-bottom: 13px;
+
+}
+
+.travelers-search__category--food {
+  margin-bottom: 11px;
+}
+
+.travelers-search__category--transport {
+  margin-bottom: 16px;
+}
+
+.travelers-search__category--lvl {
+  margin-top: 11px;
 }
 
 .travelers-search__button {
   border: none;
   background-color: transparent;
-  width: 10px;
-  height: 10px;
+  width: 13px;
+  height: 13px;
   background-image: url("../img/svg/treangle_blue.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-left: 1px;
 }
 
 .travelers-search__button--open {
@@ -85,6 +115,9 @@
 .travelers-search__label {
   position: relative;
   padding-left: 27px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .travelers-search__label::before {
@@ -99,7 +132,7 @@
 }
 
 .travelers-search__item + .travelers-search__item {
-  margin-top: 12px;
+  margin-top: 9px;
 }
 
 .travelers-search__input:checked + .travelers-search__label::before {
@@ -125,8 +158,8 @@
 .travelers-search__input--walk:checked + .transport-list__label {
   background-image: url("../img/svg/icon_run_checked.svg");
   background-repeat: no-repeat;
-  background-position: center 45%;
-  background-size: 75%;
+  background-position: 55% 56%;
+  background-size: 70%;
 }
 
 .travelers-search__input--cycle:checked + .transport-list__label {
@@ -185,8 +218,8 @@
 }
 
 .travelers-search__input--submit {
-  width: 220px;
-  margin-top: 21px;
+  width: 230px;
+  margin-top: 24px;
 }
 
 .travelers-search__category--hidden {
