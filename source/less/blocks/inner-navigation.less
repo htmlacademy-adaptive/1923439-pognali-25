@@ -50,7 +50,9 @@
 @media (min-width: @tablet-width) {
   .inner-navigation {
     background-color: #182044;
-    padding-bottom: 0;
+    padding-top: 94px;
+    padding-bottom: 87px;
+    border-radius: 0 0 60px 60px;
 
     .container {
       padding: 0;
@@ -59,7 +61,22 @@
   }
 
   .inner-navigation__title {
-    padding-bottom: 31px;
+    position: relative;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 20px;
+    border: none;
+  }
+
+  .inner-navigation__title::before {
+    content: "";
+    width: 288px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #ff8d30;
+    position: absolute;
+    bottom: -91px;
+    left: 0;
   }
 
   .inner-navigation__go-index {
@@ -76,11 +93,12 @@
     background-image: url("../img/svg/icon_arrow_bend.svg");
     background-repeat: no-repeat;
     background-position: right center;
+    margin-top: 8px;
   }
 
   .inner-navigation__wrapper {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
   }
 }

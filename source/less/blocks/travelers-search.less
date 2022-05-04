@@ -175,6 +175,7 @@
 
 .travelers-search__item-wrapper--input {
   display: flex;
+  position: relative;
 }
 
 .travelers-search__input-lvl {
@@ -219,6 +220,7 @@
 
 .travelers-search__input--submit {
   width: 230px;
+  min-height: 41px;
   margin-top: 24px;
 }
 
@@ -226,9 +228,31 @@
   display: none;
 }
 
+.travelers-search__item-wrapper--input::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 11px;
+  left: 100px;
+}
+
+.travelers-search__item-wrapper--input::after {
+  content: "";
+  width: 16px;
+  height: 1px;
+  background-color: #cbced9;
+  position: absolute;
+  top: 17px;
+  left: 102px;
+}
+
 
 @media (min-width: @tablet-width) and (max-width: 1439px) {
   .travelers-search {
+    margin-bottom: 41px;
+
     .container {
       width: 688px;
       padding-left: 0;
@@ -241,6 +265,8 @@
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 38px;
+    margin-left: 0;
+    letter-spacing: normal;
   }
 
   .travelers-search__list--close {
@@ -252,11 +278,47 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 26px;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+
+  .travelers-search__fieldset--music {
+    padding-bottom: 0;
+    margin-bottom: 28px;
+  }
+
+  .travelers-search__fieldset--food {
+    margin-bottom: 24px;
+  }
+
+  .travelers-search__fieldset--transport {
+    justify-content: flex-start;
+    padding-bottom: 0;
+    margin-bottom: 13px;
+  }
+
+  .travelers-search__fieldset--lvl {
+    justify-content: flex-start;
+  }
+
+  .travelers-search__label {
+    padding-left: 37px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .travelers-search__label::before {
+    width: 24px;
+    height: 24px;
+  }
+
+  .travelers-search__input:checked + .travelers-search__label::before {
+    background-size: 18px;
   }
 
   .travelers-search__fieldset:first-of-type {
-    padding-top: 34px;
+    padding-top: 37px;
   }
 
   .travelers-search__fieldset:last-of-type {
@@ -269,31 +331,44 @@
     display: flex;
     align-items: center;
     width: 492px;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .travelers-search__list--transport {
     width: 180px;
-    margin-right: auto;
+    margin-left: 18px;
   }
 
   .travelers-search__list--lvl {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    width: 491px;
+    justify-content: flex-end;
+    width: 514px;
   }
 
   .travelers-search__input-lvl {
     width: 74px;
+    height: 46px;
+  }
+
+  .travelers-search__input-lvl::placeholder {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #1d2e5b;
   }
 
   .travelers-search__item {
     width: 145px;
   }
 
+  .travelers-search__item--long {
+    width: 151px;
+  }
+
   .travelers-search__item + .travelers-search__item {
-    margin-left: 20px;
+    margin-left: 25px;
     margin-top: 0;
   }
 
@@ -302,8 +377,9 @@
   }
 
   .travelers-search__item--lvl {
-    width: 150px;
     margin-bottom: 0;
+    margin-left: auto;
+    width: 148px;
   }
 
   .travelers-search__item--range {
@@ -323,14 +399,15 @@
     margin: 0;
   }
 
-  .travelers-search__label {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
   .travelers-search__input--submit {
     width: 100%;
+    min-height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #161c35;
   }
 
   .travelers-search__fieldset:nth-of-type(2n-1) {
@@ -358,6 +435,24 @@
     line-height: 20px;
     text-transform: uppercase;
     color: #1d2e5b;
+  }
+
+  .travelers-search__item-wrapper--input::before {
+    width: 16px;
+    height: 16px;
+    top: 14px;
+    left: 68px;
+  }
+
+  .travelers-search__item-wrapper--input::after {
+    width: 20px;
+    height: 1px;
+    top: 21px;
+    left: 65px;
+  }
+
+  .travelers-search__input--submit {
+
   }
 }
 
