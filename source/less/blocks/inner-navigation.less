@@ -53,6 +53,7 @@
     padding-top: 94px;
     padding-bottom: 87px;
     border-radius: 0 0 60px 60px;
+    z-index: 1;
 
     .container {
       padding: 0;
@@ -106,9 +107,15 @@
 @media (min-width: @desktop-width) {
   .inner-navigation {
     background-color: #161c35;
+    z-index: 1;
 
     .container {
-      width: 1186px;
+      width: 1191px;
     }
+  }
+
+  .inner-navigation--catalog {
+    padding-top: 136px;
+    padding-bottom: 86px;
   }
 }
