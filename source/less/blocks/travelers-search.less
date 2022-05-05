@@ -452,31 +452,124 @@
 
 @media (min-width: @desktop-width) {
   .travelers-search {
-    width: 280px;
+    width: 285px;
+
+    .travelers-search__item--transport + .travelers-search__item--transport {
+      margin-left: 0;
+    }
+  }
+
+  .travelers-search__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: normal;
+  }
+
+  .travelers-search__category {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+
+  .travelers-search__category--transport {
+    margin-top: 8px;
+    margin-bottom: 14px;
+  }
+
+  .travelers-search__label {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 37px;
+  }
+
+  .travelers-search__label::before {
+    width: 24px;
+    height: 24px;
+  }
+
+  .travelers-search__input:checked + .travelers-search__label::before {
+    background-size: 18px;
   }
 
   .travelers-search__list--close {
     display: none;
   }
 
+  .travelers-search__button {
+    margin-right: 5px;
+    display: block;
+    background-position: 2px 5px;
+  }
+
+  .travelers-search__input-lvl {
+    width: 96px;
+    height: 46px;
+  }
+
+  .travelers-search__input-lvl::placeholder {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #1d2e5b;
+  }
+
   .travelers-search-container {
-    width: 280px;
+    width: 285px;
   }
 
   .travelers-search__list {
     flex-direction: row;
     align-items: flex-start;
+    margin-top: 16px;
+  }
+
+  .travelers-search__list--transport {
+    margin-top: 6px;
   }
 
   .travelers-search__item + .travelers-search__item {
     margin-left: 0;
+    margin-top: 19px;
   }
 
-  .travelers-search__button {
-    display: block;
+  .travelers-search__item--transport + .travelers-search__item--transport {
+    margin-top: 0;
   }
 
   .travelers-search__list--lvl {
     width: 192px;
+    margin-top: 10px;
+  }
+
+  .travelers-search__item-wrapper--input::before {
+    width: 16px;
+    height: 18px;
+    top: 14px;
+    left: 90px;
+  }
+
+  .travelers-search__item-wrapper--input::after {
+    width: 22px;
+    height: 1px;
+    top: 21px;
+    left: 85px;
+  }
+
+  .travelers-search__input--submit {
+    width: 192px;
+    min-height: 49px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 43px;
+    margin-left: 5px;
+    margin-bottom: 11px;
   }
 }
