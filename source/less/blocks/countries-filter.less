@@ -821,6 +821,15 @@
     .countries-filter__hidden {
       display: none;
     }
+
+    .countries-filter__button--key-letter {
+      justify-content: flex-start;
+    }
+
+    .countries-filter__list-inside {
+      margin-top: 15px;
+      margin-left: 0;
+    }
   }
 
   // Выпадашка открыта //
@@ -912,6 +921,8 @@
 
     .countries-filter__button--key-letter {
       opacity: 1;
+      width: 59px;
+      height: 54px;
     }
 
     .countries-filter__key-letter-label {
@@ -922,118 +933,123 @@
     }
 
     .countries-filter__list-inside {
-      margin-top: 20px;
-      margin-left: 10px;
+      margin-top: 15px;
+      margin-left: 0;
     }
 
     .countries-filter__list-inside--2 {
-      margin-top: 20px;
-      margin-left: 13px;
+      margin-top: 15px;
+      margin-left: 3px;
     }
 
     .countries-filter__list-inside--3 {
-      margin-top: 20px;
-      margin-left: 17px;
+      margin-top: 15px;
+      margin-left: 7px;
     }
 
     .countries-filter__list-inside--4 {
-      margin-top: 20px;
-      margin-left: 19px;
+      margin-top: 15px;
+      margin-left: 9px;
+    }
+
+    .countries-filter__list-inside--6 {
+      margin-top: 15px;
+      margin-left: 1px;
     }
 
     .countries-filter__list-inside--7 {
-      margin-top: 18px;
-      margin-left: 15px;
+      margin-top: 12px;
+      margin-left: 5px;
     }
 
     .countries-filter__list-inside--8 {
-      margin-top: 19px;
-      margin-left: 15px;
+      margin-top: 13px;
+      margin-left: 6px;
     }
 
     .countries-filter__list-inside--9 {
-      margin-top: 21px;
-      margin-left: 17px;
+      margin-top: 15px;
+      margin-left: 7px;
     }
 
     .countries-filter__list-inside--10 {
-      margin-top: 22px;
-      margin-left: 16px;
+      margin-top: 16px;
+      margin-left: 6px;
     }
 
     .countries-filter__list-inside--11 {
-      margin-top: 23px;
-      margin-left: 10px;
+      margin-top: 18px;
+      margin-left: 0;
     }
 
     .countries-filter__list-inside--12 {
-      margin-top: 20px;
-      margin-left: 14px;
+      margin-top: 15px;
+      margin-left: 4px;
     }
 
     .countries-filter__list-inside--13 {
-      margin-top: 22px;
-      margin-left: 17px;
+      margin-top: 17px;
+      margin-left: 7px;
     }
 
     .countries-filter__list-inside--14 {
-      margin-top: 19px;
-      margin-left: 18px;
+      margin-top: 14px;
+      margin-left: 8px;
     }
 
     .countries-filter__list-inside--15 {
-      margin-top: 20px;
-      margin-left: 16px;
+      margin-top: 15px;
+      margin-left: 6px;
     }
 
     .countries-filter__list-inside--16 {
       margin-top: 17px;
-      margin-left: 13px;
+      margin-left: 3px;
     }
 
     .countries-filter__list-inside--17 {
       margin-top: 17px;
-      margin-left: 14px;
+      margin-left: 4px;
     }
 
     .countries-filter__list-inside--18 {
-      margin-top: 17px;
-      margin-left: 16px;
+      margin-top: 15px;
+      margin-left: 6px;
     }
 
     .countries-filter__list-inside--19 {
-      margin-top: 18px;
-      margin-left: 17px;
+      margin-top: 15px;
+      margin-left: 8px;
     }
 
     .countries-filter__list-inside--20 {
-      margin-top: 18px;
-      margin-left: 19px;
+      margin-top: 16px;
+      margin-left: 9px;
     }
 
     .countries-filter__list-inside--21 {
-      margin-top: 27px;
-      margin-left: 10px;
+      margin-top: 21px;
+      margin-left: 1px;
     }
 
     .countries-filter__list-inside--22 {
-      margin-top: 28px;
-      margin-left: 14px;
+      margin-top: 21px;
+      margin-left: 4px;
     }
 
     .countries-filter__list-inside--23 {
-      margin-top: 31px;
-      margin-left: 17px;
+      margin-top: 23px;
+      margin-left: 7px;
     }
 
     .countries-filter__list-inside--24 {
-      margin-top: 29px;
-      margin-left: 20px;
+      margin-top: 21px;
+      margin-left: 10px;
     }
 
     .countries-filter__list-inside--25 {
-      margin-top: 28px;
-      margin-left: 18px;
+      margin-top: 20px;
+      margin-left: 8px;
     }
 
     .grid-1 {
@@ -1054,6 +1070,10 @@
     .grid-4 {
       grid-column: 4/5;
       grid-row: 1/2;
+
+      .countries-filter__button--key-letter {
+        margin-left: 3px;
+      }
     }
 
     .grid-5 {
@@ -1065,7 +1085,7 @@
     .grid-6 {
       grid-column: 1/2;
       grid-row: 3/4;
-      margin-top: 31px;
+      margin-top: 24px;
 
       .countries-filter__button--key-letter {
         width: 51px;
@@ -1075,64 +1095,74 @@
     .grid-7 {
       grid-column: 2/3;
       grid-row: 3/4;
-      margin-top: 31px;
+      margin-top: 24px;
     }
 
     .grid-8 {
       grid-column: 3/4;
       grid-row: 3/4;
-      margin-top: 31px;
+      margin-top: 24px;
+
+      .countries-filter__button--key-letter {
+        margin-left: 1px;
+      }
     }
 
     .grid-9 {
       grid-column: 4/5;
       grid-row: 3/4;
-      margin-top: 31px;
+      margin-top: 24px;
+
+      .countries-filter__button--key-letter {
+        margin-left: 2px;
+      }
     }
 
     .grid-10 {
       grid-column: 5/6;
       grid-row: 3/4;
-      margin-top: 31px;
+      margin-top: 24px;
     }
 
     .grid-11 {
       grid-column: 1/2;
       grid-row: 5/6;
-      margin-top: 27px;
-      margin-left: 3px;
+      margin-top: 20px;
+      margin-left: 1px;
     }
 
     .grid-12 {
       grid-column: 2/3;
       grid-row: 5/6;
-      margin-top: 27px;
-      margin-left: 2px;
+      margin-top: 20px;
+      margin-left: 3px;
     }
 
     .grid-13 {
       grid-column: 3/4;
       grid-row: 5/6;
-      margin-top: 27px;
+      margin-top: 20px;
+      margin-left: 3px;
     }
 
     .grid-14 {
       grid-column: 4/5;
       grid-row: 5/6;
-      margin-top: 27px;
-      margin-left: 2px;
+      margin-top: 20px;
+      margin-left: 5px;
     }
 
     .grid-15 {
       grid-column: 5/6;
       grid-row: 5/6;
-      margin-top: 28px;
+      margin-top: 21px;
+      margin-left: 2px;
     }
 
     .grid-16 {
       grid-column: 1/2;
       grid-row: 7/8;
-      margin-top: 66px;
+      margin-top: 59px;
 
       .countries-filter__button--key-letter {
         width: 56px;
@@ -1142,26 +1172,34 @@
     .grid-17 {
       grid-column: 2/3;
       grid-row: 7/8;
-      margin-top: 65px;
+      margin-top: 59px;
+
+      .countries-filter__button--key-letter {
+        margin-left: 2px;
+      }
     }
 
     .grid-18 {
       grid-column: 3/4;
       grid-row: 7/8;
-      margin-top: 67px;
+      margin-top: 59px;
+
+      .countries-filter__button--key-letter {
+        margin-left: 3px;
+      }
     }
 
     .grid-19 {
       grid-column: 4/5;
       grid-row: 7/8;
-      margin-top: 65px;
-      margin-left: 8px;
+      margin-top: 59px;
+      margin-left: 5px;
     }
 
     .grid-20 {
       grid-column: 5/6;
       grid-row: 7/8;
-      margin-top: 66px;
+      margin-top: 59px;
       margin-left: 0;
 
       .countries-filter__button--key-letter {
@@ -1172,7 +1210,7 @@
     .grid-21 {
       grid-column: 1/2;
       grid-row: 9/10;
-      margin-top: 25px;
+      margin-top: 17px;
 
       .countries-filter__button--key-letter {
         width: 57px;
@@ -1182,27 +1220,28 @@
     .grid-22 {
       grid-column: 2/3;
       grid-row: 9/10;
-      margin-top: 26px;
-      margin-left: 5px;
+      margin-top: 18px;
+      margin-left: 3px;
     }
 
     .grid-23 {
       grid-column: 3/4;
       grid-row: 9/10;
-      margin-top: 25px;
+      margin-top: 18px;
+      margin-left: 2px;
     }
 
     .grid-24 {
       grid-column: 4/5;
       grid-row: 9/10;
-      margin-top: 26px;
-      margin-left: 8px;
+      margin-top: 17px;
+      margin-left: 4px;
     }
 
     .grid-25 {
       grid-column: 5/6;
       grid-row: 9/10;
-      margin-top: 25px;
+      margin-top: 17px;
     }
   }
 }
