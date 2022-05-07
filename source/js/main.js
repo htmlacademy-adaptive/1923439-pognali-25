@@ -3,7 +3,7 @@ let headerMenuToggle = document.querySelector('.main-header__menu');
 let modalOpen = document.querySelector('.add-profile__link');
 let modalIndex = document.querySelector('.modal-container');
 let modalClose = document.querySelector('.modal-contant__link');
-let scrollMenu = document.querySelector('.main-header-container');
+let scrollMenu = document.querySelector('.test-wrapper');
 let sticky = scrollMenu.offsetTop;
 
 headerMenu.classList.remove('main-header--nojs');
@@ -33,13 +33,13 @@ modalClose.addEventListener('click', function () {
   modalIndex.classList.add('modal-container--close');
 });
 
-// window.onscroll = function()
-// {myFunction()};
+window.onscroll = function()
+{myFunction()};
 
-// function myFunction() {
-//   if (window.scrollY >= sticky) {
-//     scrollMenu.classList.add('scroll-menu')
-//   } else {
-//     scrollMenu.classList.remove('scroll-menu');
-//   }
-// }
+function myFunction() {
+  if (window.scrollY >= sticky) {
+    scrollMenu.classList.add('scroll-menu')
+  } else {
+    scrollMenu.classList.remove('scroll-menu');
+  }
+}

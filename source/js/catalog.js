@@ -5,6 +5,8 @@ let countriesFilter = document.querySelector('.countries-filter');
 let countriesFilterToggle2 = document.querySelector('.countries-filter__close');
 let countriesFilterToggleDesktop = document.querySelector('.countries-filter__link');
 let countriesFilterToggleButton = document.querySelector('.countries-filter__button--close');
+let scrollMenu = document.querySelector('.test-wrapper');
+let sticky = scrollMenu.offsetTop;
 
 headerMenu.classList.remove('main-header--nojs');
 
@@ -55,3 +57,14 @@ countriesFilterToggle.addEventListener('click', function () {
     countriesFilter.classList.add('countries-filter--close');
   }
 });
+
+window.onscroll = function()
+{myFunction()};
+
+function myFunction() {
+  if (window.scrollY >= sticky) {
+    scrollMenu.classList.add('scroll-menu')
+  } else {
+    scrollMenu.classList.remove('scroll-menu');
+  }
+}

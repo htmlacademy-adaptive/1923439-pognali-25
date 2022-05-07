@@ -2,6 +2,8 @@ let headerMenu = document.querySelector('.main-header');
 let headerMenuToggle = document.querySelector('.main-header__menu');
 let countriesSelect = document.querySelector('.popup-countries');
 let countriesSelectToggle = document.querySelector('.plans-algoritm__input-countries--choisen');
+let scrollMenu = document.querySelector('.test-wrapper');
+let sticky = scrollMenu.offsetTop;
 
 headerMenu.classList.remove('main-header--nojs');
 
@@ -26,3 +28,14 @@ countriesSelectToggle.addEventListener('click', function () {
     countriesSelectToggle.classList.remove('plans-algoritm__input-countries--active');
   }
 });
+
+window.onscroll = function()
+{myFunction()};
+
+function myFunction() {
+  if (window.scrollY >= sticky) {
+    scrollMenu.classList.add('scroll-menu')
+  } else {
+    scrollMenu.classList.remove('scroll-menu');
+  }
+}
