@@ -19,6 +19,7 @@ headerMenuToggle.addEventListener('click', function () {
 });
 
 countriesSelectToggle.addEventListener('click', function () {
+
   if (countriesSelect.classList.contains('popup-countries--close')) {
     countriesSelect.classList.remove('popup-countries--close');
     countriesSelect.classList.add('popup-countries--open');
