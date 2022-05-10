@@ -6,7 +6,7 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import rename from 'gulp-rename';
 import csso from 'postcss-csso';
-import htmlmin from 'gulp-minify-html';
+import htmlmin from 'gulp-html-minifier';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
@@ -70,7 +70,7 @@ const converseWebP = () => {
 // svg
 
 const svg = () => {
-  return gulp.src('source/img/**/*.svg', '!source/img/svg/logo')
+  return gulp.src('source/img/**/*.svg')
   .pipe(svgo())
   .pipe(gulp.dest('build/img'));
 }
@@ -91,8 +91,7 @@ const sprite = () => {
 const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
-    'source/*.ico',
-    'source/img/svg/logo'
+    'source/*.ico'
   ], {
       base: 'source'
     })
