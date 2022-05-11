@@ -91,7 +91,8 @@ const sprite = () => {
 const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
-    'source/*.ico'
+    'source/*.ico',
+    'source/*.html'
   ], {
       base: 'source'
     })
@@ -143,7 +144,6 @@ export const build = gulp.series(
   optimizeImages,
   gulp.parallel(
     styles,
-    html,
     js,
     svg,
     sprite,
@@ -159,7 +159,6 @@ export const start = gulp.series(
   copyImages,
   gulp.parallel(
     styles,
-    html,
     js,
     svg,
     sprite,
@@ -174,5 +173,3 @@ export const start = gulp.series(
 export default gulp.series(
   html, styles, server, watcher
 );
-
-
