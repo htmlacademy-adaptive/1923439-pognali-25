@@ -1,8 +1,9 @@
 .location {
   background-color: #ffd74b;
+  position: relative;
 
   .location-wrapper {
-    margin-bottom: 31px;
+    margin-bottom: 34px;
   }
 
   .location__link {
@@ -17,11 +18,20 @@
     width: 100%;
     display: block;
     border: none;
+    height: 296px;
   }
+}
 
-  .location-container {
-    padding-bottom: 30px;
-  }
+.location::before {
+  content: "";
+  width: 100%;
+  height: 25px;
+  background-color: #ffd74b;
+  position: absolute;
+  top: 181px;
+  left: 0;
+  z-index: 0;
+  border-radius: 0 0 30px 30px;
 }
 
 .location__description {
@@ -32,6 +42,8 @@
   line-height: 22px;
   text-transform: uppercase;
   color: #1d2e5b;
+  display: inline-block;
+  width: 150px;
 }
 
 .location__map {
@@ -65,18 +77,37 @@
     .location__map {
       width: 100%;
       margin: 0 auto;
+      height: 548px;
+    }
+
+    .location-wrapper {
+      margin-bottom: 46px;
     }
   }
 
   .location__link {
     width: 100%;
+    height: 80px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    padding-left: 34px;
+    background-position: 568px 32px;
   }
 
   .location__description {
     font-size: 28px;
     line-height: 28px;
     width: 430px;
-    margin-left: 26px;
+    margin-left: 12px;
+  }
+
+  .location::before {
+    height: 60px;
+    top: 264px;
+    border-radius: 0 0 60px 60px;
   }
 }
 
@@ -87,22 +118,29 @@
     }
 
     .container {
-      width: 1022px;
+      width: 1170px;
     }
 
     .location-container {
-      padding-top: 60px;
-      padding-bottom: 60px;
+      padding-top: 53px;
+      padding-bottom: 15px;
     }
 
     .location__map {
       width: 100%;
       margin: 0 auto;
+      height: 473px;
+    }
+
+    .location__description {
+      margin-left: 16px;
     }
 
     .location-wrapper {
       margin-bottom: 0;
       padding-top: 0;
+      width: 600px;
+      margin-right: 40px;
     }
 
     .location__link {
@@ -111,11 +149,19 @@
       display: flex;
       box-sizing: border-box;
       margin-bottom: 0;
+      margin-top: 6px;
     }
   }
 
-  .location__map {
-    width: 1424px;
-    margin: 0 auto;
+  .location::before {
+    content: "";
+    width: 100%;
+    height: 45px;
+    background-color: #ffd74b;
+    position: absolute;
+    top: 155px;
+    left: 0;
+    z-index: 0;
+    border-radius: 0 0 60px 60px;
   }
 }

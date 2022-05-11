@@ -1,16 +1,28 @@
 .directions {
   background-color: #edeff6;
-  border-radius: 0 0 25px 25px;
-  padding-bottom: 30px;
+  border-radius: 0 0 30px 30px;
+  padding-bottom: 34px;
+  position: relative;
 
   .directions-container {
-    padding-top: 71px;
+    padding-top: 67px;
   }
 }
 
+.directions::before {
+  content: "";
+  width: 100%;
+  height: 25px;
+  background-color: #192144;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .directions__title.page-title {
-  margin-left: 20px;
-  margin-bottom: 30px;
+  margin-left: 25px;
+  margin-bottom: 19px;
 }
 
 .directions__list {
@@ -21,17 +33,18 @@
 
 .directions__text {
   display: block;
-  width: 216px;
-  margin-bottom: 60px;
-  margin-left: 20px;
+  width: 200px;
+  margin-bottom: 62px;
+  margin-left: 23px;
 }
 
 @media (min-width: @tablet-width) {
   .directions {
     background-color: #edeff6;
     background-image: url("../img/png/directions-background-tablet.png");
-    background-position: right center;
+    background-position: 440px 81px;
     background-repeat: no-repeat;
+    border-radius: 0 0 60px 60px;
 
     @media (min-resolution: 2dppx) {
       .directions {
@@ -41,24 +54,38 @@
 
     .container {
       width: 618px;
+      padding-bottom: 46px;
     }
 
     .directions__text {
-      width: 380px;
+      position: relative;
+      width: 350px;
       display: block;
-      margin-bottom: 104px;
+      margin-bottom: 106px;
       font-size: 28px;
       line-height: 33px;
+      margin-left: 0;
+    }
+
+    .directions__text::before {
+      content: "";
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+      position: absolute;
+      bottom: -210px;
+      left: -34px;
     }
 
     .directions-card__counter {
       background-position: 0 center;
-      padding-left: 20px;
+      padding-left: 30px;
     }
 
     .directions-card__flag {
-      top: 17px;
-      right: -35px;
+      top: 18px;
+      right: -198px;
       left: auto;
       width: 70px;
       height: 47px;
@@ -69,8 +96,11 @@
       display: flex;
       flex-direction: column;
       order: 1;
-      width: 100%;
+      width: 270px;
+      margin-right: -211px;
       border-radius: 15px 0 0 15px;
+      min-height: 140px;
+      padding: 29px 20px 20px 30px;
     }
 
     .direc1tions__list {
@@ -92,16 +122,34 @@
 
     .directions-card__image {
       order: 2;
-      border-radius: 0 15px 15px 0;
+      object-fit: cover;
+    }
+
+    .directions-card__image-tablet {
+      border-radius: 0 20px 20px 0;
+      height: 142px;
     }
 
     .directions__link {
       width: 100%;
+      min-height: 82px;
+      border-radius: 20px;
+      margin-top: 48px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      padding-left: 32px;
+      background-position: 575px 38px;
     }
 
     .directions__title {
-      margin-bottom: 57px;
+      margin-bottom: 59px;
+      margin-left: 0;
     }
+  }
+
+  .directions::before {
+    height: 100px;
   }
 }
 
@@ -109,13 +157,27 @@
   .directions {
     background-color: #edeff6;
     background-image: url("../img/png/directions-background-tablet.png");
-    background-position: right center;
+    background-position: 1092px 87px;
     background-repeat: no-repeat;
+    padding-bottom: 54px;
+
+    .directions__text::before {
+      bottom: 202px;
+      left: -802px;
+    }
+
+    .directions-card__image-tablet {
+      border-radius: 20px 20px 20px 20px;
+    }
 
     @media (min-resolution: 2dppx) {
       .directions {
         background-image: url("../img/png/directions-background-desktop-2x.png");
       }
+    }
+
+    .directions-container {
+      padding-top: 160px;
     }
 
     .container {
@@ -124,28 +186,46 @@
 
     .directions__title {
       grid-column: 2/3;
-      grid-row: 2/3;
+      grid-row: 1/2;
+      margin-bottom: 80px;
     }
 
     .directions__text {
       grid-column: 2/3;
       grid-row: 2/3;
       align-self: center;
-      margin-bottom: 0;
+      margin-bottom: 26px;
       font-size: 28px;
       line-height: 33px;
     }
 
+    .directions-card__flag {
+      top: 23px;
+      right: -138px;
+    }
+
     .directions__list {
       grid-column: 1/2;
-      grid-row: 2/3;
+      grid-row: 1/-1;
       width: 560px;
+      margin-left: 70px;
+    }
+
+    .directions-card__content {
+      margin-right: -269px;
+      padding: 22px 20px 20px 30px;
     }
 
     .directions__link {
       width: 275px;
+      height: 80px;
       grid-column: 2/3;
       grid-row: 3/4;
+      margin-top: 72px;
+      display: flex;
+      align-items: center;
+      background-position: 230px 35px;
+      box-sizing: border-box;
     }
   }
 }

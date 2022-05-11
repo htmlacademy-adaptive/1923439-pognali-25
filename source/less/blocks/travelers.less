@@ -2,40 +2,57 @@
   background-color: #192144;
   background-image: url("../img/png/travelers-background.png");
   background-repeat: no-repeat;
-  background-position: 40% 5%;
-  border-radius: 0 0 25px 25px;
-  padding-top: 40px;
-  padding-bottom: 1px;
+  background-position: 0 34px;
+  border-radius: 0 0 30px 30px;
+  padding-top: 65px;
+  padding-bottom: 4px;
+  position: relative;
 
   .travelers__title {
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin-left: 24px;
+    margin-bottom: 21px;
   }
 
   .travelers__text {
     display: block;
     width: 217px;
-    margin-left: 30px;
+    margin-left: 24px;
+
+    br {
+      display: none;
+    }
   }
 
   .travelers__description {
     width: 217px;
-    margin-left: 30px;
-    margin-bottom: 54px;
+    margin-left: 24px;
+    margin-bottom: 56px;
+    margin-top: 20px;
+    margin-right: 0;
+
+    br {
+      display: none;
+    }
   }
 
   .travelers-flags {
     width: 145px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: absolute;
-    top: -13px;
+    top: -11px;
     left: 23%;
   }
 
+  .travelers-flags--short {
+    top: -12px;
+    left: 90px;
+    width: 100px;
+  }
+
   .travelers-flags__item + .travelers-flags__item {
-    margin-left: 15px;
+    margin-left: 20px;
   }
 
   .travelers__item + .travelers__item {
@@ -43,7 +60,7 @@
   }
 
   .travelers__link {
-    margin-top: 20px;
+    margin-top: 19px;
     margin-bottom: 25px;
   }
 }
@@ -54,32 +71,52 @@
   list-style-type: none;
 }
 
+.travelers::before {
+  content: "";
+  width: 100%;
+  height: 25px;
+  background-color: #e6e8f1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
 @media (min-width: @tablet-width) {
   .travelers {
-    background: url("../img/png/travelers-back-tablet.png") 83% 11% no-repeat, url("../img/png/travelers-back-tablet-small.png") 5% 35% no-repeat;
+    background: url("../img/png/travelers-back-tablet.png") 409px 80px no-repeat, url("../img/png/travelers-back-tablet-small.png") 40px 425px no-repeat;
     background-color: #192144;
-    padding-top: 141px;
+    padding-top: 135px;
     padding-left: 25px;
     padding-right: 25px;
-    padding-bottom: 87px;
+    padding-bottom: 62px;
     box-sizing: border-box;
+    border-radius: 0 0 60px 60px;
 
     .container {
       width: 618px;
     }
 
     .travelers__title {
+      position: relative;
       width: 420px;
       margin: 0;
       margin-bottom: 55px;
+      z-index: 1;
     }
 
     .travelers__text {
+      position: relative;
       display: block;
       width: 430px;
       font-size: 28px;
       line-height: 34px;
       margin-left: 0;
+      z-index: 1;
+
+      br {
+        display: block;
+      }
     }
 
     .travelers__description {
@@ -87,10 +124,27 @@
       line-height: 24px;
       margin-left: 0;
       width: 260px;
+      margin-top: 41px;
+      margin-bottom: 61px;
+
+      br {
+        display: block;
+      }
+    }
+
+    .travelers-flags {
+      top: -12px;
+      left: 24%;
+    }
+
+    .travelers-flags--short {
+      left: 99px;
     }
 
     .travelers-card__image {
       width: 285px;
+      height: 286px;
+      border-radius: 20px 20px 0 0;
     }
 
     .travelers__item + .travelers__item {
@@ -102,13 +156,32 @@
     }
 
     .travelers__link {
-      width: 100%;
+      width: 615px;
+      min-height: 80px;
       margin-top: 81px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      padding-left: 30px;
+      background-position: 570px 35px;
+      border-radius: 20px;
+    }
+
+    .transport-list {
+      width: 121px;
     }
   }
 
-  .travelers__link {
-    width: 100%;
+  .travelers__title::before {
+    content: "";
+    width: 212px;
+    height: 212px;
+    border-radius: 20px;
+    background-color: #141b3b;
+    position: absolute;
+    bottom: -101px;
+    left: -34px;
+    z-index: -1;
   }
 
   .travelers__list {
@@ -117,17 +190,20 @@
     justify-content: space-between;
   }
 
-  .tra1velers__item {
-    width: 44%;
+  .travelers::before {
+    height: 100px;
+    background-color: #edeff6;
   }
 }
 
 @media (min-width: @desktop-width) {
   .travelers {
-    background: url("../img/png/travelers-back-tablet.png") 10% 70% no-repeat, url("../img/png/travelers-back-tablet-small.png") 40% 15% no-repeat;
+    background: url("../img/png/travelers-back-tablet.png") 190px 386px no-repeat, url("../img/png/travelers-back-tablet-small.png") 547px 134px no-repeat;
     background-color: #192144;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 125px;
+    padding-bottom: 127px;
 
     .travelers-container {
       padding: 0;
@@ -135,10 +211,42 @@
 
     .travelers__link {
       width: 280px;
+      margin-top: 12px;
+      margin-left: 71px;
+      padding-left: 33px;
+      grid-column: 1/2;
+      grid-row: 3/4;
+      background-position: 233px 34px;
+    }
+
+    .travelers-card__content {
+      padding-top: 27px;
+    }
+
+    .travelers-flags--short {
+      top: -15px;
     }
 
     .container {
       width: 1320px;
+    }
+
+    .travelers__title {
+      margin-left: 69px;
+    }
+
+    .travelers__title::before {
+      bottom: -112px;
+      left: -70px;
+    }
+
+    .travelers__text {
+      margin-left: 69px;
+    }
+
+    .travelers__description {
+      margin-left: 69px;
+      margin-bottom: 0;
     }
   }
 
@@ -146,5 +254,6 @@
     width: 630px;
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
   }
 }

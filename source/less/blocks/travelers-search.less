@@ -1,7 +1,20 @@
 .travelers-search {
-  background-color: #dfe3f0;
+  background-color: #edeff6;
   position: relative;
   margin-bottom: 28px;
+  margin-top: 75px;
+
+  .travelers-search__item--transport + .travelers-search__item--transport {
+    margin-left: 1px;
+  }
+}
+
+.countries-filter + .travelers-search {
+  margin-top: 25px;
+}
+
+.countries-filter--close + .travelers-search {
+  margin-top: 75px;
 }
 
 .travelers-search__title {
@@ -14,6 +27,7 @@
   color: #1d2e5b;
   margin: 0;
   margin-bottom: 23px;
+  margin-left: 4px;
 }
 
 .travelers-search__list {
@@ -41,6 +55,16 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-left: 5px;
+  margin-right: 3px;
+}
+
+.travelers-search__fieldset--music {
+  padding-bottom: 19px;
+}
+
+.travelers-search__fieldset--transport {
+  padding-bottom: 19px;
 }
 
 .travelers-search__fieldset:nth-of-type(2n-1) {
@@ -53,7 +77,7 @@
 }
 
 .travelers-search__fieldset + .travelers-search__fieldset {
-  margin-top: 12px;
+  margin-top: 0;
 }
 
 .travelers-search__category {
@@ -65,17 +89,31 @@
   text-transform: uppercase;
   color: #1d2e5b;
   width: 165px;
-  margin: 12px 0;
+  margin-top: 10px;
+  margin-bottom: 13px;
+}
+
+.travelers-search__category--food {
+  margin-bottom: 11px;
+}
+
+.travelers-search__category--transport {
+  margin-bottom: 16px;
+}
+
+.travelers-search__category--lvl {
+  margin-top: 11px;
 }
 
 .travelers-search__button {
   border: none;
   background-color: transparent;
-  width: 10px;
-  height: 10px;
+  width: 13px;
+  height: 13px;
   background-image: url("../img/svg/treangle_blue.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-left: 1px;
 }
 
 .travelers-search__button--open {
@@ -85,6 +123,9 @@
 .travelers-search__label {
   position: relative;
   padding-left: 27px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .travelers-search__label::before {
@@ -99,7 +140,7 @@
 }
 
 .travelers-search__item + .travelers-search__item {
-  margin-top: 12px;
+  margin-top: 9px;
 }
 
 .travelers-search__input:checked + .travelers-search__label::before {
@@ -125,8 +166,8 @@
 .travelers-search__input--walk:checked + .transport-list__label {
   background-image: url("../img/svg/icon_run_checked.svg");
   background-repeat: no-repeat;
-  background-position: center 45%;
-  background-size: 75%;
+  background-position: 55% 56%;
+  background-size: 70%;
 }
 
 .travelers-search__input--cycle:checked + .transport-list__label {
@@ -142,6 +183,7 @@
 
 .travelers-search__item-wrapper--input {
   display: flex;
+  position: relative;
 }
 
 .travelers-search__input-lvl {
@@ -185,13 +227,39 @@
 }
 
 .travelers-search__input--submit {
-  width: 220px;
-  margin-top: 21px;
+  width: 230px;
+  min-height: 41px;
+  margin-top: 24px;
 }
 
+.travelers-search__category-hidden {
+  display: none;
+}
+
+.travelers-search__item-wrapper--input::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 11px;
+  left: 100px;
+}
+
+.travelers-search__item-wrapper--input::after {
+  content: "";
+  width: 16px;
+  height: 1px;
+  background-color: #cbced9;
+  position: absolute;
+  top: 17px;
+  left: 102px;
+}
 
 @media (min-width: @tablet-width) and (max-width: 1439px) {
   .travelers-search {
+    margin-bottom: 41px;
+
     .container {
       width: 688px;
       padding-left: 0;
@@ -199,11 +267,24 @@
     }
   }
 
+  .countries-filter + .travelers-search {
+    padding-top: 52px;
+    margin-bottom: 41px;
+  }
+
+
+  .countries-filter--close + .travelers-search {
+    padding-top: 106px;
+    margin-bottom: 40px;
+  }
+
   .travelers-search__title {
     font-weight: 700;
     font-size: 30px;
     line-height: 30px;
     margin-bottom: 38px;
+    margin-left: 0;
+    letter-spacing: normal;
   }
 
   .travelers-search__list--close {
@@ -215,11 +296,47 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 26px;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+
+  .travelers-search__fieldset--music {
+    padding-bottom: 0;
+    margin-bottom: 28px;
+  }
+
+  .travelers-search__fieldset--food {
+    margin-bottom: 24px;
+  }
+
+  .travelers-search__fieldset--transport {
+    justify-content: flex-start;
+    padding-bottom: 0;
+    margin-bottom: 13px;
+  }
+
+  .travelers-search__fieldset--lvl {
+    justify-content: flex-start;
+  }
+
+  .travelers-search__label {
+    padding-left: 37px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .travelers-search__label::before {
+    width: 24px;
+    height: 24px;
+  }
+
+  .travelers-search__input:checked + .travelers-search__label::before {
+    background-size: 18px;
   }
 
   .travelers-search__fieldset:first-of-type {
-    padding-top: 34px;
+    padding-top: 37px;
   }
 
   .travelers-search__fieldset:last-of-type {
@@ -232,31 +349,44 @@
     display: flex;
     align-items: center;
     width: 492px;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .travelers-search__list--transport {
     width: 180px;
-    margin-right: auto;
+    margin-left: 18px;
   }
 
   .travelers-search__list--lvl {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    width: 491px;
+    justify-content: flex-end;
+    width: 514px;
   }
 
   .travelers-search__input-lvl {
     width: 74px;
+    height: 46px;
+  }
+
+  .travelers-search__input-lvl::placeholder {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #1d2e5b;
   }
 
   .travelers-search__item {
     width: 145px;
   }
 
+  .travelers-search__item--long {
+    width: 151px;
+  }
+
   .travelers-search__item + .travelers-search__item {
-    margin-left: 20px;
+    margin-left: 25px;
     margin-top: 0;
   }
 
@@ -265,14 +395,14 @@
   }
 
   .travelers-search__item--lvl {
-    width: 150px;
     margin-bottom: 0;
+    margin-left: auto;
+    width: 148px;
   }
 
   .travelers-search__item--range {
     width: 285px;
   }
-
 
   .travelers-search__button {
     display: none;
@@ -286,14 +416,15 @@
     margin: 0;
   }
 
-  .travelers-search__label {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
   .travelers-search__input--submit {
     width: 100%;
+    min-height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #161c35;
   }
 
   .travelers-search__fieldset:nth-of-type(2n-1) {
@@ -311,35 +442,166 @@
   .travelers-search__item-wrapper--input {
     width: 150px;
   }
+
+  .travelers-search__category-hidden {
+    display: inline;
+    font-family: "Blogger Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #1d2e5b;
+  }
+
+  .travelers-search__item-wrapper--input::before {
+    width: 16px;
+    height: 16px;
+    top: 14px;
+    left: 68px;
+  }
+
+  .travelers-search__item-wrapper--input::after {
+    width: 20px;
+    height: 1px;
+    top: 21px;
+    left: 65px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .travelers-search {
-    width: 280px;
+    width: 285px;
+
+
+    .container {
+      width: 285px;
+    }
+
+    .travelers-search__item--transport + .travelers-search__item--transport {
+      margin-left: 0;
+    }
+  }
+
+  .countries-filter--desktop.countries-filter--close + .travelers-search {
+    margin-top: 2680px;
+  }
+
+  .countries-filter--close + .travelers-search {
+    margin-top: 0;
+  }
+
+  .travelers-search__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: normal;
+  }
+
+  .travelers-search__category {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+
+  .travelers-search__category--transport {
+    margin-top: 8px;
+    margin-bottom: 14px;
+  }
+
+  .travelers-search__label {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    padding-left: 37px;
+  }
+
+  .travelers-search__label::before {
+    width: 24px;
+    height: 24px;
+  }
+
+  .travelers-search__input:checked + .travelers-search__label::before {
+    background-size: 18px;
   }
 
   .travelers-search__list--close {
     display: none;
   }
 
+  .travelers-search__button {
+    margin-right: 5px;
+    display: block;
+    background-position: 2px 5px;
+  }
+
+  .travelers-search__input-lvl {
+    width: 96px;
+    height: 46px;
+  }
+
+  .travelers-search__input-lvl::placeholder {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #1d2e5b;
+  }
+
   .travelers-search-container {
-    width: 280px;
+    width: 285px;
   }
 
   .travelers-search__list {
     flex-direction: row;
     align-items: flex-start;
+    margin-top: 16px;
+  }
+
+  .travelers-search__list--transport {
+    margin-top: 6px;
   }
 
   .travelers-search__item + .travelers-search__item {
     margin-left: 0;
+    margin-top: 19px;
   }
 
-  .travelers-search__button {
-    display: block;
+  .travelers-search__item--transport + .travelers-search__item--transport {
+    margin-top: 0;
   }
 
   .travelers-search__list--lvl {
     width: 192px;
+    margin-top: 10px;
+  }
+
+  .travelers-search__item-wrapper--input::before {
+    width: 16px;
+    height: 18px;
+    top: 14px;
+    left: 90px;
+  }
+
+  .travelers-search__item-wrapper--input::after {
+    width: 22px;
+    height: 1px;
+    top: 21px;
+    left: 85px;
+  }
+
+  .travelers-search__input--submit {
+    width: 192px;
+    min-height: 49px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 43px;
+    margin-left: 5px;
+    margin-bottom: 11px;
   }
 }

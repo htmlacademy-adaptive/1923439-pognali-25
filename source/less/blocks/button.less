@@ -23,9 +23,28 @@
   align-items: center;
 }
 
+@media (min-width: @desktop-width) {
+  .button--log-in {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    min-height: 50px;
+
+    &:hover {
+      background-color: #ffbd30;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
 .button--more-info {
   background-image: url("../img/svg/button-treangle.svg");
-  background-position: 90% 50%;
+  background-position: 87% 50%;
   background-repeat: no-repeat;
   width: 270px;
   min-height: 62px;
@@ -49,6 +68,14 @@
   height: 40px;
   background-color: #ff8d30;
   border-radius: 50%;
+
+  &:hover {
+    background-color: #f26926;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .button--email {
@@ -56,6 +83,22 @@
   height: 40px;
   background-color: #ffbd30;
   border-radius: 50%;
+
+  &:hover {
+    background-color: #ff8d30;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button--phone,
+  .button--email {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .button--log-in-welcome {
@@ -63,9 +106,15 @@
   min-height: 40px;
 }
 
+@media (min-width: @desktop-width) {
+  .button--log-in-welcome {
+    min-height: 50px;
+  }
+}
+
 .button--show-all {
   background-image: url("../img/svg/button-treangle.svg");
-  background-position: 90% 50%;
+  background-position: 91% 50%;
   background-repeat: no-repeat;
   width: 270px;
   min-height: 62px;
@@ -113,14 +162,13 @@
 
 .button--location {
   background-image: url("../img/svg/button-treangle.svg");
-  background-position: 90% 50%;
+  background-position: 91% 48%;
   background-repeat: no-repeat;
   font-family: "Blogger Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
   color: #1d2e5b;
   width: 270px;
   min-height: 62px;
@@ -128,7 +176,7 @@
   box-sizing: border-box;
   border-radius: 10px;
   justify-content: flex-start;
-  padding-left: 22px;
+  padding-left: 19px;
 }
 
 .modal-contant__link--close {
@@ -156,11 +204,19 @@
   text-align: center;
   text-transform: uppercase;
   color: #161c35;
+
+  &:hover {
+    background-color: #d1d7e9;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 
 .button--next-step {
-  width: 221px;
+  width: 223px;
   min-height: 40px;
   background: #ffd74b;
   border-radius: 20px;
@@ -172,6 +228,10 @@
   text-transform: uppercase;
   color: #1d2e5b;
   margin-bottom: 13px;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -182,6 +242,13 @@
     font-size: 24px;
     line-height: 24px;
     order: 5;
+    text-transform: none;
+    justify-content: flex-start;
+    padding: 0 34px;
+    box-sizing: border-box;
+    background-image: url("../img/svg/blue_treangle.svg");
+    background-repeat: no-repeat;
+    background-position: 235px 35px;
   }
 }
 
@@ -196,10 +263,26 @@
   color: #1d2e5b;
 }
 
+@media (min-width: @tablet-width) {
+  .button--previos-step {
+    padding-left: 35px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    text-transform: none;
+    background-image: url("../img/svg/blue_treangle_left.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    box-sizing: border-box;
+    margin-right: 18px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .button--previos-step {
     font-size: 24px;
     line-height: 22px;
+    margin-right: 0;
   }
 }
 
@@ -213,6 +296,14 @@
   text-transform: uppercase;
   color: #000000;
   opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .button--close {

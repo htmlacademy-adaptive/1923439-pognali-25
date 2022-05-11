@@ -1,5 +1,5 @@
 .catalog-pagination {
-  background-color: #e5e5e5;
+  background-color: #edeff6;
 }
 
 .catalog-pagination__wrapper {
@@ -27,10 +27,15 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  width: 50px;
-  height: 50px;
+  width: 51px;
+  height: 51px;
   border-radius: 50%;
   background-color: transparent;
+  color: #1d2e5b;
+}
+
+.catalog-pagination__item + .catalog-pagination__item {
+  margin-left: 0;
 }
 
 .catalog-pagination__link--active {
@@ -59,6 +64,7 @@
   .catalog-pagination {
     .catalog-pagination-container.container {
       width: 688px;
+      margin-bottom: 96px;
     }
   }
 
@@ -67,15 +73,37 @@
   }
 
   .catalog-pagination__wrapper {
-    padding: 25px;
+    padding: 25px 25px 25px 27px;
     justify-content: space-between;
   }
 
   .catalog-pagination__button-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 90px;
+  }
+
+  .catalog-pagination__img {
+    width: 15px;
+    height: 18px;
+  }
+
+  .catalog-pagination__img--next {
+    transform: rotate(180deg);
+  }
+
+  .catalog-pagination__img--previos {
+    transform: rotate(0deg);
+  }
+
+  .button--pagination {
+    width: 30px;
+    height: 30px;
+  }
+
+  .button--pagination + .button--pagination {
+    margin-left: 15px;
   }
 }
 
@@ -86,6 +114,15 @@
 
     .catalog-pagination-container.container {
       width: 949px;
+      margin-bottom: 111px;
+    }
+
+    .button--pagination + .button--pagination {
+      margin-left: 19px;
+    }
+
+    .catalog-pagination__wrapper {
+      padding: 25px 29px 25px 27px;
     }
   }
 }

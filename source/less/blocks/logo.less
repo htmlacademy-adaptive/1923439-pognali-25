@@ -2,10 +2,23 @@
   color: #192144;
 }
 
+.logo__tablet,
+.logo__desktop {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .logo__adaptive {
     width: 166px;
     height: 42px;
+  }
+
+  .logo__mobile {
+    display: none;
+  }
+
+  .logo__tablet {
+    display: block;
   }
 }
 
@@ -17,5 +30,13 @@
   .logo__adaptive {
     width: 200px;
     height: 50px;
+  }
+
+  .logo__tablet {
+    display: none;
+  }
+
+  .logo__desktop {
+    display: block;
   }
 }

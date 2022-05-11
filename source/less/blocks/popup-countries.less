@@ -5,13 +5,19 @@
   display: flex;
   flex-direction: column;
   width: 220px;
-  min-height: 440px;
+  min-height: 490px;
   background: #ffffff;
   box-shadow: 0 2px 16px rgba(212, 217, 235, 0.25);
   border: 1px solid #cbced9;
-  border-radius: 4px;
-  z-index: 1;
+  border-radius: 0 0 4px 4px;
+  border-top: none;
+  z-index: 10;
 
+  .countries-filter__button--key-letter {
+    width: 44px;
+    height: 41px;
+    background-color: #ffffff;
+  }
 
   .countries-filter__list {
     padding: 0;
@@ -20,6 +26,15 @@
     top: 0;
     left: 0;
     background-color: #ffffff;
+  }
+
+  .countries-filter__button--key-letter-active {
+    background-color: #edeff6;
+    color: #1d2e5b;
+  }
+
+  .countries-filter__item--active {
+    padding-left: 19px;
   }
 }
 
@@ -30,7 +45,7 @@
 @media (min-width: @tablet-width) {
   .popup-countries.countries-filter {
     flex-direction: row;
-    width: 578px;
+    width: 576px;
     min-height: 420px;
     justify-content: space-between;
     background-color: #ffffff;
@@ -52,9 +67,43 @@
       height: 70px;
     }
 
+    .countries-filter__button--key-letter {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    .countries-filter__item-inside + .countries-filter__item-inside {
+      margin-top: 10px;
+    }
+
+    .countries-filter__key-letter-label {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    .countries-filter__button--key-letter-active {
+      background-color: #1d2e5b;
+      color: #ffffff;
+    }
+
     .countries-filter__item--active {
+      position: relative;
       grid-column: 7/8;
       grid-row: 1/-1;
+      margin-top: 0;
+      padding-left: 50px;
+    }
+
+    .countries-filter__item--active::before {
+      content: "";
+      width: 415px;
+      height: 1px;
+      transform: rotate(90deg);
+      position: absolute;
+      top: 172px;
+      left: -195px;
+      background-color: rgba(214, 217, 230, 0.5);
     }
 
     .grid-1 {
@@ -190,14 +239,29 @@
     height: 476px;
 
     .countries-filter__list {
-      column-gap: 15px;
-      row-gap: 15px;
+      column-gap: 16px;
+      row-gap: 14px;
       min-height: 476px;
     }
 
     .countries-filter__button {
       width: 60px;
       height: 70px;
+    }
+
+    .countries-filter__item--active::before {
+      content: "";
+      width: 475px;
+      height: 1px;
+      transform: rotate(90deg);
+      position: absolute;
+      top: 201px;
+      left: -216px;
+      background-color: rgba(214, 217, 230, 0.5);
+    }
+
+    .countries-filter__button--key-letter {
+      border-radius: 4px;
     }
   }
 }

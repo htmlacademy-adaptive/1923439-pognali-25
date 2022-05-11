@@ -7,11 +7,16 @@
   border-radius: 10px;
   position: relative;
   padding: 25px;
+  padding-bottom: 24px;
   box-sizing: border-box;
-  margin-top: calc(100% - 277px);
+  margin-top: -10px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 21px 16px;
+  grid-template-rows: 21px min-content;
+}
+
+.directions-card__content--long {
+  padding-bottom: 7px;
 }
 
 .directions-card__title {
@@ -46,24 +51,59 @@
   font-size: 16px;
   line-height: 20px;
   color: rgba(22, 28, 53, 0.3);
-  padding-left: 25px;
+  padding-left: 32px;
   background-image: url("../img/svg/icon_user.svg");
   background-repeat: no-repeat;
-  background-position: 12% center;
+  background-position: 21% center;
   opacity: 1;
 }
 
 .directions-card__image {
   display: block;
   border-radius: 10px 10px 0 0;
+  width: 270px;
+  height: 110px;
+}
+
+.directions-card__image-tablet {
+  border-radius: 10px 10px 0 0;
 }
 
 .directions-card__flag {
   position: absolute;
-  left: 10px;
-  top: -10px;
+  left: 24px;
+  top: -14px;
 }
 
 .directions__link {
-  margin-top: 25px;
+  margin-top: 27px;
+}
+
+@media (min-width: @tablet-width) {
+  .directions-card__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+
+  .directions-card__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .directions-card__counter {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    background-size: 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .directions-card__text {
+    margin-bottom: 26px;
+  }
 }

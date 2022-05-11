@@ -4,6 +4,8 @@
 }
 
 .plans-algoritm-calendar__td--day {
+  width: 30px;
+  height: 30px;
   text-align: center;
   border-left: none;
   border-right: none;
@@ -14,6 +16,10 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+}
+
+.day-hidden {
+  display: none;
 }
 
 .plans-algoritm-calendar__td-in {
@@ -38,8 +44,8 @@
 }
 
 .plans-algoritm-calendar__td--number {
-  width: 33px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   text-align: center;
   vertical-align: middle;
   font-family: "Blogger Sans", sans-serif;
@@ -48,6 +54,13 @@
   font-size: 14px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
+
+  &:hover {
+    background-color: #1d2e5b;
+    color: #ffffff;
+    outline: 4px solid #ff5c23;
+    outline-offset: -2px;
+  }
 }
 
 .plans-algoritm-calendar__td--choisen {
@@ -72,13 +85,24 @@
 
   .plans-algoritm-calendar__td--number {
     width: 80px;
-    height: 71px;
+    height: 68px;
     font-size: 18px;
     line-height: 18px;
   }
 
   .plans-algoritm-calendar__td--day {
-    padding-bottom: 9px;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #444444;
+    margin-top: 3px;
+  }
+
+  .plans-algoritm-calendar__td--weekand {
+    color: #ff5c23;
   }
 }
 
@@ -89,6 +113,10 @@
     padding-left: 16px;
   }
 
+  .day-hidden {
+    display: inline;
+  }
+
   .plans-algoritm-calendar__td {
     width: 148px;
     height: 76px;
@@ -97,20 +125,31 @@
     padding-top: 14px;
   }
 
+  .plans-algoritm-calendar__td--day {
+    padding-left: 16px;
+    padding-top: 0;
+    height: 51px;
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+  }
+
+  .plans-algoritm-calendar__td--number {
+    height: 56px;
+  }
+
+  .plans-algoritm__button {
+    margin-bottom: 0;
+  }
+
   .plans-algoritm-calendar__td-in {
     display: block;
-    margin-top: 9px;
+    margin-top: 5px;
+    margin-left: 5px;
   }
 
   .plans-algoritm-calendar__td--active {
     outline: 4px solid #ff5c23;
     outline-offset: -1px;
-  }
-
-  .plans-algoritm-calendar__td--day {
-    font-size: 18px;
-    line-height: 18px;
-    padding-top: 20px;
-    vertical-align: middle;
   }
 }

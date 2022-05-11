@@ -9,14 +9,14 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 138px;
+  width: 143px;
   height: 2px;
   background-color: rgba(29, 46, 91, 1);
 }
 
 .range__button {
   position: absolute;
-  top: -5px;
+  top: -5.5px;
   right: 0;
   border: none;
   background-color: rgba(29, 46, 91, 1);
@@ -26,16 +26,17 @@
 }
 
 .range__button--min {
-  right: 129px;
+  right: 142px;
 }
 
 @media (min-width: @tablet-width) and (max-width: 1400px) {
   .range {
-    width: 281px;
+    width: 279px;
+    margin-right: 20px;
   }
 
   .range__scale {
-    width: 166px;
+    width: 173px;
   }
 
   .range__button {
@@ -44,6 +45,21 @@
   }
 
   .range__button--min {
-    right: 160px;
+    right: 168px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .range {
+    margin-top: 36px;
+    width: 192px;
+  }
+
+  .range__scale {
+    width: 127px;
+  }
+
+  .range__button--min {
+    right: 121px;
   }
 }
