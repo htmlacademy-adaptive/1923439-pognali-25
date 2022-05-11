@@ -3,7 +3,7 @@ let headerMenuToggle = document.querySelector('.main-header__menu');
 let modalOpen = document.querySelector('.add-profile__link');
 let modalIndex = document.querySelector('.modal-container');
 let modalClose = document.querySelector('.modal-contant__link');
-let scrollMenu = document.querySelector('.test-wrapper');
+let scrollMenu = document.querySelector('.scroll-wrapper');
 let sticky = scrollMenu.offsetTop;
 
 headerMenu.classList.remove('main-header--nojs');

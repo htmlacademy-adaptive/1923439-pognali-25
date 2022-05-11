@@ -1,10 +1,10 @@
 .main-header--open {
-  .scroll-menu.test-wrapper::before {
+  .scroll-menu.scroll-wrapper::before {
     left: 0;
   }
 }
 
-.scroll-menu.test-wrapper::before {
+.scroll-menu.scroll-wrapper::before {
   content: "";
   width: 320px;
   height: 73px;
@@ -15,7 +15,7 @@
   z-index: -1;
 }
 
-.scroll-menu.test-wrapper {
+.scroll-menu.scroll-wrapper {
   position: fixed;
   top: 0;
   z-index: 20;
@@ -31,33 +31,33 @@
     background-color: #cccccc;
   }
 
-  .logo--color {
+  .logo__color {
     fill: #192144;
   }
 }
 
-.scroll-menu.test-wrapper ~ .main-header__welcome-contacts-wrapper {
+.scroll-menu.scroll-wrapper ~ .main-header__welcome-contacts-wrapper {
   margin-top: 224px;
 }
 
-.scroll-menu.test-wrapper ~ .main-header__welcome-title {
+.scroll-menu.scroll-wrapper ~ .main-header__welcome-title {
   margin-top: 94px;
 }
 
 
 @media (min-width: @tablet-width) {
   .main-header--open {
-    .scroll-menu.test-wrapper::before {
+    .scroll-menu.scroll-wrapper::before {
       left: 0;
       height: 857px;
     }
 
-    .test-wrapper.scroll-menu {
+    .scroll-wrapper.scroll-menu {
       width: 768px;
     }
   }
 
-  .scroll-menu.test-wrapper::before {
+  .scroll-menu.scroll-wrapper::before {
     content: "";
     width: 768px;
     height: 132px;
@@ -68,7 +68,7 @@
     z-index: -1;
   }
 
-  .scroll-menu.test-wrapper {
+  .scroll-menu.scroll-wrapper {
     align-items: flex-start;
 
     .main-header__logo-wrapper {
@@ -90,23 +90,23 @@
 
 @media (min-width: @desktop-width) {
   .main-header {
-    .scroll-menu.test-wrapper::before {
+    .scroll-menu.scroll-wrapper::before {
       display: block;
       height: 90px;
       width: 1440px;
       z-index: -1;
       left: -59px;
 
-      .logo--color {
+      .logo__color {
         fill: #192144;
       }
 
-      .test-wrapper {
+      .scroll-wrapper {
         width: 100px;
       }
     }
 
-    .test-wrapper.scroll-menu {
+    .scroll-wrapper.scroll-menu {
       width: 1032px;
       background-color: #ffffff;
       align-items: center;
@@ -116,7 +116,7 @@
   }
 
 
-  .test-wrapper.scroll-menu {
+  .scroll-wrapper.scroll-menu {
     .main-header__logo-wrapper {
       background-color: transparent;
       padding-top: 0;
@@ -139,7 +139,7 @@
     }
   }
 
-  .scroll-menu.test-wrapper ~ .main-header__welcome-contacts-wrapper {
+  .scroll-menu.scroll-wrapper ~ .main-header__welcome-contacts-wrapper {
     margin-top: 0;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -151,7 +151,7 @@
     z-index: 27;
   }
 
-  .scroll-menu.test-wrapper ~ .main-header__welcome-title {
+  .scroll-menu.scroll-wrapper ~ .main-header__welcome-title {
     margin-top: 104px;
   }
 }

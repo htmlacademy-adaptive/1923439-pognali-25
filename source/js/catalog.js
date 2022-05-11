@@ -5,7 +5,7 @@ let countriesFilter = document.querySelector('.countries-filter');
 let countriesFilterToggle2 = document.querySelector('.countries-filter__close');
 let countriesFilterToggleDesktop = document.querySelector('.countries-filter__link');
 let countriesFilterToggleButton = document.querySelector('.countries-filter__button--close');
-let scrollMenu = document.querySelector('.test-wrapper');
+let scrollMenu = document.querySelector('.scroll-wrapper');
 let sticky = scrollMenu.offsetTop;
 
 headerMenu.classList.remove('main-header--nojs');

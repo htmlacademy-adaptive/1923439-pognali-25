@@ -2,7 +2,7 @@ let headerMenu = document.querySelector('.main-header');
 let headerMenuToggle = document.querySelector('.main-header__menu');
 let countriesSelect = document.querySelector('.popup-countries');
 let countriesSelectToggle = document.querySelector('.plans-algoritm__input-countries--choisen');
-let scrollMenu = document.querySelector('.test-wrapper');
+let scrollMenu = document.querySelector('.scroll-wrapper');
 let sticky = scrollMenu.offsetTop;
 
 headerMenu.classList.remove('main-header--nojs');
