@@ -7,6 +7,7 @@ let countriesFilterToggleDesktop = document.querySelector('.countries-filter__li
 let countriesFilterToggleButton = document.querySelector('.countries-filter__button--close');
 let scrollMenu = document.querySelector('.scroll-wrapper');
 let sticky = scrollMenu.offsetTop;
+let innerPadding = document.querySelector('.main-header--inner');
 
 headerMenu.classList.remove('main-header--nojs');
 
@@ -64,7 +65,9 @@ window.onscroll = function()
 function myFunction() {
   if (window.scrollY >= sticky) {
     scrollMenu.classList.add('scroll-menu')
+    innerPadding.classList.add('main-header--scroll-menu-catalog');
   } else {
     scrollMenu.classList.remove('scroll-menu');
+    innerPadding.classList.remove('main-header--scroll-menu-catalog');
   }
 }
