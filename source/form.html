@@ -273,7 +273,7 @@
           </div>
         </section>
         <section class="add-plans">
-          <div class="add-plans-container container">
+          <div class="add-plans-container add-plans__container">
             <div class="add-plans__title-wrapper">
               <h2 class="add-plans__title inner-title">Добавить план:</h2>
               <ul class="add-plans__pagination-list">
@@ -288,7 +288,7 @@
                 </li>
               </ul>
             </div>
-            <div class="add-plans__algoritm plans-algoritm">
+            <div class="add-plans__algoritm plans-algoritm" id="step-1">
               <div class="add-plans__header-wrapper">
                 <h3 class="plans-algoritm__title">Шаг 1.<br> Даты пребывания</h3>
                 <p class="plans-algoritm__description">
@@ -437,9 +437,9 @@
                   </table>
                 </li>
               </ul>
-              <a class="plans-algoritm__button button button--next-step" href="/">Следующий шаг</a>
+              <a class="plans-algoritm__button button button--next-step" href="#step-2">Следующий шаг</a>
             </div>
-            <div class="add-plans__algoritm plans-algoritm add-plans__algoritm--step-2">
+            <div class="add-plans__algoritm plans-algoritm add-plans__algoritm--step-2" id="step-2">
               <div class="add-plans__header-wrapper">
               <h3 class="plans-algoritm__title">Шаг 2. <br>Маршрут</h3>
               <p class="plans-algoritm__description plans-algoritm__description--step-2">
@@ -1347,11 +1347,11 @@
                 </li>
               </ul>
               <div class="plans-algoritm__button-wrapper">
-                <a class="plans-algoritm__button button button--next-step" href="/">Следующий шаг</a>
-                <a class="plans-algoritm__button button button--previos-step" href="/">На шаг назад</a>
+                <a class="plans-algoritm__button button button--next-step" href="#step-3">Следующий шаг</a>
+                <a class="plans-algoritm__button button button--previos-step" href="#step-1">На шаг назад</a>
               </div>
             </div>
-            <div class="add-plans__algoritm plans-algoritm add-plans__algoritm--step-3">
+            <div class="add-plans__algoritm plans-algoritm add-plans__algoritm--step-3" id="step-3">
               <div class="add-plans__header-wrapper">
                 <h3 class="plans-algoritm__title">Шаг 3. <br>Развлечения</h3>
                 <p class="plans-algoritm__description plans-algoritm__description--step-3">
@@ -1387,7 +1387,7 @@
               </ul>
               <div class="plans-algoritm__button-wrapper plans-algoritm__button-wrapper--step-3">
                 <input class="plans-algoritm__button button button--submit button--next-step" type="submit" value="Отправить">
-                <a class="plans-algoritm__button button button--previos-step" href="/">На шаг назад</a>
+                <a class="plans-algoritm__button button button--previos-step" href="#step-2">На шаг назад</a>
               </div>
             </div>
         </div>
