@@ -13,15 +13,6 @@
   height: 32px;
   border-radius: 50%;
   background-color: #ffffff;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    background-color: #e2e5f1;
-    opacity: 0.5;
-  }
 }
 
 .transport-list__label--aero {
@@ -81,5 +72,18 @@
   .transport-list__label {
     width: 44px;
     height: 44px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .transport-list__label {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      background-color: #e2e5f1;
+      opacity: 0.5;
+    }
   }
 }
