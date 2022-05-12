@@ -200,18 +200,6 @@
   padding-left: 19px;
 }
 
-.modal-contant__link--close {
-  background-color: #f3f4f8;
-  font-family: "Blogger Sans", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #1d2e5b;
-  min-height: 59px;
-}
-
 .button--change-photo {
   background: #dfe3f0;
   border-radius: 20px;
@@ -342,50 +330,22 @@
   color: #192144;
 }
 
-.product-card__link--go {
-  width: 230px;
-  min-height: 40px;
-  background-color: #ffd74b;
-  border-radius: 25px;
-  font-family: "Blogger Sans", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 17px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #161c35;
-}
-
-.travelers-search__input--submit {
-  width: 230px;
-  min-height: 41px;
-  background: #ffffff;
-  border-radius: 25px;
-  font-family: "Blogger Sans", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 17px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #161c35;
-}
-
-.search-results__link--show-more {
-  font-family: "Blogger Sans", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #1d2e5b;
-}
-
 .button--pagination {
   width: 135px;
   min-height: 51px;
   background: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .button--pagination + .button--pagination {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button--pagination + .button--pagination {
+    margin-left: 11px;
+  }
 }
 
 .button--pagination-previos {
@@ -394,8 +354,4 @@
 
 .button--pagination-next {
   border-radius: 0 20px 20px 0;
-}
-
-.catalog-pagination__img--next {
-  transform: rotate(180deg);
 }

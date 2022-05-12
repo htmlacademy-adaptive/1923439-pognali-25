@@ -30,12 +30,6 @@ export const styles = () => {
 
 // HTML
 
-const html = () => {
-  return gulp.src('source/*.html')
-  .pipe(htmlmin({ collapseWhitespace: true }))
-  .pipe(gulp.dest('build'));
-}
-
 // Js
 
 const js = () => {
@@ -171,5 +165,5 @@ export const start = gulp.series(
 
 
 export default gulp.series(
-  html, styles, server, watcher
+  styles, server, watcher
 );
