@@ -1,7 +1,3 @@
-.directions__item + .directions__item {
-  margin-top: 10px;
-}
-
 .directions-card__content {
   background: #ffffff;
   border-radius: 10px;
@@ -75,10 +71,6 @@
   top: -14px;
 }
 
-.directions__link {
-  margin-top: 27px;
-}
-
 @media (min-width: @tablet-width) {
   .directions-card__title {
     font-weight: 700;
@@ -99,11 +91,57 @@
     font-size: 20px;
     line-height: 20px;
     background-size: 22px;
+    background-position: 0 center;
+    padding-left: 30px;
+  }
+
+  .directions-card__flag {
+    top: 18px;
+    right: -198px;
+    left: auto;
+    width: 70px;
+    height: 47px;
+  }
+
+  .directions-card__content {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    width: 270px;
+    margin-right: -211px;
+    border-radius: 15px 0 0 15px;
+    min-height: 140px;
+    padding: 29px 20px 20px 30px;
+  }
+
+  .directions-card__image {
+    order: 2;
+    object-fit: cover;
+  }
+
+  .directions-card__image-tablet {
+    border-radius: 0 20px 20px 0;
+    height: 142px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .directions-card__text {
     margin-bottom: 26px;
+  }
+
+  .directions-card__image-tablet {
+    border-radius: 20px 20px 20px 20px;
+  }
+
+  .directions-card__flag {
+    top: 23px;
+    right: -138px;
+  }
+
+  .directions-card__content {
+    margin-right: -269px;
+    padding: 22px 20px 20px 30px;
   }
 }
