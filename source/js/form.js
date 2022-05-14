@@ -36,11 +36,11 @@ window.onscroll = function()
 
 function myFunction() {
   if (window.scrollY >= sticky) {
-    scrollMenu.classList.add('scroll-menu');
+    scrollMenu.classList.add('scroll-menu__open');
     innerPadding.classList.add('main-header--scroll-menu-form');
 
   } else {
-    scrollMenu.classList.remove('scroll-menu');
+    scrollMenu.classList.remove('scroll-menu__open');
     innerPadding.classList.remove('main-header--scroll-menu-form')
   }
 }
