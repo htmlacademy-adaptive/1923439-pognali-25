@@ -5,50 +5,6 @@
   display: flex;
 }
 
-.navigation-menu::before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 3px;
-  top: 0;
-  left: 0;
-  background-color: #192144;
-  border-radius: 1.5px;
-}
-
-.navigation-menu::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  background-color: #192144;
-  border-radius: 1.5px;
-}
-
-.navigation-menu::before,
-.navigation-menu::after {
-  background-color: #ffffff;
-}
-
-
-.main-header--open {
-  .navigation-menu::before {
-    transform: rotate(45deg);
-    top: 4px;
-    left: 0;
-    background-color: #cccccc;
-  }
-
-  .navigation-menu::after {
-    transform: rotate(-45deg);
-    bottom: 4px;
-    left: 0;
-    background-color: #cccccc;
-  }
-}
-
 @media (min-width: @desktop-width) {
   .navigation-menu {
     display: none;
