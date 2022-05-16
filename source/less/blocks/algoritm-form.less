@@ -3,3 +3,62 @@
   padding: 0;
   list-style-type: none;
 }
+
+.algoritm-form__item {
+  position: relative;
+}
+
+.algoritm-form__item--first::after {
+  position: absolute;
+  top: 150px;
+  left: -155px;
+  content: "";
+  width: 284px;
+  height: 2px;
+  background-color: #1d2e5b;
+  transform: rotate(-90deg);
+}
+
+@media (min-width: @tablet-width) {
+  .algoritm-form__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .algoritm-form__item--first::before {
+    position: absolute;
+    top: -37px;
+    left: 506px;
+    content: "";
+    width: 43px;
+    height: 372px;
+    background-image: url("../img/svg/line_country.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .algoritm-form__item--first::after {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .algoritm-form__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 730px;
+    margin-top: 74px;
+  }
+
+  .algoritm-form__item--first::before {
+    top: -34px;
+    left: 753px;
+  }
+
+  .algoritm-form__item:last-child {
+    margin-bottom: 0;
+  }
+}
