@@ -690,6 +690,13 @@
     align-items: flex-start;
   }
   // Открывашка открыта //
+
+  .main-header--scroll-menu-open {
+    .main-header__welcome-title {
+      margin-top: 115px;
+    }
+  }
+
   .main-header--scroll-menu-open.main-header.main-header--open {
     padding: 0;
 
@@ -1203,6 +1210,49 @@
     .main-header__welcome-link {
       width: 50px;
       height: 50px;
+    }
+  }
+
+  .main-header--scroll-menu-open {
+    .main-header__welcome-contacts-wrapper {
+      position: fixed;
+      top: 0;
+      margin-top: 0;
+      padding-top: 20px;
+      padding-bottom: 22px;
+      padding-right: 58px;
+      background-color: #ffffff;
+      margin-left: 1032px;
+      z-index: 27;
+    }
+
+    .main-header__navigation-link {
+      color: rgba(25, 33, 68, 1);
+    }
+
+    .main-header__navigation-list {
+      width: 550px;
+      padding-top: 34px;
+      margin-left: 142px;
+    }
+
+    .main-header__navigation-item {
+      width: max-content;
+    }
+
+    .main-header__navigation-list::before {
+      background-color: rgba(25, 33, 68, 1);
+      top: 44px;
+      left: -88px;
+      width: 44px;
+    }
+
+    .main-header__welcome-title {
+      margin-top: 156px;
+    }
+
+    .main-header__features-quote {
+      margin-top: 158px;
     }
   }
   // Не подгрузился JS //

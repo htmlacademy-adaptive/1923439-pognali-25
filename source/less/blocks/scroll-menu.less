@@ -40,6 +40,22 @@
 @media (min-width: @tablet-width) {
   .scroll-menu__open.scroll-menu--wrapper {
     width: 688px;
+    align-items: flex-start;
+
+    .scroll-menu__logo-wrapper {
+      padding-top: 45px;
+      padding-bottom: 40px;
+      width: 397px;
+    }
+
+    .scroll-menu__log-in-wrapper {
+      padding-top: 40px;
+    }
+
+    .scroll-menu__navigation-menu::before,
+    .scroll-menu__navigation-menu::after {
+      background-color: #cccccc;
+    }
   }
 
   .scroll-menu__open.scroll-menu--wrapper::after {
@@ -54,50 +70,19 @@
       width: 768px;
     }
   }
-
-  .scroll-menu__open.scroll-wrapper {
-    align-items: flex-start;
-
-    .main-header__logo-wrapper {
-      padding-top: 45px;
-      padding-bottom: 40px;
-      width: 397px;
-    }
-
-    .main-header__log-in-wrapper {
-      padding-top: 40px;
-    }
-
-    .scroll-menu__navigation-menu::before,
-    .scroll-menu__navigation-menu::after {
-      background-color: #cccccc;
-    }
-  }
-
-  .scroll-menu__open.scroll-wrapper ~ .main-header__welcome-title {
-    margin-top: 115px;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .main-header {
-    .scroll-menu__open.scroll-wrapper::before {
-      display: block;
-      height: 90px;
-      width: 1440px;
-      z-index: -1;
-      left: -59px;
-
-      .scroll-menu__open-logo-color {
-        fill: #192144;
-      }
-
-      .scroll-wrapper {
-        width: 100px;
-      }
+  .scroll-menu_open {
+    .scroll-menu__open-logo-color {
+      fill: #192144;
     }
 
-    .scroll-wrapper.scroll-menu__open {
+    .scroll-menu--wrapper {
+      width: 100px;
+    }
+
+    .scroll-menu--wrapper.scroll-menu__open {
       width: 1032px;
       background-color: #ffffff;
       align-items: center;
@@ -106,47 +91,21 @@
     }
   }
 
+  .scroll-menu__open.scroll-menu--wrapper::after {
+    display: block;
+    height: 92px;
+    z-index: -1;
+    left: -59px;
+    width: 1110px;
+    right: -363px;
+  }
 
-  .scroll-wrapper.scroll-menu__open {
-    .main-header__logo-wrapper {
+  .scroll-menu--wrapper.scroll-menu__open {
+    .scroll-menu__logo-wrapper {
       background-color: transparent;
-      padding-top: 0;
-      padding-bottom: 0;
+      padding-top: 17px;
+      padding-bottom: 15px;
       width: 345px;
     }
-
-    .main-header__welcome-contacts-wrapper {
-      position: fixed;
-      top: 0;
-      right: 0;
-    }
-
-    .main-header__navigation-link {
-      color: rgba(25, 33, 68, 1);
-    }
-
-    .main-header__navigation-list::before {
-      background-color: rgba(25, 33, 68, 1);
-    }
-  }
-
-  .scroll-menu__open.scroll-wrapper ~ .main-header__welcome-contacts-wrapper {
-    margin-top: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 40px;
-    position: fixed;
-    top: 0;
-    background-color: #ffffff;
-    margin-left: 1032px;
-    z-index: 27;
-  }
-
-  .scroll-menu__open.scroll-wrapper ~ .main-header__welcome-title {
-    margin-top: 156px;
-  }
-
-  .scroll-menu__open.scroll-wrapper ~ .main-header__features-quote {
-    margin-top: 158px;
   }
 }
