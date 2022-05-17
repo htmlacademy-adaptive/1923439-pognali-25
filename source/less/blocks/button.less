@@ -170,6 +170,16 @@
   background-image: url("../img/svg/button-treangle.svg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  margin-left: -10px;
+}
+
+@media (min-width: @tablet-width) {
+  .button--subscribe {
+    height: 80px;
+    width: 80px;
+    border-radius: 0 12px 12px 0;
+    margin-left: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -178,6 +188,10 @@
     justify-content: flex-start;
     padding-left: 25px;
     box-sizing: border-box;
+    min-height: 81px;
+    width: 323px;
+    border-radius: 0 12px 12px 0;
+    margin-left: 0;
   }
 }
 
