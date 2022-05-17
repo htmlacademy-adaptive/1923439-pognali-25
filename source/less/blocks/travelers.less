@@ -8,6 +8,11 @@
   padding-bottom: 4px;
   position: relative;
 
+  .travelers__container {
+    width: 270px;
+    margin: 0 auto;
+  }
+
   .travelers__title {
     margin-left: 24px;
     margin-bottom: 21px;
@@ -33,26 +38,6 @@
     br {
       display: none;
     }
-  }
-
-  .travelers-flags {
-    width: 145px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: absolute;
-    top: -11px;
-    left: 23%;
-  }
-
-  .travelers-flags--short {
-    top: -12px;
-    left: 90px;
-    width: 100px;
-  }
-
-  .travelers-flags__item + .travelers-flags__item {
-    margin-left: 20px;
   }
 
   .travelers__item + .travelers__item {
@@ -93,8 +78,9 @@
     box-sizing: border-box;
     border-radius: 0 0 60px 60px;
 
-    .container {
+    .travelers__container {
       width: 618px;
+      margin: 0 auto;
     }
 
     .travelers__title {
@@ -132,27 +118,8 @@
       }
     }
 
-    .travelers-flags {
-      top: -12px;
-      left: 24%;
-    }
-
-    .travelers-flags--short {
-      left: 99px;
-    }
-
-    .travelers-card__image {
-      width: 285px;
-      height: 286px;
-      border-radius: 20px 20px 0 0;
-    }
-
     .travelers__item + .travelers__item {
       margin-top: 0;
-    }
-
-    .travelers-card__tag {
-      text-align: center;
     }
 
     .travelers__link {
@@ -165,10 +132,6 @@
       padding-left: 30px;
       background-position: 570px 35px;
       border-radius: 20px;
-    }
-
-    .transport-list {
-      width: 121px;
     }
   }
 
@@ -205,8 +168,9 @@
     padding-top: 125px;
     padding-bottom: 127px;
 
-    .travelers-container {
+    .travelers__container {
       padding: 0;
+      width: 1320px;
     }
 
     .travelers__link {
@@ -217,18 +181,6 @@
       grid-column: 1/2;
       grid-row: 3/4;
       background-position: 233px 34px;
-    }
-
-    .travelers-card__content {
-      padding-top: 27px;
-    }
-
-    .travelers-flags--short {
-      top: -15px;
-    }
-
-    .container {
-      width: 1320px;
     }
 
     .travelers__title {

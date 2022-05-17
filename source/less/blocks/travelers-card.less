@@ -58,6 +58,11 @@
     transform: rotate(44deg);
   }
 
+  .travelers-card__flags-short {
+    top: -12px;
+    left: 90px;
+    width: 60px;
+  }
 
   .travelers-card__lvl-background {
     width: 54px;
@@ -156,9 +161,15 @@
       left: 22px;
     }
 
+    .travelers-card__flags-short {
+      left: 99px;
+    }
+
     .travelers-card__image {
       display: block;
       width: 100%;
+      height: 285px;
+      border-radius: 20px 20px 0 0;
     }
 
     .travelers-card__title {
@@ -187,6 +198,17 @@
       font-size: 20px;
       line-height: 23px;
       margin-bottom: 24px;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .travelers-card__content {
+    padding-top: 27px;
+
+    .travelers-card__flags-short {
+      top: -13px;
     }
   }
 }
