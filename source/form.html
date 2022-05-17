@@ -215,16 +215,16 @@
       <form class="algoritm-form" id="add-plans" action="https://echo.htmlacademy.ru" method="post">
         <h1 class="visually-hidden">Выбор направления путешествия</h1>
         <section class="user-profile">
-          <div class="container">
-          <div class="user-profile-title-wrapper">
+          <div class="user-profile__container">
+          <div class="user-profile__title-wrapper">
             <a class="user-profile__title main-header-title main-header-title--active">Направления</a>
           </div>
           <h2 class="visually-hidden">Профиль пользователя</h2>
           <div class="user-profile__card-lvl-wrapper">
             <div class="user-profile__lvl card-lvl">
-              <div class="card-lvl__background">
-                <span class="card-lvl__number">80</span>
-                <span class="card-lvl__description">level</span>
+              <div class="user-profile__card-lvl-background  card-lvl__background">
+                <span class="user-profile__card-lvl-number card-lvl__number">80</span>
+                <span class="user-profile__card-lvl-description card-lvl__description">level</span>
               </div>
             </div>
           </div>
@@ -232,12 +232,12 @@
               <img class="user-profile__avatar user-profile-avatar" src="./img/jpeg/profile-avatar.jpg" width="190" height="190" alt="Ваша аватарка" srcset="./img/jpeg/profile-avatar-2x.jpg 2x">
             </div>
             <a class="user-profile__link button button--change-photo" href="/"><span class="user-profile__link-hidden">сменить</span>фото</a>
-            <div class="user-profile-wrapper user-profile__wrapper-tag">
-              <label class="user-profile-wrapper__title user-profile-wrapper__title--tag" for="tags-profile">ТЭГИ</label>
-              <textarea class="user-profile-wrapper__description" id="tags-profile">#бургер #бар #футбол #концерт #крафт</textarea>
+            <div class="user-profile__wrapper user-profile__wrapper-tag">
+              <label class="user-profile__wrapper-title user-profile__wrapper-title--tag" for="tags-profile">ТЭГИ</label>
+              <textarea class="user-profile__wrapper-description" id="tags-profile">#бургер #бар #футбол #концерт #крафт</textarea>
             </div>
-            <div class="user-profile-wrapper user-profile__wrapper-transport">
-              <label class="user-profile-wrapper__title user-profile-wrapper__title--transport">транспорт</label>
+            <div class="user-profile__wrapper user-profile__wrapper-transport">
+              <label class="user-profile__wrapper-title user-profile__wrapper-title--transport">транспорт</label>
               <ul class="user-profile__list transport-list">
                 <li class="user-profile__item transport-item">
                   <input class="transport-list__input transport-list__input--aero visually-hidden" id="aero" type="checkbox" name="aero" checked>
@@ -260,21 +260,21 @@
           </div>
         </section>
         <section class="user-plans">
-          <div class="user-plans-container container">
+          <div class="user-plans-container user-plans__container">
             <h2 class="user-plans__title inner-title">Мои планы:</h2>
             <ol class="user-plans__list user-plans-list">
               <li class="user-plans__item user-plans-item">
                 <span class="user-plans-item__counter">1.</span>
                 <h3 class="user-plans-item__title">Франция, Италия</h3>
-                <p class="user-plans-item__description travelers-info travelers-counter">3 попутчика</p>
-                <p class="user-plans-item__description travelers-info travelers-date">26 мар <span class="long-dash">&#8212;</span> 29 мар</p>
+                <p class="user-plans-item__description travelers-info user-plans-item__travelers-counter">3 попутчика</p>
+                <p class="user-plans-item__description travelers-info user-plans-item__travelers-date">26 мар <span class="long-dash">&#8212;</span> 29 мар</p>
                 <a class="user-plans-item__link button button--change-plans" href="/">изменить</a>
               </li>
               <li class="user-plans__item user-plans-item">
                 <span class="user-plans-item__counter">2.</span>
                 <h3 class="user-plans-item__title">Таиланд, Индонезия</h3>
-                <p class="user-plans-item__description travelers-info travelers-counter">1 попутчик</p>
-                <p class="user-plans-item__description travelers-info travelers-date">1 июл <span class="long-dash">&#8212;</span> 15 июл</p>
+                <p class="user-plans-item__description travelers-info user-plans-item__travelers-counter">1 попутчик</p>
+                <p class="user-plans-item__description travelers-info user-plans-item__travelers-date">1 июл <span class="long-dash">&#8212;</span> 15 июл</p>
                 <a class="user-plans-item__link button button--change-plans" href="/">изменить</a>
               </li>
             </ol>
