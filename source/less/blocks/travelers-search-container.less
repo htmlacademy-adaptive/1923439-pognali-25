@@ -5,24 +5,25 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 23px;
+  width: 270px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) and (max-width: 1439px) {
   .travelers-search-container__background {
     padding: 34px 36px 37px 34px;
+    width: 688px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .travelers-search-container {
     width: 285px;
-
-    .container {
-      width: 285px;
-    }
   }
 
   .travelers-search-container__background {
     padding: 42px 36px 37px 43px;
+    width: 285px;
   }
 }
