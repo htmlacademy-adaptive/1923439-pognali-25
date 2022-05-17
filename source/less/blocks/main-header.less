@@ -697,16 +697,16 @@
     }
   }
 
-  .main-header--scroll-menu-open.main-header.main-header--open {
-    padding: 0;
+  .main-header__scroll-menu-open.main-header__scroll-menu-wrapper::before {
+    left: 0;
+    top: 0;
+    height: 857px;
+    width: 768px;
+    position: absolute;
+  }
 
-    .main-header__scroll-menu-open.main-header__scroll-menu-wrapper::before {
-      left: 0;
-      top: 0;
-      height: 857px;
-      width: 768px;
-      position: absolute;
-    }
+  .main-header.main-header--open {
+    padding: 0;
 
     .main-header__scroll-wrapper {
       width: 768px;
@@ -740,6 +740,7 @@
       padding-right: 0;
       padding-top: 45px;
       box-sizing: border-box;
+      position: static;
     }
 
     .main-header__log-in {
