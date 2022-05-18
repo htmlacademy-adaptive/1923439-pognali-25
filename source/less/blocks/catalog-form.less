@@ -2,18 +2,6 @@
   position: relative;
 }
 
-
-@media (min-width: @tablet-width) {
-  .catalog-form {
-    .container {
-      width: 688px;
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-}
-
-
 @media (min-width: @desktop-width) {
   .catalog-form {
     display: flex;
@@ -22,37 +10,27 @@
     justify-content: space-between;
     width: 1320px;
     margin: 0 auto;
-
-    .container {
-      padding: 0;
-      width: 285px;
-    }
-
-    .desktop-container {
-      width: 1320px;
-      margin: 0 auto;
-    }
   }
 
-  .catalog-form__travelers-search--margin {
-    margin-top: 0;
-  }
-
-  .catalog-form__search-results--margin {
-    margin-top: 0;
-  }
-
-  .travelers-search {
+  .catalog-form__travelers-search {
     order: 1;
     width: 285px;
   }
 
-  .search-results {
+  .catalog-form__search-results {
     order: 0;
     width: 74%;
   }
 
-  .catalog-pagination {
+  .catalog-form__catalog-pagination {
     order: 1;
   }
+}
+
+.catalog-form__countries-filter--close + .catalog-form__travelers-search {
+  margin-top: 30px;
+}
+
+.catalog-form__countries-filter--close ~ .catalog-form__search-results {
+  margin-top: 30px;
 }
