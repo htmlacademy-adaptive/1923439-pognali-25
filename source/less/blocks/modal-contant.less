@@ -89,6 +89,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
+    text-transform: none;
   }
 
   .modal-contant__list::before {
@@ -117,10 +118,19 @@
   .modal-contant {
     width: 750px;
     min-height: 526px;
+
+    .modal-contant__title {
+      margin-bottom: 63px;
+      margin-top: 49px;
+    }
   }
 
   .modal-contant__list {
     width: 630px;
+  }
+
+  .modal-contant__list + .modal-contant__list {
+    margin-top: 20px;
   }
 
   .modal-contant__list::before {
@@ -135,5 +145,11 @@
     height: 1px;
     bottom: -17px;
     left: 0;
+  }
+
+  .modal-contant__link--close {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
   }
 }
