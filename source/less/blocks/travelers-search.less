@@ -9,14 +9,6 @@
   }
 }
 
-.countries-filter + .travelers-search {
-  margin-top: 25px;
-}
-
-.countries-filter--close + .travelers-search {
-  margin-top: 75px;
-}
-
 .travelers-search__title {
   font-family: "Blogger Sans", "Tahoma", sans-serif;
   font-style: normal;
@@ -149,28 +141,28 @@
   background-position: center;
 }
 
-.travelers-search__input--aero:checked + .transport-list__label {
+.travelers-search__input--aero:checked + .travelers-search__label-transport {
   background-image: url("../img/svg/icon_plane_checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
 }
 
-.travelers-search__input--bus:checked + .transport-list__label {
+.travelers-search__input--bus:checked + .travelers-search__label-transport {
   background-image: url("../img/svg/icon_bus_checked.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 60%;
 }
 
-.travelers-search__input--walk:checked + .transport-list__label {
+.travelers-search__input--walk:checked + .travelers-search__label-transport {
   background-image: url("../img/svg/icon_run_checked.svg");
   background-repeat: no-repeat;
   background-position: 55% 56%;
   background-size: 70%;
 }
 
-.travelers-search__input--cycle:checked + .transport-list__label {
+.travelers-search__input--cycle:checked + .travelers-search__label-transport {
   background-image: url("../img/svg/icon_bicycle_checked.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -201,6 +193,21 @@
   line-height: 13px;
   letter-spacing: 0.06em;
   color: #1d2e5b;
+  appearance: none;
+}
+
+.travelers-search__input-lvl[type="number"] {
+  appearance: textfield;
+}
+
+.travelers-search__input-lvl::-webkit-outer-spin-button {
+  display: none;
+  appearance: none;
+}
+
+.travelers-search__input-lvl::-webkit-inner-spin-button {
+  display: none;
+  appearance: none;
 }
 
 .travelers-search__input-lvl::placeholder {
@@ -269,23 +276,14 @@
 @media (min-width: @tablet-width) and (max-width: 1439px) {
   .travelers-search {
     margin-bottom: 41px;
+    padding-top: 107px;
 
-    .container {
+    .travelers-search__container {
       width: 688px;
       padding-left: 0;
       padding-right: 0;
+      margin: 0 auto;
     }
-  }
-
-  .countries-filter + .travelers-search {
-    padding-top: 52px;
-    margin-bottom: 41px;
-  }
-
-
-  .countries-filter--close + .travelers-search {
-    padding-top: 106px;
-    margin-bottom: 40px;
   }
 
   .travelers-search__title {
@@ -482,23 +480,16 @@
 @media (min-width: @desktop-width) {
   .travelers-search {
     width: 285px;
+    margin-top: 2680px;
 
 
-    .container {
+    .travelers-search__container {
       width: 285px;
     }
 
     .travelers-search__item--transport + .travelers-search__item--transport {
       margin-left: 0;
     }
-  }
-
-  .countries-filter--desktop.countries-filter--close + .travelers-search {
-    margin-top: 2680px;
-  }
-
-  .countries-filter--close + .travelers-search {
-    margin-top: 0;
   }
 
   .travelers-search__title {
@@ -558,10 +549,6 @@
     line-height: 20px;
     letter-spacing: 0.05em;
     color: #1d2e5b;
-  }
-
-  .travelers-search-container {
-    width: 285px;
   }
 
   .travelers-search__list {

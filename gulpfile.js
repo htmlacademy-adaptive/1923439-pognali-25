@@ -30,6 +30,12 @@ export const styles = () => {
 
 // HTML
 
+const html = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({collapseWhiteSpace: true}))
+    .pipe(gulp.dest('build'));
+}
+
 // Js
 
 const js = () => {
@@ -127,7 +133,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(js));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // Build
@@ -138,6 +144,7 @@ export const build = gulp.series(
   optimizeImages,
   gulp.parallel(
     styles,
+    html,
     js,
     svg,
     sprite,
@@ -147,12 +154,13 @@ export const build = gulp.series(
 
 // Default
 
-export const start = gulp.series(
+export default gulp.series(
   clean,
   copy,
   copyImages,
   gulp.parallel(
     styles,
+    html,
     js,
     svg,
     sprite,
@@ -164,6 +172,6 @@ export const start = gulp.series(
 ));
 
 
-export default gulp.series(
-  styles, server, watcher
-);
+// export default gulp.series(
+//   html,styles, server, watcher
+// );

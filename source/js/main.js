@@ -12,9 +12,11 @@ headerMenuToggle.addEventListener('click', function () {
   if (headerMenu.classList.contains('main-header--close')) {
     headerMenu.classList.remove('main-header--close');
     headerMenu.classList.add('main-header--open');
+    headerMenu.classList.add('scroll-menu__open');
   } else {
     headerMenu.classList.add('main-header--close');
     headerMenu.classList.remove('main-header--open');
+    headerMenu.classList.remove('scroll-menu__open');
   }
 });
 
@@ -38,8 +40,10 @@ window.onscroll = function()
 
 function myFunction() {
   if (window.scrollY >= sticky) {
-    scrollMenu.classList.add('scroll-menu')
+    scrollMenu.classList.add('scroll-menu__open');
+    headerMenu.classList.add('main-header--scroll-menu-open');
   } else {
-    scrollMenu.classList.remove('scroll-menu');
+    scrollMenu.classList.remove('scroll-menu__open');
+    headerMenu.classList.remove('main-header--scroll-menu-open');
   }
 }

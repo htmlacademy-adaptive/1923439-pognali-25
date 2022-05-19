@@ -97,11 +97,6 @@
   width: 100%;
 }
 
-.plans-algoritm-calendar__td--active {
-  outline: 2px solid #ff5c23;
-  outline-offset: -1px;
-}
-
 .plans-algoritm__textarea {
   width: 220px;
   height: 220px;
@@ -110,28 +105,22 @@
   border: 1px solid #cbced9;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 10px 14px;
+  padding: 8px 14px;
   position: relative;
   resize: none;
 }
 
+.plans-algoritm__textarea::placeholder {
+  font-family: "Blogger Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
 .plans-algoritm__textarea--second {
   margin-bottom: 17px;
-}
-
-.algoritm-form__item {
-  position: relative;
-}
-
-.algoritm-form__item--first::after {
-  position: absolute;
-  top: 150px;
-  left: -155px;
-  content: "";
-  width: 284px;
-  height: 2px;
-  background-color: #1d2e5b;
-  transform: rotate(-90deg);
 }
 
 .plans-algoritm__label-textarea {
@@ -238,6 +227,21 @@
   appearance: none;
 }
 
+.plans-algoritm__input[type="number"] {
+  appearance: textfield;
+}
+
+
+.plans-algoritm__input::-webkit-outer-spin-button {
+  display: none;
+  appearance: none;
+}
+
+.plans-algoritm__input::-webkit-inner-spin-button {
+  display: none;
+  appearance: none;
+}
+
 .plans-algoritm__label--children {
   position: relative;
   padding-left: 39px;
@@ -319,21 +323,15 @@
   background-size: 14px;
   background-position: 140px 16px;
   border-radius: 4px;
-}
-
-.plans-algoritm-countries-list__button--shadow::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 24px;
-  right: 120px;
-  background-color: transparent;
-  box-shadow: 26px 0 11px 0 #ffffff;
-  z-index: 1;
+  width: 168px;
+  height: 42px;
+  border: 1px solid #cbced9;
+  background-color: #ffffff;
 }
 
 .plans-algoritm__input-countries {
+  width: 220px;
+  height: 42px;
   border: 1px solid #cbced9;
   border-radius: 4px;
   padding: 11px;
@@ -345,6 +343,18 @@
   background-position: 192px 15px;
 }
 
+.plans-algoritm__flags-wrapper {
+  width: 53px;
+  height: 42px;
+  border: 1px solid #cbced9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
 .plans-algoritm__input-countries--active {
   background-color: #1d2e5b;
   color: #ffffff;
@@ -352,9 +362,11 @@
   background-repeat: no-repeat;
   background-size: 12px;
   position: relative;
+  letter-spacing: 0.02em;
+  padding-left: 18px;
 }
 
-.plans-algoritm__input-countries--active + .plans-algoritm-countries-list__button {
+.plans-algoritm__input-countries--active + .plans-algoritm__countries-button-choisen {
   display: none;
 }
 
@@ -369,18 +381,6 @@
   color: #1d2e5b;
 }
 
-.plans-algoritm-countries-list__item + .plans-algoritm-countries-list__item {
-  margin-top: 22px;
-}
-
-.plans-algoritm-countries-list__item {
-  position: relative;
-}
-
-.plans-algoritm__flags-wrapper {
-  position: relative;
-}
-
 .plans-algoritm__flags-wrapper::after {
   content: "";
   position: absolute;
@@ -392,10 +392,6 @@
   border-radius: 50%;
 }
 
-.plans-algoritm .plans-algoritm-countries-list__item--popup {
-  margin-top: 0;
-}
-
 .plans-algoritm__input-countries--add {
   background-color: #edeff6;
   background-image: url("../img/svg/icon_plus.svg");
@@ -403,28 +399,6 @@
   background-position: 193px 15px;
   background-size: 13px;
   padding-left: 13px;
-}
-
-.plans-algoritm-countries-list__item--decore::before {
-  content: "";
-  position: absolute;
-  top: 16px;
-  right: 51px;
-  width: 8px;
-  height: 8px;
-  border: 1px solid #cbced9;
-  box-sizing: border-box;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.plans-algoritm.add-plans__algoritm--step-2 {
-  padding: 24px 23px 6px 23px;
-  margin-bottom: 11px;
-}
-
-.plans-algoritm.add-plans__algoritm--step-3 {
-  padding: 25px 23px 3px 24px;
 }
 
 .plans-algoritm__description--step-3 {
@@ -455,14 +429,6 @@
     .plans-algoritm__select {
       position: relative;
       background-size: 18px;
-    }
-
-    .plans-algoritm-countries-list__item + .plans-algoritm-countries-list__item {
-      margin-top: 15px;
-    }
-
-    .plans-algoritm-countries-list__item.plans-algoritm-countries-list__item--popup {
-      margin-top: 0;
     }
   }
 
@@ -531,11 +497,6 @@
   .plans-algoritm__explanation--short {
     margin-left: 5px;
     margin-right: 0;
-  }
-
-  .plans-algoritm-calendar__td--active {
-    outline: 4px solid #ff5c23;
-    outline-offset: -1px;
   }
 
   .plans-algoritm__input,
@@ -621,13 +582,6 @@
     order: 2;
   }
 
-  .algoritm-form__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 90%;
-  }
-
   .plans-algoritm__input-countries--active {
     background-size: 15px;
   }
@@ -646,6 +600,12 @@
     color: rgba(68, 68, 68, 0.3);
     margin-bottom: 44px;
     resize: none;
+  }
+
+  .plans-algoritm__textarea::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
   }
 
   .plans-algoritm .plans-algoritm__label-textarea {
@@ -668,6 +628,13 @@
     padding-left: 24px;
   }
 
+  .plans-algoritm__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 48px;
+  }
+
   .plans-algoritm__flags,
   .plans-algoritm__flags-wrapper {
     width: 70px;
@@ -676,6 +643,7 @@
 
   .plans-algoritm__flags-wrapper {
     margin-left: 52px;
+    border: 0;
   }
 
   .plans-algoritm__flags-wrapper::after {
@@ -686,33 +654,10 @@
     z-index: 2;
   }
 
-  .plans-algoritm-countries-list__item--decore::before {
-    content: "";
-    position: absolute;
-    top: 26px;
-    right: 150px;
-    width: 14px;
-    height: 14px;
-    border: 1px solid #cbced9;
-    box-sizing: border-box;
-    border-radius: 50%;
-    background-color: #ffffff;
-    z-index: 2;
-  }
-
-  .plans-algoritm-countries-list__item--not-choisen::before {
-    background-color: #edeff6;
-  }
-
   .plans-algoritm__input-countries::placeholder {
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
-  }
-
-  .plans-algoritm__button-wrapper {
-    align-items: baseline;
-    margin-top: 48px;
   }
 
   .plans-algoritm__label-textarea--first::after {
@@ -737,18 +682,6 @@
     background-size: 70px;
   }
 
-  .algoritm-form__item--first::before {
-    position: absolute;
-    top: -37px;
-    left: 506px;
-    content: "";
-    width: 43px;
-    height: 372px;
-    background-image: url("../img/svg/line_country.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
   .plans-algoritm__label-textarea {
     letter-spacing: normal;
     padding-left: 0;
@@ -756,28 +689,6 @@
 
   .plans-algoritm__label-textarea::before {
     display: none;
-  }
-
-  .algoritm-form__item--first::after {
-    display: none;
-  }
-
-  .plans-algoritm-countries-list__item--select::after {
-    display: none;
-  }
-
-  .plans-algoritm-countries-list__button--shadow::after {
-    display: none;
-  }
-
-  .plans-algoritm.add-plans__algoritm--step-2 {
-    padding: 44px 23px 40px 43px;
-    margin-bottom: 52px;
-  }
-
-  .plans-algoritm.add-plans__algoritm--step-3 {
-    padding: 43px 23px 40px 43px;
-    margin-bottom: 39px;
   }
 
   .plans-algoritm__button-wrapper--step-3 {
@@ -807,6 +718,10 @@
     .plans-algoritm__button-image--mounth {
       width: 21px;
       height: 33px;
+    }
+
+    .plans-algoritm__button {
+      margin-bottom: 0;
     }
 
     .plans-algoritm__item.plans-algoritm__item--calendar {
@@ -985,14 +900,6 @@
     margin-top: 30px;
   }
 
-  .algoritm-form__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 730px;
-    margin-top: 74px;
-  }
-
   .plans-algoritm__select,
   .plans-algoritm__input-countries {
     width: 730px;
@@ -1002,10 +909,9 @@
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 0.1em;
-  }
-
-  .plans-algoritm-countries-list__item--decore::before {
-    right: 219px;
+    border: 1px solid #cbced9;
+    padding: 0;
+    padding-left: 24px;
   }
 
   .plans-algoritm__flags-wrapper {
@@ -1019,35 +925,12 @@
     height: 14px;
   }
 
-  .plans-algoritm-countries-list {
-    margin-top: 62px;
-  }
-
   .plans-algoritm__label-textarea--first::after {
     right: -545px;
   }
 
   .plans-algoritm__label-textarea--second::after {
     right: -803px;
-  }
-
-  .algoritm-form__item--first::before {
-    top: -34px;
-    left: 753px;
-  }
-
-  .algoritm-form__item:last-child {
-    margin-bottom: 0;
-  }
-
-  .plans-algoritm.add-plans__algoritm--step-2 {
-    padding: 95px 160px 105px 159px;
-    margin-bottom: 44px;
-  }
-
-  .plans-algoritm.add-plans__algoritm--step-3 {
-    padding: 97px 160px 102px 159px;
-    margin-bottom: 49px;
   }
 
   .plans-algoritm__description--step-3 {

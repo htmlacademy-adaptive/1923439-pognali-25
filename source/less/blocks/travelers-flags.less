@@ -4,4 +4,30 @@
   list-style-type: none;
   display: flex;
   align-items: center;
+  width: 145px;
+  justify-content: flex-start;
+  position: absolute;
+  top: -11px;
+  left: 60px;
+
+  .travelers-flags__item + .travelers-flags__item {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .travelers-flags {
+    top: -12px;
+    left: 24%;
+  }
+
+  .travelers-flags--short {
+    left: 99px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .travelers-flags--short {
+    top: -15px;
+  }
 }

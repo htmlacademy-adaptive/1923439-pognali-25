@@ -1,3 +1,12 @@
+.footer-social {
+  padding-bottom: 37px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.footer-social__icon {
+  width: 28px;
+  height: 25px;
+}
 
 .footer-social__list {
   margin: 0 auto;
@@ -7,4 +16,20 @@
   flex-wrap: wrap;
   align-items: center;
   width: 135px;
+}
+
+@media (min-width: @tablet-width) {
+  .footer-social {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .footer-social__icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .footer-social__list {
+    width: 195px;
+  }
 }

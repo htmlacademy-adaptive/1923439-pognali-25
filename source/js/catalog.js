@@ -16,9 +16,11 @@ headerMenuToggle.addEventListener('click', function () {
   if (headerMenu.classList.contains('main-header--close')) {
     headerMenu.classList.remove('main-header--close');
     headerMenu.classList.add('main-header--open');
+    headerMenu.classList.add('scroll-menu__open');
   } else {
     headerMenu.classList.add('main-header--close');
     headerMenu.classList.remove('main-header--open');
+    headerMenu.classList.remove('scroll-menu__open');
   }
 });
 
@@ -33,20 +35,15 @@ countriesFilterToggleButton.addEventListener('click', function () {
 });
 
 countriesFilterToggle2.addEventListener('click', function () {
-  if (countriesFilterToggleButton.classList.contains('countries-filter__button--x')) {
+  if (countriesFilter.classList.contains('countries-filter--desktop')) {
     countriesFilter.classList.remove('countries-filter--desktop');
-    countriesFilterToggleButton.classList.remove('countries-filter__button--x');
-    countriesFilterToggleButton.classList.add('countries-filter__button--dots');
-    countriesFilter.classList.add('countries-filter--close');
-  } else {
-    countriesFilter.classList.remove('countries-filter--desktop');
-  }
-});
+    countriesFilter.classList.add('catalog-form__countries-filter--close');
+  } });
+
 
 countriesFilterToggleDesktop.addEventListener('click', function () {
-  if (countriesFilter.classList.contains('countries-filter--desktop')) {
-    countriesFilter.classList.add('countries-filter--close');
-  } else {
+  if (countriesFilter.classList.contains('catalog-form__countries-filter--close')) {
+    countriesFilter.classList.remove('catalog-form__countries-filter--close');
     countriesFilter.classList.add('countries-filter--desktop');
   }
 });
@@ -64,10 +61,12 @@ window.onscroll = function()
 
 function myFunction() {
   if (window.scrollY >= sticky) {
-    scrollMenu.classList.add('scroll-menu')
+    scrollMenu.classList.add('scroll-menu__open')
     innerPadding.classList.add('main-header--scroll-menu-catalog');
+    headerMenu.classList.add('main-header--scroll-menu-open');
   } else {
-    scrollMenu.classList.remove('scroll-menu');
+    scrollMenu.classList.remove('scroll-menu__open');
     innerPadding.classList.remove('main-header--scroll-menu-catalog');
+    headerMenu.classList.remove('main-header--scroll-menu-open');
   }
 }

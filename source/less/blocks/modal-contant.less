@@ -1,5 +1,16 @@
 .modal-contant {
   background-color: #ffffff;
+  width: 270px;
+  min-height: 443px;
+  position: fixed;
+  box-shadow: 0 2px 8px rgba(29, 46, 91, 0.14);
+  border-radius: 20px;
+
+  .modal-contant__title {
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 39px;
+  }
 }
 
 .modal-contant__link--close {
@@ -12,13 +23,133 @@
   text-transform: uppercase;
   color: #1d2e5b;
   min-height: 59px;
+  margin-top: 45px;
+  border-radius: 0 0 20px 20px;
 }
 
 .modal-contant__list {
   margin: 0;
   padding: 0;
+  margin-left: 25px;
+  margin-bottom: 22px;
+  position: relative;
 }
 
 .modal-contant__dd {
   margin: 0;
+}
+
+.modal-contant__list::before {
+  content: "";
+  width: 219px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: -10px;
+  left: 0;
+  z-index: 1;
+}
+
+.modal-contant__list:last-of-type::after {
+  content: "";
+  width: 219px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  z-index: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-contant {
+    width: 688px;
+    min-height: 526px;
+
+    .modal-contant__title {
+      text-align: center;
+      margin-top: 54px;
+      margin-bottom: 61px;
+    }
+  }
+
+  .modal-contant__list {
+    display: flex;
+    justify-content: space-between;
+    width: 504px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+  }
+
+  .modal-contant__link--close {
+    margin-top: 65px;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    min-height: 108px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+  }
+
+  .modal-contant__list::before {
+    width: 504px;
+    height: 1px;
+    top: -12px;
+    left: 0;
+  }
+
+  .modal-contant__list:last-of-type::after {
+    width: 504px;
+    height: 1px;
+    bottom: -17px;
+    left: 0;
+  }
+
+  .modal-contant__dd,
+  .modal-contant__dt {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal-contant {
+    width: 750px;
+    min-height: 526px;
+
+    .modal-contant__title {
+      margin-bottom: 63px;
+      margin-top: 49px;
+    }
+  }
+
+  .modal-contant__list {
+    width: 630px;
+  }
+
+  .modal-contant__list + .modal-contant__list {
+    margin-top: 20px;
+  }
+
+  .modal-contant__list::before {
+    width: 630px;
+    height: 1px;
+    top: -12px;
+    left: 0;
+  }
+
+  .modal-contant__list:last-of-type::after {
+    width: 630px;
+    height: 1px;
+    bottom: -17px;
+    left: 0;
+  }
+
+  .modal-contant__link--close {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+  }
 }
