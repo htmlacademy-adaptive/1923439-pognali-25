@@ -5,8 +5,10 @@ let modalIndex = document.querySelector('.modal-container');
 let modalClose = document.querySelector('.modal-contant__link');
 let scrollMenu = document.querySelector('.scroll-wrapper');
 let sticky = scrollMenu.offsetTop;
+let map = document.querySelector('.location');
 
 headerMenu.classList.remove('main-header--nojs');
+map.classList.remove('location--nojs');
 
 headerMenuToggle.addEventListener('click', function () {
   if (headerMenu.classList.contains('main-header--close')) {
