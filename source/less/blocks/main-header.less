@@ -216,7 +216,11 @@
   }
 
   .main-header__logo-color {
-    fill: #192144;
+    color: #192144;
+  }
+
+  .main-header__logo-blue {
+    color: #192144;
   }
 
   .main-header__logo-wrapper {
@@ -366,12 +370,13 @@
 // не подгрузился js //
 .main-header--nojs {
   padding-top: 0;
-  background: url("../img/png/traveller-illustration-mobile.png") center 62% no-repeat, url("../img/png/header-back-mobile.png") center 50% no-repeat;
+  background: url("../img/png/traveller-illustration-mobile.png") center 58% no-repeat, url("../img/png/header-back-mobile.png") center 44% no-repeat;
   background-color: #161c35;
 
   .main-header__main-header-container {
     width: 320px;
     margin: 0 auto;
+    justify-content: center;
   }
 
   .main-header__contacts-wrapper-link {
@@ -408,6 +413,10 @@
 
   .main-header__logo-color {
     fill: #192144;
+  }
+
+  .main-header__logo-blue {
+    color: #192144;
   }
 
   .main-header__logo-wrapper {
@@ -757,6 +766,10 @@
       position: static;
     }
 
+    .main-header__logo-blue {
+      color: #192144;
+    }
+
     .main-header__log-in {
       margin-left: 0;
     }
@@ -848,7 +861,7 @@
   // Не подгрузился js //
   .main-header--nojs {
     padding: 0;
-    background: url("../img/png/traveller-illustration-tablet.png") 80% 75% no-repeat, url("../img/png/globe-back-tablet.svg.png") center 74%  no-repeat;
+    background: url("../img/png/traveller-illustration-tablet.png") 80% 78% no-repeat, url("../img/png/globe-back-tablet.svg.png") center 74%  no-repeat;
     background-color: #182044;
 
     .main-header__main-header-container {
@@ -856,6 +869,11 @@
       box-sizing: border-box;
       display: flex;
       flex-wrap: wrap;
+    }
+
+    .main-header__scroll-wrapper {
+      flex-wrap: wrap;
+      width: 768px;
     }
 
     .main-header__logo-color {

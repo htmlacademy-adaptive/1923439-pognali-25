@@ -262,6 +262,10 @@
   border: 1px solid #cbced9;
   box-sizing: border-box;
   border-radius: 4px;
+
+  &:hover {
+    border-color: #959bb2;
+  }
 }
 
 .plans-algoritm__input-children:checked + .plans-algoritm__label--children::before {
@@ -403,6 +407,19 @@
 
 .plans-algoritm__description--step-3 {
   margin-bottom: 21px;
+}
+
+.plans-algoritm__button-image-max {
+  opacity: 0.3;
+}
+
+.plans-algoritm__button-image:hover {
+  color: #1d2e5b;
+  opacity: 0.8;
+}
+
+.plans-algoritm__button-image:active {
+  opacity: 0.2;
 }
 
 @media (min-width: @tablet-width) {
@@ -722,6 +739,7 @@
 
     .plans-algoritm__button {
       margin-bottom: 0;
+      cursor: pointer;
     }
 
     .plans-algoritm__item.plans-algoritm__item--calendar {
@@ -912,6 +930,10 @@
     border: 1px solid #cbced9;
     padding: 0;
     padding-left: 24px;
+
+    &:hover {
+      background-color: #dfe3f0;
+    }
   }
 
   .plans-algoritm__flags-wrapper {

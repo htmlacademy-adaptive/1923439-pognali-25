@@ -5,6 +5,10 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .button--log-in {
@@ -61,6 +65,14 @@
   padding-right: 23px;
   box-sizing: border-box;
   display: none;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -151,6 +163,14 @@
   padding-left: 23px;
   padding-right: 23px;
   box-sizing: border-box;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .button--for-busines {
@@ -171,6 +191,14 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   margin-left: -10px;
+
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -197,7 +225,7 @@
 
 .button--location {
   background-image: url("../img/svg/button-treangle.svg");
-  background-position: 91% 48%;
+  background-position: 91% 53%;
   background-repeat: no-repeat;
   font-family: "Blogger Sans", "Tahoma", sans-serif;
   font-style: normal;
@@ -212,6 +240,12 @@
   border-radius: 10px;
   justify-content: flex-start;
   padding-left: 19px;
+
+  @media (min-width: @desktop-width) {
+    .button--location {
+      background-size: 20px;
+    }
+  }
 }
 
 .button--change-photo {
@@ -301,6 +335,10 @@
     box-sizing: border-box;
     margin-right: 18px;
     order: 4;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 

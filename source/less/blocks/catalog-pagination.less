@@ -121,4 +121,21 @@
     padding: 25px 26px 25px 27px;
     width: 898px;
   }
+
+  .catalog-pagination__link {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .catalog-pagination__link--active:hover {
+    opacity: 1;
+    cursor: auto;
+  }
 }
