@@ -34,6 +34,7 @@
   line-height: 18px;
   color: #192144;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .contacts-wrapper__link--subscribe {
@@ -49,6 +50,14 @@
       font-weight: 700;
       font-size: 28px;
       line-height: 28px;
+
+      &:hover {
+        color: #ffbd30;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
 
     .contacts-wrapper__image-wrapper {
@@ -80,6 +89,10 @@
     .contacts-wrapper__image {
       width: 37px;
       height: 37px;
+    }
+
+    &:hover {
+      cursor: pointer;
     }
   }
 

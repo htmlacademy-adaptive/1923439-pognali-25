@@ -743,6 +743,11 @@
   .product-card__label-like {
     grid-row: 4/5;
     margin-bottom: 10px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   .product-card__title {
@@ -750,6 +755,15 @@
     grid-row: 2/3;
     margin-top: 5px;
     margin-left: 6px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .product-card__tag {
@@ -845,5 +859,17 @@
 
   .product-card__wishes-countries-image {
     margin-right: 18px;
+  }
+
+  .product-card__link--go {
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ffbd30;
+    }
+
+    &:active {
+      color: rgba(22, 28, 53, 0.3);
+    }
   }
 }

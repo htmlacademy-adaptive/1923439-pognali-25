@@ -129,6 +129,10 @@
   height: 18px;
   background-color: #ffffff;
   border-radius: 4px;
+
+  &:hover {
+    outline: 1px solid #959bb2;
+  }
 }
 
 .travelers-search__item + .travelers-search__item {
@@ -509,6 +513,11 @@
   .travelers-search__category--transport {
     margin-top: 8px;
     margin-bottom: 14px;
+    cursor: pointer;
+  }
+
+  .travelers-search__label-transport {
+    cursor: pointer;
   }
 
   .travelers-search__label {
@@ -517,11 +526,21 @@
     line-height: 20px;
     color: #000000;
     padding-left: 37px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.4;
+    }
   }
 
   .travelers-search__label::before {
     width: 24px;
     height: 24px;
+    cursor: pointer;
   }
 
   .travelers-search__input:checked + .travelers-search__label::before {
@@ -536,11 +555,29 @@
     margin-right: 5px;
     display: block;
     background-position: center;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .travelers-search__input-lvl {
     width: 96px;
     height: 46px;
+    cursor: pointer;
+
+    &:hover {
+      border-color: #959bb2;
+    }
+
+    &:active {
+      border-color: #161c35;
+    }
   }
 
   .travelers-search__input-lvl::placeholder {
@@ -600,5 +637,14 @@
     margin-top: 43px;
     margin-left: 5px;
     margin-bottom: 11px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      background-color: #f3c72b;
+      color: rgba(22, 28, 53, 3);
+    }
   }
 }

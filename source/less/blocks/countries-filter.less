@@ -258,6 +258,15 @@
   line-height: 20px;
   text-transform: uppercase;
   color: rgba(25, 33, 68, 0.3);
+  cursor: pointer;
+
+  &:hover {
+    color: rgba(25, 33, 68, 1);
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .countries-filter__continent-checkbox {
@@ -278,7 +287,16 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #444444;
+  color: rgba(68, 68, 68, 1);
+
+  &:hover {
+    color: rgba(25, 33, 68, 1);
+    font-size: 18px;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .countries-filter__label-continent--active {
@@ -792,6 +810,11 @@
       line-height: 20px;
       background-size: 23px;
       padding-left: 45px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
 
     .countries-filter__button--close {
@@ -837,6 +860,11 @@
     .countries-filter__link {
       margin-bottom: 20px;
       padding-left: 45px;
+      cursor: auto;
+
+      &:hover {
+        opacity: 1;
+      }
     }
 
     .countries-filter__close {
@@ -848,6 +876,14 @@
       letter-spacing: normal;
       width: 1320px;
       justify-content: center;
+
+      &:hover {
+        background-color: #c8cee8;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
     }
 
     .countries-filter__item--hidden {
@@ -915,6 +951,15 @@
       line-height: 30px;
       color: #444444;
       cursor: pointer;
+
+      &:hover {
+        color: rgba(25, 33, 68, 1);
+        font-weight: 500;
+      }
+
+      &:active {
+        opacity: 0.5;
+      }
     }
 
     .countries-filter__list-inside {
